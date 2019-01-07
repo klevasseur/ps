@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+<chapter xml:id="c-induction-pigeons">
+<title>Induction and Pigeonholes </title>
+<introduction>
+	<p>In the first class, we review two basic proof tools, mathematical induction and the pigeonhole principle. I suggest starting the class by reviewing these two topics through examples.  I try to be as careful as possible to write the solutions in a logically coherent form, setting the tone for what I will expect to see from students.   The choice of Fermat's Little Theorem for the induction proof also anticipates the Class 3 in which we do Number Theory.  I don't dwell on these examples any longer than necessary, shooting for a total time of around 30 minutes.</p>
+	</introduction>
+<section xml:id="s-induction">
+<title>Mathematical Induction</title>
+	<p>We illustrate a basic proof by induction by proving Fermat's Little Theorem. </p>
+
+	<theorem xml:id="theorem-fermat-little"><title>Fermat's Little Theorem</title>
+	<idx>Fermat's Little Theorem</idx>
+	<statement><p>Let <m>p</m> be a prime number, and <m>n</m> an integer. Then <m>n^p - n</m> is divisible by <m>p</m>.</p>
+	</statement>
+	<proof><p>The Theorem is clearly true for the case of <m>p=2</m> since any integer and it's square have the same odd/even parity and their difference must be even.   We now assume that <m>p</m> is odd.   The theorem is clearly true for <m>n=0</m>.  This forms the basis for an induction poof for positive values of <m>n</m>.  Assume that for some <m>m > 0</m>, that  <m>n^p - n</m> is divisible by <m>p</m>.  Now consider  <m>(n+1)^p - (n+1)</m>.
+<md>
+  <mrow>(n+1)^p - (n+1) \amp=   n^p+\sum_{k=1}^{p-1} { \binom{p}{k} n^{p-k} } + 1 -n -1 </mrow>
+  <mrow>                \amp (n^p -n)  +\sum_{k=1}^{p-1} {\binom{p}{k} n^{p-k} }\amp \amp</mrow>
+</md>
+</p>
+<p>The first term is divisible by <m>p</m> by the induction hypothesis, and the the second is also divisible by <m>p</m> because <m>\binom{p}{k}</m> is divisible by <m>p</m> for <m>k = 1, 2,\dots,p-1</m>.  Therefore, the theorem is true for all positive values of <m>n</m>.  Finally, the theorem is clearly true for negative values of <m>n</m>.</p> 
+</proof>
+</theorem>
+<p>There may appear to be gaps in the proof from the point of view of a typical undergraduate course. Saying as we did at the end that something is clearly true may not be acceptable to some instructors in some courses.  However, in the context of preparing for the Putnam, knowing how basic your arguments need to be is important.  In this author's opinion the negative case is sufficiently obvious to skip the details. The same is true of the statement that <m>\binom{p}{k}</m> is divisible by <m>p</m> for <m>k = 1, 2,\dots,p-1</m>.</p>
+
+<example xml:id="determinant-sage-assist"><title>Recursive Thinking</title>
+<p>Consider the sequence of  matrices <m>A(n)</m> defined by <m>A(1)=[1]</m> and for <m>n \ge 1</m>, <m>A(n)</m> is an <m>(n-1) \times (n-1)</m> identity matrix with a column of 1's appended to it, and then a row of 1's appended.  For example,
+<m>A(3)=\begin{pmatrix}1 &amp; 0 &amp; 1\\
+							  0 &amp; 1 &amp; 1\\
+							  1 &amp; 1 &amp; 1 \end{pmatrix}</m>.
+What is the determinant of <m>A(n)</m>?</p>
+<p>To solve this problem, we can expand the determinant along the first row.  This gives us two minors to evalute, one of which is the determinant of <m>A(n-1)</m>.  The other minor is matrix that takes a form like this one, in the case were we are expanding <m>\lvert A(5)\rvert</m>: <m>\begin{pmatrix}
+							  0 &amp; 1 &amp; 0 &amp; 0\\
+							  0 &amp; 0 &amp; 1 &amp; 0\\
+							  0 &amp; 0 &amp; 0 &amp; 1\\
+							  1 &amp; 1 &amp; 1 &amp; 1 \end{pmatrix}</m>.</p>
+By shifting the bottom row up, one row at a time, with <m>n-2</m> shifts, we get an upper triangular matrix with all 1's in the diagonal, and so the minor is  <m>(-1)^{(n-2)}</m>  The cofactor corresponding to this minor will have a sign <m>(-1)^{n+1}</m>.  Therefore the value of the cofactor will be<m>(-1)^{n+1}\cdot (-1)^{(n-2)}= -1</m> and so we have
+<me>\lvert A(n) \rvert = \lvert A(n-1) \rvert -1</me>.  Since <m>\lvert A(1) \rvert = 1</m>, we conclude that <m>\lvert A(n) \rvert = 2-n </m></p>							  
+
+
+<p>Occasionally, an assist from technology will jump-start a solution.  In this example, it might not be necessary. However, here is a verification that our solution was correct, or if you hadn't seen the recursion, it might serve as a hint.   Change the value of <c>n</c> to see how the determinant depends on it.</p>
+<sage>
+<input>
+n=5
+A=Matrix([[i==j or i==n-1 or j==n-1 for i in range(n)] for j in range(n)] )
+[A,det(A)]
+</input>
+<output>
+[[1 0 0 0 1]
+[0 1 0 0 1]
+[0 0 1 0 1]
+[0 0 0 1 1]
+[1 1 1 1 1], -3]
+</output>
+</sage>
+</example>
+
+
+</section>  
+<section xml:id="s-pigeons">
+<title>The Pigeonhole Principle</title>
+
+            <figure xml:id="to-many-pigeons">
+                <caption>More pigeons than pigeonholes
+                </caption>
+                <image source="images/TooManyPigeons.jpg">
+                    <description>An array of nine pigeonholes occupied by ten pigeons. This image by en:User:McKay CC-BY-SA-3.0 via Wikimedia Commons</description>
+                </image>
+            </figure>
+ 
+
+
+<p>Informally, the Pigeonhole Principle says that if you have more pigeons than you have pigeonholes, then at least one pair of pigeons have to share the same pigeonhole. The trick to using this simple idea is to identify the pigeons and pigeonholes in a problem.  Here is a relatively simple example. A clue that we can use the Pigeonhole Principle problem in this case is that we are asked to prove the existence of two objects that share a property.</p> 
+	<example xml:id="e-pigeons-1">
+		<p>Prove that every set of 10 two-digit integer numbers has two disjoint subsets with the same sum of elements. (Subsets are pigeons, possible sums are holes)</p>
+		<p>We want two subsets with the same sum, so consider the possible sums to be pigeonholes, and now picture subsets of our ten integer set to be the pigeons. We are not given a specific set of integers, but we can identify the range of possible sums of elements in their subsets.  The smallest sum is 1 while the largest proper subset is <m>91+92+\cdots+99 =855 </m>.  There are <m>2^{10}-2 = 1022 &gt; 855</m> non-empty proper subsets of a ten element set.  Therefore, if we imagine each subset to roost with it's sum, we are sure there there must be two subsets with the same sum.  Now those two subsets may not be disjoint, but if we simply remove elements from their intersection from both subsets, we are done.
+		</p>
+	</example>
+</section>  
+<exercises xml:id="induction-exercises">
+<title>Problems</title>
+<introduction><p>I normally divide the class into groups of 2, 3 or 4 to work on problems.  Exactly how this is done depends on class size, and other factors.  See Appendix 1 for details.   The first problem is a warm-up in that I expect several students to have seen it already.  I instruct the class to work  on this one first with the expectation that most groups will complete it within ten minutes.   I circulate among the groups to help anyone who is struggling with the first problem.   I assign the rest of the problems to different groups.  I encourage the groups to put solutions on the board when they are ready.  When a few problems have been written out, we take a break from solving to review the solutions. Groups that have completed a problem are assigned a new one and we continue until the period is almost over.</p>
+</introduction>
+<exercise number="1">
+<statement>
+<p>Find and prove a formula for the sum of the first <m>n</m> consecutive odd positive integers. For example, if <m>n = 4</m> then <m>1 + 3 + 5 + 7 = 16</m>.</p>
+</statement>
+<hint><p>Look at the first few examples.</p>
+</hint>
+</exercise>
+<exercise number="2">
+<statement>
+<p>
+	Prove that in a room with <m>n</m> people, at least two people know exactly the same number of people. Assume knowing is a symmetric relation: If Paul knows Pat, then Pat knows Paul.
+</p>
+</statement>
+<hint><p>It is impossible to have someone know <m>n-1</m> people and someone else know nobody in the room.</p>
+</hint>
+</exercise>
+<exercise number="3">
+<statement>
+	<p>
+		Let <m>S</m> be any set of 18 distinct integers chosen from the arithmetic progression <m>1, 4, 7, \dots , 100</m>. Prove that there must be two integers in <m>S</m> whose sum is 101.
+	</p>
+</statement>
+<hint><p>Count the number of pairs that can up to 101.</p>
+</hint>
+</exercise>
+
+<exercise number="4">
+<statement>
+	<p>
+		Choose 51 positive integers from 1 to 100. Prove that one of them is a multiple of another.
+	</p>
+</statement>
+<hint><p>Each integer has a maximal odd factor.</p>
+</hint>
+</exercise>
+<exercise number="5">
+<statement>
+<p>
+	Show that a <m>2^n \times  2^n</m> square with a corner tile removed can be covered without overlaps by L-shaped figures (each figure contains 3 tiles). (If you feel adventurous, how about an <m>n \times  n</m> square for arbitrary <m>n</m>?)
+</p>
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+<exercise number="6">
+<statement>
+	<p>
+		Given nine points inside the unit square, prove that some three of them form a triangle whose area does not exceed <m>1/8</m>.
+	</p>
+
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+<exercise number="7">
+<statement>
+<p>Given a sequence of integers <m>x_1</m>, <m>x_2</m>, <m>\dots x_n</m> whose sum is 1, prove that exactly one of the cyclic shifts
+<md>
+<mrow> x_1,x_2,\dots ,x_n </mrow>
+<mrow>  x_2,\dots,x_n,x_1  </mrow>
+<mrow> \vdots    </mrow>
+<mrow> x_n,x_1,\dots,x_{n-1}  </mrow>
+</md>
+has all of its partial sums positive. (By a partial sum we mean the sum of the first <m>k</m> terms, <m>k \leq  n</m>.
+</p>
+
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+<exercise number="8">
+<statement>
+<p>
+	Inside a circle of radius 4 are chosen 61 points. Show that among them there are two at distance at most <m>\sqrt{2}</m> from each other.
+</p>
+
+</statement>
+<hint><p></p>
+</hint>
+</exercise>
+<exercise number="9">
+<statement>
+<p>Show that there is a positive term of the Fibonacci sequence that is divisible by 1000. Recall that the Fibonacci { }sequence is defined by <m>F_0=F_1= 1</m> and for <m>n>1</m>, <m>F_n= F_{n-1}+F_{n-2}</m>.
+</p>
+
+</statement>
+<hint><p>Start with two pairs of consecutive terms that have identical remainders mod 1000.</p>
+</hint>
+</exercise>
+<exercise number="10">
+<statement>
+	<p>
+		You have coins <m>C_1</m>, <m>C_2</m>, ... , <m>C_n</m>. For each <m>k</m>, <m>C_k</m> is biased so that, when tossed, it has probability <m>1/(2k + 1)</m> of falling heads. If the <m>n</m> coins are tossed, what is the probability that the number of heads is odd? Express the answer as a rational function of <m>n</m>.
+	</p>
+
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+<exercise number="11">
+<statement>
+<p>
+	Prove that any positive integer can be represented as <m>\pm 1^2\pm 2^2\pm 3^2\pm \cdots \pm n^2</m> for some positive integer <m>n</m> and some choice of signs. 
+</p>
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+<exercise number="12">
+<statement>
+<p>
+	Prove that for any positive integer <m>n</m> there exists an <m>n</m>-digit number divisible by <m>2^n</m> and containing only the digits 2 and 3.
+</p>
+
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+
+</exercises>
+</chapter> 

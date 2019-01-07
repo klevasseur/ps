@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+<chapter xml:id="c-counting">
+<title>Counting and Indirect Proofs</title>
+<introduction><p>In the second class, we focus on some counting techniques and indirect proofs.  Again, we spend only a short time reviewing these concepts after having discussed some of the problems from week 1.  Leave plenty of time to work on these new problems. Students should be aware that not every solution to problems that are posed in a given week use the technique that is highlighted in that week. </p>
+</introduction>
+<section><title>Counting Two Ways</title>
+<p>Most students are familiar with formula for binomial coefficients, but this derivation in which we use two-way counting.</p>
+<example xml:id="ex-binomial-coeff-formula">
+<statement>
+<p>Derive a formula for the number of <m>k</m> element subsets of an <m>n</m> element set , <m>0\leq k\leq n</m>.</p>
+</statement>
+</example>
+</section>  
+
+<section><title>Indirect Proofs</title>
+<p>Prove that there is no least positive real number.</p>
+
+</section>  
+
+<exercises><title>Problems</title>
+<exercise number="1">
+<statement>
+<p>Let <m>S</m> be a set of real numbers which is closed under multiplication (that is, if <m>a</m> and <m>b</m> are in <m>S</m>, then so is <m>a b</m>). Let <m>T</m> and <m>U</m> be disjoint subsets of <m>S</m> whose union is <m>S</m>. Given that the product of any three (not necessarily distinct) elements of <m>T</m> is in <m>T</m> and that the product of any three elements of <m>U</m> is in <m>U</m>, show that at least one of the two subsets <m>T</m>, <m>U</m> is closed under multiplication.</p>
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+<exercise number="2">
+<statement>
+<p>Let's say I have a group of <m>n+1</m> people who want to see a show. I have three tickets into the theatre: a backstage pass and two regular (but distinguishable)
+tickets. I have to give out the tickets according to the following two rules:
+<ol>
+<li>The backstage pass must go to the oldest person who gets a ticket. (All the people in line are of different ages.</li>
+<li>The person who gets the backstage pass can't get either of the other two tickets, but the two normal tickets can both go to the same person.</li>
+</ol>
+How many ways can I give away the tickets? There are two ways to count. Try to find both.</p>
+</statement>
+<hint><p>You get two different results depending on whether you select who will be oldest first, or you decide what three people will get tickets first.</p>
+</hint>
+</exercise>
+
+<exercise number="3">
+<statement>
+<p> Consider paths such as the one in the grid below that start at the bottom left, <m>(0,0),</m> and reach the top right, <m>(10,10)</m>.  These paths can only go up and to the right.  How many paths are there in all? How many of those paths pass through the point <m>(4,6)</m>?  Generalize both of your results.</p>
+            <figure xml:id="lattice_path">
+                <caption>A Lattice Path
+                </caption>
+                <image source="images/lattice_path.png" width="60%">
+                    <description>A lattice path from (0,0) to (10,10).</description>
+                </image>
+            </figure>
+ 
+
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+
+<exercise number="4">
+<statement>
+<p>Prove that if <m>n\geq 1</m>, then <m>\sum _{k=0}^n \binom{n}{k}^2=\binom{2 n}{n}</m></p>
+</statement>
+<!-- 
+<solution><p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="5">
+<statement>
+<p>Prove that the number of odd coefficients in each row of Pascal's triangle is a power of 2.</p>
+
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+<exercise number="6">
+<statement>
+<p>Every point of three-dimensional space is colored red, green, or blue. Prove that one of the colors attains all distances, meaning that any positive real number represents the distance between two points of this color.</p>
+</statement>
+<hint><p>If false, there are <q>non-attainable</q> distances for each color.  Call them <m>r</m>, <m>g</m> and <m>b</m>, with  <m> r \leq g \leq b</m>.</p>
+</hint>
+</exercise>
+
+
+<exercise number="7">
+<statement>
+<p> How many positive integers <m>n</m> are there such that <m>n</m> is a divisor of at least one the numbers <m>10^{40}</m> and <m>20^{30}</m>?</p>
+</statement>
+<!-- 
+<solution><p></p>
+</solution>
+ -->
+</exercise>
+
+
+<exercise number="8">
+<statement>
+<p>Prove that a list can be made of all the subsets of a finite set such that
+<ul>
+<li>the empty set is the first set;</li>
+<li>each subset occurs once;</li>
+<li>each subset is obtained from the preceding by adding or deleting an element.</li>
+</ul></p>
+</statement>
+<!-- 
+<solution><p></p>
+</solution>
+ -->
+</exercise>
+
+
+</exercises>
+</chapter> 
