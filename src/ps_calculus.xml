@@ -93,10 +93,9 @@ that isn{'}t likely to be used in the Putnam (I could be wrong!)
 </exercise>
 <exercise number="8">
 <statement><p>
-Evaluate  <m>\int_0^{\infty } \frac{\text{Arctan}(\pi  x)-\text{Arctan}(x)}{x} \, dx</m>.  Hint: Generalize.
-</p></statement>
+Evaluate  <m>\int_0^{\infty } \frac{\text{Arctan}(\pi  x)-\text{Arctan}(x)}{x} \, dx</m>.  </p></statement>
+<hint><p>Generalize.</p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution><p></p></solution>
  -->
 </exercise>
@@ -114,13 +113,8 @@ For which real numbers <m>c</m> is <m>\frac{e^x+ e^{-x}}{2}\leq e^{c x^2}</m> fo
 <statement><p>
 Let <m>f(x)</m> be a function such that <m>f(1)=1</m> and for <m>x\geq 1</m>
 
-
-
-$\quad \quad $<m>f'(x)=\frac{1}{x^2+ f(x)^2}</m>.
-
-
-
-Prove that <m>\lim_{x\to \infty } f(x)</m> exists and is less than <m>1+\frac{\pi }{4}</m>.
+<me>f'(x)=\frac{1}{x^2+ f(x)^2}</me>.
+Prove that <m>\lim_{x\to \infty } f(x)</m> exists and is less than <m>1+\frac{\pi}{4}</m>.
 
 </p></statement>
 <!-- 
@@ -130,10 +124,10 @@ Prove that <m>\lim_{x\to \infty } f(x)</m> exists and is less than <m>1+\frac{\p
 </exercise>
 <exercise number="11">
 <statement><p>
-Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>. Hint: Look at the {``}partial products.{''}\\
+Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>.
 </p></statement>
+<hint><p>Look at the <q>partial products.</q></p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution><p></p></solution>
  -->
 </exercise>
