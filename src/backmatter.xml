@@ -18,10 +18,12 @@
 </solutions>
  -->
 
+<!-- 
 <appendix><title>Notation</title>
 <p>The following table defines the notation used in this book. Page numbers or references refer to the first appearance of each symbol.</p>
 	<notation-list />
 </appendix>
+ -->
 <xi:include href="./references.xml" />
 
 <index>
