@@ -35,7 +35,7 @@ What is the determinant of <m>A(n)</m>?</p>
 							  0 &amp; 0 &amp; 1 &amp; 0\\
 							  0 &amp; 0 &amp; 0 &amp; 1\\
 							  1 &amp; 1 &amp; 1 &amp; 1 \end{pmatrix}</m>.</p>
-By shifting the bottom row up, one row at a time, with <m>n-2</m> shifts, we get an upper triangular matrix with all 1's in the diagonal, and so the minor is  <m>(-1)^{(n-2)}</m>  The cofactor corresponding to this minor will have a sign <m>(-1)^{n+1}</m>.  Therefore the value of the cofactor will be<m>(-1)^{n+1}\cdot (-1)^{(n-2)}= -1</m> and so we have
+<p>By shifting the bottom row up, one row at a time, with <m>n-2</m> shifts, we get an upper triangular matrix with all 1's in the diagonal, and so the minor is  <m>(-1)^{(n-2)}</m>  The cofactor corresponding to this minor will have a sign <m>(-1)^{n+1}</m>.  Therefore the value of the cofactor will be<m>(-1)^{n+1}\cdot (-1)^{(n-2)}= -1</m> and so we have
 <me>\lvert A(n) \rvert = \lvert A(n-1) \rvert -1</me>.  Since <m>\lvert A(1) \rvert = 1</m>, we conclude that <m>\lvert A(n) \rvert = 2-n </m></p>							  
 
 
