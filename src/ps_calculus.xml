@@ -7,8 +7,19 @@
 <introduction>
 </introduction>
 <title>Examples</title>
-<example><p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is often Riemann sums and their role in integration.</p>
-<p>Identifying a limit as a Riemann sum was the key to solving B-1 in the 1976 Putnam.</p>
+<example><p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is often Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m></p>, <m>\frac{1}{n} \sum _{k=1}^n
+  \left(\frac{k}{n}\right)^5</m> and maybe disguise it to some extent.  Then ask for the limit as <m>n</m> goes to infinity.  Naturally the answer is simply the integral, <m>\frac{1}{6}</m>.   The first part of solving B-1 in the 1976 Putnam was to identify a slightly more disguised example.</p>
+<blockquote><p>Evaluate
+	<me>\lim_{n\to\infty} \frac{1}{n} \sum _{k=1}^n \left(\left\lfloor
+  								 	\frac{2 n}{k}\right\rfloor -2
+  									 \left\lfloor
+  										 \frac{n}{k}\right\rfloor \right) 
+	</me>
+	</p>
+</blockquote>
+<p>In this case, the function we are integrating is a bit more complicated, and integration is a second issue that isn't so straightforward.  The function is   
+<m>f(x)= \left\lfloor \frac{2}{x}\right\rfloor - 2 \left\lfloor \frac{1}{x}\right\rfloor</m></p>.
+<p>Evaluating the integral is non-trivial, but here is an overview.  When working with floor/ceiling functions, one trick is to assume your variable satisfies inequalities that explicitly give a formula for their value.  In this case, we assume that for some positive integer <m>k</m>,  <me> k \leq \frac{1}{x} \le k +1  \Rightarrow </me></p>
 </example>
 
 </section>  
