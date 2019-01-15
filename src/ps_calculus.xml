@@ -7,7 +7,7 @@
 <introduction>
 </introduction>
 <title>Examples</title>
-<example><p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is often Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m></p>, <m>\frac{1}{n} \sum _{k=1}^n
+<example><p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is often Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m>, <m>\frac{1}{n} \sum _{k=1}^n
   \left(\frac{k}{n}\right)^5</m> and maybe disguise it to some extent.  Then ask for the limit as <m>n</m> goes to infinity.  Naturally the answer is simply the integral, <m>\frac{1}{6}</m>.   The first part of solving B-1 in the 1976 Putnam was to identify a slightly more disguised example.</p>
 <blockquote><p>Evaluate
 	<me>\lim_{n\to\infty} \frac{1}{n} \sum _{k=1}^n \left(\left\lfloor
@@ -56,8 +56,7 @@ Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m>  for all <m>n\geq 1</m>.
 <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size <m>n</m>.</p></li>
 </ol>
 </p>
-
-</p></statement>
+</statement>
 <!-- 
 <hint><p></p></hint>
 <solution><p></p></solution>
@@ -145,12 +144,4 @@ Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>.
 </exercise>
 
 </exercises>
-</chapter> 
-
- 
-
- 
- 
- 
-
-
+</chapter>
