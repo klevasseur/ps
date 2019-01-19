@@ -5,22 +5,18 @@
 <title>Number Theory </title>
 <section>
 <title>Examples</title>
-<p>Show that \(n^2+ 1\) is divisible by 7 for no positive integer \(n\).
+<p>Show that <m>n^2+ 1</m> is divisible by 7 for no positive integer <m>n</m>.
 </p>
 
 </section>  
 
-<section>
-<title></title>
-
-</section>  
 
 
 <exercises>
 <title>Problems</title>
 <exercise number="1">
 <statement>
-
+<p>__</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -44,7 +40,7 @@
 
 <exercise number="3">
 <statement>
-<p>Show, without using a calculator, that \(2^9 + 2^{99}\) is divisible by 100.</p></statement>
+<p>Show, without using a calculator, that <m>2^9 + 2^{99}</m> is divisible by 100.</p></statement>
 <!-- 
 <hint><p></p></hint>
 <solution>
@@ -55,8 +51,8 @@
 
 <exercise number="4">
 <statement>
-<p>Let \(a, b\) be integers and \(m, n\) positive integers such that \(\gcd (m,n)=1\). { }Prove that there is a unique integer, \(x\), { }in the set
-\(\{0,1,2,\ldots , m n -1\}\) such that \(x\equiv a (\text{mod} m)\) and \(y\equiv b (\text{mod} n)\).</p>
+<p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. { }Prove that there is a unique integer, <m>x</m>, { }in the set
+<m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a (\text{mod} m)</m> and <m>y\equiv b (\text{mod} n)</m>.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -68,8 +64,8 @@
 
 <exercise number="5">
 <statement>
-<p>Let \(\varphi (k)\) be the number of integers in the set \(\{1,2, \ldots  , k-1\}\) that are relatively prime to \(k\). Find and prove a formula
-for \(\varphi \left(p^n\right)\) if \(n\geq 1\) and \textit{ p} is prime.</p>
+<p>Let <m>\varphi (k)</m> be the number of integers in the set <m>\{1,2, \ldots  , k-1\}</m> that are relatively prime to <m>k</m>. Find and prove a formula
+for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and \textit{ p} is prime.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -81,7 +77,7 @@ for \(\varphi \left(p^n\right)\) if \(n\geq 1\) and \textit{ p} is prime.</p>
 
 <exercise number="6">
 <statement>
-<p>For which positive integers \(n\) is there a sum of \(n\) consecutive integers that is a perfect square?
+<p>For which positive integers <m>n</m> is there a sum of <m>n</m> consecutive integers that is a perfect square?
 </p>
 </statement>
 <!-- 
@@ -94,7 +90,7 @@ for \(\varphi \left(p^n\right)\) if \(n\geq 1\) and \textit{ p} is prime.</p>
 
 <exercise number="7">
 <statement>
-<p>Show that the equation \(x^2- y^2=2x y z\) has no solutions in the positive integers. { }Hint: { }Consider a prime divisor of \(x y\).
+<p>Show that the equation <m>x^2- y^2=2x y z</m> has no solutions in the positive integers. { }Hint: { }Consider a prime divisor of <m>x y</m>.
 </p>
 </statement>
 <!-- 
@@ -106,10 +102,10 @@ for \(\varphi \left(p^n\right)\) if \(n\geq 1\) and \textit{ p} is prime.</p>
 </exercise>
 
 <exercise number="8">
-<statement><p>In <xref ref="" label="text-local"/>, we showed an example of how to deal with floor/ceiling functions. Here is an problem from the 1983 Putnam that can be solved by starting with a similar approach.  We quote the problem verbatim, where <m>[x]</m> was used for the floor function. </p>
-<p>Let <m>f(n)=n +[\sqrt{n}]</m> where <m>[x]</m> is the largest integer less than or equal to <m>x</m>.  Prove that, for every positive integer <m>m</m>, the sequence <md>m, f(m), f(f(m)), f(f(f(m))), \dots</md> contains at least one square of an integer.</p>
+<statement><p>In <xref ref="example-riemann-limit" />, we showed an example of how to deal with floor/ceiling functions. Here is an problem from the 1983 Putnam that can be solved by starting with a similar approach.  We quote the problem verbatim, where <m>[x]</m> was used for the floor function. </p>
+<p>Let <m>f(n)=n +[\sqrt{n}]</m> where <m>[x]</m> is the largest integer less than or equal to <m>x</m>.  Prove that, for every positive integer <m>m</m>, the sequence <me>m, f(m), f(f(m)), f(f(f(m))), \dots</me> contains at least one square of an integer.</p>
 </statement>
-<hint><p></p></hint>
+<hint><p>Assume <m>n = k^2 + j</m> where <m>0 \leq j \leq 2k</m>.</p></hint>
 <!-- 
 <solution>
 <p></p>
@@ -119,7 +115,7 @@ for \(\varphi \left(p^n\right)\) if \(n\geq 1\) and \textit{ p} is prime.</p>
 
 <exercise number="9">
 <statement>
-<p>Find all integral solutions to \(\left|p^r-q^s\right|=1\), where \textit{ p} and \textit{ q} are primes and \textit{ r} and \textit{ s} are positive
+<p>Find all integral solutions to <m>\left|p^r-q^s\right|=1</m>, where \textit{ p} and \textit{ q} are primes and \textit{ r} and \textit{ s} are positive
 integers greater than or equal to 2. Prove that there are no other solutions than the ones you list.
 </p>
 </statement>
@@ -133,7 +129,7 @@ integers greater than or equal to 2. Prove that there are no other solutions tha
 
 <exercise number="10">
 <statement>
-<p>What is the sum of the digits of the sum of the digits of the sum of the digits of \(4444^{4444}\)?</p>
+<p>What is the sum of the digits of the sum of the digits of the sum of the digits of <m>4444^{4444}</m>?</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -145,9 +141,9 @@ integers greater than or equal to 2. Prove that there are no other solutions tha
 
 <exercise number="11">
 <statement>
-<p>Each of the numbers \(x_1\), \(x_2\), ..., \(x_n\) equal 1 or -1, and { }\(x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots +x_{n-3}x_{n-2}x_{n-1}x_n+x_{n-2}x_{n-1}x_nx_1+x_{n-1}x_nx_1x_2+x_nx_1x_2x_3=
+<p>Each of the numbers <m>x_1</m>, <m>x_2</m>, ..., <m>x_n</m> equal 1 or -1, and { }\(x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots +x_{n-3}x_{n-2}x_{n-1}x_n+x_{n-2}x_{n-1}x_nx_1+x_{n-1}x_nx_1x_2+x_nx_1x_2x_3=
 0\). { }\\
-Prove that \(n\) is divisible by 4.</p>
+Prove that <m>n</m> is divisible by 4.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -159,7 +155,7 @@ Prove that \(n\) is divisible by 4.</p>
 
 <exercise number="12">
 <statement>
-<p>Find all positive integers \(n\) such that \(n!\) ends in exactly 1000 zeros.</p>
+<p>Find all positive integers <m>n</m> such that <m>n!</m> ends in exactly 1000 zeros.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -171,7 +167,7 @@ Prove that \(n\) is divisible by 4.</p>
 
 <exercise number="13">
 <statement>
-<p>Prove that among any three distinct integers we can find two, say \(a\) and \(b\), such that the number \(a^3b - a b^3\) is a multiple of 10.
+<p>Prove that among any three distinct integers we can find two, say <m>a</m> and <m>b</m>, such that the number <m>a^3b - a b^3</m> is a multiple of 10.
 </p>
 </statement>
 <!-- 

@@ -3,11 +3,11 @@
 
 <chapter xml:id="s-calculus">
 <title>Calculus</title>
-<section>
-<introduction>
+<introduction><p>Calculus is always represented in the Putnam, but not always in ways that students expect.</p>
 </introduction>
+<section>
 <title>Examples</title>
-<example><p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is often Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m>, <m>\frac{1}{n} \sum _{k=1}^n
+<example xml:id="example-riemann-limit"><p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m>, <m>\frac{1}{n} \sum _{k=1}^n
   \left(\frac{k}{n}\right)^5</m> and maybe disguise it to some extent.  Then ask for the limit as <m>n</m> goes to infinity.  Naturally the answer is simply the integral, <m>\frac{1}{6}</m>.   The first part of solving B-1 in the 1976 Putnam was to identify a slightly more disguised example.</p>
 <blockquote><p>Evaluate
 	<me>\lim_{n\to\infty} \frac{1}{n} \sum _{k=1}^n \left(\left\lfloor
@@ -18,8 +18,34 @@
 	</p>
 </blockquote>
 <p>In this case, the function we are integrating is a bit more complicated, and integration is a second issue that isn't so straightforward.  The function is   
-<m>f(x)= \left\lfloor \frac{2}{x}\right\rfloor - 2 \left\lfloor \frac{1}{x}\right\rfloor</m></p>.
-<p>Evaluating the integral is non-trivial, but here is an overview.  When working with floor/ceiling functions, one trick is to assume your variable satisfies inequalities that explicitly give a formula for their value.  In this case, we assume that for some positive integer <m>k</m>,  <me> k \leq \frac{1}{x} \le k +1  \Rightarrow </me></p>
+<m>f(x)= \left\lfloor \frac{2}{x}\right\rfloor - 2 \left\lfloor \frac{1}{x}\right\rfloor</m>.</p>
+<p>Evaluating the integral is non-trivial, but here is an overview.  When working with floor/ceiling functions, one trick is to assume your variable satisfies inequalities that explicitly give a formula for their value.  In this case, we assume that  <m>k</m> is some positive integer.
+<me>\begin{split}
+	2[\frac{1}{x}]=2k &amp;\Leftrightarrow  [\frac{1}{x}]=k\\
+	                &amp; \Leftrightarrow k \leq \frac{1}{x} \lt k +1 \\
+	 						&amp; \Leftrightarrow \frac{1}{k+1} \lt x \leq \frac{1}{k}
+	 			\end{split}</me></p>
+<p>
+<me>\begin{split}
+		 k \leq \frac{1}{x} \le k +1  &amp;\Leftrightarrow 2k \leq \frac{2}{x} \le 2k +2 \\
+											&amp;\Leftrightarrow  \left[\frac{2}{x}\right] = 2k \textrm{ or } 2k + 1.
+	\end{split}</me>
+If <m>\frac{1}{k+1} \lt x \leq \frac{2}{2k+1}</m>, we have <m>[\frac{2}{x}] = 2k</m>; and if <m>\frac{2}{2k+1} \lt x \leq \frac{1}{k}</m>, we have <m>[\frac{2}{x}] = 2k +1</m>.  Therefore,  on the interval <m>(\frac{1}{k+1}, \frac{1}{k}]</m>, <me>f(x)=\left{\begin{cases} 0 &amp; \textrm{if } \frac{1}{k+1} \lt x \leq \frac{2}{2k+1}\\
+							1 &amp; \textrm{if } \frac{2}{2k+1} \lt x \leq \frac{1}{k}
+							\end{cases}
+</me>
+and <m>\int_{\frac{1}{k+1}}^{\frac{1}{k}} f(x) dx = \frac{1}{k} - \frac{2}{2k+1}</m></p>
+<p>Finally, we have 
+<me>\begin{split}
+\int_{0}^{1} f(x) dx &amp; = \sum_{k=1}^{\infy} \left( \frac{1}{k} - \frac{2}{2k+1} \right) \\
+						&amp;  = \sum_{k=1}^{\infy} \left( \frac{2}{2k} - \frac{2}{2k+1} \right) \\
+						&amp;  = 2 \sum_{k=1}^{\infy} \left( \frac{1}{2k} - \frac{1}{2k+1} \right) \\
+						&amp;  = 2 \left(\left( \sum_{k=1}^{\infy} (-1)^{k+1}\frac{1}{k}\right)  - 1 \right)\\
+						&amp; =2 \ln(2) - 2\\
+						&amp; =\ln(4) - 2
+\end{split}</me>
+</p>
+
 </example>
 
 </section>  
@@ -47,11 +73,9 @@ Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m>  for all <m>n\geq 1</m>.
 </exercise>
 <exercise number="3">
 <statement><p>
-<ol type="(a)">
-<li><p>Find a partition <m>\left\{t_0=1,t_1,t_2=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of \(\int_1^2
-\frac{1}{x} \, dx\) among all other partitions of size 2.</p></li>
-<li><p>Find a partition <m>\left\{t_0=1,t_1,t_2,t_3=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of \(\int_1^2
-\frac{1}{x} \, dx\) among all other partitions of size 3.</p></li>
+<ol label="(a)">
+<li><p>Find a partition <m>\left\{t_0=1,t_1,t_2=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size 2.</p></li>
+<li><p>Find a partition <m>\left\{t_0=1,t_1,t_2,t_3=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size 3.</p></li>
 <li><p>Find a partition <m>\left\{t_0=1,t_1,t_2,\ldots , t_n=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of
 <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size <m>n</m>.</p></li>
 </ol>

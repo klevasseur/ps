@@ -27,6 +27,7 @@
 	 	<xi:include href="./ps_induction.xml" />                        
 		<xi:include href="./ps_counting.xml" />                        
 		<xi:include href="./ps_calculus.xml" />                        
+		<xi:include href="./number_theory.xml" />                        
 		<xi:include href="./backmatter.xml" />            
  <!-- 
 -->
