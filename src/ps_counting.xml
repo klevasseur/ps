@@ -54,7 +54,7 @@ How many ways can I give away the tickets? There are two ways to count. Try to f
 
 </statement>
 <hint><p>Think of each path as a sequence of instructions to go right (R) and up (U).</p></hint>
-<solution><p>Each path can be described as a sequence or R's and U's with exactly ten of each.   The ten positions in which R's could be placed can be selected from the twenty positions in the sequence \(\binom{20}{10}\) ways.  We can generalize this logic and see that there are \(\binom{m+n}{m}\) paths from \((0,0)\) to \((m,n)\).</p>
+<solution><p>Each path can be described as a sequence or R's and U's with exactly ten of each.   The ten positions in which R's could be placed can be selected from the twenty positions in the sequence <m>\binom{20}{10}</m> ways.  We can generalize this logic and see that there are <m>\binom{m+n}{m}</m> paths from <m>(0,0)</m> to <m>(m,n)</m>.</p>
 </solution>
 </exercise>
 

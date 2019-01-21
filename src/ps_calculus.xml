@@ -30,19 +30,18 @@
 		 k \leq \frac{1}{x} \le k +1  &amp;\Leftrightarrow 2k \leq \frac{2}{x} \le 2k +2 \\
 											&amp;\Leftrightarrow  \left[\frac{2}{x}\right] = 2k \textrm{ or } 2k + 1.
 	\end{split}</me>
-If <m>\frac{1}{k+1} \lt x \leq \frac{2}{2k+1}</m>, we have <m>[\frac{2}{x}] = 2k</m>; and if <m>\frac{2}{2k+1} \lt x \leq \frac{1}{k}</m>, we have <m>[\frac{2}{x}] = 2k +1</m>.  Therefore,  on the interval <m>(\frac{1}{k+1}, \frac{1}{k}]</m>, <me>f(x)=\left{\begin{cases} 0 &amp; \textrm{if } \frac{1}{k+1} \lt x \leq \frac{2}{2k+1}\\
-							1 &amp; \textrm{if } \frac{2}{2k+1} \lt x \leq \frac{1}{k}
+If <m>\frac{1}{k+1} \lt x \leq \frac{2}{2k+1}</m>, we have <m>[\frac{2}{x}] = 2k+1</m>; and if <m>\frac{2}{2k+1} \lt x \leq \frac{1}{k}</m>, we have <m>[\frac{2}{x}] = 2k</m>.  Therefore,  on the interval <m>(\frac{1}{k+1}, \frac{1}{k}]</m>, <me>f(x)=\left{\begin{cases} 1 &amp; \textrm{if } \frac{1}{k+1} \lt x \leq \frac{2}{2k+1}\\
+							0 &amp; \textrm{if } \frac{2}{2k+1} \lt x \leq \frac{1}{k}
 							\end{cases}
 </me>
-and <m>\int_{\frac{1}{k+1}}^{\frac{1}{k}} f(x) dx = \frac{1}{k} - \frac{2}{2k+1}</m></p>
+and <m>\int_{\frac{1}{k+1}}^{\frac{1}{k}} f(x) dx = \frac{2}{2k+1}-  \frac{1}{k+1}</m></p>
 <p>Finally, we have 
 <me>\begin{split}
-\int_{0}^{1} f(x) dx &amp; = \sum_{k=1}^{\infy} \left( \frac{1}{k} - \frac{2}{2k+1} \right) \\
-						&amp;  = \sum_{k=1}^{\infy} \left( \frac{2}{2k} - \frac{2}{2k+1} \right) \\
-						&amp;  = 2 \sum_{k=1}^{\infy} \left( \frac{1}{2k} - \frac{1}{2k+1} \right) \\
-						&amp;  = 2 \left(\left( \sum_{k=1}^{\infy} (-1)^{k+1}\frac{1}{k}\right)  - 1 \right)\\
-						&amp; =2 \ln(2) - 2\\
-						&amp; =\ln(4) - 2
+\int_{0}^{1} f(x) dx &amp; = \sum_{k=1}^{\infty} \left( \frac{2}{2k+1}-  \frac{1}{k+1} \right) \\
+						&amp;  = 2 \sum_{k=1}^{\infty} \left( \frac{1}{2k+1} - \frac{1}{2k+2} \right) \\
+						&amp;  = 2 \left(\left( \sum_{k=1}^{\infty} (-1)^{k+1}\frac{1}{k}\right)  - (1-\frac{1}{2}) \right)\\
+						&amp; = 2 \ln(2) - 1\\
+						&amp; = \ln(4) - 1
 \end{split}</me>
 </p>
 

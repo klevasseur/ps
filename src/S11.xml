@@ -30,19 +30,16 @@
 </exercises>
 </chapter> 
 
- Let <m>a,b,c,d,e \in \mathbb{R}</m> such that <m>a + \frac{b}{2} + \frac{c}{3} + \frac{d}{4} + \frac{e}{5} = 0</m>. Show that the polynomial { }\(a+b
-x+c x^2 +d x^3 +e x^4\) { }has at least one real zero. Note: { }In this context, \textit{ e} isn{'}t the number we call \textit{ e}, it{'}s just
+ Let <m>a,b,c,d,e \in \mathbb{R}</m> such that <m>a + \frac{b}{2} + \frac{c}{3} + \frac{d}{4} + \frac{e}{5} = 0</m>. Show that the polynomial <m>a+b x+c x^2 +d x^3 +e x^4</m> has at least one real zero. Note: { }In this context, \textit{ e} isn{'}t the number we call \textit{ e}, it{'}s just
 an arbitrary real number.
 
-Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m> { } for all <m>n\geq 1</m>.
+Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m>  for all <m>n\geq 1</m>.
 
-(a) Find a partition <m>\left\{t_0=1,t_1,t_2=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of { }\(\int_1^2
-\frac{1}{x} \, dx\) among all other partitions of size 2.
-
+(a) Find a partition <m>\left\{t_0=1,t_1,t_2=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size 2.
 
 
-(b) Find a partition <m>\left\{t_0=1,t_1,t_2,t_3=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of { }\(\int_1^2
-\frac{1}{x} \, dx\) among all other partitions of size 3.
+
+(b) Find a partition <m>\left\{t_0=1,t_1,t_2,t_3=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size 3.
 
 
 
