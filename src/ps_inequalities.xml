@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+<chapter xml:id="c-inequalities">
+<title>Inequalities</title>
+<introduction><p>As with most topics, we could spend a whole semester on inequalities.  I normally concentrate on inequalites involving means and the CBS  inequality in a single class</p>
+</introduction>
+<section><title>Means</title>
+<p>
+</p>
+<theorem><title>The AM/GM inequality</title>
+<idx>AM/GM inequality</idx>
+<statement><p>Assume <m>n \geq 2</m>.  If <m>a_i</m>, <m>i = 1, 2, \dots, n</m> are non-negative real numbers, then
+<me>\left(a_1a_2\cdots  a_n\right){}^{1/n}\leq  \frac{a_1+a_2+\cdots +a_n}{n}</me>
+with equality if and only if all the <m>a_i</m> are equal.</p>
+<proof><p>A proof by induction.  We leave the proof for <m>n=2</m> as an exercise.  Then we assume that for some <m>n \geq 2</m>, the inequality is true and then assume we have <m>n+1</m> numbers.</p> </proof>
+</theorem>
+<example xml:id="">
+<statement>
+<p></p>
+</statement>
+</example>
+</section>  
+
+<section><title>The CBS Inequality</title>
+<p>The Cauchy-Bunyakovsky-Schwarz, or CBS, inequality has both discrete and continuous versions.  The real discrete version is that if <m>x</m> and <m>y</m> are vectors in <m>\mathbb{R}^n</m>, then  <m>\left(\sum _{i=1}^n x_i y_i\right){}^2\leq \left(\sum _{i=1}^n x_i^2\right)\left(
+\sum _{i=1}^n y_i^2\right)</m>, with equality if and only if the two vectors are scalar multiples of one another.  </p>
+
+</section>  
+<section><title>Young's Inequality</title>
+<p>Given positive numbers  and  whose reciprocals add up to one, the product  of two positive real numbers  and  is less than or equal to a weighted sum of <m>p^{th}</m> and <m>q^{th}</m> powers  of <m>a</m> and <m>b</m>.
+</p>
+
+</section>  
+
+<exercises><title>Problems</title>
+<exercise number="8">
+<statement>
+<p>Let <m>a</m> and <m>b</m> be positive real numbers. Prove that <m>\sqrt{a b}\leq \frac{a+b}{2}</m>  with equality if and only if <m>a=b</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p>How does <m>\frac{2}{\frac{1}{a}+\frac{1}{b}}</m> compare with the two quantities in the first problem? 
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p>An express delivery service restricts the size of packages it will accept.  Packages cannot exceed 18 inches in length plus girth, i. e., <m>\text{length}+2\times
+\text{width} +2\times \text{height}\leq 18</m>.  Find the maximum volume of an acceptable package.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p> Let <m>a_1, a_2. \ldots  , a_{n }</m> be positive, with sum 1.    Show that <m>\sum _{i=1}^n a_i^2\geq \frac{1}{n}</m>  and   <m>\sum _{i=1}^n
+a_i^4\geq \frac{1}{n^3}</m>
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p>(a)  Compute the determinant <m>D= \left\left| \left(
+\begin{array}{ccc}
+ a & b & c \\
+ c & a & b \\
+ b & c & a \\
+\end{array}
+\right)\right\right|</m> two ways to derive the identity <m>a^3+b^3+c^3-3 a b c =(a+b+c) \left(a^2+b^2+c^2-a b-b c - c a\right)</m>.
+
+(b)  Prove that if <m>x</m>, <m>y</m>, and <m>z</m> are distinct real numbers, then <m>\sqrt[3]{x-y}+ \sqrt[3]{y-z}+\sqrt[3]{z-x}\neq 0</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p>Let <m>x_1+x_2+x_3=\frac{\pi }{2}</m>, where the <m>x_i</m> are positive.   Show that  <m>\sin  x_1\sin  x_2 \sin  x_3\leq \frac{1}{8}</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p>Let <m>f</m>be a continuous and monotonically increasing function such that <m>f(0) = 0</m> and <m>f(1) = 1</m>. Prove that   \\
+        <m>f(0.1)+f(0.2)+\cdot  \cdot  \cdot +f(0.9)+f^{-1}(0.1)+f^{-1}(0.2)+\cdot  \cdot  \cdot +f^{-1}(0.9) \leq  9.9</m>
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p>Let <m>T</m> be a tetrahedron with three mutually perpendicular edges of lengths <m>a</m>, <m>b</m>, and <m>c</m>.  Let <m>l</m> be the sum of the length of the
+six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p>Let <m>a_1, a_2, \ldots  , a_n</m> be positive real numbers and let <m>s</m> be their sum.  Show that 
+<m>\left(1+a_1\right)\left(1+a_2\right)\cdots \left(1+a_n\right) \leq  1 + \frac{s}{1!}+ \frac{s^2}{2!}+ \cdots +\frac{s^n}{n!}</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p>For positive numbers <m>x</m> and <m>y</m>, prove that <m>x^x+y^y\geq x^y+ y^x</m>, with equality if and only if <m>x=y</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise number="8">
+<statement>
+<p>Find the maximum of the function <m>f(x,y,z)=5x -6y+7z</m> on the ellipsoid <m>2x^2+3y^2+4z^2=1</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise number="8">
+<statement>
+<p>Prove that a list can be made of all the subsets of a finite set such that
+<ul>
+<li>the empty set is the first set;</li>
+<li>each subset occurs once;</li>
+<li>each subset is obtained from the preceding by adding or deleting an element.</li>
+</ul></p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+
+</exercises>
+</chapter> 
