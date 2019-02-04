@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+<chapter xml:id="c-seq-series">
+<title>Sequences and Series</title>
+<introduction><p></p>
+</introduction>
+<section><title></title>
+<idx></idx><idx></idx>
+<p>The Fibonacci sequence:   <m>f_0=1,\text{  }f_1= 1</m>, and for <m>n\geq 2</m>, <m>f_n= f_{n-2}+f_{n-1}</m>.
+Warm-up  Prove that any two consecutive Fibonacci numbers are coprime.  Note:  the terms  <q>coprime</q>  and   <q>relatively prime</q>
+ mean the same thing, have no common factor other than 1.
+
+</p>
+</section>  
+
+<section><title></title>
+</section>  
+<section><title>Generating Functions</title>
+<idx>Counting Binary Trees</idx>
+<p>Students should know how to derive the power series representation of a function, but might not be familiar with the inverse process of identifying  a function, given its power series.   This is a particulary powerful tool for deriving a formula from a combinitorial sequence. We will illustrate this technique by deriving a formula for the number of different binary trees with <m>n</m> vertices.</p>
+<definition xml:id="def-binary-tree"><title>Binary Tree</title>
+<idx>Binary Tree</idx>
+<statement>
+<p><ol label="(1)">
+<li><p>A tree consisting of no vertices (the empty tree) is a binary tree</p></li>
+<li><p>A vertex together with two subtrees that are both binary trees is a binary tree. The subtrees are called the left and right subtrees of the binary tree.</p></li>
+</ol></p>
+</statement></definition>
+<p>Let <m>B(n)</m> be the number of different binary trees of size <m>n</m> (<m>n</m> vertices), <m>n \geq  0</m>. By our definition of a binary tree,
+<m>B(0) = 1</m>. Now consider any positive integer <m>n + 1</m>, <m>n \geq  0</m>. A binary tree of size <m>n + 1</m> has two subtrees, the sizes of which add
+up to <m>n</m>. The possibilities can be broken down into <m>n + 1</m> cases:</p>
+<blockquote>
+<p>Case 0: Left subtree has size 0; right subtree has size <m>n</m>. </p>
+<p>Case 1: Left subtree has size 1; right subtree has size <m>n - 1</m>.</p>
+<p> <m>\quad \quad </m><m>\vdots</m></p>
+<p>Case <m>k</m>: Left subtree has size <m>k</m>; right subtree has size <m>n - k</m>.</p>
+<p> <m>\quad \quad </m><m>\vdots</m></p>
+<p>Case <m>n</m>: Left subtree has size <m>n</m>; right subtree has size 0.</p>
+</blockquote>
+
+<p>In the general Case <m>k</m>, we can count the number of possibilities by multiplying the number of ways that the left subtree can be filled,
+<m>B(k)</m>, by the number of ways that the right subtree can be filled. <m>B(n-k)</m>. Since the sum of these products equals <m>B(n + 1)</m>, we obtain the recurrence relation for <m>n\geq 0</m>:
+
+
+<me>
+\begin{split}
+ B(n+1) &amp;= B(0)B(n)+ B(1)B(n-1)+ \cdots  + B(n)B(0)\\
+ 		&amp;=\sum_{k=0}^n B(k) B(n-k)
+\end{split} </me>
+</p>
+
+<p>Now take the generating function of both sides of this recurrence relation:
+<mdn><mrow>\sum_{n=0}^{\infty } B(n+1) z^n= \sum_{n=0}^{\infty }  \left(\sum_{k=0}^n B(k) B(n-k)\right)z^n</mrow></mdn>
+or
+<mdn><mrow>G(B\uparrow ; z) = G(B*B; z) = G(B; z) ^2</mrow></mdn></p>
+
+<p>Recall that <m>G(B\uparrow;z) =\frac{G(B;z)-B(0)}{z}=\frac{G(B;z)-1}{z}</m> If we abbreviate <m>G(B; z)</m> to <m>G</m>, we get 
+<me>\frac{G-1}{z}= G^2  \Rightarrow  z G^2- G + 1 = 0</me>
+Using the quadratic equation we find two solutions:
+<mdn><mrow>G_1 = \frac{1+\sqrt{1-4 z}}{2z} \textrm{ and}</mrow>
+<mrow> G_2 = \frac{1-\sqrt{1-4 z}}{2z}</mrow></mdn>
+</p>
+<p>
+The gap in our deviation occurs here since we don't presume calculus.  If we expand <m>G_1</m> as an extended power series, we find 
+<mdn><mrow>G_1 = \frac{1+\sqrt{1-4 z}}{2z}=\frac{1}{z}-1-z-2 z^2-5 z^3-14 z^4-42 z^5+\cdots</mrow></mdn></p>
+	
+<p>The coefficients after the first one are all negative and there is singularity at 0 because of the <m>\frac{1}{z}</m> term. However if
+we do the same with <m>G_2</m> we get
+
+<mdn><mrow>G_2= \frac{1-\sqrt{1-4 z}}{2z} = 1+z+2 z^2+5 z^3+14 z^4+42 z^5+\cdots</mrow></mdn></p>
+
+<p>Further analysis leads to a closed form expression for <m>B(n)</m>, which is
+<me>B(n) = \frac{1}{n+1}\left(
+\begin{array}{c}
+ 2n \\
+ n \\
+\end{array}
+\right)</me>
+
+
+
+This sequence of numbers is often called the <term>Catalan numbers</term>. For more information on the Catalan numbers, see the entry A000108 in The
+<url href="https://oeis.org">On-Line Encyclopedia of Integer Sequences</url>.</p>
+</section>  
+<exercises><title>Problems</title>
+<exercise>
+<statement>
+<p>Consider products of pairs of Fibonacci numbers that are two positions apart in the sequence.  What do you see?  Describe the pattern and write
+a general formula.  Use your observation to examine the ratios of consecutive Fibonacci numbers.   What happens in the  <q>long run?</q>
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Find the sum  <m>1\cdot 1! + 2\cdot 2! + \cdots +n\cdot n!</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Evaluate  <m>\lim_{n\to \infty }  \left(\frac{1}{n+1}+ \frac{1}{n+2}+ \cdots +\frac{1}{2n}\right)</m>
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p><m>\left\lfloor \sqrt{44}\right\rfloor =6</m> and   <m>\left\lfloor \sqrt{4444}\right\rfloor =66</m>.  Generalize and prove.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Express <m>\sum _{k=1}^{\infty } \frac{6^k}{\left(3^{k+1}-2^{k+1}\right) \left(3^k-2^k\right)}</m> as a rational number.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Prove that <m>\sum _{k=1}^n \frac{1}{\sqrt{k}}\lt 2\sqrt{n}</m>
+
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Show that if the sequence <m>\left\{a_n\right\}</m> is monotonically decreasing and <m>\sum _{n=1}^{\infty } a_n</m> converges, then <m>\sum _{n=1}^{\infty
+} n \left(a_n-a_{n+1}\right)</m> converges and the two sums are equal.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Prove that if <m>H_n</m> is the <m>n^{th}</m> partial sum of the harmonic series, then 
+<me>\sum_{n=1}^{infty} H_{n} x^n = \frac{1}{1-x} \ln{\frac{1}{1-x}}</me>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>The sequence <m>a_0, a_1, a_2,\ldots</m> satisfies\\
+$\quad $<m>a_{m+n}+a_{m-n}=\frac{1}{2}\left(a_{2m}+a_{2n}\right)</m>\\
+for all nonnegative integers \textit{ m} and \textit{ n} with <m>m\geq n</m>.  If <m>a_1= 1</m>, determine <m>a_n</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>(a)  How many ways can you tile a <m>2 \times  n</m> rectangle, <m>n\geq 1</m>, using <m>1\times 2</m> tiles?\\
+\hspace*{0.5ex} (b) How many ways can you tile a <m>3 \times  2n</m> rectangle, <m>n\geq 1</m>, using <m>1\times 2</m> tiles?
+
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Let <m>p(x)=x^2-3x + 2</m>.  Show that for any positive integer <m>n</m> there exist unique numbers <m>a_n</m> and <m>b_n</m> such that the polynomial <m>q_n(x)=
+x^n-a_nx-b_n</m> is divisible by <m>p(x)</m>.    Hint:  If true, then for all <m>n\geq 1</m>,   <m>q_{n+1}(x)-x q_n(x)</m> is divisible by <m>p(x)</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+
+</exercises>
+</chapter> 

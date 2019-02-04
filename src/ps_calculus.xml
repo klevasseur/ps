@@ -30,7 +30,9 @@
 		 k \leq \frac{1}{x} \le k +1  &amp;\Leftrightarrow 2k \leq \frac{2}{x} \le 2k +2 \\
 											&amp;\Leftrightarrow  \left[\frac{2}{x}\right] = 2k \textrm{ or } 2k + 1.
 	\end{split}</me>
-If <m>\frac{1}{k+1} \lt x \leq \frac{2}{2k+1}</m>, we have <m>[\frac{2}{x}] = 2k+1</m>; and if <m>\frac{2}{2k+1} \lt x \leq \frac{1}{k}</m>, we have <m>[\frac{2}{x}] = 2k</m>.  Therefore,  on the interval <m>(\frac{1}{k+1}, \frac{1}{k}]</m>, <me>f(x)=\left{\begin{cases} 1 &amp; \textrm{if } \frac{1}{k+1} \lt x \leq \frac{2}{2k+1}\\
+If <m>\frac{1}{k+1} \lt x \leq \frac{2}{2k+1}</m>, we have <m>[\frac{2}{x}] = 2k+1</m>; and if <m>\frac{2}{2k+1} \lt x \leq \frac{1}{k}</m>, we have <m>[\frac{2}{x}] = 2k</m>.  Therefore,  on the interval <m>(\frac{1}{k+1}, \frac{1}{k}]</m>, 
+
+<me>f(x)==\begin{cases} 1 &amp; \textrm{if } \frac{1}{k+1} \lt x \leq \frac{2}{2k+1}\\
 							0 &amp; \textrm{if } \frac{2}{2k+1} \lt x \leq \frac{1}{k}
 							\end{cases}
 </me>
@@ -106,9 +108,10 @@ that <m>p(x) \geq  0</m> for every <m>x</m>.
 </exercise>
 <exercise number="6">
 <statement><p>
-If <m>f</m> is a differentiable function on <m>[0,1]</m> such that <m>f(0)=f(1)=0</m>, and if  <m>\int_0^1 \left\left| f'(x)\right\right|  \, dx=1</m>,
+If <m>f</m> is a differentiable function on <m>[0,1]</m> such that <m>f(0)=f(1)=0</m>, and if  
+<m>\int_0^1 \left| f'(x)\right| dx=1</m>,
 what can be said about <m>f\left(\frac{1}{2}\right)</m>? For example, is it possible that <m>f\left(\frac{1}{2}\right)=0?</m>, or 1?, or <m>\frac{1}{2}</m>?,
-or -1?, or 2? Note: \textit{ Differentiable} can be replaced with \textit{ Absolutely Continuous}, but this is a somewhat more advanced property
+or -1?, or 2? Note: <em>Differentiable</em> can be replaced with <em>Absolutely Continuous</em>, but this is a somewhat more advanced property
 that isn{'}t likely to be used in the Putnam (I could be wrong!)
 </p></statement>
 <!-- 
@@ -165,6 +168,17 @@ Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>.
 <solution><p></p></solution>
  -->
 </exercise>
-
+<exercise>
+<statement>
+<p>Prove the following or provide a counterexample:  If <m>\left\{f_n\right\}</m> is a sequence of functions defined on the interval <m>[0,1]</m> and that
+for each \textit{ x} in the interval <m>\lim_{n\to \infty } f_n(x) = f(x)</m>,  then    <m>\lim_{n\to \infty } \int_0^1 f_n(x) \, dx=\int_0^1 f(x)
+\, dx</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
 </exercises>
 </chapter>

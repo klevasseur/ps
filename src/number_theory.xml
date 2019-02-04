@@ -5,18 +5,22 @@
 <title>Number Theory </title>
 <section>
 <title>Examples</title>
+<example xml:id="mod7">
 <p>Show that <m>n^2+ 1</m> is divisible by 7 for no positive integer <m>n</m>.
 </p>
-
+</example>
 </section>  
-
-
 
 <exercises>
 <title>Problems</title>
 <exercise number="1">
 <statement>
-<p>__</p>
+<p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em> if <m>b c - ad = \pm</m>.  
+<ol label="(a)">
+	<li><p>Prove that if <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are close, then <m>\frac{a+c}{b+d}</m> is close to both <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>.</p></li>
+	<li><p>Find ten rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
+</ol>
+</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -167,8 +171,7 @@ Prove that <m>n</m> is divisible by 4.</p>
 
 <exercise number="13">
 <statement>
-<p>Prove that among any three distinct integers we can find two, say <m>a</m> and <m>b</m>, such that the number <m>a^3b - a b^3</m> is a multiple of 10.
-</p>
+<p>Prove that among any three distinct integers we can find two, say <m>a</m> and <m>b</m>, such that the number <m>a^3b - a b^3</m> is a multiple of 10.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -177,7 +180,5 @@ Prove that <m>n</m> is divisible by 4.</p>
 </solution>
  -->
 </exercise>
-
-
 </exercises>
 </chapter> 

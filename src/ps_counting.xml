@@ -14,7 +14,22 @@
 </section>  
 
 <section><title>Indirect Proofs</title>
+<example><title></title>
 <p>Prove that there is no least positive real number.</p>
+</example>
+<example><title>The Harmonic Series</title><idx>Harmonic Series</idx>
+<p>Students often struggle with the idea that although the terms of the harmonic series, <m>\sum_{n=1}^{\infty} \frac{1}{n}</m>, converge to zero, the series itself diverges. Encountering this fact in a calculus class in which proof may not be emphasized is often the problem.  Many of the dozens of proofs that the harmonic series diverges are indirect.  Here is one such example.</p>
+<p>Assume the series converges and it's limit is <m>H</m>.
+	<me>\begin{split}
+		H &amp;= 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} +\cdots + \frac{1}{2k-1} + \frac{1}{2k} + \cdots\\
+		&amp; \lt  \frac{1}{2} + \frac{1}{2} + \frac{1}{4} + \frac{1}{4} +\cdots + \frac{1}{2k} + \frac{1}{2k} + \cdots\\
+		&amp; = 1 + \frac{1}{2} +  +\cdots + \frac{1}{k}  + \cdots\\
+		&amp; = H
+		  \end{split}
+	</me> 
+The contradiction we arrive at, <m>H \lt H</m>, implies that the series does indeed diverge.
+</p>
+</example>
 
 </section>  
 

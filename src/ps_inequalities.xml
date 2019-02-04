@@ -2,23 +2,20 @@
 <!-- MBX -->
 <chapter xml:id="c-inequalities">
 <title>Inequalities</title>
-<introduction><p>As with most topics, we could spend a whole semester on inequalities.  I normally concentrate on inequalites involving means and the CBS  inequality in a single class</p>
+<introduction><p>As with most topics, we could spend a whole semester on inequalities.  I normally concentrate on the relationship between the arithmetic, geometric and harmonic means, the Cauchy-Bunyakovsky-Schwarz inequality, and Young's inequality in a single class</p>
 </introduction>
 <section><title>Means</title>
-<p>
+<idx>Arithmetic Mean</idx><idx>Geometric Mean</idx>
+<p>There are many functions on a finite number of nonnegative real numbers.  Here we focus on a few of the most common.  The <em>arithmetic mean</em> of <m>n</m> numbers, or what we often call their average, is their sum divided by <m>n</m>.  The <em>geometric mean</em> is computed by taking <m>n^{th}</m> root of their product.  We establish the relationship between these two means in the following theorem.
 </p>
 <theorem><title>The AM/GM inequality</title>
 <idx>AM/GM inequality</idx>
 <statement><p>Assume <m>n \geq 2</m>.  If <m>a_i</m>, <m>i = 1, 2, \dots, n</m> are non-negative real numbers, then
 <me>\left(a_1a_2\cdots  a_n\right){}^{1/n}\leq  \frac{a_1+a_2+\cdots +a_n}{n}</me>
-with equality if and only if all the <m>a_i</m> are equal.</p>
+with equality if and only if all the <m>a_i</m> are equal.</p></statement>
 <proof><p>A proof by induction.  We leave the proof for <m>n=2</m> as an exercise.  Then we assume that for some <m>n \geq 2</m>, the inequality is true and then assume we have <m>n+1</m> numbers.</p> </proof>
 </theorem>
-<example xml:id="">
-<statement>
-<p></p>
-</statement>
-</example>
+<p>In the exercises we examine the harmonic mean and how it is related to the arithmetic and geometric means.</p>
 </section>  
 
 <section><title>The CBS Inequality</title>
@@ -29,11 +26,45 @@ with equality if and only if all the <m>a_i</m> are equal.</p>
 <section><title>Young's Inequality</title>
 <p>Given positive numbers  and  whose reciprocals add up to one, the product  of two positive real numbers  and  is less than or equal to a weighted sum of <m>p^{th}</m> and <m>q^{th}</m> powers  of <m>a</m> and <m>b</m>.
 </p>
+<theorem>
+	<title>Young's inequality</title>
+	<idx>Young's inequality</idx>
+		<statement><p>If <m>a</m> and <m>b</m> are nonnegative real numbers and <m>p</m> and <m>q</m> are positive real numbers such that <m>\frac{1}{p} + \frac{1}{q} = 1</m>, then 
+		<me>a b \leq \frac{a^{p}}{p} + \frac{b^{q}}{q}.</me></p></statement>
+<proof><p>If <m>a</m> and <m>b</m> are nonnegative real numbers and <m>p</m> and <m>q</m> are positive real numbers such that <m>\frac{1}{p} + \frac{1}{q} = 1</m>, then 
+<me>a b \leq \frac{a^{p}}{p} + \frac{b^{q}}{q}.</me>
+</p> </proof>
+</theorem>
 
+<sage>
+<input>
+@interact()
+def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
+    pl=plot(x^(p-1),(x,0,a),fill='min',
+                           fillcolor='red',ticks=[[],[]])
+    pl+=plot(x^(p-1),(x,0,b^(1/(p-1))),fill='max',
+                           fillcolor='blue')
+    pl+=text('a='+str(n(a,3)),[a,-0.1])
+    pl+=text('b='+str(n(b,3)),[-0.1, b])
+    pl+=text('separating curve is \n$y=x^{p-1}$',[1.3*a,0.5*b])
+    show(pl,aspect_ratio=1)
+</input>
+<output>
+</output>
+</sage>
+<p>The output from the SageMath expression above is a dynamic version of this image:</p>            
+         <figure xml:id="figure-young">
+                <caption>A visualization of the derivation of Young's Inequality
+                </caption>
+                <image source="images/young.png">
+                    <description>A rectangle with area <m>a b</m> is included in the shaded regions</description>
+                </image>
+            </figure>
+ 
+<p>--</p>
 </section>  
-
 <exercises><title>Problems</title>
-<exercise number="8">
+<exercise>
 <statement>
 <p>Let <m>a</m> and <m>b</m> be positive real numbers. Prove that <m>\sqrt{a b}\leq \frac{a+b}{2}</m>  with equality if and only if <m>a=b</m>.
 </p>
@@ -43,17 +74,17 @@ with equality if and only if all the <m>a_i</m> are equal.</p>
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise><idx>Harmonic Mean</idx>
 <statement>
-<p>How does <m>\frac{2}{\frac{1}{a}+\frac{1}{b}}</m> compare with the two quantities in the first problem? 
+<p>How does the <term>harmonic mean</term> of two nonnegative real numbers, <m>a</m> and <m>b</m>,  <m>\frac{2}{\frac{1}{a}+\frac{1}{b}}</m> compare with the geometric and arithmetic means?
 </p>
 </statement>
+<hint><p>Select two simple numbers and compute their harmonic, geometric and arithmetic means.  If there is going to be consistency, you know what is should be.  Then the hard work is to prove it!</p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise>
 <statement>
 <p>An express delivery service restricts the size of packages it will accept.  Packages cannot exceed 18 inches in length plus girth, i. e., <m>\text{length}+2\times
 \text{width} +2\times \text{height}\leq 18</m>.  Find the maximum volume of an acceptable package.
@@ -64,9 +95,9 @@ with equality if and only if all the <m>a_i</m> are equal.</p>
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise>
 <statement>
-<p> Let <m>a_1, a_2. \ldots  , a_{n }</m> be positive, with sum 1.    Show that <m>\sum _{i=1}^n a_i^2\geq \frac{1}{n}</m>  and   <m>\sum _{i=1}^n
+<p> Let <m>a_1, a_2, \ldots, a_{n }</m> be positive, with sum 1.    Show that <m>\sum _{i=1}^n a_i^2\geq \frac{1}{n}</m>  and   <m>\sum _{i=1}^n
 a_i^4\geq \frac{1}{n^3}</m>
 </p>
 </statement>
@@ -75,15 +106,14 @@ a_i^4\geq \frac{1}{n^3}</m>
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise>
 <statement>
-<p>(a)  Compute the determinant <m>D= \left\left| \left(
+<p>(a)  Compute the determinant <m>D= \left| 
 \begin{array}{ccc}
- a & b & c \\
- c & a & b \\
- b & c & a \\
-\end{array}
-\right)\right\right|</m> two ways to derive the identity <m>a^3+b^3+c^3-3 a b c =(a+b+c) \left(a^2+b^2+c^2-a b-b c - c a\right)</m>.
+ a &amp; b &amp; c \\
+ c &amp; a &amp; b \\
+ b &amp; c &amp; a 
+\end{array} \right|</m> two ways to derive the identity <m>a^3+b^3+c^3-3 a b c =(a+b+c) \left(a^2+b^2+c^2-a b-b c - c a\right)</m>.
 
 (b)  Prove that if <m>x</m>, <m>y</m>, and <m>z</m> are distinct real numbers, then <m>\sqrt[3]{x-y}+ \sqrt[3]{y-z}+\sqrt[3]{z-x}\neq 0</m>.
 </p>
@@ -93,7 +123,7 @@ a_i^4\geq \frac{1}{n^3}</m>
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise>
 <statement>
 <p>Let <m>x_1+x_2+x_3=\frac{\pi }{2}</m>, where the <m>x_i</m> are positive.   Show that  <m>\sin  x_1\sin  x_2 \sin  x_3\leq \frac{1}{8}</m>.
 </p>
@@ -103,10 +133,10 @@ a_i^4\geq \frac{1}{n^3}</m>
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise>
 <statement>
-<p>Let <m>f</m>be a continuous and monotonically increasing function such that <m>f(0) = 0</m> and <m>f(1) = 1</m>. Prove that   \\
-        <m>f(0.1)+f(0.2)+\cdot  \cdot  \cdot +f(0.9)+f^{-1}(0.1)+f^{-1}(0.2)+\cdot  \cdot  \cdot +f^{-1}(0.9) \leq  9.9</m>
+<p>Let <m>f</m> be a continuous and monotonically increasing function such that <m>f(0) = 0</m> and <m>f(1) = 1</m>. Prove that  
+        <me>f(0.1)+f(0.2)+\cdot  \cdot  \cdot +f(0.9)+f^{-1}(0.1)+f^{-1}(0.2)+\cdot  \cdot  \cdot +f^{-1}(0.9) \leq  9.9</me>.
 </p>
 </statement>
 <!-- 
@@ -114,7 +144,7 @@ a_i^4\geq \frac{1}{n^3}</m>
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise>
 <statement>
 <p>Let <m>T</m> be a tetrahedron with three mutually perpendicular edges of lengths <m>a</m>, <m>b</m>, and <m>c</m>.  Let <m>l</m> be the sum of the length of the
 six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
@@ -125,7 +155,7 @@ six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise>
 <statement>
 <p>Let <m>a_1, a_2, \ldots  , a_n</m> be positive real numbers and let <m>s</m> be their sum.  Show that 
 <m>\left(1+a_1\right)\left(1+a_2\right)\cdots \left(1+a_n\right) \leq  1 + \frac{s}{1!}+ \frac{s^2}{2!}+ \cdots +\frac{s^n}{n!}</m>.
@@ -136,7 +166,7 @@ six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise>
 <statement>
 <p>For positive numbers <m>x</m> and <m>y</m>, prove that <m>x^x+y^y\geq x^y+ y^x</m>, with equality if and only if <m>x=y</m>.
 </p>
@@ -146,7 +176,7 @@ six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise number="8">
+<exercise>
 <statement>
 <p>Find the maximum of the function <m>f(x,y,z)=5x -6y+7z</m> on the ellipsoid <m>2x^2+3y^2+4z^2=1</m>.
 </p>
@@ -157,7 +187,7 @@ six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
  -->
 </exercise>
 
-<exercise number="8">
+<exercise>
 <statement>
 <p>Prove that a list can be made of all the subsets of a finite set such that
 <ul>
@@ -171,7 +201,5 @@ six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
 <solution><p></p></solution>
  -->
 </exercise>
-
-
 </exercises>
 </chapter> 
