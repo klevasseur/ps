@@ -32,14 +32,27 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 <blockquote><p>Given a real number <m>a</m>, we define a sequence by <m>x_0 = 1</m>, <m>x_1 = x_2 = a</m>, and <m>x_{n+1} = 2x_n x_{n-1} - x_{n-2}</m> for <m>n \geq 2</m>. Prove that if <m>x_n = 0</m> for some <m>n</m>, then the sequence is periodic.</p></blockquote>
 </section>  
 
-<!-- 
-<section>
-<title></title>
-<p>
 
+<section>
+<title>Generalization</title>
+<p>Many mainstream topics in the mathematics curriculum can be generalized. One example is the binomial expansion.  The expansion of <m>(x+y)^n</m> for nonnegative integers is in every curriculum, but it's generalization for non-integral exponents is not. 
 </p>
+<example><title>Fractional Binomial Expansion</title><idx>Fractional Binomial Expansion</idx>
+<p>The power series series expansion about <m>x=0</m> of an expression such as <m>\sqrt{1-x}</m> certainly can be derived using basic calculus tools, but an faster expansion can be done by (correctly) assuming that the binomial expansion theorem applies for the exponent <m>\frac{1}{2}</m>.  The integral version is finite since <m>\binom{m}{n} =0</m> for <m>n \gt m</m>, but a reasonable generalization of <m>\binom{\alpha}{n}</m> is <me>\frac{\product_{k=0}{n-1} \alpha-k}{n!}</me>, which will never equal zero for non-integral values of <m>\alpha</m>.  Thus we have 
+	<me>
+	\begin{split>
+	\sqrt{1-x} &amp;= \sum_{n=0}^{\infty} \binom{\frac{1}{2}}{n} (-x)^n\\
+					&amp;= \sum_{n=0}^{\infty} \frac{\frac{1}{2} \cdot\frac{-1}{2}\cdot\frac{-3}{2}\cdot \cdots \cdot(\frac{1}{2}-n+1) \cdot}{n!} (-1)^n x^n\\
+	\end{split}</me>
+</p>
+</example>
+<p><idx>Pochhammer symbol</idx> The Pochhammer symbol is the notation  <m>(x)_n</m>, where <m>n</m> is a non-negative integer. It is commonly used to represent the <q>falling factorial</q> expression  <m>x\cdot(x-1)\cdot(x-2)\cdot \cdots \cdot (x-(k-1))</m>.  This gives a more concise way to express the expansion we have just examined without binomial coefficients as <m>\sum_{n=0}^{\infty} \frac{(\frac{1}{2})_n}{n!} (-x)^n.  However, you still need to get into the weeds and manipulate the expression in the end. </p>
+<p>A different sense in which generalization applies to problem solving is when a problem is more easily solved by first generalizing the context of the problem.  This problem from the ___ Putnam is a good example.
+<example><p>Problem from E&F
+</p>
+</example>
 </section>  
- -->
+
 
 
 <exercises>
