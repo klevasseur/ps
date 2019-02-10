@@ -65,7 +65,9 @@ Using the quadratic equation we find two solutions:
 
 <mdn><mrow>G_2(x) = 1+z+2 z^2+5 z^3+14 z^4+42 z^5+\cdots</mrow></mdn>
 It's easy to verify that these coefficient satisfy our recurrence relation.  So now we will develop a formula.</p>
-
+<p>We start by finding a general formula for 
+<me>
+</p>
 <p>Further analysis leads to a closed form expression for <m>B(n)</m>, which is
 <me>B(n) = \frac{1}{n+1}\left(
 \begin{array}{c}
