@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+
+<chapter xml:id="c-polynomials">
+<title>Polynomials</title>
+<section><title>Examples</title>
+Definition: { }Let \textit{ S} be a set of numbers, usually the rational, real or complex numbers. { }\(a_nx^n+ a_{n-1}x^{n-1}+\cdots +a_1x+a_0\)
+is a polynomial over \(S\) if { }\(a_i\in S\) for all \textit{ i}. { }If \(a_n\neq 0\) then the degree of the polynomial is \(n\).
+
+\subsection*{Basic Prerequisites (in question form):}
+
+What is the \textit{ Fundamental theorem of Algebra }?
+
+What does it mean to divide one polynomial by a second (nonzero) polynomial? { }What is the result?
+
+If \(p(x)\) and \(q(x)\) are polynomials of degree \textit{ m} and \textit{ n}, how are the degrees of \(p(x) + q(x)\), \(p(x)q(x)\),\(p(q(x))\)
+and \(q(p(x))\) related to \(m\) and \(n\)?
+
+Why is it customary to consider the degree of { }the zero polynomial to be undefined?
+
+Let \(p(x)\) be a polynomial and $\alpha $ a number. { } What is the relationship between \(p(\alpha )\) { }and division of \(p(x)\) by \(x - \alpha\)?
+
+If the degree of \(p(x)\) is \(n\) with roots { }\(x_1\), \(x_2\), \(\ldots , x_n\) (possibly repeated). How are \(a_0\), { }\(a_{n-2}\) and { }\(a_{n-1}\)
+related to the roots of \(p(x)\)? { }
+
+
+</section>  
+
+<section>
+<title></title>
+
+</section>  
+
+
+<exercises>
+<title>Exercises</title>
+
+<exercise>
+<statement>
+ If \(z=a + b i\) is a complex number then { }\(\bar{z}= a -b i\) is its complex conjugate. Prove that for any two complex numbers \(z\) and \(w\),
+{ } \(\overline{z+w}=\bar{z}+\bar{w}\) and \(\overline{z\cdot w}=\bar{z}\cdot \bar{w}\). { } { } The second identity implies \(\overline{z^n}=\bar{z}^n\)
+for all positive integers \(n\), which can be proven by induction, but don{'}t do this.
+
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+Let \(p(x)\) be a polynomial over the real numbers. { }\\
+(a) Prove that if \(z=a + b i\) { }is a root of \(p(x)\), then { }\(\bar{z}= a -b i\) { }is also a root of \(p(x)\).\\
+(b) Prove that \(p(x)\) can be factored into a product of linear and quadratic polynomials with real coefficients.
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+Let \(f(x)\) be a polynomial of degree greater than or equal to two with \(f(-1)=f(1)=0\), and \(f(x)>0\) on the interval \((-1,1)\). { } Let \(L_{-1}\)
+and \(L_1\) be tangents to the \(f(x)\) at \(-1\) and 1, respectively. { }What is the area, \(T\), of the triangle formed by \(L_{-1}\), \(L_1\),
+and the \textit{ x}-axis? { } Is \(T\) bounded?
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+(a) Given three real numbers \(x_0<x_1<x_2\), and three more real numbers \(y_0, y_1, y_2\), not necessarily distinct, does there always exist a
+unique polynomial, \(p(x)\), of degree less than or equal to 2 such that \(p\left(x_0\right)=y_0\), \(p\left(x_1\right)=y_1\), and \(p\left(x_2\right)=y_2\)?\\
+(b) { }Same as part (a) but replace \(p\left(x_2\right)=y_2\) with \(p'\left(x_2\right)=y_2\).\\
+(c) Same as part (a) but replace \(p\left(x_1\right)=y_1\) with \(p'\left(x_1\right)=y_1\).
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+Two players play the following game. { }Start with the equation\\
+ { } { } { } { } { } { } { } { } { } { } \(\_ x^3 + \_ x^2 + \_ x + \_= 0\).\\
+The players take turns writing real numbers instead of blanks. { }The first player wins if the resulting cubic equation has exactly one real solution;
+otherwise he loses. { }Does either player have a winning strategy?
+
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+Prove that there is no polynomial with integer coefficients \(P(x)\) with the property that \(P(7) = 5\) and \(P(15) = 9\).
+
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+Find all polynomials, \(p(x)\), { }with real coefficients satisfying the equation { }\(p(x-1)p(x+1) = p(p(x))\).
+
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+Find all polynomials \(P(x)\) with the property that \(P(x)\) is a multiple of its second derivative, \(P\text{''}(x)\).
+
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+The zeros of the polynomial \(P(x) = x^3 - 10x + 11\) are \textit{ u}, \textit{ v}, and\textit{  w}. Determine the value of \(\arctan  u + \arctan
+ v + \arctan  w\). { } { } { }$\quad $
+
+Hint: \(\tan (s+t)=\frac{\tan  s + \tan  t }{1-(\tan  s )(\tan  t)}\).
+
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+Determine all polynomials \(P(x)\) such that \(P\left(x^2+1\right)=P(x)^2+1\) and { }\(P(0)=0\).
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+</exercises>
+</chapter> 
+

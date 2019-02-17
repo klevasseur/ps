@@ -13,7 +13,7 @@
 	<idx>Fermat's Little Theorem</idx>
 	<statement><p>Let <m>p</m> be a prime number, and <m>n</m> an integer. Then <m>n^p - n</m> is divisible by <m>p</m>.</p>
 	</statement>
-	<proof><p>The Theorem is clearly true for the case of <m>p=2</m> since any integer and it's square have the same odd/even parity and their difference must be even.   We now assume that <m>p</m> is odd.   The theorem is clearly true for <m>n=0</m>.  This forms the basis for an induction poof for positive values of <m>n</m>.  Assume that for some <m>m > 0</m>, that  <m>n^p - n</m> is divisible by <m>p</m>.  Now consider  <m>(n+1)^p - (n+1)</m>.
+	<proof><p>The Theorem is clearly true for the case of <m>p=2</m> since any integer and it's square have the same odd/even parity and their difference must be even.   We now assume that <m>p</m> is odd.   The theorem is clearly true for <m>n=0</m>.  This forms the basis for an induction poof for positive values of <m>n</m>.  Assume that for some <m>n > 0</m>, that  <m>n^p - n</m> is divisible by <m>p</m>.  Now consider  <m>(n+1)^p - (n+1)</m>.
 <md>
   <mrow>(n+1)^p - (n+1) \amp=   n^p+\sum_{k=1}^{p-1} { \binom{p}{k} n^{p-k} } + 1 -n -1 </mrow>
   <mrow>                \amp (n^p -n)  +\sum_{k=1}^{p-1} {\binom{p}{k} n^{p-k} }\amp \amp</mrow>

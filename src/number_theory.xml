@@ -55,7 +55,7 @@
 
 <exercise number="4">
 <statement>
-<p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. { }Prove that there is a unique integer, <m>x</m>, { }in the set
+<p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. Prove that there is a unique integer, <m>x</m>, in the set
 <m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a (\text{mod} m)</m> and <m>y\equiv b (\text{mod} n)</m>.</p>
 </statement>
 <!-- 
@@ -69,7 +69,7 @@
 <exercise number="5">
 <statement>
 <p>Let <m>\varphi (k)</m> be the number of integers in the set <m>\{1,2, \ldots  , k-1\}</m> that are relatively prime to <m>k</m>. Find and prove a formula
-for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and \textit{ p} is prime.</p>
+for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and <m>p</m> is prime.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -94,7 +94,7 @@ for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and \textit{ p} is prime.<
 
 <exercise number="7">
 <statement>
-<p>Show that the equation <m>x^2- y^2=2x y z</m> has no solutions in the positive integers. { }Hint: { }Consider a prime divisor of <m>x y</m>.
+<p>Show that the equation <m>x^2- y^2=2x y z</m> has no solutions in the positive integers. Hint: Consider a prime divisor of <m>x y</m>.
 </p>
 </statement>
 <!-- 
@@ -119,7 +119,7 @@ for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and \textit{ p} is prime.<
 
 <exercise number="9">
 <statement>
-<p>Find all integral solutions to <m>\left|p^r-q^s\right|=1</m>, where \textit{ p} and \textit{ q} are primes and \textit{ r} and \textit{ s} are positive
+<p>Find all integral solutions to <m>\left|p^r-q^s\right|=1</m>, where <m>p</m> and <m>q</m> are primes and <m>r</m> and <m>s</m> are positive
 integers greater than or equal to 2. Prove that there are no other solutions than the ones you list.
 </p>
 </statement>

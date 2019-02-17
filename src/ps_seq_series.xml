@@ -40,8 +40,7 @@ up to <m>n</m>. The possibilities can be broken down into <m>n + 1</m> cases:</p
 <p>Case <m>n</m>: Left subtree has size <m>n</m>; right subtree has size 0.</p>
 </blockquote>
 
-<p>We can count the number of possibilities by multiplying the number of ways that the left subtree can be filled,
-<m>B(k)</m>, by the number of ways that the right subtree can be filled. <m>B(n-k)</m>. Since the sum of these products equals <m>B(n + 1)</m>, we obtain the recurrence relation for <m>n\geq 0</m>:
+<p>We can count the number of possibilities by multiplying the number of ways that the left subtree can be filled, <m>B(k)</m>, by the number of ways that the right subtree can be filled, <m>B(n-k)</m>. Since the sum of these products equals <m>B(n + 1)</m>, we obtain the recurrence relation for <m>n\geq 0</m>:
 
 
 <me>
@@ -60,16 +59,23 @@ Using the quadratic equation we find two solutions:
 <mdn><mrow>G_1(z) = \frac{1+\sqrt{1-4 z}}{2z} \textrm{ and}</mrow>
 <mrow> G_2(z) = \frac{1-\sqrt{1-4 z}}{2z}</mrow></mdn>
 </p>
-<p>It is apparent that <m>G_1(z)</m> is not what we are looking for because it has a singularity at <m>z=0</m> while the <m>G(x)</m> we are looking for satisfies <m>G(0)=1</m>. <m>G_2(z)</m> does statisfy the condition at zero and so we will expand it to extract its coefficients.  We can compute the first few coefficients numerically to verify that we are on the right track
+<p>It is apparent that <m>G_1(z)</m> is not what we are looking for because it has a singularity at <m>z=0</m> while the <m>G(z)</m> we are looking for satisfies <m>G(0)=1</m>. <m>G_2(z)</m> does statisfy the condition at zero and so we will expand it to extract its coefficients.  We can compute the first few coefficients numerically to verify that we are on the right track
 
 
 <mdn><mrow>G_2(x) = 1+z+2 z^2+5 z^3+14 z^4+42 z^5+\cdots</mrow></mdn>
-It's easy to verify that these coefficient satisfy our recurrence relation.  So now we will develop a formula.</p>
-<p>We start by finding a general formula for 
+It's easy to verify that these coefficient satisfy our recurrence relation.  So now we will develop a general expression for <m>B(n)</m> using the generalized binomial theorem.</p>
+<p>
 <me>
+\begin{split}
+G(z) &amp;= \frac{1-\sqrt{1-4 z}}{2z}\\
+		&amp;= \frac{1 - \sum_{n=0}^{\infty} \binom{\frac{1}{2}}{n} (-4z)^n}{2z}\\
+		&amp;= \frac{-1}{2} \sum_{n=1}^{\infty} \binom{\frac{1}{2}}{n} (-4)^n z^{n-1}\\
+		&amp;= \sum_{n=0}^{\infty} \frac{-1}{2} \binom{\frac{1}{2}}{n+1} (-4)^{n+1} z^n
+\end{split}
+</me> 
 </p>
-<p>Further analysis leads to a closed form expression for <m>B(n)</m>, which is
-<me>B(n) = \frac{1}{n+1}\left(
+<p>We leave it as an exercise to verify that
+<me>B(n) =\frac{-1}{2} \binom{\frac{1}{2}}{n+1} (-4)^{n+1}= \frac{1}{n+1}\left(
 \begin{array}{c}
  2n \\
  n \\
@@ -152,8 +158,7 @@ a general formula.  Use your observation to examine the ratios of consecutive Fi
 
 <exercise>
 <statement>
-<p>Show that if the sequence <m>\left\{a_n\right\}</m> is monotonically decreasing and <m>\sum _{n=1}^{\infty } a_n</m> converges, then <m>\sum _{n=1}^{\infty
-} n \left(a_n-a_{n+1}\right)</m> converges and the two sums are equal.
+<p>Show that if the sequence <m>\left\{a_n\right\}</m> is monotonically decreasing and <m>\sum _{n=1}^{\infty } a_n</m> converges, then <m>\sum _{n=1}^{\infty} n \left(a_n-a_{n+1}\right)</m> converges and the two sums are equal.
 </p>
 </statement>
 <!-- 
@@ -165,7 +170,7 @@ a general formula.  Use your observation to examine the ratios of consecutive Fi
 <exercise>
 <statement>
 <p>Prove that if <m>H_n</m> is the <m>n^{th}</m> partial sum of the harmonic series, then 
-<me>\sum_{n=1}^{infty} H_{n} x^n = \frac{1}{1-x} \ln{\frac{1}{1-x}}</me>.
+<me>\sum_{n=1}^{\infty} H_{n} x^n = \frac{1}{1-x} \ln{\frac{1}{1-x}}</me>.
 </p>
 </statement>
 <!-- 
@@ -176,22 +181,23 @@ a general formula.  Use your observation to examine the ratios of consecutive Fi
 
 <exercise>
 <statement>
-<p>The sequence <m>a_0, a_1, a_2,\ldots</m> satisfies\\
-$\quad $<m>a_{m+n}+a_{m-n}=\frac{1}{2}\left(a_{2m}+a_{2n}\right)</m>\\
-for all nonnegative integers \textit{ m} and \textit{ n} with <m>m\geq n</m>.  If <m>a_1= 1</m>, determine <m>a_n</m>.
+<p>The sequence <m>a_0, a_1, a_2,\ldots</m> satisfies <m>a_{m+n}+a_{m-n}=\frac{1}{2}\left(a_{2m}+a_{2n}\right)</m>
+for all nonnegative integers <m>m</m> and <m>n</m> with <m>m\geq n</m>.  If <m>a_1= 1</m>, determine <m>a_n</m>.
 </p>
 </statement>
+<hint><p>Compute a few values to get a reasonable guess.</p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution><p></p></solution>
  -->
 </exercise>
 
 <exercise>
 <statement>
-<p>(a)  How many ways can you tile a <m>2 \times  n</m> rectangle, <m>n\geq 1</m>, using <m>1\times 2</m> tiles?\\
-\hspace*{0.5ex} (b) How many ways can you tile a <m>3 \times  2n</m> rectangle, <m>n\geq 1</m>, using <m>1\times 2</m> tiles?
-
+<p>
+<ol label="(a)">
+<li><p> How many ways can you tile a <m>2 \times  n</m> rectangle, <m>n\geq 1</m>, using <m>1\times 2</m> tiles?</p></li>
+<li><p> How many ways can you tile a <m>3 \times  2n</m> rectangle, <m>n\geq 1</m>, using <m>1\times 2</m> tiles?</p></li>
+</ol>
 </p>
 </statement>
 <!-- 

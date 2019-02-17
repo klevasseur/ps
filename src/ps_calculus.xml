@@ -73,7 +73,7 @@ Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m>  for all <m>n\geq 1</m>.
  -->
 </exercise>
 <exercise number="3">
-<statement><p>
+<statement><p>Generalizing the first part of this problem will lead to a characterization of the other parts.
 <ol label="(a)">
 <li><p>Find a partition <m>\left\{t_0=1,t_1,t_2=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size 2.</p></li>
 <li><p>Find a partition <m>\left\{t_0=1,t_1,t_2,t_3=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size 3.</p></li>

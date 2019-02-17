@@ -38,18 +38,29 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 <p>Many mainstream topics in the mathematics curriculum can be generalized. One example is the binomial expansion.  The expansion of <m>(x+y)^n</m> for nonnegative integers is in every curriculum, but it's generalization for non-integral exponents is not. 
 </p>
 <example><title>Fractional Binomial Expansion</title><idx>Fractional Binomial Expansion</idx>
-<p>The power series series expansion about <m>x=0</m> of an expression such as <m>\sqrt{1-x}</m> certainly can be derived using basic calculus tools, but an faster expansion can be done by (correctly) assuming that the binomial expansion theorem applies for the exponent <m>\frac{1}{2}</m>.  The integral version is finite since <m>\binom{m}{n} =0</m> for <m>n \gt m</m>, but a reasonable generalization of <m>\binom{\alpha}{n}</m> is <me>\frac{\product_{k=0}{n-1} \alpha-k}{n!}</me>, which will never equal zero for non-integral values of <m>\alpha</m>.  Thus we have 
-	<me>
-	\begin{split>
-	\sqrt{1-x} &amp;= \sum_{n=0}^{\infty} \binom{\frac{1}{2}}{n} (-x)^n\\
-					&amp;= \sum_{n=0}^{\infty} \frac{\frac{1}{2} \cdot\frac{-1}{2}\cdot\frac{-3}{2}\cdot \cdots \cdot(\frac{1}{2}-n+1) \cdot}{n!} (-1)^n x^n\\
+<p>The power series series expansion about <m>x=0</m> of an expression such as <m>\sqrt{1-x}</m> certainly can be derived using basic calculus tools, but an alternate approach can be taken by (correctly) assuming that the binomial expansion theorem applies for the exponent <m>\frac{1}{2}</m>.  The integral version is finite since <m>\binom{m}{n} =0</m> for <m>n \gt m</m>, but a reasonable generalization of <m>\binom{\alpha}{n}</m> is <me>\frac{\prod_{k=0}^{n-1} (\alpha-k)}{n!}</me> which will never equal zero for non-integral values of <m>\alpha</m>.  Thus we have 
+	<me>\sqrt{1-x} = \sum_{n=0}^{\infty} \binom{\frac{1}{2}}{n} (-x)^n</me>
+The first two terms of this sum are 1 and <m>-\frac{1}{2} x</m>. We will preceed to simplify the general form of the coefficient of <m>x^n</m> for <m>n \gt 1</m>.
+<me>	
+	\begin{split}
+	 \binom{\frac{1}{2}}{n} (-1)^n
+				&amp;=  \frac{\frac{1}{2} \cdot\frac{-1}{2}\cdot\frac{-3}{2}\cdot \cdots \cdot(\frac{1}{2}-(n-1)) }{n!} (-1)^n\\
+\textrm{multiply fractions by 2 }	&amp;=  \frac{1 \cdot -1 \cdot -3 \cdot \cdots \cdot (-2n+3)}{2^{n} n!} (-1)^n\\
+\textrm{multiply negatives by factors of -1}	&amp;= - \frac{1 \cdot 1 \cdot 3 \cdot \cdots \cdot (2n-3)}{2^{n} n!}  \\
+\textrm{fill in even and higher factors of }(2n!)	&amp;= - \frac{ 1 \cdot 2 \cdot 3\cdot 4 \cdot \cdots \cdot (2n-3)\cdot (2n-2)\cdot (2n-1)\cdot (2n)}{2^n\cdot 2^n\cdot (n!)^2 \cdot (2n-1)}  \\
+\textrm{(put things together)}	&amp;= - \frac{(2n)!}{4^n \cdot(n!)^2\cdot (2n-1)} 
 	\end{split}</me>
+This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
+<me>\sqrt{1-x}  = \sum_{n=0}^{\infty} -\frac{(2n)!}{4^n \cdot(n!)^2\cdot (2n-1)}  x^n  </me>	
+	
 </p>
 </example>
-<p><idx>Pochhammer symbol</idx> The Pochhammer symbol is the notation  <m>(x)_n</m>, where <m>n</m> is a non-negative integer. It is commonly used to represent the <q>falling factorial</q> expression  <m>x\cdot(x-1)\cdot(x-2)\cdot \cdots \cdot (x-(k-1))</m>.  This gives a more concise way to express the expansion we have just examined without binomial coefficients as <m>\sum_{n=0}^{\infty} \frac{(\frac{1}{2})_n}{n!} (-x)^n.  However, you still need to get into the weeds and manipulate the expression in the end. </p>
-<p>A different sense in which generalization applies to problem solving is when a problem is more easily solved by first generalizing the context of the problem.  This problem from the ___ Putnam is a good example.
-<example><p>Problem from E&F
-</p>
+<remark><p><idx>Pochhammer symbol</idx> The Pochhammer symbol is the notation  <m>(x)_n</m>, where <m>n</m> is a non-negative integer. It is commonly used to represent the <q>falling factorial</q> expression  <m>x\cdot(x-1)\cdot(x-2)\cdot \cdots \cdot (x-(k-1))</m>.  This gives a more concise way to express the expansion we have just examined as <m>\sum_{n=0}^{\infty} \frac{(\frac{1}{2})_n}{n!} (-x)^n</m>.  However, you still need to get into the weeds and manipulate the expression in the end. </p></remark>
+<p>A different sense in which generalization applies to problem solving is when a problem is more easily solved by first generalizing the context of the problem.  This problem from the 1982 Putnam is a good example.</p>
+<example><title>A Putnam Integral</title>
+<p>Evaluate <m>\int_0^{\infty} \frac{\tan ^{-1}(\pi  x)-\tan ^{-1}(x)}{x} \, dx</m>.</p>
+<p>The integral can be evaluated by generalizing it first to a function: 
+<m>F(y)=\int_0^{\infty} \frac{\tan ^{-1}(y x)-\tan ^{-1}(x)}{x} \, dx</m>. We then can differentiate with respect to <m>y</m> to get a simple expression of <m>F(y)</m>.  After applying the obvious condition <m>F(1)=0</m>, we can substitute <m>\pi</m> for <m>y</m> to get our final answer.  We leave it as an exercise for you to get the final answer of <m>\frac{1}{2} \pi  \ln(\pi )</m></p>
 </example>
 </section>  
 
@@ -66,6 +77,5 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 </solution>
  -->
 </exercise>
-
 </exercises>
 </chapter> 
