@@ -193,11 +193,13 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 <exercise number="12">
 <statement>
 <p>
-	Prove that for any positive integer <m>n</m> there exists an <m>n</m>-digit number divisible by <m>2^n</m> and containing only the digits 2 and 3.
+	A fair coin is tossed repeatedly until there is a run of an odd number of heads followed by a tail. Determine the expected number of tosses.
 </p>
-
 </statement>
-<solution><p></p>
+<hint><p>Identify beginnings of the process that either end it or <q>reset</q> it.</p></hint>
+<solution><p>If the first flip produces a tail, the expected length of the process from then on is the same as the expectation before that flip.   The same is true if the first two flips come up heads.  If the first two flips are heads-tails, the process has ended in two flips.  One of these three possible beginnings will occur with probabilities <m>1/2</m>, <m>1/4</m>, and <m>1/4</m>, respectively.  Therefore if <m>F</m> is the expected number of flips, we have
+<me>\frac{1}{2} (1+F) +\frac{1}{4} (2+F) +\frac{1}{4} (2) = F</me>.
+Solving for <m>F</m>, we get 6 for the expected number of flips.  </p>
 </solution>
 </exercise>
 

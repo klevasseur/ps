@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+<chapter xml:id="c-games">
+<title>Games</title>
+<introduction><p>Mathematical games are a common type of problem in the Putnam. The two most recent cases have been difficult, A5 in 2017 and B5 in 2014.</p>
+</introduction><section>
+<title>Examples</title>
+<p>
+In analyzing games, it is  always assumed that players use optimal strategies, i. e., they make rational moves in their best interests.</p>
+</section>  
+<section>
+<title>Finite Two Person Games</title>
+<p>A finite game like nim goes here.</p>
+</section>  
+
+<section>
+<title>Infinite Games</title>
+<p>Some games cannot truely be played in that they would require an infinite number of moves and so really <q>mind games.</q></p>
+</section>  
+
+
+<exercises>
+<title>Problems</title>
+
+
+<exercise><title>Nim</title>
+<statement><p>
+This game starts with three piles of stones. The piles contain 5, 7, and 11 stones. Two players take turns. On each turn, a player
+must remove at least one stone, and may remove any number of stones provided they all come from the same pile. The goal is to be the last player
+to take a stone. What player has a definite winning strategy; i. e. will always win if he/she makes the right moves.
+</p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement><p>
+A line of squares is laid out starting with square 1, then square 2 to its right, square 3 further right, etc.  The number of squares can be as
+long as you like. Put some coins in some of the squares.  For example.  one on square 1, two on square 3, one on square 5, and one on
+square 6.  Take turns moving one coin to the left. There are no restrictions otherwise. You can jump onto or over other coins, or jump clear
+off the line. You can have any number of coins on a square. Your aim is to be the person who makes the last move. 
+</p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement><p>
+Two players play the following game. They start with two piles of candy, one with 21 and the other with 20 candies. At each turn, a player eats one
+of the piles and splits the other into two piles. The first player who can't make a legal move loses. Who will win, the first player or the second
+player?
+
+</p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement><p>
+Consider the following game played with a deck of <m>2n</m> cards numbered from 1 to <m>2n</m>. The deck is randomly shuffled and <m>n</m> cards are dealt
+to each of two players. Beginning with A, the players take turns discarding one of their remaining cards and announcing its number. The game ends
+as soon as the sum of the numbers on the discarded cards is divisible by <m>2n + 1</m>. The last person to discard wins the game. Assuming optimal strategy
+by both A and B, what is the probability that A wins?
+</p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement><p>
+ Alice and Bob play a game in which they take turns removing stones from a heap that initially has <m>n</m> stones. The number of stones removed at each turn must be one less than a prime. The winner is the player who takes the last stone. Alice plays first. Prove that there are infinitely many <m>n</m> such that Bob has a winning strategy.
+</p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement><p>
+In  Determinant Tic-Tac-Toe, Player 1 enters a 1 in an empty 3 $\times $ 3 matrix. Player 0 counters with a 0 in a vacant position, and play
+continues in turn until the <m>3 \times  3</m> matrix is completed with five 1's and four 0's. Player 0 wins if the determinant is 0 and player 1
+wins otherwise. Assuming both players pursue optimal strategies, who will win and how?
+</p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement><p>
+  Alice and Barbara play a game with a pack of <m>2n</m> cards, on each of which is written a positive integer. The pack is shuffled and the
+cards laid out in a row, with the numbers facing upwards. Alice starts, and the girls take turns to remove one card from either end of the row, until
+Barbara picks up the final card. Each girl's score is the sum of the numbers on her chosen cards at the end of the game.
+</p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement><p>
+A game is played as follows. The first player selects an interval [a, b]. The second player selects an interval <m>[c, d] \subset  [a, b]</m>. The first
+player selects an interval inside <m>[c, d]</m>, and so on. The game goes on forever. The first player will win if the intersection of all segments contains a rational number. Is he going to win?
+</p></statement>
+<hint><p>One player makes a list of rational numbers in \([a,b]\) and plan to avoid them sequentially.</p></hint>
+<!-- 
+<solution><p></p></solution>
+ -->
+</exercise>
+
+</exercises>
+</chapter>

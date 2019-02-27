@@ -180,5 +180,16 @@ Prove that <m>n</m> is divisible by 4.</p>
 </solution>
  -->
 </exercise>
+<exercise number="14">
+<statement>
+<p>
+	Prove that for any positive integer <m>n</m> there exists an <m>n</m>-digit number divisible by <m>2^n</m> and containing only the digits 2 and 3.
+</p>
+
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+
 </exercises>
 </chapter> 
