@@ -23,6 +23,42 @@
 </proof>
 </theorem>
 <p>There may appear to be gaps in the proof from the point of view of a typical undergraduate course. Saying as we did at the end that something is clearly true may not be acceptable to some instructors in some courses.  However, in the context of preparing for the Putnam, knowing how basic your arguments need to be is important.  In this author's opinion the negative case is sufficiently obvious to skip the details. The same is true of the statement that <m>\binom{p}{k}</m> is divisible by <m>p</m> for <m>k = 1, 2,\dots,p-1</m>.</p>
+<p>Our next example will be about connected undirected planar graphs.  Here is an example of one such graph.</p>
+
+            <figure xml:id="cup-graph">
+                <caption>An example of a connected undirected planar graph
+                </caption>
+                <image source="images/cup-graph.png">
+                    <description>A connected undirected planar graph.</description>
+                </image>
+            </figure>
+<example>
+<title> Euler's Formula</title><idx> Euler's Formula</idx>
+<p>Euler's Formula states that if <m>G</m> is a connected undirected planar graph, with <m>v</m> vertices, <m>e</m> edges and <m>r</m> regions, then <m>v+r-e=2</m></p>
+
+<p>We will prove this by induction on the number of edges in the graph.  Let <m>p(n)</m> be <q>The statement is true for all such graphs with <m>n</m> edges, where <m>n\geq 0</m>.</q></p>
+
+<p>Basis:  If a connected undirected planar graph has zero edges, it must be that the graph has only one vertex and the plane is  <q>divided</q> into only one region.  Therefore <m>v=1</m>, <m>e=0</m>, and <m>r=1</m>; and   <m>v+r-e=1+1-0 =2</m>.</p>
+<p>Induction.  Assume Euler's formula is true for all connected undirected planar graphs  with <m>k</m> edges where <m>k\leq n</m>.   Assume we such a graph, <m>G</m>, with <m>n+1</m> edges.  We remove one of the edges from <m>G</m>, making it an undirected planar graph with <m>n</m> edges.  However it may no longer be connected.  We need to consider two possible cases.</p>
+
+<p>Case 1:  The graph with the removed edge is still connected. In the example above, if we remove <m>e_1</m>, we have this situation.  Since we have
+a connected undirected planar graph with <m>n</m> edges, the induction hypothesis applied with <m>k=n</m>, and so Euler{'}s formula is true.  Now, consider
+returning the edge we had removed.  In so doing, the number of edges increases by 1, the number of verticies stays the same, and the number of
+regions increases by 1 since the returned edge divides a region into two parts.  Therefore, the net change in the expression <m>v+r-e</m> is <m>0+1-1=0</m>and
+so it is still equal to 2.</p>
+<p>Case 2: The graph with the removed edge has two components. In the example above, if we remove <m>e_2</m>, we have this situation.   The vertices
+in each of the two components are connected.  Assume the components have <m>k_1</m> and <m>k_2</m> edges, where <m>k_1+k_2= n</m>.  Furthermore, assume
+the numbers of vertices and regions in the first component is <m>v_1</m> and <m>r_1</m>, while the second component has <m>v_2</m> and <m>r_2</m> for it{'}s
+vertices and regions. By the induction hyponthesis,
+<me>v_1+r_1-k_1=2 \textrm{ and } v_2+r_2-k_2=2</me>
+Now when we bring back the edge we had removed, the original graph had <m>v_1+ v_2</m> vertices and <m>k_1+k_2+1= n+1</m> edges.  The number of regions is <m>r_1+ r_2-1</m> because the infinite regions of the two components  is now one region.  Collecting this information, we have 
+<me>\begin{split}
+	v+r-e &amp;= \left(v_1+v_2\right)+\left(r_1+ r_2-1\right) -\left(k_1+k_2+1\right)\\
+		&amp; = \left(v_1+r_1-k_1\right)+ \left(v_2+r_2+k_2\right) -2\\
+		&amp;=2+2-2 = 2
+	\end{split}</me>
+Therefore Euler's formula is true for this case.</p>
+</example>
 
 <example xml:id="determinant-sage-assist"><title>Recursive Thinking</title>
 <p>Consider the sequence of  matrices <m>A(n)</m> defined by <m>A(1)=[1]</m> and for <m>n \ge 1</m>, <m>A(n)</m> is an <m>(n-1) \times (n-1)</m> identity matrix with a column of 1's appended to it, and then a row of 1's appended.  For example,

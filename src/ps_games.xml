@@ -15,7 +15,8 @@ In analyzing games, it is  always assumed that players use optimal strategies, i
 
 <section>
 <title>Infinite Games</title>
-<p>Some games cannot truely be played in that they would require an infinite number of moves and so really <q>mind games.</q></p>
+<p>Some games cannot ,m be played in that they would require an infinite number of moves and so really <q>mind games.</q></p>
+<p>Near-Far, from E&F</p>
 </section>  
 
 
@@ -36,10 +37,7 @@ to take a stone. What player has a definite winning strategy; i. e. will always 
 </exercise>
 <exercise>
 <statement><p>
-A line of squares is laid out starting with square 1, then square 2 to its right, square 3 further right, etc.  The number of squares can be as
-long as you like. Put some coins in some of the squares.  For example.  one on square 1, two on square 3, one on square 5, and one on
-square 6.  Take turns moving one coin to the left. There are no restrictions otherwise. You can jump onto or over other coins, or jump clear
-off the line. You can have any number of coins on a square. Your aim is to be the person who makes the last move. 
+A line of squares is laid out starting with square 1, then square 2 to its right, square 3 further right, etc.  The number of squares can be as long as you like. Put some coins in some of the squares.  For example.  one on square 1, two on square 3, one on square 5, and one on square 6.  Take turns moving one coin to the left. There are no restrictions otherwise. You can jump onto or over other coins, or jump clear off the line. You can have any number of coins on a square. Your aim is to be the person who makes the last move. 
 </p></statement>
 <!-- 
 <hint><p></p></hint>
@@ -48,13 +46,11 @@ off the line. You can have any number of coins on a square. Your aim is to be th
 </exercise>
 <exercise>
 <statement><p>
-Two players play the following game. They start with two piles of candy, one with 21 and the other with 20 candies. At each turn, a player eats one
-of the piles and splits the other into two piles. The first player who can't make a legal move loses. Who will win, the first player or the second
+Two players play the following game. They start with two piles of candy, one with 21 and the other with 20 candies. At each turn, a player eats one of the piles and splits the other into two piles. The first player who can't make a legal move loses. Who will win, the first player or the second
 player?
-
 </p></statement>
+<hint><p>If you leave our opponent with two <q>piles</q> with one candy each, you win.</p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution><p></p></solution>
  -->
 </exercise>
