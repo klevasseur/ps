@@ -23,6 +23,7 @@
       <xi:include href="./frontmatter.xml" /> 
  <!-- 
 -->
+	 	<xi:include href="./ps_prerequisites.xml" />                        
 	 	<xi:include href="./ps_tricks.xml" />                        
 	 	<xi:include href="./ps_induction.xml" />                        
 		<xi:include href="./ps_counting.xml" />                        

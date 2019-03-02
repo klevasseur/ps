@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <references><idx><h>References</h></idx>
 <introduction>
-<p>---</p>
+<p>Many of the problems in this book have been used in multiple sources.  If  a problem was set in a know competition, it cited in the problem statement.   For most other problems, no effort has been made to identify when it was first posed, but most of the problems in this book among the following list of sources.  An additional source of problems are the problem sections of the Mathematical Association of America journals:
+<ul>
+<li><p>The American Mathematical Monthley</p></li>
+<li><p>Mathematics Magazine</p></li>
+<li><p>The College Mathematics Journal</p></li>
+</ul>
+For problems that were posed in these journals, the source is cited with the problems.</p>
 </introduction>
 <biblio type="raw" xml:id="biblio-appel-1976">Appel, K., and W. Haken, <title>Every Planar Map Is 4-colorable</title>,  Bull, Am. Math. Soc. 82 (1976): 711-12.</biblio>
 <biblio type="raw" xml:id="doerr-2019">Doerr, A, and K. Levasseur, <title>Applied Discrete Structures</title></biblio>

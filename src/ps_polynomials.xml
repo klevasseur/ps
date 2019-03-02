@@ -86,21 +86,7 @@ and the <m>x</m>-axis?  Is <m>T</m> bounded?
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise>
-<statement><p>
-Two players play the following game. Start with the equation
-           <me>\_ x^3 + \_ x^2 + \_ x + \_= 0</me>
-The players take turns writing real numbers instead of blanks. The first player wins if the resulting cubic equation has exactly one real solution; otherwise he loses. Does either player have a winning strategy?
-</p></statement>
-<!-- 
-<hint><p></p></hint>
- -->
-<solution><p>We identify the blanks, from left to right as a, b, c and d.  Player 2 will always win using the following strategy.</p>
-<p>We pair up the blanks  a and c, and b and d.   Whatever blank Player 1 fills, Player 2 should fill in the other blank in the pair with the negation of the number Player 1 used.  For example, if Player fills blank c with a 2, Player 2 should fill blank a with -2.  After four turns, the result is 
-	<me>s x^3 + t x^2 - s x - t =  (x^2-1)(s x + t) =0</me> 
-which always has 3 real solutions if both <m>s</m>  and <m>t</m> are nonzero.   If any combination of  <m>s</m>  and <m>t</m> are zero, it's easy to see that the number of real solutions is not 1.</p>
-</solution>
-</exercise>
+
 <exercise>
 <statement><p>
 Prove that there is no polynomial with integer coefficients <m>P(x)</m> with the property that <m>P(7) = 5</m> and <m>P(15) = 9</m>.
