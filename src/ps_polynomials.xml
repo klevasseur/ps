@@ -94,8 +94,12 @@ The players take turns writing real numbers instead of blanks. The first player 
 </p></statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+<solution><p>We identify the blanks, from left to right as a, b, c and d.  Player 2 will always win using the following strategy.</p>
+<p>We pair up the blanks  a and c, and b and d.   Whatever blank Player 1 fills, Player 2 should fill in the other blank in the pair with the negation of the number Player 1 used.  For example, if Player fills blank c with a 2, Player 2 should fill blank a with -2.  After four turns, the result is 
+	<me>s x^3 + t x^2 - s x - t =  (x^2-1)(s x + t) =0</me> 
+which always has 3 real solutions if both <m>s</m>  and <m>t</m> are nonzero.   If any combination of  <m>s</m>  and <m>t</m> are zero, it's easy to see that the number of real solutions is not 1.</p>
+</solution>
 </exercise>
 <exercise>
 <statement><p>
@@ -130,11 +134,11 @@ Find all polynomials <m>P(x)</m> with the property that <m>P(x)</m> is a multipl
 The zeros of the polynomial <m>P(x) = x^3 - 10x + 11</m> are <m>u</m>, <m>v</m>, and <m>w</m>. Determine the value of <m>\arctan  u + \arctan
  v + \arctan  w</m>.   
 
-Hint: <m>\tan (s+t)=\frac{\tan  s + \tan  t }{1-(\tan  s )(\tan  t)}</m>.
+Hint: 
 
 </p></statement>
+<hint><p><m>\tan(s+t)=\frac{\tan  s + \tan  t }{1-(\tan  s )(\tan  t)}</m>.</p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution><p></p></solution>
  -->
 </exercise>
