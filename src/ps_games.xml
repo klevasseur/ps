@@ -14,24 +14,25 @@ In analyzing games, it is  always assumed that players use optimal strategies, i
 </section>  
 
 <section>
-<title>Infinite Games</title>
-<p>Some games cannot ,m be played in that they would require an infinite number of moves and so really <q>mind games.</q></p>
-<p>Near-Far, from E and F</p>
+<title>Mind Games</title>
+<p>Some games cannot really be played in that they would require an infinite number of moves. Other game-related problems ask a long term strategy, such as the following, where playing the game once might not really help.</p>
+<example xml:id="ex-near-far"><idx>Near-Far</idx>
+<statement><p>Near-Far, from E and F</p>
+</statement>
+</example>
 </section>  
 
 
 <exercises>
 <title>Problems</title>
-
-
 <exercise><title>Nim</title>
 <statement><p>
 This game starts with three piles of stones. The piles contain 5, 7, and 11 stones. Two players take turns. On each turn, a player
 must remove at least one stone, and may remove any number of stones provided they all come from the same pile. The goal is to be the last player
 to take a stone. What player has a definite winning strategy; i. e. will always win if he/she makes the right moves.
 </p></statement>
+<hint><p>Look closely at these two positions: two piles of three stones, or three piles with three, two and one stone.   These are both losing positions for the next player for the same reason.</p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution><p></p></solution>
  -->
 </exercise>
