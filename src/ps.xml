@@ -33,6 +33,7 @@
 		<xi:include href="./ps_seq_series.xml" />                        
 		<xi:include href="./ps_polynomials.xml" />                        
 		<xi:include href="./ps_games.xml" />                        
+		<xi:include href="./ps_probability.xml" />                        
 		<xi:include href="./backmatter.xml" />            
  <!-- 
 -->

@@ -4,36 +4,56 @@
 <title>Inequalities</title>
 <introduction><p>As with most topics, we could spend a whole semester on inequalities.  I normally concentrate on the relationship between the arithmetic, geometric and harmonic means, the Cauchy-Bunyakovsky-Schwarz inequality, and Young's inequality in a single class</p>
 </introduction>
-<section><title>Means</title>
+<section xml:id="s-means"><title>Means</title>
 <idx>Arithmetic Mean</idx><idx>Geometric Mean</idx>
-<p>There are many functions on a finite number of nonnegative real numbers.  Here we focus on a few of the most common.  The <em>arithmetic mean</em> of <m>n</m> numbers, or what we often call their average, is their sum divided by <m>n</m>.  The <em>geometric mean</em> is computed by taking <m>n^{th}</m> root of their product.  We establish the relationship between these two means in the following theorem.
+<p>There are many means on a finite number of nonnegative real numbers.  Here we focus on a few of the most common.  The <em>arithmetic mean</em> of <m>n</m> numbers, or what we often call their average, is their sum divided by <m>n</m>.  The <em>geometric mean</em> is computed by taking <m>n^{th}</m> root of their product.  We establish the relationship between these two means in the following theorem.
 </p>
 <theorem><title>The AM/GM inequality</title>
 <idx>AM/GM inequality</idx>
 <statement><p>Assume <m>n \geq 2</m>.  If <m>a_i</m>, <m>i = 1, 2, \dots, n</m> are non-negative real numbers, then
-<me>\left(a_1a_2\cdots  a_n\right){}^{1/n}\leq  \frac{a_1+a_2+\cdots +a_n}{n}</me>
+<me>\left(a_1 a_2\cdots  a_n\right){}^{1/n}\leq  \frac{a_1+a_2+\cdots +a_n}{n}</me>
 with equality if and only if all the <m>a_i</m> are equal.</p></statement>
 <proof><p>A proof by induction.  We leave the proof for <m>n=2</m> as an exercise.  Then we assume that for some <m>n \geq 2</m>, the inequality is true and then assume we have <m>n+1</m> numbers.</p> </proof>
 </theorem>
-<p>The AM/GM inequality can be used in optimization.  Here is a simple example.</p>
+<p>The AM/GM inequality can be used in optimization.  Here is an example.</p>
 <example><statement><p>Problem:  If <m>x</m> and <m>y</m> are positive real numbers such that <m>x+2y=1</m>, what is the largest possible value of <m>x^2 y</m>?</p>
-<p>A first attempt at this problem might be to do this:
+<p>A first attempt at this problem might be to write this:
 	<me>x^2 y \leq  \left( \frac{x + x + y}{3} \right)^3</me>
-	However, it's <m>x+2y</m>, not <m>2x + y</m> that is invariant. The objective function needs to be adjusted with the right constants.</p>
-	<p><me>
+	However, it's <m>x+2y</m>, not <m>2x + y</m> that is invariant. The objective function needs to be adjusted with the right constants.
+	<me>
 	\begin{split}
 		x^2 y &amp;= \frac{1}{4} \cdot x\cdot x\cdot (4 y) \\
-			&amp;\leq  \frac{1}{4} \left( \frac{(2(x+2y)}{3}} \right)^3\\
-			&amp; = \frac{1}{4} \left( \frac{2}{3}} \right)^3 = \frac{2}{27} </me>
+			&amp;\leq  \frac{1}{4} \left( \frac{(2(x+2y)}{3} \right)^3\\
+			&amp; = \frac{1}{4} \left( \frac{2}{3} \right)^3 = \frac{2}{27} 
+			\end{split}</me>
 with equality when <m>x=4y</m>, which implies that the maximum is attained when <m>y=\frac{1}{6}</m> and <m>x=\frac{2}{3}</m>.</p>
 </statement>
 </example>
 <p>In the exercises we examine the harmonic mean and how it is related to the arithmetic and geometric means.</p>
 </section>  
 
+
 <section><title>The CBS Inequality</title>
-<p>The Cauchy-Bunyakovsky-Schwarz, or CBS, inequality has both discrete and continuous versions.  The real discrete version is that if <m>x</m> and <m>y</m> are vectors in <m>\mathbb{R}^n</m>, then  <m>\left(\sum _{i=1}^n x_i y_i\right){}^2\leq \left(\sum _{i=1}^n x_i^2\right)\left(
-\sum _{i=1}^n y_i^2\right)</m>, with equality if and only if the two vectors are scalar multiples of one another.  </p>
+<p>The Cauchy-Bunyakovsky-Schwarz, or CBS, inequality has both discrete and continuous versions.  The real discrete version follows.</p>
+
+<theorem><title>Cauchy-Bunyakovsky-Schwarz Inequality</title><idx>Cauchy-Bunyakovsky-Schwarz Inequality</idx>
+<statement>
+<p>If <m>x</m> and <m>y</m> are vectors in <m>\mathbb{R}^n</m>, then  
+<me>\left(\sum _{i=1}^n x_i y_i\right){}^2\leq \left(\sum _{i=1}^n x_i^2\right)\left(
+\sum _{i=1}^n y_i^2\right)</me>
+ with equality if and only if the two vectors are scalar multiples of one another.</p>
+</statement>
+<proof><p>There are many proofs of this inequality.  Here is a brief one from THE BOOK. We observe that the inequality can be express more compactly as <m> (x, y)^2 \leq \left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 </m>. </p>
+<p>We can assume that both <m>x</m> and <m>y</m> are nonzero vectors, for otherwise the inequality is obvious.  Let <m>\alpha</m> be a real variable, and consider the square of the norm of the vector <m>\alpha x + y</m>.  If <m>x</m> and <m>y</m> are linearly independent, then <m>\left\Vert \alpha x + y\right\Vert \gt 0</m>
+<me>\begin{split}
+			\left| \alpha x + y \right| &amp;= (\alpha x + y,\alpha x + y)\\
+								&amp;  = \alpha^2 \left| x \right|^2 + 2 \alpha (x, y) + \left| y \right|
+	\end{split}
+</me>
+This quadratic polynomial in <m>\alpha</m> has no real roots and so the discriminant, <m>4 (x, y)^2 - 4\left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 \lt 0</m>, which implies CBS.</p>
+<p>If  <m>x</m> and <m>y</m> are linearly dependent, we get equality since the discriminant would equal zero.</p>
+</proof>
+</theorem>
 
 </section>  
 <section><title>Young's Inequality</title>

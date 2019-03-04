@@ -195,12 +195,13 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 </p>
 
 </statement>
-<hint><p></p>
-</hint>
+<solution><p>Solution 1:  If the circle is placed at the origin of the Cartesian plane, we see that the interior can be divided into 60  one by one squares and partial squares.  Since there are 61 points, the Pigeonhole Principle can be applied, were any rule would be applied to point on the boundary of squares.</p>
+<p>Solution 2:  For each point, place a disk of radius <m>\frac{\sqrt{2}}{2}</m> centered at that point. The area of each disk is <m>\frac{\pi}{2}</m>.  The 61 disks cover a total area of <m>\frac{61\pi}{2}</m>.  These disks are contained within a circle of area <m>(4+ \frac{\sqrt{2}}{2})^2 \pi</m> which is less than <m>\frac{61\pi}{2}</m>.  Therefore two of the disks must overlap and so their centers must be within <m>\sqrt{2},</m> of one another.</p>
+</solution>
 </exercise>
 <exercise number="9">
 <statement>
-<p>Show that there is a positive term of the Fibonacci sequence that is divisible by 1000. Recall that the Fibonacci { }sequence is defined by <m>F_0=F_1= 1</m> and for <m>n>1</m>, <m>F_n= F_{n-1}+F_{n-2}</m>.
+<p>Show that there is a positive term of the Fibonacci sequence that is divisible by 1000. Recall that the Fibonacci sequence is defined by <m>F_0=F_1= 1</m> and for <m>n>1</m>, <m>F_n= F_{n-1}+F_{n-2}</m>.
 </p>
 
 </statement>
