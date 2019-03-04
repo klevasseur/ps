@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+
+<chapter xml:id="c-probability">
+<title>Probability</title>
+<section>
+<title>Examples</title>
+<p>If <m>x</m> is a random variable with outcomes <m>x_1, x_2. x_3, \ldots</m> and corresponding probabilities <m>p_1, p_2, p_3,
+\ldots</m>, then the expected value of <m>x</m> is <m>x_1p_2+ x_2p_2+ x_3p_3+\ldots</m>.</p>
+
+<p>Warm-up: What is the probability that a random five-card poker hand is a flush? a straight? </p>
+</section>  
+
+<section>
+<title>Conditional Probability</title>
+<p>Add this</p>
+</section>  
+
+
+<exercises>
+<title>Exercises</title>
+
+<exercise>
+<statement>
+<p>Shanille O'Keal shoots free throws on a basketball court. She hits the first and misses the second, and thereafter the probability that she hits the next shot is equal to the proportion of shots she has hit so far. What is the probability that she hits exactly 50 of her first 100 shots?</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>King Arthur is sick of fights for inheritance and decides to announce the following law. From now on, no family will be allowed to have another child after a boy is born. What will happen to the percentage of males if the law is followed?</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise><title>Simplified NCAA basketball pool</title>
+<statement>
+<p>There are 64 teams who play single elimination tournament, hence 6 rounds, and you have to predict all the winners in
+all 63 games. Your score is then computed as follows: 32 points for correctly predicting the final winner, 16 points for each correct finalist, and so on, down to 1 point for every correctly predicted winner for the first round. Knowing nothing about any team, you flip fair coins to decide every one of your 63 bets. Compute the expected number of points.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Three real numbers <m>a</m>, <m>b</m>, <m>c</m> are randomly (and uniformly) chosen from the interval <m>[0, 1]</m>. What is the probability that there exists a triangle with sides <m>a</m>, <m>b</m>, <m>c</m>?</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Let <m>p_n</m> be the probability that <m>c + d</m> is a perfect square, where the integers <m>c</m> and <m>d</m> are selected independently at random from the set <m>\{1, . . . , n\}</m>. Find <m>\lim_{n\to \infty } \, \sqrt{n} p_n</m>.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Two real numbers <m>x</m> and <m>y</m> are chosen at random in the interval (0,1) with respect to the uniform distribution. What is the probability that
+the closest integer to <m>x/y</m> is even? Express the answer in the form <m>r + s \pi</m>, where <m>r</m> and <m>s</m> are rational numbers.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Let <m>\alpha  \in  [0,1]</m> be an arbitrary number, rational or irrational. The only randomizing device is an unfair coin, with probability <m>p \in (0,1)</m> of heads. Design a game between Alice and Bob so that Alice{'}s winning probability is exactly <m>\alpha</m>. The game of course has to end in a finite number of tosses with probability 1.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Begin with the set <m>\{1,2,\dots,n\}</m>. Toss a coin <m>n</m> times, once for each member of the set. Keep the elements that scored <q>Heads</q> and discard the elements that got <q>Tails</q>. You now have a certain subset <m>S</m> of the original set. Call this whole process a <q>step</q>. Now take a step from <m>S</m>. That is, toss a coin for each element of <m>S</m>, and keep those that get <q>Heads</q>, getting a sub-subset <m>S'</m>, etc. This game halts when the empty set is reached. Let <m>f(n,k,r)</m> be the probability that after <m>k</m> steps, exactly <m>r</m> objects remain.
+<ol label="(a)">
+<li><p>Find a recurrence relation for <m>f</m>, find the generating function for f, and find f itself. </p></li>
+<li><p>What is the average number of steps in a complete game?</p></li>
+</ol>
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>An urn contains a number of colored balls, with the same number of balls in each color. If 20 balls of a new color are added to the urn, the probability of drawing (without replacement) two balls of the same color is not changed. How many balls are in the urn (before the new balls are added)?</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>---</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+</exercises>
+</chapter> 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
