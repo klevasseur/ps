@@ -36,18 +36,18 @@ with equality when <m>x=4y</m>, which implies that the maximum is attained when 
 <section><title>The CBS Inequality</title>
 <p>The Cauchy-Bunyakovsky-Schwarz, or CBS, inequality has both discrete and continuous versions.  The real discrete version follows.</p>
 
-<theorem><title>Cauchy-Bunyakovsky-Schwarz Inequality</title><idx>Cauchy-Bunyakovsky-Schwarz Inequality</idx>
+<theorem><title>Cauchy-Bunyakovsky-Schwarz Inequality</title><idx>Cauchy-Bunyakovsky-Schwarz Inequality</idx><idx>CBS Inequality</idx>
 <statement>
 <p>If <m>x</m> and <m>y</m> are vectors in <m>\mathbb{R}^n</m>, then  
 <me>\left(\sum _{i=1}^n x_i y_i\right){}^2\leq \left(\sum _{i=1}^n x_i^2\right)\left(
 \sum _{i=1}^n y_i^2\right)</me>
  with equality if and only if the two vectors are scalar multiples of one another.</p>
 </statement>
-<proof><p>There are many proofs of this inequality.  Here is a brief one from THE BOOK. We observe that the inequality can be express more compactly as <m> (x, y)^2 \leq \left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 </m>. </p>
+<proof><p>There are many proofs of this inequality.  Here is a brief one from THE BOOK. We observe that the inequality can be express more compactly using norm and inner product notation as <m> (x, y)^2 \leq \left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 </m>. </p>
 <p>We can assume that both <m>x</m> and <m>y</m> are nonzero vectors, for otherwise the inequality is obvious.  Let <m>\alpha</m> be a real variable, and consider the square of the norm of the vector <m>\alpha x + y</m>.  If <m>x</m> and <m>y</m> are linearly independent, then <m>\left\Vert \alpha x + y\right\Vert \gt 0</m>
 <me>\begin{split}
-			\left| \alpha x + y \right| &amp;= (\alpha x + y,\alpha x + y)\\
-								&amp;  = \alpha^2 \left| x \right|^2 + 2 \alpha (x, y) + \left| y \right|
+			\left\Vert \alpha x + y \right\Vert &amp;= (\alpha x + y,\alpha x + y)\\
+								&amp;  = \alpha^2 \left\Vert x \right\Vert^2 + 2 \alpha (x, y) + \left\Vert y \right\Vert
 	\end{split}
 </me>
 This quadratic polynomial in <m>\alpha</m> has no real roots and so the discriminant, <m>4 (x, y)^2 - 4\left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 \lt 0</m>, which implies CBS.</p>

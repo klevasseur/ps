@@ -3,26 +3,24 @@
 
 <chapter xml:id="c-probability">
 <title>Probability</title>
+<introduction><p>If <m>x</m> is a random variable with outcomes <m>x_1, x_2. x_3, \ldots</m> and corresponding probabilities <m>p_1, p_2, p_3, \ldots</m>, then the expected value of <m>x</m> is <m>x_1p_2+ x_2p_2+ x_3p_3+\ldots</m>.</p>
+</introduction>
 <section>
 <title>Examples</title>
-<p>If <m>x</m> is a random variable with outcomes <m>x_1, x_2. x_3, \ldots</m> and corresponding probabilities <m>p_1, p_2, p_3,
-\ldots</m>, then the expected value of <m>x</m> is <m>x_1p_2+ x_2p_2+ x_3p_3+\ldots</m>.</p>
-
 <p>Warm-up: What is the probability that a random five-card poker hand is a flush? a straight? </p>
 </section>  
-
 <section>
 <title>Conditional Probability</title>
-<p>Add this</p>
+<example><title>Family Matters</title><p>
+Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}.  Now suppose you are told that a certain family has two children and one of them is a boy.  What is probability that the family has two boys?  Our intuition may tell us a certain answer, but many of us are wrong. This is a case where conditional probability comes into play.</m></p></example>
+<p>The Law of Conditional Probability.   Suppose a random event takes place and let <m>H</m> a condition on the event that has a positive probability. Suppose we are concerned with the probability that second condition, <m>A</m> is met with knowledge that <m>H</m> is true.  The formula for <q>the probability of <m>A</m> given <m>H</m>,</q> denoted <m>P(A \vert H)</m>, is <m>\frac{P(A and H)}{P(H)}</m>.</p>
+<p>In the example above, the random event of two children being born in sequence has four equally likely outcomes; BB, BG, GB, GG.  We are told that one of the first three has occured, so <m>P(H) =\frac{3}{4}</m> in this case.   The condition that one of the children is boy and both are boys is the same the condition that both are boys, so <m>P(A\vert H) = \frac{1}{4}</m> in this case, therefore the probability we want is <m>\frac{1/4}{3/4} =\frac{1}{3}</m>.  This conclusion often surprises people.  How about you?</p>  
 </section>  
-
-
 <exercises>
 <title>Exercises</title>
-
 <exercise>
 <statement>
-<p>Shanille O'Keal shoots free throws on a basketball court. She hits the first and misses the second, and thereafter the probability that she hits the next shot is equal to the proportion of shots she has hit so far. What is the probability that she hits exactly 50 of her first 100 shots?</p>
+<p>Shanille O'Keal shoots free throws on a basketball court. She hits the first and misses the second, and thereafter the probability that she hits the next shot is equal to the proportion of shots she has hit so far. What is the probability that she hits exactly 50 of           her first 100 shots?</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
