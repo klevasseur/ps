@@ -28,12 +28,14 @@
 	 	<xi:include href="./ps_induction.xml" />                        
 		<xi:include href="./ps_counting.xml" />                        
 		<xi:include href="./ps_calculus.xml" />                        
-		<xi:include href="./number_theory.xml" />                        
+		<xi:include href="./ps_number_theory.xml" />                        
 		<xi:include href="./ps_inequalities.xml" />                        
 		<xi:include href="./ps_seq_series.xml" />                        
 		<xi:include href="./ps_polynomials.xml" />                        
 		<xi:include href="./ps_games.xml" />                        
+		<xi:include href="./ps_geometry.xml" />                        
 		<xi:include href="./ps_probability.xml" />                        
+		<xi:include href="./ps_linear_algebra.xml" />                        
 		<xi:include href="./backmatter.xml" />            
  <!-- 
 -->

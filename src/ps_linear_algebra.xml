@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+<chapter xml:id="c-linear-algebra">
+<title>Linear Algebra</title>
+<section>
+<title>Examples</title>
+<example xml:id="ex-oddtown"><title>Oddtown</title>
+
+<p>In a town with <m>n</m> people, <m>m</m> clubs have been formed. Every club have an odd number of members, and every two clubs have an even number of members in common. Prove that <m>m \leq  n</m>.</p>
+</exercise>
+</section>  
+
+<section>
+<title></title>
+
+</section>  
+
+
+<exercises>
+<title>Exercises</title>
+
+<exercise>
+<statement>
+<p>Let <m>N=2^n</m> for some positive integer <m>n</m> and <m>\omega =e^{\frac{2\pi  i}{N}}</m>.  Let <m>U(\omega )</m> be the <m>N\times N</m> matrix with <m>U(\omega)_{i,j}= \omega ^{(i-1)(j-1)}</m>.  Compute <m>U(\omega )U\left(\omega ^{-1}\right)</m>.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Let <m>A</m> and <m>B</m> be <m>n\times n</m> matrices satisfying <m>A+B = A B</m>. Show that <m>A B = B A</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p> Consider the matrix equation <m>\left(
+\begin{array}{ccc}
+ 1 &amp; 1 &amp; 0 \\
+ 1 &amp; 1 &amp; 1 \\
+ 0 &amp; 1 &amp; 1 \\
+\end{array}
+\right)^3=\left(
+\begin{array}{ccc}
+ A_n &amp; B_n &amp; C_n \\
+ D_n &amp; E_n &amp; F_n \\
+ G_n &amp; H_n &amp; J_n \\
+\end{array}
+\right)</m>.  Identify <m>A_n</m>, <m>B_n</m>,$\ldots $, <m>J_n</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Let's call a real <m>3 \times 3</m> matrix a <q>magic square</q> if all its row-sums and column-sums are equal to 0. Show that all magic squares form a vector space. Find its dimension.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Let <m>n</m> be a positive integer, and let <m>v_1, v_2, \ldots ,v_k</m>, <m>1\leq k\leq n</m>, be linearly independent vectors in <m>\mathbb{R}^n</m> spanning a subspace <m>V_k</m>. Prove that there exist <m>k</m> orthogonal vectors <m>w_1, w_2, \ldots ,w_k</m> that span <m>V_k</m>.  (Two vectors are orthogonal if their dot product is equal to 0.) Hint: Use the linearly of the dot product: <m>x.(a y+z) = a(x.y)+x.z</m>, where <m>a</m> is a scalar.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Let <m>A</m> be the <m>n\times n</m> matrix whose entry in the <m>i</m>-th row and <m>j</m>-th column is <m>\frac{1}{\min (i,j)}</m> for <m>1 \leq  i,j \leq  n</m>. Compute <m>\det (A)</m>.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>The dashboard of a nuclear power station has several lights. Some lights are on and some are off. There are also several buttons. Pressing each button
+changes the state of several lights (from on to off and from off to on). It is known that for every set of lights there exists a button connected
+to an odd number of lights in this set. Show that one can turn off all lights by pressing some buttons.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Compute the determinant of the <m>n \times  n</m> matrix <m>\left[a_{i j}\right]</m> such that <m>a_{i j} =\lvert i-j\rvert</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>It is well known that all real-valued functions on <m>\mathbb{R}</m> form a vector space. Does the function <m>\sin  x</m> belong to the linear span of the functions <m>1</m>, <m>\cos x</m>, <m>\cos 2 x</m>, <m>\cos 3 x,\ldots</m>?    How about the function <m>\sin^2 x</m>?
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Think of a square matrix as placed on a checkerboard, so that the leading diagonal consists entirely of white squares. Then if the signs of all the entries on black squares are changed, prove that the eigenvalues are unchanged.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+</exercises>
+</chapter>

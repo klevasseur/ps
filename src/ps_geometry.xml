@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+
+<chapter xml:id="c-geometry">
+<title>Geometry</title>
+<introduction>
+<p>There are three basic approaches to geometric problems:
+
+
+
+(1) Axiomatic approach, where everything is deduced from basic facts, such as congruence tests for triangles (SAS, ASA, and SSS), similarity of triangles,
+angles in the circle theorem, etc. These problems are great to sharpen your proof skills but you are unlikely to see them on the Putnam exam.
+
+
+
+(2) Method of coordinates. Points on the plane are interpreted as coordinates <m>(x,y) \in \mathbb{R}^2</m>, or vectors, or complex numbers. Calculations
+can often be simplified by using basic linear algebra (scalar products, etc.) and knowing geometric interpretations of various algebraic operations
+(e.g. multiplication of complex numbers). Alternatively, a lot of things can be computed using trig functions.
+
+
+
+(3) Symmetries and transformations. This is a more dynamic approach, where you apply and compose rotations, symmetries, etc.
+
+
+
+Often, problems are only formulated using geometric language but the solution uses some counting trick, or combinatorics, etc.</p>
+</introduction>
+
+<section>
+<title>Examples</title>
+
+</section>  
+
+<section>
+<title></title>
+
+</section>  
+
+
+<exercises>
+<title>Exercises</title>
+
+<exercise>
+<statement>
+<p>Prove that a central angle subtended by a given circular arc is twice the angle of an inscribed angle for the same arc.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Inscribe a rectangle of base <m>b</m> and height <m>h</m> and an isosceles triangle of base <m>b</m> in a circle of radius one as shown. For what value of <m>h</m> do the rectangle and triangle have the same area? </p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>What convex quadrilaterals can be inscribed into a circle? There is a name for these quadrilaterals, but your answer should describe them, not
+just name them</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Prove that if the lengths of the sides of a triangle form an arithmetic progression, then the radius of the inscribed circle is one third of one
+of the heights of the triangle.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>A piece of paper is in the shape of a rectangle <m>ABCD</m> with <m>AB=CD=3</m> and <m>AD=BC=5</m>.
+The paper is folded so that <m>A</m> and <m>C</m> coincide. Find the length of the crease.  Generalize your result.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>On the hyperbola <m>x y = 1</m> consider four points whose <m>x</m>-coordinates are <m>x_1</m>, <m>x_2</m>, <m>x_3</m>, and <m>x_4</m>. Show that if these points lie on a circle, then <m>x_1 \cdot  x_{2} \cdot x_{3}\cdot x_4 = 1</m>.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Let <m>ABC</m> be a triangle and let the angle bisector of <m>\angle A</m> intersect the side <m>BC</m> at a point <m>D</m>. Show that <m>\frac{A B}{A C} = \frac{B D}{C D}</m>.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Let <m>f</m> be a real-valued function on the plane such that for every square <m>ABCD</m> in the plane, <m>f(A) + f(B) + f(C) + f(D) = 0</m>. Does it follow that <m>f(P) = 0</m> for all points <m>P</m> in the plane?</p>
+</statement>
+<hint><p>Start with a square and divide it into four squares.</p></hint>
+<!-- 
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Given nine lattice points in <m>\mathbb{R}^3</m> prove that there exist two of them with the property that the midpoint of the segment between them is a lattice point.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Right triangle <m>ABC</m> has a right angle at <m>C</m> and <m>\angle BAC = \theta</m>; the point <m>D</m> is chosen on <m>AB</m> so that <m>AC= AD= 1</m>; the point <m>E</m> is chosen on <m>BC</m> so that <m>\angle CDE = \theta</m>. The perpendicular to <m>BC</m> at <m>E</m> meets <m>AB</m> at <m>F</m>. Evaluate  <m>\lim _{\theta \to 0} EF</m>.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Consider triangle <m>ABC</m> with the following trisection points,
+<ul><li><p><m>P</m> on segment <m>AB</m> closest to <m>B</m></p></li>
+<li><p><m>R</m> on segment <m>BC</m> closest to <m>C</m> and</p></li>
+<li><p> <m>Q</m> on segment <m>CA</m> closest to <m>A</m>.</p></li>
+</ul>
+If these points are connected by segments to the opposite vertices of the triangle, is the area of the inner triangle created by the segments related to the area of triangle <m>ABC</m>?</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+</exercises>
+</chapter> 
