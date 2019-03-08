@@ -49,7 +49,7 @@ tickets. I have to give out the tickets according to the following two rules:
 <li>The backstage pass must go to the oldest person who gets a ticket. </li>
 <li>The person who gets the backstage pass can't get either of the other two tickets, but the two normal tickets can both go to the same person.</li>
 </ol>
-How many ways can I give away the tickets? There are two ways to count. Try to find both.</p>
+How many ways can I give away the tickets? There are two ways to count. Find both and equate them.</p>
 </statement>
 <hint><p>You get two different results depending on whether you select who will be oldest first, or you decide what three people will get tickets first.</p>
 </hint>
@@ -69,6 +69,7 @@ How many ways can I give away the tickets? There are two ways to count. Try to f
 
 </statement>
 <hint><p>Think of each path as a sequence of instructions to go right (R) and up (U).</p></hint>
+<answer><p>There are <m>\binom{m+n}{m}</m> paths</p></answer>
 <solution><p>Each path can be described as a sequence or R's and U's with exactly ten of each.   The ten positions in which R's could be placed can be selected from the twenty positions in the sequence <m>\binom{20}{10}</m> ways.  We can generalize this logic and see that there are <m>\binom{m+n}{m}</m> paths from <m>(0,0)</m> to <m>(m,n)</m>.</p>
 </solution>
 </exercise>
@@ -77,6 +78,7 @@ How many ways can I give away the tickets? There are two ways to count. Try to f
 <statement>
 <p>Prove that if <m>n\geq 1</m>, then <m>\sum _{k=0}^n \binom{n}{k}^2=\binom{2 n}{n}</m></p>
 </statement>
+<hint></p>Consider the lattice paths from <m>(0,0)</m> to <m>(n,n)</m> passing through any point on the diagonal <m>i + j = n</m>.</p></hint>
 <!-- 
 <solution><p></p>
 </solution>

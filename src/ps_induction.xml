@@ -210,12 +210,19 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 </exercise>
 <exercise number="10">
 <statement>
-	<p>
-		You have coins <m>C_1</m>, <m>C_2</m>, ... , <m>C_n</m>. For each <m>k</m>, <m>C_k</m> is biased so that, when tossed, it has probability <m>1/(2k + 1)</m> of falling heads. If the <m>n</m> coins are tossed, what is the probability that the number of heads is odd? Express the answer as a rational function of <m>n</m>.
+	<p>You have coins <m>C_1</m>, <m>C_2</m>, ... , <m>C_n</m>. For each <m>k</m>, <m>C_k</m> is biased so that, when tossed, it has probability <m>1/(2k + 1)</m> of falling heads. If the <m>n</m> coins are tossed, what is the probability that the number of heads is odd? Express the answer as a rational function of <m>n</m>.
 	</p>
 
 </statement>
-<solution><p></p>
+<answer><p>The probability that the number of heads is odd is <m>\frac{n}{n+1}.</m></answer>
+ <solution><p>Let <m>p_n</m> be the probability that after tossing the first <m>n</m> coins, an odd number of heads have appeared.  Clearly <m>p_1 = \frac{1}{3}</m>.  If <m>n \gt 1</m>,
+ 	<me>\begin{split}
+ 		p_n &amp;= \frac{1}{2n+1}  (1-p_{n-1}) + \frac{2n}{2n+1} p_{n-1}\\
+ 			&amp; = \frac{2n-1}{2n+1}p_{n-1} + \frac{1}{2n+1}
+ 		\end{split}
+ 		</me>
+If you use the formula to compute a few more terms of the sequence, the pattern <m>p_n=\frac{n}{2n+1} </m> emerges and this can be proven by induction.
+ </p>
 </solution>
 </exercise>
 <exercise number="11">

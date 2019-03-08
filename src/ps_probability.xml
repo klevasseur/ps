@@ -12,8 +12,8 @@
 <section>
 <title>Conditional Probability</title>
 <example><title>Family Matters</title><p>
-Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}.  Now suppose you are told that a certain family has two children and one of them is a boy.  What is probability that the family has two boys?  Our intuition may tell us a certain answer, but many of us are wrong. This is a case where conditional probability comes into play.</m></p></example>
-<p>The Law of Conditional Probability.   Suppose a random event takes place and let <m>H</m> a condition on the event that has a positive probability. Suppose we are concerned with the probability that second condition, <m>A</m> is met with knowledge that <m>H</m> is true.  The formula for <q>the probability of <m>A</m> given <m>H</m>,</q> denoted <m>P(A \vert H)</m>, is <m>\frac{P(A and H)}{P(H)}</m>.</p>
+Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}</m>.  Now suppose you are told that a certain family has two children and one of them is a boy.  What is probability that the family has two boys?  Our intuition may tell us a certain answer, but many of us are wrong. This is a case for conditional probability.</p></example>
+<p>The Law of Conditional Probability.   Suppose a random event takes place and let <m>H</m> a condition on the event that has a positive probability. Suppose we are concerned with the probability that second condition, <m>A</m>, is met with knowledge that <m>H</m> is true.  The formula for <q>the probability of <m>A</m> given <m>H</m>,</q> denoted <m>P(A \vert H)</m>, is <m>\frac{P(A \and H)}{P(H)}</m>.</p>
 <p>In the example above, the random event of two children being born in sequence has four equally likely outcomes; BB, BG, GB, GG.  We are told that one of the first three has occured, so <m>P(H) =\frac{3}{4}</m> in this case.   The condition that one of the children is boy and both are boys is the same the condition that both are boys, so <m>P(A\vert H) = \frac{1}{4}</m> in this case, therefore the probability we want is <m>\frac{1/4}{3/4} =\frac{1}{3}</m>.  This conclusion often surprises people.  How about you?</p>  
 </section>  
 <exercises>
@@ -67,7 +67,7 @@ all 63 games. Your score is then computed as follows: 32 points for correctly pr
 </exercise>
 <exercise>
 <statement>
-<p>Two real numbers <m>x</m> and <m>y</m> are chosen at random in the interval (0,1) with respect to the uniform distribution. What is the probability that
+<p>Two real numbers <m>x</m> and <m>y</m> are chosen at random in the interval <m>(0,1)</m> with respect to the uniform distribution. What is the probability that
 the closest integer to <m>x/y</m> is even? Express the answer in the form <m>r + s \pi</m>, where <m>r</m> and <m>s</m> are rational numbers.</p>
 </statement>
 <!-- 
@@ -113,7 +113,7 @@ the closest integer to <m>x/y</m> is even? Express the answer in the form <m>r +
 
 <exercise>
 <statement>
-<p>---</p>
+<p>Suppose that the probability that the length of a telephone call is between <m>t_1</m> and <m>t_2</m> minutes,  <m>t_1 \lt t_2</m> is \int_{t_1}^{t_2} e^{-t} \, dt.   What is the probability that a phone call lasts less than one minute.  What is the probability that a phone call lasts less than two minutes given that it lasts at least one minute?</p>
 </statement>
 <!-- 
 <hint><p></p></hint>

@@ -46,10 +46,11 @@
 
 	</colophon>
 <dedication>
+<!-- COMMENTED OUT TEMPORARILY
 <title>Dedication</title>
 <p>To my family</p>
 </dedication>
-	<!-- Accepted order: acknowledgements, forewords, prefaces -->
+	<!~~ Accepted order: acknowledgements, forewords, prefaces ~~>
 
 <xi:include href="./acknowledgement.xml" />
 
@@ -64,5 +65,6 @@
 			</attribution>
 
 </preface>
+ -->
 
 </frontmatter>

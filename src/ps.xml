@@ -19,7 +19,7 @@
 <xi:include href="./bookinfo.xml" />    <!--ISBN, website, other metadata -->
     
 	<book xml:id="ps">
-      <title>Problem Solving</title>    
+      <title>A Problem Solving Course</title>    
       <xi:include href="./frontmatter.xml" /> 
  <!-- 
 -->

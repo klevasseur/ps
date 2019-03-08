@@ -2,17 +2,13 @@
 <!-- MBX -->
 <chapter xml:id="c-linear-algebra">
 <title>Linear Algebra</title>
-<section>
+<introduction><p>to be added</p>
+</introduction><section>
 <title>Examples</title>
-<example xml:id="ex-oddtown"><title>Oddtown</title>
-
+<example xml:id="ex-oddtown-la"><title>Oddtown</title>
 <p>In a town with <m>n</m> people, <m>m</m> clubs have been formed. Every club have an odd number of members, and every two clubs have an even number of members in common. Prove that <m>m \leq  n</m>.</p>
-</exercise>
-</section>  
-
-<section>
-<title></title>
-
+<p>Let <m>M</m> be that <m>n \times m</m> matrix where <m>M_{ij}</m> is equal to 1 if person <m>i</m> belongs to club <m>j</m>, and 0 otherwise.
+</example>
 </section>  
 
 
@@ -21,7 +17,7 @@
 
 <exercise>
 <statement>
-<p>Let <m>N=2^n</m> for some positive integer <m>n</m> and <m>\omega =e^{\frac{2\pi  i}{N}}</m>.  Let <m>U(\omega )</m> be the <m>N\times N</m> matrix with <m>U(\omega)_{i,j}= \omega ^{(i-1)(j-1)}</m>.  Compute <m>U(\omega )U\left(\omega ^{-1}\right)</m>.</p>
+<p>Let <m>N=2^n</m> for some positive integer <m>n</m> and <m>\omega =e^{\frac{2\pi i}{N}}</m>.  Let <m>U(\omega )</m> be the <m>N\times N</m> matrix with <m>U(\omega)_{i,j}= \omega^{(i-1)(j-1)}</m>.  Compute <m>U(\omega )U\left(\omega ^{-1}\right)</m>.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -46,13 +42,13 @@
  1 &amp; 1 &amp; 1 \\
  0 &amp; 1 &amp; 1 \\
 \end{array}
-\right)^3=\left(
+\right)^n=\left(
 \begin{array}{ccc}
  A_n &amp; B_n &amp; C_n \\
  D_n &amp; E_n &amp; F_n \\
  G_n &amp; H_n &amp; J_n \\
 \end{array}
-\right)</m>.  Identify <m>A_n</m>, <m>B_n</m>,$\ldots $, <m>J_n</m>.
+\right)</m>.  Identify formulae for <m>A_n, B_n,\ldots , J_n</m>.
 </p>
 </statement>
 <!-- 
@@ -72,11 +68,11 @@
 </exercise>
 <exercise>
 <statement>
-<p>Let <m>n</m> be a positive integer, and let <m>v_1, v_2, \ldots ,v_k</m>, <m>1\leq k\leq n</m>, be linearly independent vectors in <m>\mathbb{R}^n</m> spanning a subspace <m>V_k</m>. Prove that there exist <m>k</m> orthogonal vectors <m>w_1, w_2, \ldots ,w_k</m> that span <m>V_k</m>.  (Two vectors are orthogonal if their dot product is equal to 0.) Hint: Use the linearly of the dot product: <m>x.(a y+z) = a(x.y)+x.z</m>, where <m>a</m> is a scalar.
+<p>Let <m>n</m> be a positive integer, and let <m>v_1, v_2, \ldots ,v_k</m>, <m>1\leq k\leq n</m>, be linearly independent vectors in <m>\mathbb{R}^n</m> spanning a subspace <m>V_k</m>. Prove that there exist <m>k</m> orthogonal vectors <m>w_1, w_2, \ldots ,w_k</m> that span <m>V_k</m>.  (Note: Two nonzero vectors are orthogonal if their dot product is equal to 0.)
 </p>
 </statement>
+<hint><p>Use the linearly of the dot product: <m>x.(a y+z) = a(x.y)+x.z</m>, where <m>a</m> is a scalar.</p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution><p></p></solution>
  -->
 </exercise>
@@ -91,9 +87,7 @@
 </exercise>
 <exercise>
 <statement>
-<p>The dashboard of a nuclear power station has several lights. Some lights are on and some are off. There are also several buttons. Pressing each button
-changes the state of several lights (from on to off and from off to on). It is known that for every set of lights there exists a button connected
-to an odd number of lights in this set. Show that one can turn off all lights by pressing some buttons.
+<p>The dashboard of a nuclear power station has several lights. Some lights are on and some are off. There are also several buttons. Pressing each button changes the state of several lights (from on to off and from off to on). It is known that for every set of lights there exists a button connected to an odd number of lights in this set. Show that one can turn off all lights by pressing some buttons.
 </p>
 </statement>
 <!-- 

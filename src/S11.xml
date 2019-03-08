@@ -30,7 +30,7 @@
 </exercises>
 </chapter> 
 
- Let <m>a,b,c,d,e \in \mathbb{R}</m> such that <m>a + \frac{b}{2} + \frac{c}{3} + \frac{d}{4} + \frac{e}{5} = 0</m>. Show that the polynomial <m>a+b x+c x^2 +d x^3 +e x^4</m> has at least one real zero. Note: { }In this context, \textit{ e} isn{'}t the number we call \textit{ e}, it{'}s just
+ Let <m>a,b,c,d,e \in \mathbb{R}</m> such that <m>a + \frac{b}{2} + \frac{c}{3} + \frac{d}{4} + \frac{e}{5} = 0</m>. Show that the polynomial <m>a+b x+c x^2 +d x^3 +e x^4</m> has at least one real zero. Note: In this context, \textit{ e} isn{'}t the number we call \textit{ e}, it{'}s just
 an arbitrary real number.
 
 Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m>  for all <m>n\geq 1</m>.
@@ -44,23 +44,23 @@ Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m>  for all <m>n\geq 1</m>.
 
 
 (c) Find a partition <m>\left\{t_0=1,t_1,t_2,\ldots , t_n=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of
-{ }<m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size \textit{ n}.
+<m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size \textit{ n}.
 
  Determine the value of <m>\lim _{n\to \infty }\sum _{k=1}^n \frac{n}{k^2+n^2}</m>
 
-Let <m>p(x)</m> be a polynomial of even degree with a positive leading coefficient. Suppose <m>p(x) \geq  p\text{''}(x)</m> for every \textit{ x}. { }Show
+Let <m>p(x)</m> be a polynomial of even degree with a positive leading coefficient. Suppose <m>p(x) \geq  p\text{''}(x)</m> for every \textit{ x}. Show
 that <m>p(x) \geq  0</m> for every <m>x</m>.
 
- If \textit{ f} is a differentiable function on <m>[0,1]</m> such that <m>f(0)=f(1)=0</m>, and if { } <m>\int_0^1 \left\left| f'(x)\right\right|  \, dx=1</m>,
-{ }what can be said about <m>f\left(\frac{1}{2}\right)</m>? { }For example, is it possible that <m>f\left(\frac{1}{2}\right)=0?</m>, or 1?, or <m>\frac{1}{2}</m>?,
-or -1?, or 2? { }Note: { }\textit{ Differentiable} can be replaced with \textit{ Absolutely Continuous}, but this is a somewhat more advanced property
+ If \textit{ f} is a differentiable function on <m>[0,1]</m> such that <m>f(0)=f(1)=0</m>, and if  <m>\int_0^1 \left\left| f'(x)\right\right|  \, dx=1</m>,
+what can be said about <m>f\left(\frac{1}{2}\right)</m>? For example, is it possible that <m>f\left(\frac{1}{2}\right)=0?</m>, or 1?, or <m>\frac{1}{2}</m>?,
+or -1?, or 2? Note: \textit{ Differentiable} can be replaced with \textit{ Absolutely Continuous}, but this is a somewhat more advanced property
 that isn{'}t likely to be used in the Putnam (I could be wrong!)
 
  Evaluate <m>\int_{ 0}^{ \pi /2} \left(\sin ^2(\sin (x))+\cos ^2(\cos (x))\right) \, dx</m>.
 
- Evaluate { } <m>\int_0^{\infty } \frac{\text{Arctan}(\pi  x)-\text{Arctan}(x)}{x} \, dx</m>. { } Hint: Generalize.
+ Evaluate  <m>\int_0^{\infty } \frac{\text{Arctan}(\pi  x)-\text{Arctan}(x)}{x} \, dx</m>.  Hint: Generalize.
 
- For which real numbers \textit{ c} is <m>\frac{e^x+ e^{-x}}{2}\leq e^{c x^2}</m> { }for all real \textit{ x}?
+ For which real numbers \textit{ c} is <m>\frac{e^x+ e^{-x}}{2}\leq e^{c x^2}</m> for all real \textit{ x}?
 
  Let <m>f(x)</m> be a function such that <m>f(1)=1</m> and for <m>x\geq 1</m>
 
@@ -72,6 +72,6 @@ $\quad \quad $<m>f'(x)=\frac{1}{x^2+ f(x)^2}</m>.
 
 Prove that <m>\lim_{x\to \infty } f(x)</m> exists and is less than <m>1+\frac{\pi }{4}</m>.
 
- { }Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>. { }Hint: Look at the {``}partial products.{''}\\
+ Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>. Hint: Look at the {``}partial products.{''}\\
 
 

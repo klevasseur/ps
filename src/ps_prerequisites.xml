@@ -2,12 +2,11 @@
 <!-- MBX -->
 <chapter xml:id="c-games">
 <title>Prerequisite Topics</title>
-<introduction><p>In this chapter will list a few topics that are commonly in the undergraduate curriculum but that many students may not be familiar with yet.</p>
+<introduction><p>In this chapter, we list a few topics that are commonly in the undergraduate curriculum but may be worth reminding students</p>
 </introduction>
 <section><title>Complex Numbers</title>
 <p>Properties of the complex numbers</p>
-<p>Basic right triangle geometry</p>
 <p>Circular function definition of the trig functions.</p>
-
+<p>Expected Value of a random variable</p>
 </section>
 </chapter>

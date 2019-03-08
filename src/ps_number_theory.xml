@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+
+<chapter xml:id="c-number_theory">
+<title>Number Theory </title>
+<section>
+<title>Examples</title>
+<example xml:id="mod7">
+<p>Show that <m>n^2+ 1</m> is divisible by 7 for no positive integer <m>n</m>.
+</p>
+</example>
+</section>  
+
+<exercises>
+<title>Problems</title>
+<exercise number="1">
+<statement>
+<p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em> if <m>b c - ad = \pm</m>.  
+<ol label="(a)">
+	<li><p>Prove that if <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are close, then <m>\frac{a+c}{b+d}</m> is close to both <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>.</p></li>
+	<li><p>Find ten rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
+</ol>
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="2">
+<statement>
+<p>Prove that some positive integral power of 17 ends in 0001 (base 10).</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="3">
+<statement>
+<p>Show, without using a calculator, that <m>2^9 + 2^{99}</m> is divisible by 100.</p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="4">
+<statement>
+<p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. Prove that there is a unique integer, <m>x</m>, in the set
+<m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a (\text{mod} m)</m> and <m>y\equiv b (\text{mod} n)</m>.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="5">
+<statement>
+<p>Let <m>\varphi (k)</m> be the number of integers in the set <m>\{1,2, \ldots  , k-1\}</m> that are relatively prime to <m>k</m>. Find and prove a formula
+for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and <m>p</m> is prime.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="6">
+<statement>
+<p>For which positive integers <m>n</m> is there a sum of <m>n</m> consecutive integers that is a perfect square?
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="7">
+<statement>
+<p>Show that the equation <m>x^2- y^2=2x y z</m> has no solutions in the positive integers. Hint: Consider a prime divisor of <m>x y</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="8">
+<statement><p>In <xref ref="example-riemann-limit" />, we showed an example of how to deal with floor/ceiling functions. Here is an problem from the 1983 Putnam that can be solved by starting with a similar approach.  We quote the problem verbatim, where <m>[x]</m> was used for the floor function. </p>
+<p>Let <m>f(n)=n +[\sqrt{n}]</m> where <m>[x]</m> is the largest integer less than or equal to <m>x</m>.  Prove that, for every positive integer <m>m</m>, the sequence <me>m, f(m), f(f(m)), f(f(f(m))), \dots</me> contains at least one square of an integer.</p>
+</statement>
+<hint><p>Assume <m>m = k^2 + j</m> where <m>0 \leq j \leq 2k</m>.</p></hint>
+<!-- 
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="9">
+<statement>
+<p>Find all integral solutions to <m>\left|p^r-q^s\right|=1</m>, where <m>p</m> and <m>q</m> are primes and <m>r</m> and <m>s</m> are positive
+integers greater than or equal to 2. Prove that there are no other solutions than the ones you list.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+ </exercise>
+
+<exercise number="10">
+<statement>
+<p>What is the sum of the digits of the sum of the digits of the sum of the digits of <m>4444^{4444}</m>?</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="11">
+<statement>
+<p>Each of the numbers <m>x_1</m>, <m>x_2</m>, ..., <m>x_n</m> equal 1 or -1, and <m>x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots +x_{n-3}x_{n-2}x_{n-1}x_n+x_{n-2}x_{n-1}x_nx_1+x_{n-1}x_nx_1x_2+x_nx_1x_2x_3=
+0</m>.
+Prove that <m>n</m> is divisible by 4.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="12">
+<statement>
+<p>Find all positive integers <m>n</m> such that <m>n!</m> ends in exactly 1000 zeros.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="13">
+<statement>
+<p>Prove that among any three distinct integers we can find two, say <m>a</m> and <m>b</m>, such that the number <m>a^3b - a b^3</m> is a multiple of 10.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution>
+<p></p>
+</solution>
+ -->
+</exercise>
+<exercise number="14">
+<statement>
+<p>
+	Prove that for any positive integer <m>n</m> there exists an <m>n</m>-digit number divisible by <m>2^n</m> and containing only the digits 2 and 3.
+</p>
+
+</statement>
+<solution><p></p>
+</solution>
+</exercise>
+
+</exercises>
+</chapter> 
