@@ -24,7 +24,7 @@
 
 	</titlepage>
 
-	<colophon>
+<colophon>
 		<edition>1st Edition </edition>
 		<website>
 			<name>faculty.uml.edu/klevasseur/ps</name>
@@ -43,27 +43,27 @@
 			<shortlicense>Problem Solving by  Kenneth Levasseur is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States License. You are free to Share: copy and redistribute the material in any medium or format; Adapt: remix, transform, and build upon the material. You may not use the material for commercial purposes.  The licensor cannot revoke these freedoms as long as you follow the license terms.
 			</shortlicense>
 		</copyright>
+</colophon>
 
-	</colophon>
+<!-- 
+COMMENTED OUT TEMPORARILY
 <dedication>
-<!-- COMMENTED OUT TEMPORARILY
 <title>Dedication</title>
 <p>To my family</p>
-</dedication>
-	<!~~ Accepted order: acknowledgements, forewords, prefaces ~~>
+</dedication>  
+--> 
+	<!-- Accepted order: acknowledgements, forewords, prefaces -->
+<!-- 
 
 <xi:include href="./acknowledgement.xml" />
 
-
 <preface xml:id="ads-preface"><title>Preface</title>
-<p><em>Problem Solving</em> is designed for use in a university course for students who are not as the Putnam Fellow level, but who aspire to compete in the Putnam.</p>
-
+<p>This book is designed for use in a university course for students who are not as the Putnam Fellow level, but who aspire to compete in the Putnam.</p>
 <p>Many of the concepts introduced in this text are illustrated using SageMath code.  SageMath (<url href="http://sagemath.org">sagemath.org</url>).  This, of course, is not a resource students have in the Putnam but the idea is to demonstrate how appropriate use of technology be useful in everyday mathematical activity.</p>
 			<attribution>
 			<line>Ken Levasseur</line>
 			<line>Lowell, MA</line>
 			</attribution>
-
 </preface>
  -->
 

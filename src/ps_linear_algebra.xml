@@ -7,7 +7,7 @@
 <title>Examples</title>
 <example xml:id="ex-oddtown-la"><title>Oddtown</title>
 <p>In a town with <m>n</m> people, <m>m</m> clubs have been formed. Every club have an odd number of members, and every two clubs have an even number of members in common. Prove that <m>m \leq  n</m>.</p>
-<p>Let <m>M</m> be that <m>n \times m</m> matrix where <m>M_{ij}</m> is equal to 1 if person <m>i</m> belongs to club <m>j</m>, and 0 otherwise.
+<p>Let <m>M</m> be that <m>n \times m</m> matrix where <m>M_{ij}</m> is equal to 1 if person <m>i</m> belongs to club <m>j</m>, and 0 otherwise.</p>
 </example>
 </section>  
 

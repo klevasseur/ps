@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- MBX -->
-<chapter xml:id="c-games">
+<chapter xml:id="c-prerequisites">
 <title>Prerequisite Topics</title>
-<introduction><p>In this chapter, we list a few topics that are commonly in the undergraduate curriculum but may be worth reminding students</p>
+<introduction><p>In this chapter, we list a few topics that are commonly in the undergraduate curriculum but may be worth reminding students.  Not sure about including this.</p>
 </introduction>
 <section><title>Complex Numbers</title>
 <p>Properties of the complex numbers</p>

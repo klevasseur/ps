@@ -78,7 +78,7 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 <statement>
 <p>Prove that if <m>n\geq 1</m>, then <m>\sum _{k=0}^n \binom{n}{k}^2=\binom{2 n}{n}</m></p>
 </statement>
-<hint></p>Consider the lattice paths from <m>(0,0)</m> to <m>(n,n)</m> passing through any point on the diagonal <m>i + j = n</m>.</p></hint>
+<hint><p>Consider the lattice paths from <m>(0,0)</m> to <m>(n,n)</m> passing through any point on the diagonal <m>i + j = n</m>.</p></hint>
 <!-- 
 <solution><p></p>
 </solution>
