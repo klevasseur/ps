@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+
+<chapter xml:id="c-abstract-algebra">
+<title>Abstract Algebra</title>
+<introduction>
+<p>Groups and finite fields are among the topics that have made their way into the Putnam lately.</p>
+</introduction>
+<section>
+<title>Groups</title>
+<p>Let <m>G</m> be a group.</p>
+<example><title>1970 Putnam A</title>
+<p>Prove that the union of two of subgroups, neither contained in the other, is a subgroup.</p>
+<p>Assume <m>H</m> and <m>K</m> are subgroups of some group <m>G</m>, and that <m>x \in H-K</m>, <m>y \in K-H</m>.  In order for the union to be a subgroup. it must be closed and <m>x*y</m> must be in <m>H</m> or in <m>K</m>.  Assume it's in <m>H</m>.
+<me>x \in H \Rightarrow x^{-1} \in H \Rightarrow x^{-1}*(x*y) = y \in H</me>
+This contradiction implies that the union isn't closed and we are done.</p>
+</example>
+</section>  
+<section>
+<title>Rings and Fields</title>
+<p>Assume that <m>p(x)</m> is a polynomial of degree <m>n</m> over a field <m>F</m> that has <m>n</m> distinct roots in <m>F</m>.  Charactorize the ring <m>F[x]/(p(x))</m>.</p>
+</section>  
+
+
+<exercises>
+<title>Exercises</title>
+
+<exercise number="1">
+<statement>
+<p>Let <m>*</m> be an associative binary operation on a set <m>A</m> such that for all <m>a, b \in A</m>, <m>a*b=b*a \Rightarrow a=b</m>.  Prove that for all <m>a, b, c \in A</m>, <m>a*b*c = a*c</m>.</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+ -->
+<solution>
+<p>Step 1: Note that the operation must be idempotent.  By associativity, <m>(a*a)*a = a*(a*a)</m>, and so <m>a*a=a</m>.</p>	
+<p>Step 2: Show that for all <m>a, b</m>, <m> a*b*a=a</m>:		 
+	<me>\begin{split}
+	(a*b*a)*a &amp;= (a*b)*(a*a)\\
+			&amp;=(a*b*a)\\
+			&amp;=((a*a)*b*a)\\
+			&amp;= a*(a*b*a) \Rightarrow a*b*a = a
+	\end{split}
+	</me></p>
+<p>Step 3: Prove that <m>a*b*c=a*c</m>.
+<me>(a*b*c)*(a*c)= (a*(b*c)*a)*c = a*c</me>
+while
+<me>(a*c)(a*b*c)= a*(c*(a*c)*c)= a*c</me>
+hence the conclusion.</p>
+</solution>
+</exercise>
+
+</exercises>
+</chapter>
