@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- MBX -->
-
-<chapter xml:id="s-ticks">
+<chapter xml:id="c-tricks">
 <title>Tricks of the Trade </title>
 <introduction>
 <p>In this chapter we highlight some <q>tricks of the trade</q> that can help you piece together a solution to many problems.  Naturally, no single trick is likely to be needed in a given competition, but all of them have been played a part in solving some problems in past competitions.</p>
@@ -25,14 +24,11 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 
 <p>As for negative factors, the ones that are congruent to <m>1 \pmod 3</m> are <m>-2, -2 \cdot 1009, -2 \cdot 1009^2</m>.  However, all of these lead to pairs where <m>a \leq 0</m> or <m>b \leq 0</m>.</p></blockquote>
 </section>  
-
 <section>
 <title>Trig Substitution</title>
 <p>When a real numbers have absolute value less than or equal to 1, consider equating them with cosines or sines.   Here is an example from the 2018 Putnam, Problem B4.</p>
 <blockquote><p>Given a real number <m>a</m>, we define a sequence by <m>x_0 = 1</m>, <m>x_1 = x_2 = a</m>, and <m>x_{n+1} = 2x_n x_{n-1} - x_{n-2}</m> for <m>n \geq 2</m>. Prove that if <m>x_n = 0</m> for some <m>n</m>, then the sequence is periodic.</p></blockquote>
 </section>  
-
-
 <section>
 <title>Generalization</title>
 <p>Many mainstream topics in the mathematics curriculum can be generalized. One example is the binomial expansion.  The expansion of <m>(x+y)^n</m> for nonnegative integers is in every curriculum, but it's generalization for non-integral exponents is not. 
@@ -51,26 +47,32 @@ The first two terms of this sum are 1 and <m>-\frac{1}{2} x</m>. We will preceed
 \textrm{(put things together)}	&amp;= - \frac{(2n)!}{4^n \cdot(n!)^2\cdot (2n-1)} 
 	\end{split}</me>
 This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
-<me>\sqrt{1-x}  = \sum_{n=0}^{\infty} -\frac{(2n)!}{4^n \cdot(n!)^2\cdot (2n-1)}  x^n  </me>	
+<me>\sqrt{1-x}  = - \sum_{n=0}^{\infty} \frac{(2n)!}{4^n \cdot(n!)^2\cdot (2n-1)}  x^n  </me>	
 	
 </p>
 </example>
 <remark><p><idx>Pochhammer symbol</idx> The Pochhammer symbol is the notation  <m>(x)_n</m>, where <m>n</m> is a non-negative integer. It is commonly used to represent the <q>falling factorial</q> expression  <m>x\cdot(x-1)\cdot(x-2)\cdot \cdots \cdot (x-(k-1))</m>.  This gives a more concise way to express the expansion we have just examined as <m>\sum_{n=0}^{\infty} \frac{(\frac{1}{2})_n}{n!} (-x)^n</m>.  However, you still need to get into the weeds and manipulate the expression in the end. </p></remark>
 <p>A different sense in which generalization applies to problem solving is when a problem is more easily solved by first generalizing the context of the problem.  This problem from the 1982 Putnam is a good example.</p>
-<example><title>A Putnam Integral</title>
+<example xml:id="example-putnam-integral"><title>A Putnam Integral</title>
 <p>Evaluate <m>\int_0^{\infty} \frac{\tan ^{-1}(\pi  x)-\tan ^{-1}(x)}{x} \, dx</m>.</p>
 <p>The integral can be evaluated by generalizing it first to a function: 
 <m>F(y)=\int_0^{\infty} \frac{\tan ^{-1}(y x)-\tan ^{-1}(x)}{x} \, dx</m>. We then can differentiate with respect to <m>y</m> to get a simple expression of <m>F(y)</m>.  After applying the obvious condition <m>F(1)=0</m>, we can substitute <m>\pi</m> for <m>y</m> to get our final answer.  We leave it as an exercise for you to get the final answer of <m>\frac{1}{2} \pi  \ln(\pi )</m></p>
 </example>
 </section>  
-
-
-
 <exercises>
 <title>Exercises</title>
 <exercise number="1">
 <statement>
-<p>This is a placeholder.</p>
+<p>Complete the derivation of the value of the integral in <xref ref="example-putnam-integral" />.</p>
+</statement>
+<!-- 
+<solution><p></p>
+</solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>___.</p>
 </statement>
 <!-- 
 <solution><p></p>

@@ -5,9 +5,16 @@
 <title>Number Theory </title>
 <section>
 <title>Examples</title>
+<p>We start with a simple use of residues.</p>
 <example xml:id="mod7">
 <p>Show that <m>n^2+ 1</m> is divisible by 7 for no positive integer <m>n</m>.
 </p>
+<p><me>\begin{split}
+ 7 \mid (n^2+1) &amp; \Rightarrow n^2 \equiv -1 \mod{7}\\
+ 		&amp; \Rightarrow n^2 \equiv 6 \mod{7}
+ 		\end{split}
+ 		</me>
+ 		We can easily verify that for any <m>n</m>, the residue of <m>n^2 \mod{7}</m> is never 6.</p>
 </example>
 </section>  
 

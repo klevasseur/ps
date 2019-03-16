@@ -36,7 +36,7 @@
 		<xi:include href="./ps_geometry.xml" />                        
 		<xi:include href="./ps_probability.xml" />                        
 		<xi:include href="./ps_linear_algebra.xml" />
-		<xi:include href="./sp_abstract_algebra" />                        
+		<xi:include href="./ps_abstract_algebra.xml" />                        
 		<xi:include href="./backmatter.xml" />            
  <!-- 
 -->

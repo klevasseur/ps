@@ -63,12 +63,19 @@ This quadratic polynomial in <m>\alpha</m> has no real roots and so the discrimi
 	<title>Young's inequality</title>
 	<idx>Young's inequality</idx>
 		<statement><p>If <m>a</m> and <m>b</m> are nonnegative real numbers and <m>p</m> and <m>q</m> are positive real numbers such that <m>\frac{1}{p} + \frac{1}{q} = 1</m>, then 
-		<me>a b \leq \frac{a^{p}}{p} + \frac{b^{q}}{q}.</me></p></statement>
-<proof><p>If <m>a</m> and <m>b</m> are nonnegative real numbers and <m>p</m> and <m>q</m> are positive real numbers such that <m>\frac{1}{p} + \frac{1}{q} = 1</m>, then 
-<me>a b \leq \frac{a^{p}}{p} + \frac{b^{q}}{q}.</me>
+		<me>a\cdot b \leq \frac{a^{p}}{p} + \frac{b^{q}}{q}.</me></p></statement>
+<proof><p>The proof follows from the following more general inequality, where <m>f(x)=x^{p-1}</m>.
 </p> </proof>
 </theorem>
-
+<theorem>
+	<title>__</title>
+	<idx>__</idx>
+		<statement><p>If <m>f</m> is a strictly increasing function on the positive real numbers, <m>f(0)=0</m>, and <m>a</m> and <m>b</m> are positive real numbers, then 
+		<me>a b \leq \int_0^a f(x) \, dx +\int_0^b f^{-1}(y) \, dy</me></p></statement>
+<proof><p>If <m>b=f(a)</m>, then the rectangle <m>[0,a]\times[0,b]</m> is divided into two regions, the region below the curve <m>y=f(x)</m>, and the region to the left of <m>x = f^{-1}(y)</m>.  The sum of the two integrals is exactly equal to the area, <m>a\cdot b</m>.  If <m>f(a) \gt b</m>, the region whose area  <m>\int_0^b f^{-1}(y) \, dy</m> computes is contained within the rectangle, but the region whose area <m>\int_0^a f(x) \, dx</m> computes spills outside the rectangle, making the inequality a strict one.  This case is illustrated by <xref ref="figure-young" />.  In the other case, where <m>f(a) \lt b</m>, the excess area that makes the inequality a strict one is accounted for by <m>\int_0^b f^{-1}(y) \, dy</m>.
+</p> </proof>
+</theorem>
+<p>This interactive SageMath expression illustrates the proof above for the case where <m>f(x)=x^{p-1}</m>, <m>p \gt 1</m>.</p>
 <sage>
 <input>
 @interact()
@@ -117,6 +124,16 @@ def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
 <solution><p></p></solution>
  -->
 </exercise>
+<exercise>
+<statement><p>Let <m>a</m> and <m>b</m> be positive real numbers. Identify and prove the relationship between their <em>Quadratic Mean</em>, <m>\sqrt{\frac{a^2 + b^2}{2}}</m> and their other means.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
+
 <exercise>
 <statement>
 <p>An express delivery service restricts the size of packages it will accept.  Packages cannot exceed 18 inches in length plus girth, i. e., <m>\text{length}+2\times
