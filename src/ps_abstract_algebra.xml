@@ -49,6 +49,31 @@ while
 hence the conclusion.</p>
 </solution>
 </exercise>
-
+<exercise number="2">
+<statement>
+<p>(Putnam 1972) Let <m>S</m> be a set and <m>∗</m> a binary operation on <m>S</m> satisfying the laws
+<ol label="(i)">
+<li><p><m> x∗(x∗y)=y</m> for all <m>x,y∈S</m></p></li>
+<li><p><m> (y∗x)∗x=y</m> for all <m>x,y∈S</m></p></li>
+</ol>
+Show that <m>*</m> is commutative but not necessarily associative.</p>
+</statement>
+<solution>
+<p>Step 1: Show that <m>x*(y*x)=(x*y)*x = y</m> for all <m>x,y∈S</m>
+	<me>\begin{split}
+		y &amp;=(y*(y*x))*(y*x)\\
+			&amp;=x*(y*x)
+			\end{split}</me>
+and we can get <m>(x*y)*x</m>	similarly.  Combining these equalities with the two given ones, we see that the product of three factors with one pair of equal ones can be commuted and associated in any order and the result is the unique factor.</p>
+<p>Step 2: We can now get commutivity:		 
+	<me>\begin{split}
+	y*x &amp;= (x*(y*x))*x\\
+			&amp;=x*((y*x)*x)\\
+			&amp;=x*y
+	\end{split}
+	</me></p>
+<p>We haven't used general associativity here, and in fact there are nonassociative binary operations that satisfy the premises. One such is the operation on the integers defined by <m>x*y = -(x+y)</m>.</p>
+</solution>
+</exercise>
 </exercises>
 </chapter>
