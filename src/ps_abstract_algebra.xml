@@ -24,8 +24,17 @@ This contradiction implies that the union isn't closed and we are done.</p>
 
 <exercises>
 <title>Exercises</title>
-
 <exercise number="1">
+<statement>
+<p> ?</p>
+</statement>
+<!-- 
+<solution><p></p>
+</solution>
+ -->
+</exercise>
+
+<exercise number="2">
 <statement>
 <p>Let <m>*</m> be an associative binary operation on a set <m>A</m> such that for all <m>a, b \in A</m>, <m>a*b=b*a \Rightarrow a=b</m>.  Prove that for all <m>a, b, c \in A</m>, <m>a*b*c = a*c</m>.</p>
 </statement>
@@ -49,7 +58,7 @@ while
 hence the conclusion.</p>
 </solution>
 </exercise>
-<exercise number="2">
+<exercise number="3">
 <statement>
 <p>(Putnam 1972) Let <m>S</m> be a set and <m>∗</m> a binary operation on <m>S</m> satisfying the laws
 <ol label="(i)">

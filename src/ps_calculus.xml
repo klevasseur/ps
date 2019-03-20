@@ -89,12 +89,17 @@ Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m>  for all <m>n\geq 1</m>.
 </exercise>
 <exercise number="4">
 <statement><p>
-Determine the value of <m>\lim _{n\to \infty }\sum _{k=1}^n \frac{n}{k^2+n^2}</m>
+Determine the value of <m>\lim _{n\to \infty }\sum _{k=1}^n \frac{k}{k^2+n^2}</m>
 </p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<hint><p>This is a limit of Reimann sums in disguise!</p></hint>
+<solution><p>
+<me>
+	\begin{split}
+	\lim_{n\to \infty }\sum _{k=1}^n \frac{k}{k^2+n^2} &amp;=\lim_{n\to \infty }\sum _{k=1}^n \frac{\frac{k}{n}}{(\frac{k}{n})^2+1}\frac{1}{n}\\
+					&amp; = \int_0^1 \frac{x}{1+x^2} dx = \frac{\ln 2}{2}
+	\end{split}
+	</me>
+</p></solution>
 </exercise>
 <exercise number="5">
 <statement><p>
