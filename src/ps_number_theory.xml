@@ -101,11 +101,11 @@ for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and <m>p</m> is prime.</p>
 
 <exercise number="7">
 <statement>
-<p>Show that the equation <m>x^2- y^2=2x y z</m> has no solutions in the positive integers. Hint: Consider a prime divisor of <m>x y</m>.
+<p>Show that the equation <m>x^2- y^2=2x y z</m> has no solutions in the positive integers. Hint: 
 </p>
 </statement>
+<hint><p>Consider a prime divisor of <m>x y</m>.</p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution>
 <p></p>
 </solution>
@@ -144,11 +144,22 @@ integers greater than or equal to 2. Prove that there are no other solutions tha
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution>
-<p></p>
-</solution>
  -->
-</exercise>
+<solution>
+<p>Let <m>S(n)</m> be the sum of the base 10 digits of <m>n</m>.  Since  <m>10^k \equiv 1 \mod{9}</m> for all <m>k \geq 0</m>, 
+<me>s \equiv S(n) \equiv S^{2}(n) \equiv S^{3}(n) \mod{9}</me>,
+we can determine the reside of the desired value mod 9 by identifying the pattern in the powers of <m>4444</m>. 
+<me>
+4444^1 \equiv 7 \mod{9}\\
+4444^2 \equiv 4 \mod{9}\\
+4444^3 \equiv 1 \mod{9}\\
+4444^4 \equiv 7 \mod{9}\\
+</me>
+The powers are cyclic with period 3, and so <m>S^3(4444^{4444}) \equiv 7 \mod{9}</m>.</p>
+<p>Now we need to do some estimation.  First we bound  <m>S(4444^{4444})</m>.   
+<me>4444^{4444} < 1000^{5000} = 10^{15000} \Rightarrow S(4444^{4444}) \leq 9\cdot 15000 = 135000</me>
+The sum of the digits of <m>S(4444^{4444})</m> is no more than the sum of the digits of 13499, or 35. Therefore the summ of the digits of  <m>S(S(4444^{4444}))</m> is bounded by the sum of digits of integers that are less than or equal to 35.  The maximum is then the sum of digits of 29, or 11.   The bound of 11 on <m>S^3(4444^{4444})</m> combined with the fact that it is congruent to 7 mod 9 implies that our answer is 7.</p>
+</solution></exercise>
 
 <exercise number="11">
 <statement>

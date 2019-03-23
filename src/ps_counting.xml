@@ -34,17 +34,14 @@ The contradiction we arrive at, <m>H \gt H</m>, implies that the series does ind
 </section>  
 
 <exercises><title>Problems</title>
+
 <exercise number="1">
 <statement>
-<p> ?</p>
+<p>Let <m>S</m> be a set of real numbers which is closed under multiplication (that is, if <m>a</m> and <m>b</m> are in <m>S</m>, then so is <m>a b</m>). Let <m>T</m> and <m>U</m> be disjoint subsets of <m>S</m> whose union is <m>S</m>. Given that the product of any three (not necessarily distinct) elements of <m>T</m> is in <m>T</m> and that the product of any three elements of <m>U</m> is in <m>U</m>, show that at least one of the two subsets <m>T</m>, <m>U</m> is closed under multiplication.</p>
 </statement>
-<!-- 
-<solution><p></p>
+<solution><p>Assume neither <m>T</m> nor <m>U</m> is closed.  Then there exist <m>t_1, t_2\in T</m> and <m>u_1, u_2 \in U</m> such that <m>t_1\cdot t_2 \in U</m> and <m>u_1 \cdot u_2 \in T</m>.  If we consider <m>(t_1\cdot t_2)\cdot(u_1 \cdot u_2)</m> to be a product of either three elements of <m>T</m> or <m>U</m>, meaning that it would be in the intersection, which is a contradiction.  Therefore one of the sets is closed.</p>
 </solution>
- -->
 </exercise>
-
-
 <exercise number="2">
 <statement>
 <p>Let's say I have a group of <m>n+1</m> people who want to see a show. Assume they all have different ages.  I have three tickets into the theatre: a backstage pass and two regular (but distinguishable)
