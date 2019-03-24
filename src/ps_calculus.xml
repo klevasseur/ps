@@ -108,8 +108,8 @@ that <m>p(x) \geq  0</m> for every <m>x</m>.
 </p></statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+<solution><p>Indirect Proof:  Assume <m>p(x)\lt 0</m> for some <m>x</m>.  The conditions of the problem implies that <m>p(x)</m> attains a minimum value at <m>x=a</m> for some <m>a</m>.  Then <m>p(a) \lt 0 \leq p''(a)</m>.  This contradicts the condition that <m>p(x)\geq p''(x)</m> for all <m>x</m>.</p></solution>
 </exercise>
 <exercise number="6">
 <statement><p>
