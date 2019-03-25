@@ -9,9 +9,9 @@
 <section>
 <title>Groups</title>
 <p>Let <m>G</m> be a group.</p>
-<example><title>1970 Putnam A</title>
-<p>Prove that the union of two of subgroups, neither contained in the other, is a subgroup.</p>
-<p>Assume <m>H</m> and <m>K</m> are subgroups of some group <m>G</m>, and that <m>x \in H-K</m>, <m>y \in K-H</m>.  In order for the union to be a subgroup. it must be closed and <m>x*y</m> must be in <m>H</m> or in <m>K</m>.  Assume it's in <m>H</m>.
+<example><title>1969 Putnam</title>
+<p>Show that a (finite?) group cannot be the union of two of its proper subgroups.</p>
+<p>Assume <m>H</m> and <m>K</m> are subgroups of some group <m>G</m>, and that <m>x \in H-K</m>, <m>y \in K-H</m>.  In order for the union to be a subgroup, it must be closed and <m>x*y</m> must be in <m>H</m> or in <m>K</m>.  Assume it's in <m>H</m>.
 <me>x \in H \Rightarrow x^{-1} \in H \Rightarrow x^{-1}*(x*y) = y \in H</me>
 This contradiction implies that the union isn't closed and we are done.</p>
 </example>
