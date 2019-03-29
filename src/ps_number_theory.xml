@@ -157,14 +157,15 @@ we can determine the reside of the desired value mod 9 by identifying the patter
 </me>
 The powers are cyclic with period 3, and so <m>S^3(4444^{4444}) \equiv 7 \mod{9}</m>.</p>
 <p>Now we need to do some estimation.  First we bound  <m>S(4444^{4444})</m>.   
-<me>4444^{4444} < 1000^{5000} = 10^{15000} \Rightarrow S(4444^{4444}) \leq 9\cdot 15000 = 135000</me>
+<me>4444^{4444} \lt 1000^{5000} = 10^{15000} \Rightarrow S(4444^{4444}) \leq 9\cdot 15000 = 135000</me>
 The sum of the digits of <m>S(4444^{4444})</m> is no more than the sum of the digits of 13499, or 35. Therefore the summ of the digits of  <m>S(S(4444^{4444}))</m> is bounded by the sum of digits of integers that are less than or equal to 35.  The maximum is then the sum of digits of 29, or 11.   The bound of 11 on <m>S^3(4444^{4444})</m> combined with the fact that it is congruent to 7 mod 9 implies that our answer is 7.</p>
 </solution></exercise>
 
 <exercise number="11">
 <statement>
-<p>Each of the numbers <m>x_1</m>, <m>x_2</m>, ..., <m>x_n</m> equal 1 or -1, and <m>x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots +x_{n-3}x_{n-2}x_{n-1}x_n+x_{n-2}x_{n-1}x_nx_1+x_{n-1}x_nx_1x_2+x_nx_1x_2x_3=
-0</m>.
+<p>Each of the numbers <m>x_1</m>, <m>x_2</m>, ..., <m>x_n</m> equal 1 or -1, and <me>x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots+x_{n-3}x_{n-2}x_{n-1}x_n+\\
+   x_{n-2}x_{n-1}x_nx_1+x_{n-1}x_nx_1x_2+x_nx_1x_2x_3=
+0</me>.
 Prove that <m>n</m> is divisible by 4.</p>
 </statement>
 <!-- 

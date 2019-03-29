@@ -136,14 +136,23 @@ def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
 
 <exercise>
 <statement>
-<p>An express delivery service restricts the size of packages it will accept.  Packages cannot exceed 18 inches in length plus girth, i. e., <m>\text{length}+2\times
-\text{width} +2\times \text{height}\leq 18</m>.  Find the maximum volume of an acceptable package.
+<p>An express delivery service restricts the size of packages it will accept.  Packages cannot exceed 18 inches in length plus girth, i. e., <m>\text{length}+2\times\text{width} +2\times \text{height}\leq 18</m>.  Find the maximum volume of an acceptable package.
 </p>
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+<solution><p>By the GM/AM inequality,
+		<me>
+		\begin{split}
+		(l \cdot 2w \cdot 2h)^{1/3} &amp; \leq \frac{l+2w+2h}{3}\leq \frac{18}{3}\\
+		&amp; \Rightarrow (4 l w h)^{1/3} \leq 6\\
+		&amp; \Rightarrow  l w h \leq 54
+		\end{split}
+		</me>
+with equality when <m>l = 2w = 2h = 6</m>. Thus, the maximum is attained when <m>l=6</m> and <m>w=h=3</m>.
+</p>
+</solution>
 </exercise>
 <exercise>
 <statement>
