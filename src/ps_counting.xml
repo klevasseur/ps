@@ -5,10 +5,12 @@
 <introduction><p>In the second class, we focus on some counting techniques and indirect proofs.  Again, we spend only a short time reviewing these concepts after having discussed some of the problems from week 1.  Leave plenty of time to work on these new problems. Students should be aware that not every solution to problems that are posed in a given week use the technique that is highlighted in that week. </p>
 </introduction>
 <section><title>Counting Two Ways</title>
-<p>Most students are familiar with formula for binomial coefficients, but in this derivation we use two-way counting.</p>
+<p>Most students are familiar with formula for a binomial coefficient,<m>\binom{n}{k}</m>. Here, we will derive the forumla by two-way counting.</p>
 <example xml:id="ex-binomial-coeff-formula">
+<idx>Binomial Coefficient Formula, Derivation</idx>
 <statement>
-<p>Derive a formula for the number of <m>k</m> element subsets of an <m>n</m> element set , <m>0\leq k\leq n</m>.</p>
+<p>The binomial coefficient <m>\binom{n}{k}</m> represents the  the number of <m>k</m> element subsets of an <m>n</m> element set , <m>0\leq k\leq n</m>.</p>
+<p>We will count the number of ways to permute <m>k</m>  objects from a set of <m>n</m> elements two ways.  First, we can first choose one of the <m>k</m> element subsets of of the set, and second, choose one of the <m>k!</m>  permutations of those elemenst. By the rule of products, we can do this <m> \binom{n}{k} \cdot k!</m>.  A second approach is to select the the elements from our set to go into positions 1 through <m>k</m> in the permutation immediately.  The number of ways of doing this is <m>n \cdot (n-1)\cdot \cdots \cdot (n-(k-1))</m>.   The two expressions count the same number and so they are equal. By equating the solve for the value of the  binomial coefficient:  <m>\binom{n}{k} =\frac{n!}{k! \cdot (n-k)!}</m>.</p>
 </statement>
 </example>
 </section>  
