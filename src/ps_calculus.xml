@@ -21,16 +21,16 @@
 <m>f(x)= \left\lfloor \frac{2}{x}\right\rfloor - 2 \left\lfloor \frac{1}{x}\right\rfloor</m>.</p>
 <p>Evaluating the integral is non-trivial, but here is an overview.  When working with floor/ceiling functions, one trick is to assume your variable satisfies inequalities that explicitly give a formula for their value.  In this case, we assume that  <m>k</m> is some positive integer.
 <me>\begin{split}
-	2[\frac{1}{x}]=2k &amp;\Leftrightarrow  [\frac{1}{x}]=k\\
+	2\lfloor \frac{1}{x}\rfloor =2k &amp;\Leftrightarrow  \lfloor \frac{1}{x}\rfloor=k\\
 	                &amp; \Leftrightarrow k \leq \frac{1}{x} \lt k +1 \\
 	 						&amp; \Leftrightarrow \frac{1}{k+1} \lt x \leq \frac{1}{k}
 	 			\end{split}</me></p>
 <p>
 <me>\begin{split}
 		 k \leq \frac{1}{x} \le k +1  &amp;\Leftrightarrow 2k \leq \frac{2}{x} \le 2k +2 \\
-											&amp;\Leftrightarrow  \left[\frac{2}{x}\right] = 2k \textrm{ or } 2k + 1.
+											&amp;\Leftrightarrow  \lfloor \frac{2}{x}\rfloor = 2k \textrm{ or } 2k + 1.
 	\end{split}</me>
-If <m>\frac{1}{k+1} \lt x \leq \frac{2}{2k+1}</m>, we have <m>[\frac{2}{x}] = 2k+1</m>; and if <m>\frac{2}{2k+1} \lt x \leq \frac{1}{k}</m>, we have <m>[\frac{2}{x}] = 2k</m>.  Therefore,  on the interval <m>(\frac{1}{k+1}, \frac{1}{k}]</m>, 
+If <m>\frac{1}{k+1} \lt x \leq \frac{2}{2k+1}</m>, we have <m>\lfloor \frac{2}{x}\rfloor = 2k+1</m>; and if <m>\frac{2}{2k+1} \lt x \leq \frac{1}{k}</m>, we have <m>[\frac{2}{x}] = 2k</m>.  Therefore,  on the interval <m>(\frac{1}{k+1}, \frac{1}{k}]</m>, 
 
 <me>f(x)==\begin{cases} 1 &amp; \textrm{if } \frac{1}{k+1} \lt x \leq \frac{2}{2k+1}\\
 							0 &amp; \textrm{if } \frac{2}{2k+1} \lt x \leq \frac{1}{k}
@@ -58,10 +58,7 @@ and <m>\int_{\frac{1}{k+1}}^{\frac{1}{k}} f(x) dx = \frac{2}{2k+1}-  \frac{1}{k+
 <statement><p>
  Let <m>a,b,c,d,e \in \mathbb{R}</m> such that <m>a + \frac{b}{2} + \frac{c}{3} + \frac{d}{4} + \frac{e}{5} = 0</m>. Show that the polynomial <m>a+bx+c x^2 +d x^3 +e x^4</m> has at least one real zero. Note: In this context, <m>e</m> isn't the number we call <m>e</m>, it's just an arbitrary real number.
 </p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p>The pattern in the given equation should be recognized as the value of <m>\int_0^1 \left(a+b x+c x^2+d x^3+e x^4\right) \, dx</m>.  If <m>a=0</m> we have a real root at zero. Otherwise, the only way for the integral to equal zero is for its graph to lie partially above and partially below the <m>x</m>-axis.  By the intermediate value theorem there must be a real root.</p></solution>
 </exercise>
 <exercise number="2">
 <statement><p>
@@ -103,7 +100,7 @@ Determine the value of <m>\lim _{n\to \infty }\sum _{k=1}^n \frac{k}{k^2+n^2}</m
 </exercise>
 <exercise number="5">
 <statement><p>
-Let <m>p(x)</m> be a polynomial of even degree with a positive leading coefficient. Suppose <m>p(x) \geq  p\text{''}(x)</m> for every <m>x</m>. Show
+Let <m>p(x)</m> be a polynomial of even degree with a positive leading coefficient. Suppose <m>	</m> for every <m>x</m>. Show
 that <m>p(x) \geq  0</m> for every <m>x</m>.
 </p></statement>
 <!-- 
@@ -116,8 +113,7 @@ that <m>p(x) \geq  0</m> for every <m>x</m>.
 If <m>f</m> is a differentiable function on <m>[0,1]</m> such that <m>f(0)=f(1)=0</m>, and if  
 <m>\int_0^1 \left| f'(x)\right| dx=1</m>,
 what can be said about <m>f\left(\frac{1}{2}\right)</m>? For example, is it possible that <m>f\left(\frac{1}{2}\right)=0?</m>, or 1?, or <m>\frac{1}{2}</m>?,
-or -1?, or 2? Note: <em>Differentiable</em> can be replaced with <em>Absolutely Continuous</em>, but this is a somewhat more advanced property
-that isn{'}t likely to be used in the Putnam (I could be wrong!)
+or -1?, or 2? Note: <em>Differentiable</em> can be replaced with <em>Absolutely Continuous</em>, but this is a somewhat more advanced property that isn't likely to be used in the Putnam (I could be wrong!)
 </p></statement>
 <!-- 
 <hint><p></p></hint>
@@ -176,7 +172,7 @@ Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>.
 <exercise>
 <statement>
 <p>Prove the following or provide a counterexample:  If <m>\left\{f_n\right\}</m> is a sequence of functions defined on the interval <m>[0,1]</m> and that
-for each \textit{ x} in the interval <m>\lim_{n\to \infty } f_n(x) = f(x)</m>,  then    <m>\lim_{n\to \infty } \int_0^1 f_n(x) \, dx=\int_0^1 f(x)
+for each <m>x</m> in the interval <m>\lim_{n\to \infty } f_n(x) = f(x)</m>,  then    <m>\lim_{n\to \infty } \int_0^1 f_n(x) \, dx=\int_0^1 f(x)
 \, dx</m>.
 </p>
 </statement>

@@ -13,10 +13,10 @@
 	<idx>Fermat's Little Theorem</idx>
 	<statement><p>Let <m>p</m> be a prime number, and <m>n</m> an integer. Then <m>n^p - n</m> is divisible by <m>p</m>.</p>
 	</statement>
-	<proof><p>The Theorem is clearly true for the case of <m>p=2</m> since any integer and it's square have the same odd/even parity and their difference must be even.   We now assume that <m>p</m> is odd.   The theorem is clearly true for <m>n=0</m>.  This forms the basis for an induction poof for positive values of <m>n</m>.  Assume that for some <m>n > 0</m>, that  <m>n^p - n</m> is divisible by <m>p</m>.  Now consider  <m>(n+1)^p - (n+1)</m>.
+	<proof><p>The Theorem is clearly true for the case of <m>p=2</m> since any integer and it's square have the same odd/even parity and their difference must be even.   We now assume that <m>p</m> is odd.   The theorem is clearly true for <m>n=0</m>.  This forms the basis for an induction poof for positive values of <m>n</m>.  Assume for some <m>n \geq 0</m>, that  <m>n^p - n</m> is divisible by <m>p</m>.  Now consider  <m>(n+1)^p - (n+1)</m>.
 <md>
-  <mrow>(n+1)^p - (n+1) \amp=   n^p+\sum_{k=1}^{p-1} { \binom{p}{k} n^{p-k} } + 1 -n -1 </mrow>
-  <mrow>                \amp (n^p -n)  +\sum_{k=1}^{p-1} {\binom{p}{k} n^{p-k} }\amp \amp</mrow>
+  <mrow>(n+1)^p - (n+1) \amp=   \left( n^p+\sum_{k=1}^{p-1} { \binom{p}{k} n^{p-k} } + 1\right) -n -1 </mrow>
+  <mrow>                \amp= (n^p -n)  +\sum_{k=1}^{p-1} {\binom{p}{k} n^{p-k} }</mrow>
 </md>
 </p>
 <p>The first term is divisible by <m>p</m> by the induction hypothesis, and the the second is also divisible by <m>p</m> because <m>\binom{p}{k}</m> is divisible by <m>p</m> for <m>k = 1, 2,\dots,p-1</m>.  Therefore, the theorem is true for all positive values of <m>n</m>.  Finally, the theorem is clearly true for negative values of <m>n</m>.</p> 
@@ -66,7 +66,7 @@ Therefore Euler's formula is true for this case.</p>
 							  0 &amp; 1 &amp; 1\\
 							  1 &amp; 1 &amp; 1 \end{pmatrix}</m>.
 What is the determinant of <m>A(n)</m>?</p>
-<p>To solve this problem, we can expand the determinant along the first row.  This gives us two minors to evalute, one of which is the determinant of <m>A(n-1)</m>.  The other minor is matrix that takes a form like this one, in the case were we are expanding <m>\lvert A(5)\rvert</m>: <m>\begin{pmatrix}
+<p>To solve this problem, we can expand the determinant along the first row.  This gives us two minors to evalute, one of which is the determinant of <m>A(n-1)</m>.  The other minor is a smatrix that takes a form like this one, in the case were we are expanding <m>\lvert A(5)\rvert</m>: <m>\begin{pmatrix}
 							  0 &amp; 1 &amp; 0 &amp; 0\\
 							  0 &amp; 0 &amp; 1 &amp; 0\\
 							  0 &amp; 0 &amp; 0 &amp; 1\\

@@ -31,7 +31,7 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 <example xml:id="ex-2000Putnam"><title>2000 Putnam, B4</title>
 <p>Let <m>f:[−1,1]\rightarrow \mathbb{R}</m> be a continuous function such that <m>f(2x^2−1)=2xf(x)</m> for all <m>x</m>. Show that <m>f(x)=0</m> for <m>-1 \leq x \leq 1</m>.</p>
 <p>Solution: Substitution of 1 and -1 for <m>x</m> produces <m>f(1)=f(-1)=0</m>.</p>
-<p>The restriction on <m>x</m> and the expression <m>2 x^2 -1</m> may remind one of the identity <m>1-\cos{x}^2 = \cos{2 x}</m>; and so the substitution <m>x = \cos{t}</m> is a reasonable step leading to <m>f(\cos{2t})=2 \cos{t} f(\cos{t})</m></p>.
+<p>The restriction on <m>x</m> and the expression <m>2 x^2 -1</m> may remind one of the identity <m>1-\cos{x}^2 = \cos{2 x}</m>; and so the substitution <m>x = \cos{t}</m> is a reasonable step leading to <m>f(\cos{2t})=2 \cos{t} f(\cos{t})</m>.</p>
 <p>The next step in several published solutions is to define a second function, <m>g</m>, by
  <me>g(t)=\frac{f(\cos{t})}{\sin{t}}, \textrm{ where } t\neq \pi k, k\in \mathbb{Z}</me>
  A <q>meta exercises</q> is to provide a motivation for this definition</p>
@@ -76,18 +76,21 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 </section>  
 <exercises>
 <title>Exercises</title>
+
 <exercise number="1">
 <statement>
-<p>Complete the derivation of the value of the integral in <xref ref="example-putnam-integral" />.</p>
+<p>Let <m>a, b, c \in [0, 1]</m>. Prove that <me>\sqrt{a b c}+ \sqrt{(1−a)(1−b)(1−c)} \leq 1</me></p>
 </statement>
+<hint><p>Start with proving  <m>\sqrt{a b}+ \sqrt{(1−a)(1−b)} \leq 1</m></p></hint>
 <!-- 
 <solution><p></p>
 </solution>
  -->
 </exercise>
-<exercise>
+
+<exercise number="4">
 <statement>
-<p>___.</p>
+<p>Complete the derivation of the value of the integral in <xref ref="example-putnam-integral" />.</p>
 </statement>
 <!-- 
 <solution><p></p>
