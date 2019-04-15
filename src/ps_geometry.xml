@@ -56,7 +56,7 @@ just name them</p>
 </exercise>
 
 <exercise>
-<statement><p>A rectangle with sides <m>a</m> and <m>b</m>, <m>a<b,</m> is rotated about its center, as shown in the figure, so that the two rectangles share two vertices.
+<statement><p>A rectangle with sides <m>a</m> and <m>b</m>, <m>a \lt b</m> is rotated about its center, as shown in the figure, so that the two rectangles share two vertices.
  What is the area of the parallelogram that makes up the intersection of the two rectangles?</p>
              <figure xml:id="rotated-rectangle">
                 <caption>What is the area of the intersection?
