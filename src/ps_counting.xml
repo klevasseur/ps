@@ -130,7 +130,12 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 </solution>
  -->
 </exercise>
-
+<exercise>
+<statement><p>How many positive integers not exceeding 2019 are multiples of 3 or 4 but not 5? You would count the numbers 3, 12, and 16, but not 15 or 20.</p></statement>
+<solution><p>The number of integers that are multiples of 3 or 4, but inclusion-exclusion is <m>\left\lfloor \frac{2019}{3}\right\rfloor +\left\lfloor \frac{2019}{4}\right\rfloor
+-\left\lfloor \frac{2019}{12}\right\rfloor =673+504-168=1009</m>. But we need to remove the multiples of 5 from this total. The multiples of
+5 are <m>\left\lfloor \frac{2019}{15}\right\rfloor +\left\lfloor \frac{2019}{20}\right\rfloor -\left\lfloor \frac{2019}{60}\right\rfloor =134+100-33=201</m>. The final answer is then <m>1009-201=808</m>.
+</p></solution></exercise>
 
 </exercises>
 </chapter> 

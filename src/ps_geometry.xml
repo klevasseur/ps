@@ -54,6 +54,24 @@ just name them</p>
 <solution><p></p></solution>
  -->
 </exercise>
+
+<exercise>
+<statement><p>A rectangle with sides <m>a</m> and <m>b</m>, <m>a<b,</m> is rotated about its center, as shown in the figure, so that the two rectangles share two vertices.
+ What is the area of the parallelogram that makes up the intersection of the two rectangles?</p>
+             <figure xml:id="rotated-rectangle">
+                <caption>What is the area of the intersection?
+                </caption>
+                <image source="images/rotated-rectangle.png" width="60%">
+                    <description>Figure for exercise</description>
+                </image>
+            </figure>
+</statement>
+<solution><p>
+Let <m>c</m> be the length of the horizontal sides of the parallelogram, so the area we are looking for is <m>a c</m>. The triangles that are outside
+the parallelogram are right triangles with hypotenuse <m>c</m>, and sides <m>b-c</m> and <m>a</m>.  
+<me>(b-c)^2+a^2= c^2 \Rightarrow \textrm{   }c=\frac{a^2+ b^2}{2b }\textrm{  }\Rightarrow \textrm{  Area } =\frac{a}{2b} \left(a^2+ b^2\right)</me>
+</p></solution></exercise>
+
 <exercise>
 <statement>
 <p>Prove that if the lengths of the sides of a triangle form an arithmetic progression, then the radius of the inscribed circle is one third of one

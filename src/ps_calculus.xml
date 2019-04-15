@@ -169,6 +169,19 @@ Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>.
 <solution><p></p></solution>
  -->
 </exercise>
+
+<exercise>
+<statement><p>For a positive constant <m>k</m>, consider the region <m>\mathcal{R}</m> bounded by the line<m>y = k x</m> and the parabola <m>y = x^2</m>. There is only
+one choice of <m>k</m> such that the solids obtained by revolving <m>\mathcal{R}</m> about the <m>x</m>-axis and the <m>y</m>-axis have the same
+volume. Find the value of this special choice of <m>k</m>.</p></statement>
+<solution><p>The volume of revolution around the <m>x</m> axis is 
+<me>\int_0^k \pi \left((k x)^2-x^4\right) \, dx=\frac{2\pi }{15}k^5</me>.
+Around the <m>y</m> axis we have (using shells) 
+<me>\int _0^k2\pi  x\left(k x-x^2\right)dx=\frac{\pi }{6}k^4</me>.
+Therefore the special <m>k</m> is <m>\frac{5}{4}</m>.
+</p></solution>
+</exercise>
+
 <exercise>
 <statement>
 <p>Prove the following or provide a counterexample:  If <m>\left\{f_n\right\}</m> is a sequence of functions defined on the interval <m>[0,1]</m> and that

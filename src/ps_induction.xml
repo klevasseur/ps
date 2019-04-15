@@ -247,5 +247,15 @@ Solving for <m>F</m>, we get 6 for the expected number of flips.  </p>
 </solution>
 </exercise>
 
+<exercise>
+<statement><p>Show that every set of <m>n</m> integers has a nonempty subset such that the sum of its elements is divisible by <m>n</m>.</p></statement>
+<solution><p>
+Let <m>a_1, a_2, \dots , a_n</m> be the integers and let <m>s_1, s_2, \dots , s_n</m> be the partial sums, <m>s_k=\sum _{i=1}^k
+a_i</m>.  If one of the sums is divisible by <m>n</m> then we are done, so assume none are multiples of <m>n</m>.  By the pigeonhole principle,
+there must be two partial sums that have the same residue mod <m>n</m>.  Let <m>l \lt m </m> be such that 
+	<me>s_l\equiv s_m(mod n) \Rightarrow s_m-s_l= \sum _{k=l+1}^m a_k=n q</me> for some integer <m>q</m>.  Therefore the set we are looking for is <m>\left\{a_{l+1}, \ldots, a_m\right\}</m>.
+</p></solution>
+</exercise>
+
 </exercises>
 </chapter> 

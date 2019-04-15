@@ -53,6 +53,16 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
  -->
 </exercise>
 
+<exercise>
+<statement><p>Suppose two teams play a series of games in which the probability that either wins any of the games is <m>\frac{1}{2}</m>.  If they play a best
+of seven series, where the winner is the first to win four games, what is the probability that the series lasts seven games?</p></statement>
+<answer><p><m>\frac{5}{16}</m></p></answer>
+<solution><p>
+In order for the series to go seven games, the teams must split the first six games. Imagine that they play out six games no matter what happens.
+There are <m>2^6</m> equally likely outcomes and in <m>\binom{6}{3}=20</m> of the cases the teams split. Therefore, the probability of a seven games
+series <m>\frac{20}{2^6}= \frac{5}{16}</m>.</p></solution>
+</exercise>
+
 <exercise><title>Simplified NCAA basketball pool</title>
 <statement>
 <p>There are 64 teams who play single elimination tournament, hence 6 rounds, and you have to predict all the winners in
