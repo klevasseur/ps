@@ -10,19 +10,33 @@
 <p>Show that <m>n^2+ 1</m> is divisible by 7 for no positive integer <m>n</m>.
 </p>
 <p><me>\begin{split}
- 7 \mid (n^2+1) &amp; \Rightarrow n^2 \equiv -1 \mod{7}\\
- 		&amp; \Rightarrow n^2 \equiv 6 \mod{7}
+ 7 \mid (n^2+1) &amp; \Rightleftarrow n^2 \equiv -1 \mod{7}\\
+ 		&amp; \Rightleftarrow n^2 \equiv 6 \mod{7}
  		\end{split}
  		</me>
  		We can easily verify that for any <m>n</m>, the residue of <m>n^2 \mod{7}</m> is never 6.</p>
 </example>
+
+<example xml:id="example-crt"><title>Chinese Remainder Theorem</title>
+<idx>Chinese Remainder Theorem</idx>
+<p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. Then there is a unique integer, <m>x</m>, in the set
+<m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a (\mod{m})</m> and
+ <m>x\equiv b (\mod{n})</m>.</p>
+<p>In order for an integer to satisfy the first conguence, we need <m>x = a + m\cdot q_1</m> for some integer <m>q_1</m>.  Substitution into the second congruence gives us 
+<me> a + m\cdot q_1\equiv b (\mod{n}) \Rightarrow  m\cdot q_1\equiv b-a (\mod{n})</me>
+We know that since <m>m</m> and <m>n</m> are relatively prime, there exist integers <m>s</m> and <m>t</m> such that <me>m \cdot s + n \cdot t = 1  \Rightarrow   m \cdot s \equiv 1 (\mod{n})</me>
+and so 
+<me>q_1\equiv s(b-a) (\mod{n})  \Rightarrow   x = a + m\cdot (s(b-a)+ n q_2)= x = a + m\cdot s\cdot(b-a)+ (m\cdot n) q_2) </me>
+for some integer <m>q_2</m>. This set of solutions constitutes one residue class mod <m>m \dot n</m> and so there is a unique solution in the desired set.</p>
+</example>
+
 </section>  
 
 <exercises>
 <title>Problems</title>
 <exercise number="1">
 <statement>
-<p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em> if <m>b c - ad = \pm</m>.  
+<p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em> if <m>b c - ad = \pm 1</m>.  
 <ol label="(a)">
 	<li><p>Prove that if <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are close, then <m>\frac{a+c}{b+d}</m> is close to both <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>.</p></li>
 	<li><p>Find ten rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
@@ -60,18 +74,6 @@
  -->
 </exercise>
 
-<exercise number="4">
-<statement>
-<p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. Prove that there is a unique integer, <m>x</m>, in the set
-<m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a (\text{mod} m)</m> and <m>y\equiv b (\text{mod} n)</m>.</p>
-</statement>
-<!-- 
-<hint><p></p></hint>
-<solution>
-<p></p>
-</solution>
- -->
-</exercise>
 
 <exercise number="5">
 <statement>
