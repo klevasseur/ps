@@ -234,8 +234,8 @@ six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
 <hint><p></p></hint>
  -->
 <solution><p>We clearly get equality if <m>x = y</m>.  Assume <m>x \lt y</m> and <m>y =x + z</m>.  Then <me>\begin{split}
-x^y + y^x \lt x^x + y^y  &amp; \Rightleftarrow x^y - x^x \lt y^y-y^x\\
-				&amp; \Rightleftarrow  (x^z-1)x^x \lt  (y^z-1)y^x
+x^y + y^x \lt x^x + y^y  &amp; \Leftrightarrow x^y - x^x \lt y^y-y^x\\
+				&amp; \Leftrightarrow  (x^z-1)x^x \lt  (y^z-1)y^x
 \end{split}
 </me></p></solution>
 </exercise>

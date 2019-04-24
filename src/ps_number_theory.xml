@@ -9,24 +9,25 @@
 <example xml:id="mod7">
 <p>Show that <m>n^2+ 1</m> is divisible by 7 for no positive integer <m>n</m>.
 </p>
-<p><me>\begin{split}
- 7 \mid (n^2+1) &amp; \Rightleftarrow n^2 \equiv -1 \mod{7}\\
- 		&amp; \Rightleftarrow n^2 \equiv 6 \mod{7}
- 		\end{split}
- 		</me>
- 		We can easily verify that for any <m>n</m>, the residue of <m>n^2 \mod{7}</m> is never 6.</p>
+<p><me>
+	\begin{split}
+	 7 \mid (n^2+1) &amp; \Leftrightarrow n^2 \equiv -1\pmod{7}\\
+ 						 &amp; \Leftrightarrow n^2 \equiv  6\pmod{7}\\
+ 	\end{split}
+ 	</me>
+We can easily verify that for any <m>n</m>, the residue of <m>n^2\pmod{7}</m> is never 6.</p>
 </example>
 
 <example xml:id="example-crt"><title>Chinese Remainder Theorem</title>
 <idx>Chinese Remainder Theorem</idx>
 <p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. Then there is a unique integer, <m>x</m>, in the set
-<m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a (\mod{m})</m> and
- <m>x\equiv b (\mod{n})</m>.</p>
+<m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a \pmod{m}</m> and
+ <m>x\equiv b\pmod{n}</m>.</p>
 <p>In order for an integer to satisfy the first conguence, we need <m>x = a + m\cdot q_1</m> for some integer <m>q_1</m>.  Substitution into the second congruence gives us 
-<me> a + m\cdot q_1\equiv b (\mod{n}) \Rightarrow  m\cdot q_1\equiv b-a (\mod{n})</me>
-We know that since <m>m</m> and <m>n</m> are relatively prime, there exist integers <m>s</m> and <m>t</m> such that <me>m \cdot s + n \cdot t = 1  \Rightarrow   m \cdot s \equiv 1 (\mod{n})</me>
+<me> a + m\cdot q_1\equiv b \pmod{n} \Rightarrow  m\cdot q_1\equiv b-a \pmod{n}</me>
+We know that since <m>m</m> and <m>n</m> are relatively prime, there exist integers <m>s</m> and <m>t</m> such that <me>m \cdot s + n \cdot t = 1  \Rightarrow   m \cdot s \equiv 1 \pmod{n}</me>
 and so 
-<me>q_1\equiv s(b-a) (\mod{n})  \Rightarrow   x = a + m\cdot (s(b-a)+ n q_2)= x = a + m\cdot s\cdot(b-a)+ (m\cdot n) q_2) </me>
+<me>q_1\equiv s(b-a) \pmod{n}  \Rightarrow   x = a + m\cdot (s(b-a)+ n q_2)= x = a + m\cdot s\cdot(b-a)+ (m\cdot n) q_2) </me>
 for some integer <m>q_2</m>. This set of solutions constitutes one residue class mod <m>m \dot n</m> and so there is a unique solution in the desired set.</p>
 </example>
 
@@ -148,16 +149,16 @@ integers greater than or equal to 2. Prove that there are no other solutions tha
 <hint><p></p></hint>
  -->
 <solution>
-<p>Let <m>S(n)</m> be the sum of the base 10 digits of <m>n</m>.  Since  <m>10^k \equiv 1 \mod{9}</m> for all <m>k \geq 0</m>, 
-<me>s \equiv S(n) \equiv S^{2}(n) \equiv S^{3}(n) \mod{9}</me>,
+<p>Let <m>S(n)</m> be the sum of the base 10 digits of <m>n</m>.  Since  <m>10^k \equiv 1 \pmod{9}</m> for all <m>k \geq 0</m>, 
+<me>s \equiv S(n) \equiv S^{2}(n) \equiv S^{3}(n) \pmod{9}</me>,
 we can determine the reside of the desired value mod 9 by identifying the pattern in the powers of <m>4444</m>. 
 <me>
-4444^1 \equiv 7 \mod{9}\\
-4444^2 \equiv 4 \mod{9}\\
-4444^3 \equiv 1 \mod{9}\\
-4444^4 \equiv 7 \mod{9}\\
+4444^1 \equiv 7 \pmod{9}\\
+4444^2 \equiv 4 \pmod{9}\\
+4444^3 \equiv 1 \pmod{9}\\
+4444^4 \equiv 7 \pmod{9}\\
 </me>
-The powers are cyclic with period 3, and so <m>S^3(4444^{4444}) \equiv 7 \mod{9}</m>.</p>
+The powers are cyclic with period 3, and so <m>S^3(4444^{4444}) \equiv 7 \pmod{9}</m>.</p>
 <p>Now we need to do some estimation.  First we bound  <m>S(4444^{4444})</m>.   
 <me>4444^{4444} \lt 1000^{5000} = 10^{15000} \Rightarrow S(4444^{4444}) \leq 9\cdot 15000 = 135000</me>
 The sum of the digits of <m>S(4444^{4444})</m> is no more than the sum of the digits of 13499, or 35. Therefore the summ of the digits of  <m>S(S(4444^{4444}))</m> is bounded by the sum of digits of integers that are less than or equal to 35.  The maximum is then the sum of digits of 29, or 11.   The bound of 11 on <m>S^3(4444^{4444})</m> combined with the fact that it is congruent to 7 mod 9 implies that our answer is 7.</p>

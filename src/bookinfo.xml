@@ -47,11 +47,15 @@
     <!-- Prefix to enhance Sage notebook contents -->
     <initialism>PS</initialism>
 
-    <analytics>
+  <!-- 
+  	The following is outdated.  This information is now part of the command line.
+
+  <analytics>
         <statcounter>
-            <project>11204831</project>
-            <security>957c565b</security>
+            <project>xxxxxxx</project>
+            <security>xxxxxxx</security>
         </statcounter>
     </analytics>
+ -->
  
 </docinfo>
