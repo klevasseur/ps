@@ -36,7 +36,7 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
 <title>Exercises</title>
 <exercise>
 <statement>
-<p>Shanille O'Keal shoots free throws on a basketball court. She hits the first and misses the second, and thereafter the probability that she hits the next shot is equal to the proportion of shots she has hit so far. What is the probability that she hits exactly 50 of           her first 100 shots?</p>
+<p>Shanille O'Keal shoots free throws on a basketball court. She hits the first and misses the second, and thereafter the probability that she hits the next shot is equal to the proportion of shots she has hit so far. What is the probability that she hits exactly 50 of  her first 100 shots?</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -66,7 +66,7 @@ series <m>\frac{20}{2^6}= \frac{5}{16}</m>.</p></solution>
 <exercise><title>Simplified NCAA basketball pool</title>
 <statement>
 <p>There are 64 teams who play single elimination tournament, hence 6 rounds, and you have to predict all the winners in
-all 63 games. Your score is then computed as follows: 32 points for correctly predicting the final winner, 16 points for each correct finalist, and so on, down to 1 point for every correctly predicted winner for the first round. Knowing nothing about any team, you flip fair coins to decide every one of your 63 bets. Compute the expected number of points.</p>
+all 63 games. Your score is then computed as follows: 32 points for correctly predicting the final winner, 16 points for each correct finalist, and so on, down to 1 point for every correctly predicted winner for the first round. Knowing nothing about any team, you flip fair coins to decide every one of your 63 bets. Compute your expected number of points.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -104,7 +104,7 @@ the closest integer to <m>x/y</m> is even? Express the answer in the form <m>r +
 
 <exercise>
 <statement>
-<p>Let <m>\alpha  \in  [0,1]</m> be an arbitrary number, rational or irrational. The only randomizing device is an unfair coin, with probability <m>p \in (0,1)</m> of heads. Design a game between Alice and Bob so that Alice{'}s winning probability is exactly <m>\alpha</m>. The game of course has to end in a finite number of tosses with probability 1.</p>
+<p>Let <m>\alpha  \in  [0,1]</m> be an arbitrary number, rational or irrational. The only randomizing device is an unfair coin, with probability <m>p \in (0,1)</m> of heads. Design a game between Alice and Bob so that Alice's winning probability is exactly <m>\alpha</m>. The game has to end in a finite number of tosses with probability 1.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
