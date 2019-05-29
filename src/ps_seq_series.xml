@@ -190,7 +190,29 @@ for all nonnegative integers <m>m</m> and <m>n</m> with <m>m\geq n</m>.  If <m>a
 <solution><p></p></solution>
  -->
 </exercise>
-
+<exercise>
+<statement>
+<p>Let <m>p</m> be a prime number and <m>s</m> be a positive integer.  Show that for any 
+<m>i \in \{0, 1, \dots,p^s-1\}</m>, 
+	<me>\binomial{p^s-1}{i} \equiv (-1)^i \pmod{p}.</me>
+</p>
+</statement>
+<hint><p>Consider generating functions</p></hint>
+<solution><p>
+<me>
+\begin{split}
+\sum_{i=0}^{p^s-1} \binomial{p^s-1}{i} x^i  &amp;= (1+x)^{p^s-1}\\
+		&amp; =\frac{(1+x)^{p^s}}{(1+x)}\\
+		&amp; =(1+x)^{p^s} \sum_{i=0}^{\infny} (-1)^i x^i\\
+		&amp; \equiv (1+x^{p^s}) \sum_{i=0}^{\infny} (-1)^i x^i \pmod{p}\\
+		&amp; \equiv \sum_{i=0}^{\infny}(-1)^i x^i + \sum_{i=0}^{\infny}(-1)^i x^{p^s+i}\pmod{p}\\
+		&amp; \equiv \sum_{i=0}^{\infny}(-1)^i x^i + \sum_{j=p^s}^{\infny}(-1)^{j-p^s} x^{j}\pmod{p}\\
+		&amp; \equiv \sum_{i=0}^{p^s-1}(-1)^i x^i \pmod{p}\\
+\end{split}
+</me>
+The equality of the first and last expressions implies the desired equality.		
+</p></solution>
+</exercise>
 <exercise>
 <statement>
 <p>
