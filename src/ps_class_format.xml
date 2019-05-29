@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+<chapter xml:id="c-prerequisites">
+<title>Format for a Problem Solving Class</title>
+<introduction><p>This chapter contains note on the way I teach a problem solving class.  I'm sure that there are plenty of variations that work at least as well, and I hope this will provide the reader with ideas for their own system.</p>
+</introduction>
+<section><title>Before the first class</title>
+<p></p>
+</section
+<section><title>The first class</title>
+<p>In the first class, we review two basic proof tools, mathematical induction and the pigeonhole principle. I suggest starting the class by reviewing these two topics through examples.  I try to be as careful as possible to write the solutions in a logically coherent form, setting the tone for what I will expect to see from students.   The choice of Fermat's Little Theorem for the induction proof also anticipates the Class 3 in which we do Number Theory.  I don't dwell on these examples any longer than necessary, shooting for a total time of around 30 minutes.</p>
+<p>I normally divide the class into groups of 2, 3 or 4 to work on problems.  Exactly how this is done depends on class size, and other factors.  See Appendix 1 for details.   The first problem is a warm-up in that I expect several students to have seen it already.  I instruct the class to work  on this one first with the expectation that most groups will complete it within ten minutes.   I circulate among the groups to help anyone who is struggling with the first problem.   I assign the rest of the problems to different groups.  I encourage the groups to put solutions on the board when they are ready.  When a few problems have been written out, we take a break from solving to review the solutions. Groups that have completed a problem are assigned a new one and we continue until the period is almost over.</p>
+</section
+<section><title>Complex Numbers</title>
+<p>Properties of the complex numbers</p>
+<p>Circular function definition of the trig functions.</p>
+<p>Expected Value of a random variable</p>
+</section>
+</chapter>

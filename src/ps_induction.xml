@@ -3,7 +3,7 @@
 <chapter xml:id="c-induction-pigeons">
 <title>Induction and Pigeonholes </title>
 <introduction>
-	<p>In the first class, we review two basic proof tools, mathematical induction and the pigeonhole principle. I suggest starting the class by reviewing these two topics through examples.  I try to be as careful as possible to write the solutions in a logically coherent form, setting the tone for what I will expect to see from students.   The choice of Fermat's Little Theorem for the induction proof also anticipates the Class 3 in which we do Number Theory.  I don't dwell on these examples any longer than necessary, shooting for a total time of around 30 minutes.</p>
+	<p>Mathematical induction and the pigeonhole principle are two common proof techniques that students should have seen.  They are good warm-up topic for the first class.</p>
 	</introduction>
 <section xml:id="s-induction">
 <title>Mathematical Induction</title>

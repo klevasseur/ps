@@ -2,7 +2,7 @@
 <!-- MBX -->
 <chapter xml:id="c-counting">
 <title>Counting and Indirect Proofs</title>
-<introduction><p>In the second class, we focus on some counting techniques and indirect proofs.  Again, we spend only a short time reviewing these concepts after having discussed some of the problems from week 1.  Leave plenty of time to work on these new problems. Students should be aware that not every solution to problems that are posed in a given week use the technique that is highlighted in that week. </p>
+<introduction><p>___ </p>
 </introduction>
 <section><title>Counting Two Ways</title>
 <p>Most students are familiar with formula for a binomial coefficient,<m>\binom{n}{k}</m>. Here, we will derive the forumla by two-way counting.</p>

@@ -23,11 +23,11 @@
       <xi:include href="./frontmatter.xml" /> 
  <!-- 
 -->
-	 	<xi:include href="./ps_prerequisites.xml" />                        
-	 	<xi:include href="./ps_tricks.xml" />                        
+	 	<xi:include href="./ps_class_format.xml" />                        
 	 	<xi:include href="./ps_induction.xml" />                        
 		<xi:include href="./ps_counting.xml" />                        
-		<xi:include href="./ps_calculus.xml" />                        
+		<xi:include href="./ps_tricks.xml" />                        
+	 	<xi:include href="./ps_calculus.xml" />                        
 		<xi:include href="./ps_number_theory.xml" />                        
 		<xi:include href="./ps_inequalities.xml" />                        
 		<xi:include href="./ps_seq_series.xml" />                        
