@@ -5,6 +5,21 @@
 <introduction>
 <p>In this chapter we highlight some <q>tricks of the trade</q> that can help you piece together a solution to many problems.  Naturally, no single trick is likely to be needed in a given competition, but all of them have been played a part in solving some problems in past competitions.</p>
 </introduction>
+<section><title>Telescoping Sums</title>
+<idx>Telescoping Sum</idx>
+<p>Telescoping sums are occasionally embedded in more challenging problems than this one.</p>
+<example><p>Let <m>f(n)=\sum_{k=1}^n \frac{1}{\sqrt{k}+\sqrt{k+1}}</m>.  Evaluate <m>f(9999)</m>.</p>
+<p>Rationalizing the denominator reveals a <term>telescoping sum</term> here.  For any nonnegative <m>k</m>,
+<me>\begin{split}
+\frac{1}{\sqrt{k} + \sqrt{k + 1}} &amp; = \frac{\sqrt{k + 1} - \sqrt{k}}{(\sqrt{k} + \sqrt{k + 1})(\sqrt{k + 1} - \sqrt{k})}\\ 
+	&amp;= \frac{\sqrt{k + 1} - \sqrt{k}}{k + 1 - k}\\
+	&amp;= \sqrt{k + 1} - \sqrt{k}
+\end{split}
+</me>.
+So <m>f(9999) = \sum_{1}^{9999}(\sqrt{k + 1} - \sqrt{k}) = \sqrt{9999 + 1} - \sqrt{1} = 100 - 1 = 99</m>.
+</p>
+</example>
+</section>
 <section>
 <title>Completing the Product</title>
 <p>The elementary trick of completing the square, given a quadratic and linear term, can be generalized.  Given three terms, completing the product of two binomials can play a part in a solution.  This occured in the 2018 Putnam, problem A1.</p> 
