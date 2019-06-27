@@ -256,8 +256,8 @@ there must be two partial sums that have the same residue mod <m>n</m>.  Let <m>
 </p></solution>
 </exercise>
 <exercise>
-<statement><p>Show that for any polynomial <m>f(x)</m> over the integers with degree <m>d\lt n</m>, we have <m>\sum_{k=0}^{n} (-1)^n \binom{n}{k} f(k) = 0</m>.</p></statement>
-<solution><p>(by Tung Nguyen) Denote <m>f(x) = \sum_{i = 0}^{d}a_ix^i</m>, where <m>a_i</m> are integer coefficients. Then
+<statement><p>Show that for any polynomial <m>f(x)</m> over the integers with degree <m>d\lt n</m>, we have <m>\sum_{k=0}^{n} (-1)^k \binom{n}{k} f(k) = 0</m>.</p></statement>
+<solution><p>(partial solution by Tung Nguyen) Denote <m>f(x) = \sum_{i = 0}^{d}a_ix^i</m>, where <m>a_i</m> are integer coefficients. Then
 
 <me>
 \begin{split}
