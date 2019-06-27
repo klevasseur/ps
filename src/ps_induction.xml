@@ -13,7 +13,7 @@
 	<idx>Fermat's Little Theorem</idx>
 	<statement><p>Let <m>p</m> be a prime number, and <m>n</m> an integer. Then <m>n^p - n</m> is divisible by <m>p</m>.</p>
 	</statement>
-	<proof><p>The Theorem is clearly true for the case of <m>p=2</m> since any integer and it's square have the same odd/even parity and their difference must be even.   We now assume that <m>p</m> is odd.   The theorem is clearly true for <m>n=0</m>.  This forms the basis for an induction poof for positive values of <m>n</m>.  Assume for some <m>n \geq 0</m>, that  <m>n^p - n</m> is divisible by <m>p</m>.  Now consider  <m>(n+1)^p - (n+1)</m>.
+	<proof><p>The Theorem is clearly true for the case of <m>p=2</m> since any integer and its square have the same odd/even parity and their difference must be even.   We now assume that <m>p</m> is odd.   The theorem is clearly true for <m>n=0</m>.  This forms the basis for an induction poof for positive values of <m>n</m>.  Assume for some <m>n \geq 0</m>, that  <m>n^p - n</m> is divisible by <m>p</m>.  Now consider  <m>(n+1)^p - (n+1)</m>.
 <md>
   <mrow>(n+1)^p - (n+1) \amp=   \left( n^p+\sum_{k=1}^{p-1} { \binom{p}{k} n^{p-k} } + 1\right) -n -1 </mrow>
   <mrow>                \amp= (n^p -n)  +\sum_{k=1}^{p-1} {\binom{p}{k} n^{p-k} }</mrow>
@@ -110,7 +110,7 @@ A=Matrix([[i==j or i==n-1 or j==n-1 for i in range(n)] for j in range(n)] )
 <p>Informally, the Pigeonhole Principle says that if you have more pigeons than you have pigeonholes, then at least one pair of pigeons have to share the same pigeonhole. The trick to using this simple idea is to identify the pigeons and pigeonholes in a problem.  Here is a relatively simple example. A clue that we can use the Pigeonhole Principle problem in this case is that we are asked to prove the existence of two objects that share a property.</p> 
 	<example xml:id="e-pigeons-1">
 		<p>Prove that every set of 10 two-digit integer numbers has two disjoint subsets with the same sum of elements. (Subsets are pigeons, possible sums are holes)</p>
-		<p>We want two subsets with the same sum, so consider the possible sums to be pigeonholes, and now picture subsets of our ten integer set to be the pigeons. We are not given a specific set of integers, but we can identify the range of possible sums of elements in their subsets.  The smallest sum is 1 while the largest proper subset is <m>91+92+\cdots+99 =855 </m>.  There are <m>2^{10}-2 = 1022 &gt; 855</m> non-empty proper subsets of a ten element set.  Therefore, if we imagine each subset to roost with it's sum, we are sure there there must be two subsets with the same sum.  Now those two subsets may not be disjoint, but if we simply remove elements from their intersection from both subsets, we are done.
+		<p>We want two subsets with the same sum, so consider the possible sums to be pigeonholes, and now picture subsets of our ten integer set to be the pigeons. We are not given a specific set of integers, but we can identify the range of possible sums of elements in their subsets.  The smallest sum is 1 while the largest proper subset is <m>91+92+\cdots+99 =855 </m>.  There are <m>2^{10}-2 = 1022 &gt; 855</m> non-empty proper subsets of a ten element set.  Therefore, if we imagine each subset to roost with its sum, we are sure there there must be two subsets with the same sum.  Now those two subsets may not be disjoint, but if we simply remove elements from their intersection from both subsets, we are done.
 		</p>
 	</example>
 </section>  
@@ -255,6 +255,20 @@ there must be two partial sums that have the same residue mod <m>n</m>.  Let <m>
 	<me>s_l\equiv s_m(mod n) \Rightarrow s_m-s_l= \sum _{k=l+1}^m a_k=n q</me> for some integer <m>q</m>.  Therefore the set we are looking for is <m>\left\{a_{l+1}, \ldots, a_m\right\}</m>.
 </p></solution>
 </exercise>
+<exercise>
+<statement><p>Show that for any polynomial <m>f(x)</m> over the integers with degree <m>d\lt n</m>, we have <m>\sum_{k=0}^{n} (-1)^n \binom{n}{k} f(k) = 0</m>.</p></statement>
+<solution><p>(by Tung Nguyen) Denote <m>f(x) = \sum_{i = 0}^{d}a_ix^i</m>, where <m>a_i</m> are integer coefficients. Then
 
+<me>
+\begin{split}
+\sum_{k=0}^{n}(-1)^k \binom{n}{k} f(k) &amp; = \sum_{k=0}^{n}(-1)^k \binom{n}{k} \left[\sum_{i = 0}^{d}a_i k^i\right]\\
+		&amp; = \sum_{i = 0}^{d}\sum_{k=0}^{n}(-1)^k \binom{n}{k}a_i k^i\\
+		&amp; = \sum_{i = 0}^{d} a_i \left[\sum_{k=0}^{n}(-1)^k \binom{n}{k} k^i \right]
+\end{split}
+</me>
+
+I was thinking that we can prove the sum <m>A_{(i,n)} = \sum_{k=0}^{n}(-1)^k \binom{n}{k} k^i = 0</m> for all <m>n \in \mathbb{N}</m> and <m>i < n</m> by induction, since at <m>i = 0</m>, <m>A_{(0,n)} = \sum_{k=0}^{n}(-1)^k \binom{n}{k} k^0 = \sum_{k=0}^{n}(-1)^k \binom{n}{k}*1 = \sum_{k=0}^{n}(-1)^k \binom{n}{k}(1)^{n - k} = (1 - 1)^n = 0</m>. But I haven't figured out how to do the induction step yet.
+</p></solution>
+</exercise>
 </exercises>
 </chapter> 

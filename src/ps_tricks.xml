@@ -16,7 +16,7 @@
 	&amp;= \sqrt{k + 1} - \sqrt{k}
 \end{split}
 </me>.
-So <m>f(9999) = \sum_{1}^{9999}(\sqrt{k + 1} - \sqrt{k}) = \sqrt{9999 + 1} - \sqrt{1} = 100 - 1 = 99</m>.
+So <m>f(9999) = \sum_{1}^{9999}(\sqrt{k + 1} - \sqrt{k}) = \sqrt{9999 + 1} - \sqrt{1} = 100 - 1 = 99</m>.  (Solution by Tung Nguyen)
 </p>
 </example>
 </section>
@@ -61,7 +61,7 @@ The continuity of <m>g</m> in its domain and the density of <m>{1+\frac{n \pi}{2
 </section>  
 <section>
 <title>Generalization</title>
-<p>Many mainstream topics in the mathematics curriculum can be generalized. One example is the binomial expansion.  The expansion of <m>(x+y)^n</m> for nonnegative integers is in every curriculum, but it's generalization for non-integral exponents is not. 
+<p>Many mainstream topics in the mathematics curriculum can be generalized. One example is the binomial expansion.  The expansion of <m>(x+y)^n</m> for nonnegative integers is in every curriculum, but its generalization for non-integral exponents is not. 
 </p>
 <example><title>Fractional Binomial Expansion</title><idx>Fractional Binomial Expansion</idx>
 <p>The power series series expansion about <m>x=0</m> of an expression such as <m>\sqrt{1-x}</m> certainly can be derived using basic calculus tools, but an alternate approach can be taken by (correctly) assuming that the binomial expansion theorem applies for the exponent <m>\frac{1}{2}</m>.  The integral version is finite since <m>\binom{m}{n} =0</m> for <m>n \gt m</m>, but a reasonable generalization of <m>\binom{\alpha}{n}</m> is <me>\frac{\prod_{k=0}^{n-1} (\alpha-k)}{n!}</me> which will never equal zero for non-integral values of <m>\alpha</m>.  Thus we have 
