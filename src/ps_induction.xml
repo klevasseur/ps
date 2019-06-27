@@ -257,7 +257,7 @@ there must be two partial sums that have the same residue mod <m>n</m>.  Let <m>
 </exercise>
 <exercise>
 <statement><p>Show that for any polynomial <m>f(x)</m> over the integers with degree <m>d\lt n</m>, we have <m>\sum_{k=0}^{n} (-1)^k \binom{n}{k} f(k) = 0</m>.</p></statement>
-<solution><p>(partial solution by Tung Nguyen) Denote <m>f(x) = \sum_{i = 0}^{d}a_ix^i</m>, where <m>a_i</m> are integer coefficients. Then
+<solution><p>(partial solution by Tung Nguyen) Denote <m>f(x) = \sum_{i = 0}^{d} a_i x^i</m>, where <m>a_i</m> are integer coefficients. Then
 
 <me>
 \begin{split}
@@ -266,8 +266,8 @@ there must be two partial sums that have the same residue mod <m>n</m>.  Let <m>
 		&amp; = \sum_{i = 0}^{d} a_i \left[\sum_{k=0}^{n}(-1)^k \binom{n}{k} k^i \right]
 \end{split}
 </me>
-
-I was thinking that we can prove the sum <m>A_{(i,n)} = \sum_{k=0}^{n}(-1)^k \binom{n}{k} k^i = 0</m> for all <m>n \in \mathbb{N}</m> and <m>i < n</m> by induction, since at <m>i = 0</m>, <m>A_{(0,n)} = \sum_{k=0}^{n}(-1)^k \binom{n}{k} k^0 = \sum_{k=0}^{n}(-1)^k \binom{n}{k}*1 = \sum_{k=0}^{n}(-1)^k \binom{n}{k}(1)^{n - k} = (1 - 1)^n = 0</m>. But I haven't figured out how to do the induction step yet.
+</p>
+<p>I was thinking that we can prove the sum <m>A_{(i,n)} = \sum_{k=0}^{n}(-1)^k \binom{n}{k} k^i = 0</m> for all <m>n \in \mathbb{N}</m> and <m>i \lt n</m> by induction, since at <m>i = 0</m>, <m>A_{(0,n)} = \sum_{k=0}^{n}(-1)^k \binom{n}{k} k^0 = \sum_{k=0}^{n}(-1)^k \binom{n}{k}*1 = \sum_{k=0}^{n}(-1)^k \binom{n}{k}(1)^{n - k} = (1 - 1)^n = 0</m>. But I haven't figured out how to do the induction step yet.
 </p></solution>
 </exercise>
 </exercises>
