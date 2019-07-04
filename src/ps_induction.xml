@@ -23,7 +23,15 @@
 </proof>
 </theorem>
 <p>There may appear to be gaps in the proof from the point of view of a typical undergraduate course. Saying as we did at the end that something is clearly true may not be acceptable to some instructors in some courses.  However, in the context of preparing for the Putnam, knowing how basic your arguments need to be is important.  In this author's opinion the negative case is sufficiently obvious to skip the details. The same is true of the statement that <m>\binom{p}{k}</m> is divisible by <m>p</m> for <m>k = 1, 2,\dots,p-1</m>.</p>
-<p>Our next example will be about connected undirected planar graphs.  Here is an example of one such graph.</p>
+<p>Our next example will be about connected undirected planar graphs.</p>
+<list>
+<dl>
+<li><title>Undirected</title><p>Edges have no direction assigned, normally represented as a two element subset of the vertex set.</p></li>
+<li><title>Connected</title><p>For any two vertices, there is a sequence of edges that provide a path between them.</p></li>
+<li><title>Planar</title><p>It is possible to draw the graph on a plane so that no two edges cross.</p></li>
+</dl>
+</list> 
+<p><xref ref="cup-graph" text="type-local"/> is an example of one such graph.</p>
 
             <figure xml:id="cup-graph">
                 <caption>An example of a connected undirected planar graph
@@ -42,7 +50,7 @@
 <p>Induction.  Assume Euler's formula is true for all connected undirected planar graphs  with <m>k</m> edges where <m>k\leq n</m>.   Assume we such a graph, <m>G</m>, with <m>n+1</m> edges.  We remove one of the edges from <m>G</m>, making it an undirected planar graph with <m>n</m> edges.  However it may no longer be connected.  We need to consider two possible cases.</p>
 
 <p>Case 1:  The graph with the removed edge is still connected. In the example above, if we remove <m>e_1</m>, we have this situation.  Since we have
-a connected undirected planar graph with <m>n</m> edges, the induction hypothesis applied with <m>k=n</m>, and so Euler{'}s formula is true.  Now, consider
+a connected undirected planar graph with <m>n</m> edges, the induction hypothesis applied with <m>k=n</m>, and so Euler's formula is true.  Now, consider
 returning the edge we had removed.  In so doing, the number of edges increases by 1, the number of verticies stays the same, and the number of
 regions increases by 1 since the returned edge divides a region into two parts.  Therefore, the net change in the expression <m>v+r-e</m> is <m>0+1-1=0</m>and
 so it is still equal to 2.</p>

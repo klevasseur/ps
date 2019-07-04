@@ -46,16 +46,16 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 <example xml:id="ex-2000Putnam"><title>2000 Putnam, B4</title>
 <p>Let <m>f:[−1,1]\rightarrow \mathbb{R}</m> be a continuous function such that <m>f(2x^2−1)=2xf(x)</m> for all <m>x</m>. Show that <m>f(x)=0</m> for <m>-1 \leq x \leq 1</m>.</p>
 <p>Solution: Substitution of 1 and -1 for <m>x</m> produces <m>f(1)=f(-1)=0</m>.</p>
-<p>The restriction on <m>x</m> and the expression <m>2 x^2 -1</m> may remind one of the identity <m>1-\cos{x}^2 = \cos{2 x}</m>; and so the substitution <m>x = \cos{t}</m> is a reasonable step leading to <m>f(\cos{2t})=2 \cos{t} f(\cos{t})</m>.</p>
+<p>The restriction on <m>x</m> and the expression <m>2 x^2 -1</m> may remind one of the identity <m>2\cos^2{x} - 1 = \cos{2 x}</m>; and so the substitution <m>x = \cos{t}</m> is a reasonable step leading to <m>f(\cos{2t})=2 \cos{t} f(\cos{t})</m>.</p>
 <p>The next step in several published solutions is to define a second function, <m>g</m>, by
  <me>g(t)=\frac{f(\cos{t})}{\sin{t}}, \textrm{ where } t\neq \pi k, k\in \mathbb{Z}</me>
- A <q>meta exercises</q> is to provide a motivation for this definition</p>
-<p><me>g(2t)=\frac{f(\cos{2t})}{\sin{2t}}=\frac{\cos{t}\: f(\cos{t})}{2\sin{t}\cos{t}}=g(t)</me>
+ A <q>meta exercises</q> is to provide a motivation for this definition.</p>
+<p><me>g(2t)=\frac{f(\cos{2t})}{\sin{2t}}=\frac{2 \cos{t}\: f(\cos{t})}{2\sin{t}\cos{t}}=g(t)</me>
 Combining this with the periodicity of <m>g</m> tells us that
 <me>g(1+\frac{n \pi}{2^k})=g(2^{k+1}+2 \pi n) = g(2^{k+1})=g(1)</me>
 The continuity of <m>g</m> in its domain and the density of <m>{1+\frac{n \pi}{2^k} \mid n,k \in \mathbb{Z}}</m> implies that <m>g</m> must be constant.</p>
 <p>Returning our attention to <m>f</m> we have <m>f(\cos{t})= c \sin{t}</m> for some constant <m>c</m>, which implies <m>f(x) = c \sqrt{1-x^2}</m> for <m>x \in (-1,1)</m>.  Finally, this tells us that <m>f</m> must be even.  However, when we turn to the original fuctional equation,
- <m>x f(x)=f(2x^2-1)</m> we have an odd function on the left and an even function on the right.  our only possibility is the desired conclusion.</p>
+ <m>x f(x)=f(2x^2-1)</m> we have an odd function on the left and an even function on the right.  Our only possibility is the desired conclusion.</p>
 </example>
 <!-- <blockquote><p>Given a real number <m>a</m>, we define a sequence by <m>x_0 = 1</m>, <m>x_1 = x_2 = a</m>, and <m>x_{n+1} = 2x_n x_{n-1} - x_{n-2}</m> for <m>n \geq 2</m>. Prove that if <m>x_n = 0</m> for some <m>n</m>, then the sequence is periodic.</p></blockquote> -->
 </section>  
@@ -64,7 +64,7 @@ The continuity of <m>g</m> in its domain and the density of <m>{1+\frac{n \pi}{2
 <p>Many mainstream topics in the mathematics curriculum can be generalized. One example is the binomial expansion.  The expansion of <m>(x+y)^n</m> for nonnegative integers is in every curriculum, but its generalization for non-integral exponents is not. 
 </p>
 <example><title>Fractional Binomial Expansion</title><idx>Fractional Binomial Expansion</idx>
-<p>The power series series expansion about <m>x=0</m> of an expression such as <m>\sqrt{1-x}</m> certainly can be derived using basic calculus tools, but an alternate approach can be taken by (correctly) assuming that the binomial expansion theorem applies for the exponent <m>\frac{1}{2}</m>.  The integral version is finite since <m>\binom{m}{n} =0</m> for <m>n \gt m</m>, but a reasonable generalization of <m>\binom{\alpha}{n}</m> is <me>\frac{\prod_{k=0}^{n-1} (\alpha-k)}{n!}</me> which will never equal zero for non-integral values of <m>\alpha</m>.  Thus we have 
+<p>The power series series expansion about <m>x=0</m> of an expression such as <m>\sqrt{1-x}</m> certainly can be derived using basic calculus tools, but an alternate approach can be taken by (correctly) assuming that the binomial expansion theorem applies for the exponent <m>\frac{1}{2}</m>.  If <m>m</m> is a positive integer, <m>\binom{m}{n} =0</m> for <m>n \gt m</m>, but a reasonable generalization of <m>\binom{\alpha}{n}</m> for a non-integer <m>\alpha</m> is <me>\frac{\prod_{k=0}^{n-1} (\alpha-k)}{n!}</me> which will never equal zero for non-integral values of <m>\alpha</m>.  Thus we have 
 	<me>\sqrt{1-x} = \sum_{n=0}^{\infty} \binom{\frac{1}{2}}{n} (-x)^n</me>
 The first two terms of this sum are 1 and <m>-\frac{1}{2} x</m>. We will preceed to simplify the general form of the coefficient of <m>x^n</m> for <m>n \gt 1</m>.
 <me>	
@@ -84,7 +84,7 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 <remark><p><idx>Pochhammer symbol</idx> The Pochhammer symbol is the notation  <m>(x)_n</m>, where <m>n</m> is a non-negative integer. It is commonly used to represent the <q>falling factorial</q> expression  <m>x\cdot(x-1)\cdot(x-2)\cdot \cdots \cdot (x-(k-1))</m>.  This gives a more concise way to express the expansion we have just examined as <m>\sum_{n=0}^{\infty} \frac{(\frac{1}{2})_n}{n!} (-x)^n</m>.  However, you still need to get into the weeds and manipulate the expression in the end. </p></remark>
 <p>A different sense in which generalization applies to problem solving is when a problem is more easily solved by first generalizing the context of the problem.  This problem from the 1982 Putnam is a good example.</p>
 <example xml:id="example-putnam-integral"><title>A Putnam Integral</title>
-<p>Evaluate <m>\int_0^{\infty} \frac{\tan ^{-1}(\pi  x)-\tan ^{-1}(x)}{x} \, dx</m>.</p>
+<p>Evaluate <m>\int_0^{\infty} \frac{\tan^{-1}(\pi  x)-\tan^{-1}(x)}{x} \, dx</m>.</p>
 <p>The integral can be evaluated by generalizing it first to a function: 
 <m>F(y)=\int_0^{\infty} \frac{\tan ^{-1}(y x)-\tan ^{-1}(x)}{x} \, dx</m>. We then can differentiate with respect to <m>y</m> to get a simple expression of <m>F(y)</m>.  After applying the obvious condition <m>F(1)=0</m>, we can substitute <m>\pi</m> for <m>y</m> to get our final answer.  We leave it as an exercise for you to get the final answer of <m>\frac{1}{2} \pi  \ln(\pi )</m></p>
 </example>

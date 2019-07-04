@@ -10,7 +10,7 @@
 <idx>Binomial Coefficient Formula, Derivation</idx>
 <statement>
 <p>The binomial coefficient <m>\binom{n}{k}</m> represents the  the number of <m>k</m> element subsets of an <m>n</m> element set , <m>0\leq k\leq n</m>.</p>
-<p>We will count the number of ways to permute <m>k</m>  objects from a set of <m>n</m> elements two ways.  First, we can first choose one of the <m>k</m> element subsets of of the set, and second, choose one of the <m>k!</m>  permutations of those elemenst. By the rule of products, we can do this <m> \binom{n}{k} \cdot k!</m>.  A second approach is to select the the elements from our set to go into positions 1 through <m>k</m> in the permutation immediately.  The number of ways of doing this is <m>n \cdot (n-1)\cdot \cdots \cdot (n-(k-1))</m>.   The two expressions count the same number and so they are equal. By equating the solve for the value of the  binomial coefficient:  <m>\binom{n}{k} =\frac{n!}{k! \cdot (n-k)!}</m>.</p>
+<p>We will count the number of ways to permute <m>k</m>  objects from a set of <m>n</m> elements two ways.  First, we can first choose one of the <m>k</m> element subsets of of the set, and second, choose one of the <m>k!</m>  permutations of those elements. By the rule of products, we can do this <m> \binom{n}{k} \cdot k!</m>.  A second approach is to select the the elements from our set to go into positions 1 through <m>k</m> in the permutation immediately.  The number of ways of doing this is <m>n \cdot (n-1)\cdot \cdots \cdot (n-(k-1))</m>.   The two expressions count the same number and so they are equal. By equating the solve for the value of the  binomial coefficient:  <m>\binom{n}{k} =\frac{n!}{k! \cdot (n-k)!}</m>.</p>
 </statement>
 </example>
 </section>  
@@ -18,6 +18,7 @@
 <section><title>Indirect Proofs</title>
 <example><title>No Least Positive Real Number</title>
 <p>Prove that there is no least positive real number.</p>
+<p>Assume that there is a least positive real number, which we'll call <m>L</m>.  Certainly, we can assume that <m>L \lt 1</m> since we know of many positive real number that statisfy this inequality.  If we multiply the inequality by <m>L</m>, we find that <m>L^2 \lt L</m>.  Since <m>L^2</m> is a positive real number we have a contradiction that <m>L</m> is least.  Hence no such least number can exist.</p>
 </example>
 <example><title>The Harmonic Series</title><idx>Harmonic Series</idx>
 <p>Students often struggle with the idea that although the terms of the harmonic series, <m>\sum_{n=1}^{\infty} \frac{1}{n}</m>, converge to zero, the series itself diverges. Encountering this fact in a calculus class in which proof may not be emphasized is often the problem.  Many of the dozens of proofs that the harmonic series diverges are indirect.  Here is one such example.</p>

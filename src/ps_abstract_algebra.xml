@@ -26,7 +26,18 @@ This contradiction implies that the union isn't closed and we are done.</p>
 <title>Exercises</title>
 <exercise number="1">
 <statement>
-<p> ?</p>
+<p>Let <m>S</m> be a set which is closed under the binary operation <m>\circ</m>, with the following properties:
+<ul>
+<li><p>There is an element <m>e \in S</m> such that <m>a \circ e = e\circ a=a, \forall a\in S</m></p></li>
+<li><p> <m>(a \circ b) \circ (c \circ d) = (a \circ c) \circ (b \circ d) \forall a,b,c,d \in  S</m>.</p></li>
+</ul>
+</p>
+<p>Prove or disprove:
+<ol>
+<li><p> <m> \circ</m>  is associative on <m>S</m></p></li>
+<li><p> <m> \circ</m>  is commutative on S</p></li>
+</ol>
+</p>
 </statement>
 <!-- 
 <solution><p></p>
@@ -68,7 +79,7 @@ hence the conclusion.</p>
 Show that <m>*</m> is commutative but not necessarily associative.</p>
 </statement>
 <solution>
-<p>Step 1: Show that <m>x*(y*x)=(x*y)*x = y</m> for all <m>x,y∈S</m>
+<p>Step 1: Show that <m>x*(y*x)=(x*y)*x = y</m> for all <m>x,y \in S</m>
 	<me>\begin{split}
 		y &amp;=(y*(y*x))*(y*x)\\
 			&amp;=x*(y*x)

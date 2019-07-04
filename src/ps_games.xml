@@ -15,7 +15,7 @@ In analyzing games, it is  always assumed that players use optimal strategies, i
 
 <section>
 <title>Mind Games</title>
-<p>Some games cannot really be played in that they would require an infinite number of moves. Other game-related problems ask a long term strategy, such as the following, where playing the game once might not really help.</p>
+<p>Some games cannot really be played in that they would require an infinite number of moves. Other game-related problems ask a long term strategy, such as the following, where playing the game once is not the point.</p>
 <example xml:id="ex-near-far"><idx>Near-Far</idx>
 <statement><p>Near-Far, from E and F</p>
 </statement>
@@ -120,14 +120,14 @@ cards laid out in a row, with the numbers facing upwards. Alice starts, and the 
 <!-- 
 <hint><p></p></hint>
  -->
-<solution><p>Alice is sure to win if the sum of the card values in odd positions in the line differs from the sum on even positions. If that is the case, assume the odd positions have a higher sum.  Alice will win by choosing the card in position 1.  Barbara is forced to choose a card in an even position and then Alice can take a card from the exposed odd position.  By continuing in this way, Alice will get all the cards in odd positions and win.  There are some initial configurations where the game will end in a tie.  For example, if <m>n=1</m> the line of cards <m> 2,1,3,4</m> will produce a tie.</p></solution>
+<solution><p>Alice is sure to win if the sum of the card values in odd positions in the line differs from the sum on even positions. If that is the case, assume the odd positions have a higher sum.  Alice will win by choosing the card in position 1.  Barbara is forced to choose a card in an even position and then Alice can take a card from the exposed odd position.  By continuing in this way, Alice will get all the cards in odd positions and win.  There are some initial configurations where the game will end in a tie.  For example, if <m>n=2</m> the line of cards <m> 2,1,3,4</m> will produce a tie.</p></solution>
 </exercise>
 <exercise>
 <statement><p>
 A game is played as follows. The first player selects an interval [a, b]. The second player selects an interval <m>[c, d] \subset  [a, b]</m>. The first
 player selects an interval inside <m>[c, d]</m>, and so on. The game goes on forever. The first player will win if the intersection of all segments contains a rational number. Is he going to win?
 </p></statement>
-<hint><p>One player makes a list of rational numbers in \([a,b]\) and plan to avoid them sequentially.</p></hint>
+<hint><p>One player makes a list of rational numbers in <m>[a,b]</m> and plan to avoid them sequentially.</p></hint>
 <!-- 
 <solution><p></p></solution>
  -->

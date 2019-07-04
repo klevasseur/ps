@@ -129,14 +129,19 @@ or -1?, or 2? Note: <em>Differentiable</em> can be replaced with <em>Absolutely 
 <solution><p></p></solution>
  -->
 </exercise>
+
 <exercise number="8">
-<statement><p>
-Evaluate  <m>\int_0^{\infty } \frac{\text{Arctan}(\pi  x)-\text{Arctan}(x)}{x} \, dx</m>.  </p></statement>
-<hint><p>Generalize.</p></hint>
-<!-- 
-<solution><p></p></solution>
- -->
+<statement><p>For a positive constant <m>k</m>, consider the region <m>\mathcal{R}</m> bounded by the line<m>y = k x</m> and the parabola <m>y = x^2</m>. There is only
+one choice of <m>k</m> such that the solids obtained by revolving <m>\mathcal{R}</m> about the <m>x</m>-axis and the <m>y</m>-axis have the same
+volume. Find the value of this special choice of <m>k</m>.</p></statement>
+<solution><p>The volume of revolution around the <m>x</m> axis is 
+<me>\int_0^k \pi \left((k x)^2-x^4\right) \, dx=\frac{2\pi }{15}k^5</me>.
+Around the <m>y</m> axis we have (using shells) 
+<me>\int _0^k2\pi  x\left(k x-x^2\right)dx=\frac{\pi }{6}k^4</me>.
+Therefore the special <m>k</m> is <m>\frac{5}{4}</m>.
+</p></solution>
 </exercise>
+
 <exercise number="9">
 <statement><p>
 For which real numbers <m>c</m> is <m>\frac{e^x+ e^{-x}}{2}\leq e^{c x^2}</m> for all real <m>x</m>?
@@ -170,17 +175,7 @@ Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>.
  -->
 </exercise>
 
-<exercise>
-<statement><p>For a positive constant <m>k</m>, consider the region <m>\mathcal{R}</m> bounded by the line<m>y = k x</m> and the parabola <m>y = x^2</m>. There is only
-one choice of <m>k</m> such that the solids obtained by revolving <m>\mathcal{R}</m> about the <m>x</m>-axis and the <m>y</m>-axis have the same
-volume. Find the value of this special choice of <m>k</m>.</p></statement>
-<solution><p>The volume of revolution around the <m>x</m> axis is 
-<me>\int_0^k \pi \left((k x)^2-x^4\right) \, dx=\frac{2\pi }{15}k^5</me>.
-Around the <m>y</m> axis we have (using shells) 
-<me>\int _0^k2\pi  x\left(k x-x^2\right)dx=\frac{\pi }{6}k^4</me>.
-Therefore the special <m>k</m> is <m>\frac{5}{4}</m>.
-</p></solution>
-</exercise>
+
 
 <exercise>
 <statement>
