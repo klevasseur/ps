@@ -24,7 +24,7 @@
 </theorem>
 <p>There may appear to be gaps in the proof from the point of view of a typical undergraduate course. Saying as we did at the end that something is clearly true may not be acceptable to some instructors in some courses.  However, in the context of preparing for the Putnam, knowing how basic your arguments need to be is important.  In this author's opinion the negative case is sufficiently obvious to skip the details. The same is true of the statement that <m>\binom{p}{k}</m> is divisible by <m>p</m> for <m>k = 1, 2,\dots,p-1</m>.</p>
 <p>Our next example will be about connected undirected planar graphs.</p>
-<list>
+<list><title>What do these words mean?</title>
 <dl>
 <li><title>Undirected</title><p>Edges have no direction assigned, normally represented as a two element subset of the vertex set.</p></li>
 <li><title>Connected</title><p>For any two vertices, there is a sequence of edges that provide a path between them.</p></li>

@@ -16,7 +16,7 @@
 </section>
 <section><title>Some <q>Prerequisite</q> Topics</title>
 <p>With the assumption that we have to start somewhere, I give students a list, certainly not complete, of topics that expect students to have a good grasp of to participate in the class.</p>
-<list><caption>Prerequisites</caption>
+<list><title>Prerequisites</title>
 <ul>
 <li><p>Properties of the complex numbers</p></li>
 <li><p>Circular function definition of the trig functions.</p></li>
