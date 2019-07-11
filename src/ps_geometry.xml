@@ -16,9 +16,90 @@ can often be simplified by using basic linear algebra (scalar products, etc.) an
 Often, problems are only formulated using geometric language but the solution uses some counting trick, or combinatorics, etc.</p>
 </introduction>
 
-<section>
+<section xml:id="geomentry-examples">
 <title>Examples</title>
-<p>--</p>
+<p>This is a useful <q>lemma</q> that lets you convert a statement about the angle between two line sgements to a statement about distances between endpoints.</p>
+<lemma xml:id="lemma-geometry-1">
+<statement><p>Two line segment on the plane <m>AB</m> and <m>CD</m> are perpendicular if and only if <m>\lvert AC \rvert^2 +  \lvert BD \rvert^2 = \lvert AD \rvert^2 + \lvert BC \rvert^2</m></p></statement>
+<proof>
+<case><title>(<m>\Rightarrow</m>)</title> <p>Assuming the two segments are perpendicular, we locate the point of intersection, <m>M</m>, of the two lines they determine, as in <xref ref="fig-sageplot-2segments-perp" text="type-global"/>.  In the figure, we assume that <m>M</m> does not lie on either segment, but the equations below still apply in other cases. The right angle at <m>M</m> determines four right triangles and thus
+<sidebyside>
+		<p><md>
+		<mrow>AC^2 = MA^2 + MC^2</mrow>
+		<mrow>BD^2 = MB^2 + MD^2</mrow>
+		</md></p>
+		<p><md>
+		<mrow>AD^2 = MA^2 + MD^2</mrow>
+		<mrow>BC^2 = MB^2 + MC^2</mrow>
+		</md></p>
+</sidebyside>
+</p>
+<p>If we add the equations on the right and also the two on the left, we get the desired conclusion.</p>
+</case>
+<case><title>(<m>\Leftarrow</m>)</title><p>Again, let <m>M</m> be the point of intersection of the two extended segments.  In  <xref ref="fig-sageplot-2segments-notperp" text="type-global"/> we depict the case where <m>M</m> lies on both segments.  We assume the angle between the segments is not <m>\pi/2</m> and so we assume that <m>\angle AMC \gt \pi/2</m>.  Thus, the left sides of the equations on the left are now greater than the right sides, while the left sides of the equations on the right are less than the right sides.  Therefore, <m>\lvert AC \rvert^2 +  \lvert BD \rvert^2 \gt \lvert AD \rvert^2 + \lvert BC \rvert^2</m>.</p>
+<p>Finally, how can this special case be used to prove the case when <m>M</m> is does not lie on both segments?</p>
+</case>
+
+<sidebyside>
+<figure xml:id="fig-sageplot-2segments-perp">
+  <caption>Two perpendicular segments</caption>
+  <image xml:id="sageplot-2segments-perp" width="50%">
+    <description>Figure illustrating the lemma, perpendicular case</description>
+<sageplot>
+fig=Graphics()
+for p in [point((-1,5),size=30),point((1,1),size=30),point((4,1),size=30),point((6,2),size=30),point((8/5,-1/5),size=30,color="red")]:
+    fig+=p
+fig+=text("B",(-0.75,5))
+fig+=text("A",(1.25,1))
+fig+=text("D",(5.75,1.75))
+fig+=text("C",(3.75,1))
+fig+=text("M",(1.75,-1/3))
+fig+=line([(-1,5),(1,1)])
+fig+=line([(4,1),(6,2)])
+fig+=line([(-1,5),(1,1)])
+fig+=line([(8/5,-1/5),(1,1)],color="red",linestyle="-.")
+fig+=line([(8/5,-1/5),(4,1)],color="red",linestyle="-.")
+fig+=line([(1,1),(6,2)],color="purple")
+fig+=line([(1,1),(4,1)],color="purple")
+fig+=line([(-1,5),(6,2)],color="purple")
+fig+=line([(-1,5),(4,1)],color="purple")
+fig.show(axes=False)
+</sageplot>
+  </image>
+</figure>  
+<figure xml:id="fig-sageplot-2segments-notperp">
+  <caption>Two segments that are not perpendicular</caption>
+  <image xml:id="sageplot-2segments-notperp" width="50%">
+    <description>Figure illustrating the lemma, non-perpendicular case</description>
+<sageplot>
+A=(1,1)
+B=(-1,5)
+C=(-1,2)
+D=(6,2)
+M=(1/2,2)
+fig=Graphics()
+for p in [point(B,size=30),point(A,size=30),point(C,size=30),point(D,size=30),point(M,size=30,color="red")]:
+    fig+=p
+fig+=text("B",(-0.75,5))
+fig+=text("A",(1.05,1.2))
+fig+=text("D",(5.75,1.75))
+fig+=text("C",(-0.75,2.2))
+fig+=text("M",(0.75,2.15))
+fig+=line([B,A])
+fig+=line([C,D])
+fig+=line([B,A])
+fig+=line([A,D],color="purple")
+fig+=line([A,C],color="purple")
+fig+=line([B,D],color="purple")
+fig+=line([B,C],color="purple")
+fig.show(axes=False)
+</sageplot>
+</image>
+</figure>
+</sidebyside>
+</proof>
+</lemma>
+
 </section>  
 
 

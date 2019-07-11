@@ -19,7 +19,7 @@
 </blockquote>
 <p>In this case, the function we are integrating is a bit more complicated, and integration is a second issue that isn't so straightforward.  The function is   
 <m>f(x)= \left\lfloor \frac{2}{x}\right\rfloor - 2 \left\lfloor \frac{1}{x}\right\rfloor</m>.</p>
-<p>Evaluating the integral is non-trivial, but here is an overview.  When working with floor/ceiling functions, one trick is to assume your variable satisfies inequalities that explicitly give a formula for their value.  In this case, we assume that  <m>k</m> is some positive integer.
+<p>Evaluating the integral is non-trivial, but here is an overview.  When working with floor/ceiling functions, one trick  is to assume some condition that lets you work with an equality or inequality to infer more information.  In this case, we assume that  <m>2\lfloor \frac{1}{x}\rfloor =2k</m> for some positive integer <m>k</m>.
 <me>\begin{split}
 	2\lfloor \frac{1}{x}\rfloor =2k &amp;\Leftrightarrow  \lfloor \frac{1}{x}\rfloor=k\\
 	                &amp; \Leftrightarrow k \leq \frac{1}{x} \lt k +1 \\

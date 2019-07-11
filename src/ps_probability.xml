@@ -70,7 +70,7 @@ and
 		&amp;=P(W)/3 + P(E)/3 = \frac{2}{3} P(W)\\
 		\end{split}
 	</me>
-Finally, since someone must win eventually, <m>P(N)+P(W)+P(S)+P(E)=1</m>.  The four equations we have listed have teh single solution <m>P(N)=\frac{7}{15}</m>, <m>P(W)=P(E)=\frac{1}{5}</m>, and <m>P(S)=\frac{2}{15}</m></p>
+Finally, since someone must win eventually, <m>P(N)+P(W)+P(S)+P(E)=1</m>.  The four equations we have listed have the single solution <m>P(N)=\frac{7}{15}</m>, <m>P(W)=P(E)=\frac{1}{5}</m>, and <m>P(S)=\frac{2}{15}</m></p>
 <p>There are two other ways to reach the same solution to this problem.  One is to use the fact this is Markov Chain.  The game has eight states, four are for the situations where the coin has still not been won but is held one of the players.  The other four states are called absorbing states and represent the outcomes where each player can win.  In this context, we want to compute the probabilities of landing each of the absorbing states.  There are matrix techniques for computing these probabilities.  See Kemeny and Snell <xref ref="biblio-kemeny"/> for details. Another approach is to model the game with a <term>stochastic abacus</term>.  We recommend the reader to Propp <xref ref="biblio-propp"/> or Torrence <xref ref="biblio-torrence"/>  for information on this approach.</p></solution>
 </exercise>
 <exercise>

@@ -102,7 +102,24 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 </solution>
  -->
 </exercise>
-
+<exercise number="2">
+<statement>
+<p>Evalute <m>\int x^3 \sqrt{4-9x^2} \, dx</m></p>
+</statement>
+<solution><p>Use the substitution <m>x = \frac{2}{3} \sin{\theta}</m>.  The final value is <m>-\frac{\left(4-9 x^2\right)^{3/2}
+   \left(27 x^2+8\right)}{1215}</m>.</p>
+</solution>
+</exercise>
+<exercise number="3">
+<statement>
+<p>For any triangle <m>ABC</m>, prove that <me>\tan{A}+\tan{B}+\tan{C} = \tan{A}\cdot \tan{B}\cdot \tan{C}</me></p>
+</statement>
+<!-- 
+<hint><p>Start with proving  <m>\sqrt{a b}+ \sqrt{(1−a)(1−b)} \leq 1</m></p></hint>
+<solution><p></p>
+</solution>
+ -->
+</exercise>
 <exercise number="4">
 <statement>
 <p>Complete the derivation of the value of the integral in <xref ref="example-putnam-integral" />.</p>

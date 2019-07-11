@@ -150,7 +150,6 @@ A=Matrix([[i==j or i==n-1 or j==n-1 for i in range(n)] for j in range(n)] )
 <hint><p>Count the number of pairs that can up to 101.</p>
 </hint>
 </exercise>
-
 <exercise number="4">
 <statement>
 	<p>
@@ -253,7 +252,6 @@ If you use the formula to compute a few more terms of the sequence, the pattern 
 Solving for <m>F</m>, we get 6 for the expected number of flips.  </p>
 </solution>
 </exercise>
-
 <exercise>
 <statement><p>Show that every set of <m>n</m> integers has a nonempty subset such that the sum of its elements is divisible by <m>n</m>.</p></statement>
 <solution><p>
@@ -265,17 +263,38 @@ there must be two partial sums that have the same residue mod <m>n</m>.  Let <m>
 </exercise>
 <exercise>
 <statement><p>Show that for any polynomial <m>f(x)</m> over the integers with degree <m>d\lt n</m>, we have <m>\sum_{k=0}^{n} (-1)^k \binom{n}{k} f(k) = 0</m>.</p></statement>
-<solution><p>(partial solution by Tung Nguyen) Denote <m>f(x) = \sum_{i = 0}^{d} a_i x^i</m>, where <m>a_i</m> are integer coefficients. Then
-
-<me>
-\begin{split}
-\sum_{k=0}^{n}(-1)^k \binom{n}{k} f(k) &amp; = \sum_{k=0}^{n}(-1)^k \binom{n}{k} \left[\sum_{i = 0}^{d}a_i k^i\right]\\
-		&amp; = \sum_{i = 0}^{d}\sum_{k=0}^{n}(-1)^k \binom{n}{k}a_i k^i\\
-		&amp; = \sum_{i = 0}^{d} a_i \left[\sum_{k=0}^{n}(-1)^k \binom{n}{k} k^i \right]
+<solution>
+<p>(Solution by Tung Nguyen) Proof by induction on <m>d</m>. Denote <m>f(x) = \sum_{i = 0}^{d} a_i x^i</m>, where <m>a_i</m> are integer coefficients.  If <m>d=0</m>, then functions <m>f(x)</m> of degree 0 are constant, i.e. <m>f(x) = c</m> for some <m>c \in \mathbb{Z}</m>. This leads to
+<men xml:id="sum0">\begin{split}
+\sum_{k=0}^{n} (-1)^k\binom{n}{k}f(k) &amp; = \sum_{k=0}^{n} (-1)^k\binom{n}{k}c\\
+		&amp; = c\sum_{k=0}^{n} (-1)^k\binom{n}{k}(1)^{n-k} \\
+		&amp; = c(1 - 1)^n = 0
 \end{split}
-</me>
+</men>
+for all positive integers <m>n \gt 0 = d</m>. Note at if <m>n = 0</m> the sum above is <m>c</m> instead of <m>0</m>.</p>
+<p>Assume that the formula is true for every polynomial of degree <m>d</m> and applicable to all <m>n \in \mathbb{N}</m> satisfying <m>d \lt n - 1</m>. We will prove that the formula is true for <m>d + 1 \lt n</m>.</p>
+<p>Let <m>g(x)</m> be an arbitrary polynomial of degree <m>d+1</m> over the integers, then <m>g(x)</m> can be rewritten as <m>g(x) = x\cdot h(x) + c</m>, where <m>h(x)</m> has degree <m>d</m> and <m>c</m> is an integer. Then
+<men xml:id="sum1">
+\begin{split}
+\sum_{k=0}^{n} (-1)^k\binom{n}{k}g(k) &amp;= \sum_{k=0}^{n} (-1)^k\binom{n}{k}\left[kh(k) + c\right]\\
+		&amp; = \sum_{k=0}^{n} (-1)^k\binom{n}{k}k \cot h(k) + \sum_{k=0}^{n} (-1)^k\binom{n}{k}c.
+\end{split}
+</men>
+The second term is 0 which is proven by <xref ref="sum0"/>, while 
+
+<men xml:id="sum2">\begin{split}
+\sum_{k=0}^{n} (-1)^k\binom{n}{k}k\cdot h(k) 
+	&amp;= (-1)^0\binom{n}{0}0\cdot h(0) + \sum_{k=1}^{n} (-1)^k\frac{n!}{k!(n-k)!}k\cdot h(k)\\
+	&amp; = 0 + \sum_{k=1}^{n} (-1)^k\frac{n!}{(k-1)!(n-k)!}h(k)\\
+	&amp; = -n\sum_{k=1}^{n} (-1)^{k-1}\frac{(n-1)!}{(k-1)!(n-k)!}h(k) \\ 
+	&amp;= -n\sum_{k=1}^{n} (-1)^{k-1}\binom{n-1}{k-1}h(k)\\
+	&amp; = -n\sum_{k=0}^{n-1} (-1)^k\binom{n-1}{k}h(k+1)
+\end{split}</men></p>
+<p>Because <m>h(x)</m> has degree <m>d</m>, <m>h(x+1)</m> is also has degree <m>d</m>, which is less than <m>n - 1</m> by the induction hypothesis. Therefore we have 
+<men xml:id="sum3">\sum_{k=0}^{n-1} (-1)^k\binom{n-1}{k}h(k+1)  = 0 </men>
 </p>
-<p>I was thinking that we can prove the sum <m>A_{(i,n)} = \sum_{k=0}^{n}(-1)^k \binom{n}{k} k^i = 0</m> for all <m>n \in \mathbb{N}</m> and <m>i \lt n</m> by induction, since at <m>i = 0</m>, <m>A_{(0,n)} = \sum_{k=0}^{n}(-1)^k \binom{n}{k} k^0 = \sum_{k=0}^{n}(-1)^k \binom{n}{k}*1 = \sum_{k=0}^{n}(-1)^k \binom{n}{k}(1)^{n - k} = (1 - 1)^n = 0</m>. But I haven't figured out how to do the induction step yet.
+<p>Combining <xref ref="sum1" text="local"/>,<xref ref="sum2" text="local"/> and <xref ref="sum3" text="local"/> together, we have 
+<m>\sum_{k=0}^{n} (-1)^k\binom{n}{k}g(k) = 0</m>. Because <m>g(x)</m> is arbitrarily chosen, the formula must be true for all polynomials of degree <m>d + 1 \lt n</m>, completing the induction.
 </p></solution>
 </exercise>
 </exercises>

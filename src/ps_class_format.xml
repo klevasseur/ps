@@ -12,19 +12,23 @@
 <p>I normally divide the class into groups of 2, 3 or 4 to work on problems.  Exactly how this is done depends on class size, and other factors.   The first problem is a warm-up in that I expect several students to have seen it already.  I instruct the class to work  on this one first with the expectation that most groups will complete it within ten minutes.   I circulate among the groups to help anyone who is struggling with the first problem.   I assign the rest of the problems to different groups.  I encourage the groups to put solutions on the board when they are ready.  When a few problems have been written out, we take a break from solving to review the solutions. Groups that have completed a problem are assigned a new one and we continue until the period is almost over.  Normally a few problems are left unsolved and they are assigned for homework.</p>
 </section>
 <section><title>Subsequent classes</title>
-<p>In the second class, we focus on some counting techniques and indirect proofs.  Again, we spend only a short time reviewing these concepts after having discussed some of the problems from week 1.  I leave plenty of time to work on these new problems. Students should be aware that not every solution to problems that are posed in a given week use the technique that is highlighted in that week. </p>
+<p>In the second class, we spend some time discussing further progress in the Week 1 problems.   After that, we focus on some counting techniques and indirect proofs.  Again, we spend only a short time reviewing these concepts.  I leave plenty of time to work on these new problems. Students should be aware that not every solution to problems that are posed in a given week use the technique that is highlighted in that week. </p>
+<p>Most other classes have roughly the same format as the second one</p>
 </section>
 <section><title>Some <q>Prerequisite</q> Topics</title>
-<p>With the assumption that we have to start somewhere, I give students a list, certainly not complete, of topics that expect students to have a good grasp of to participate in the class.</p>
+<p>With the assumption that we have to start somewhere, I give students a list, certainly not complete, of topics that expect students to have a good grasp of to participate in the class.  This list is far from complete, but highlights topics that appear in many of the problems we encounter. Most of the topics from calculus are not on the list, but are also assumed.</p>
 <list><title>Prerequisites</title>
 <ul>
 <li><p>Properties of the complex numbers</p></li>
-<li><p>Circular function definition of the trig functions.</p></li>
-<li><p>Expected Value of a random variable</p></li>
-<li><p></p></li>
-<li><p></p></li>
+<li><p>Geometric series, both finite and infinite.  Alternating series.</p></li>
+<li><p>Basic properties of polynomials.</p></li>
+<li><p>The definition of the trigonometric functions as circular functions, basic trigonometric identities.  Laws of sine and cosine.</p></li>
+<!-- 
+<li><p>Expected Value of a random variable.</p></li>
+ -->
 <li><p></p></li>
 </ul>
+<conclusion><p>There are several other topics could be listed here but I do spend a short amount of time reviewing them, such as induction and modular arithmetic.</p></conclusion>
 </list>
 </section>
 </chapter>

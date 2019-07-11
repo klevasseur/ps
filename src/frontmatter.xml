@@ -53,9 +53,9 @@ COMMENTED OUT TEMPORARILY
 </dedication>  
 --> 
 	<!-- Accepted order: acknowledgements, forewords, prefaces -->
-<!-- 
 
 <xi:include href="./acknowledgement.xml" />
+<!-- 
 
 <preface xml:id="ads-preface"><title>Preface</title>
 <p>This book is designed for use in a university course for students who are not as the Putnam Fellow level, but who aspire to compete in the Putnam.</p>
