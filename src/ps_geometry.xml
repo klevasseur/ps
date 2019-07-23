@@ -22,21 +22,18 @@ Often, problems are only formulated using geometric language but the solution us
 <lemma xml:id="lemma-geometry-1">
 <statement><p>Two line segment on the plane <m>AB</m> and <m>CD</m> are perpendicular if and only if <m>\lvert AC \rvert^2 +  \lvert BD \rvert^2 = \lvert AD \rvert^2 + \lvert BC \rvert^2</m></p></statement>
 <proof>
-<case><title>(<m>\Rightarrow</m>)</title> <p>Assuming the two segments are perpendicular, we locate the point of intersection, <m>M</m>, of the two lines they determine, as in <xref ref="fig-sageplot-2segments-perp" text="type-global"/>.  In the figure, we assume that <m>M</m> does not lie on either segment, but the equations below still apply in other cases. The right angle at <m>M</m> determines four right triangles and thus
-<sidebyside>
-		<p><md>
-		<mrow>AC^2 = MA^2 + MC^2</mrow>
-		<mrow>BD^2 = MB^2 + MD^2</mrow>
-		</md></p>
-		<p><md>
-		<mrow>AD^2 = MA^2 + MD^2</mrow>
-		<mrow>BC^2 = MB^2 + MC^2</mrow>
-		</md></p>
-</sidebyside>
-</p>
+<case><title>(<m>\Rightarrow</m>)</title> <p>Assuming the two segments are perpendicular, we locate the point of intersection, <m>M</m>, of the two lines they determine, as in <xref ref="fig-sageplot-2segments-perp" text="type-global" />.  In the figure, we assume that <m>M</m> does not lie on either segment, but the equations below still apply in other cases. The right angle at <m>M</m> determines four right triangles and thus
+	<me>
+	\begin{split}
+		\lvert AC\rvert^2 = \lvert MA\rvert^2 +\lvert  MC\rvert^2 
+					\qquad &amp;\lvert AD\rvert^2 =\lvert  MA\rvert^2 + \lvert MD\rvert^2 \\
+		\lvert BD\rvert^2 = \lvert MB\rvert^2 +\lvert MD\rvert^2 
+					\qquad &amp;\lvert BC\rvert^2 = \lvert MB\rvert^2 + \lvert MC\rvert^2
+		\end{split}
+	</me></p>
 <p>If we add the equations on the right and also the two on the left, we get the desired conclusion.</p>
 </case>
-<case><title>(<m>\Leftarrow</m>)</title><p>Again, let <m>M</m> be the point of intersection of the two extended segments.  In  <xref ref="fig-sageplot-2segments-notperp" text="type-global"/> we depict the case where <m>M</m> lies on both segments.  We assume the angle between the segments is not <m>\pi/2</m> and so we assume that <m>\angle AMC \gt \pi/2</m>.  Thus, the left sides of the equations on the left are now greater than the right sides, while the left sides of the equations on the right are less than the right sides.  Therefore, <m>\lvert AC \rvert^2 +  \lvert BD \rvert^2 \gt \lvert AD \rvert^2 + \lvert BC \rvert^2</m>.</p>
+<case><title>(<m>\Leftarrow</m>)</title><p>Again, let <m>M</m> be the point of intersection of the two extended segments.  In  <xref ref="fig-sageplot-2segments-notperp" text="type-global" /> we depict the case where <m>M</m> lies on both segments.  We assume the angle between the segments is not <m>\pi/2</m> and so we assume that <m>\angle AMC \gt \pi/2</m>.  Thus, the left sides of the equations on the left are now greater than the right sides, while the left sides of the equations on the right are less than the right sides.  Therefore, <m>\lvert AC \rvert^2 +  \lvert BD \rvert^2 \gt \lvert AD \rvert^2 + \lvert BC \rvert^2</m>.</p>
 <p>Finally, how can this special case be used to prove the case when <m>M</m> is does not lie on both segments?</p>
 </case>
 

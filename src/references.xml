@@ -11,7 +11,7 @@ For problems that were posed in these journals, the source is cited with the pro
 
 <p>Problems from past exams are used in several cases.  A list of the competitions from which I've drawn examples follows.
 <ul>
-<li><p>MAA Northeast Section Collegiate Math Competition</p></li>
+<li xml:id="maa_ne_contest"><p>MAA Northeast Section Collegiate Math Competition</p></li>
 <li><p>Virginia Tech Regional Mathematics Contest</p></li>
 <li><p>William Lowell Putnam Mathematics Competition (naturally!)</p></li>
 </ul>
