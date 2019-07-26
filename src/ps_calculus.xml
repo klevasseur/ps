@@ -183,12 +183,12 @@ between the tips of the hands changing at one o’clock?</p></statement>
 <!-- 
 <hint><p>Look at the <q>partial products.</q></p></hint>
  -->
- <solution>
- <p>(From <xref ref="maa_ne_contest"/>, 2006) As depicted in <xref ref="fig-sageplot-clock-hands" text="type-global"/>, let <m>\theta</m> and <m>\ell</m> be the angle between the hands and the distance between the tips of the hands, respectively.  The hour hand of a clock goes around once every 12 hours or, in radians per hour....</p>
+<solution>
+ <p>(From MAA Northeast Section Competition, 2006) As depicted in <xref ref="fig-sageplot-clock-hands" text="type-global"/>, let <m>\theta</m> and <m>\ell</m> be the angle between the hands and the distance between the tips of the hands, respectively.  The hour hand of a clock goes around once every 12 hours or, in radians per hour....</p>
  <figure xml:id="fig-sageplot-clock-hands">
-  <caption>Two segments that are not perpendicular</caption>
+  <caption>Illustration of the variables in the clock problem</caption>
   <image xml:id="sageplot-clock-hands">
-    <description>Figure illustrating the lemma, non-perpendicular case</description>
+    <description>Figure illustrating the variables in the clock problem</description>
 		<sageplot>
 				fig=Graphics()
 				fig+=circle((0,0),8)
@@ -205,8 +205,12 @@ between the tips of the hands changing at one o’clock?</p></statement>
 </figure>
 <p>The minute hand goes around once per hour, or at the rate of <m>2 \pi \frac{rad}{h}</m>.
 So the angle <m>\theta</m> between them (measuring clockwise from the minute hand to the hour hand) is changing at the rate of 
-<me>\frac{d\theta}{dt} = \frac{\pi}{6}-2\pi \quad \frac{rad}{h} </me> </p>
-<p>So the distance between the tips of the hands is decreasing at a rate of −18.6 mm/h at 1:00.</p>
+<me>\frac{d\theta}{dt} = \frac{\pi}{6}-2\pi \quad \textrm{rad/h} </me> </p>
+<p>We want <m>\frac{d\ell}{dt}</m> at one o'clock, so we use the Law of Cosines establish a relationship between <m>\theta</m> and <m>\ell</m>.  If we differentiate that equation with respect to time  we get 
+	<men xml:id="clock-diff-of-law-of-cosines"> 2 \ell \frac{d\ell}{dt} = -64(-sin \theta)\frac{d\theta}{dt}</men>
+At one o'clock, <m>\theta = \pi/6</m>.   The Law of Cosines formula gives us the value of <m>\ell</m> at that time and  then  we can use <xref ref="clock-diff-of-law-of-cosines" text="type-global"/> evaluated at <m>\pi/6</m> to get a final answer, which is <m>-\frac{88\pi}{3 \sqrt{80-33\sqrt{3}}}</m></p>
+
+<p>Without a calculator, it's unlikely that you would ever be expected to approximate this number, but with that aid, we find that the tips of the hands are decreasing at a rate of −18.6 mm/h at 1:00.</p>
 </solution>
 </exercise>
 

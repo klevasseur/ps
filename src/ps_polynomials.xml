@@ -3,7 +3,6 @@
 <chapter xml:id="c-polynomials">
 <title>Polynomials</title>
 <section><title>Prerequisite Knowledge</title>
-
 <definition>
 	<title>Polynomial over <m>S</m></title>
 	<idx>Polynomial</idx>
@@ -15,23 +14,34 @@
 		</p>
 	</statement>
 </definition>
-
 <remark><p>In the remainder of this chapter, if we simply refer to a polynomial, you can assume that it is a polynomial over any field.</p></remark>
 
+<p>What follows is a series of theorems and basic properties relating to polynomials.  Proofs are available from many sources.  We assume you are familiar with polynomial addition and multiplication, so we take division as a starting point.  The following is an analogue to the division property for integers.</p>
+<theorem xml:id="theorem-poly-divison-property"><title>Division Property for Polynomials</title>
+<idx>Division Property for Polynomials</idx>
+<statement><p>Let <m>F</m> be a field and let <m>p(x)</m> and <m>g(x)</m> be two polynomials
+of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <m>q(x)</m> and <m>r(x)</m> in <m>F[x]</m> such that <m>p(x) = g(x) q(x) + r(x)</m>, where <m>r(x) = 0</m> or
+<m>\deg  r(x) &lt; \deg  g(x)</m>.</p></statement></theorem>
 
-<p>What is the  Fundamental theorem of Algebra?</p>
+<theorem xml:id="theorem-polynomial-remainder"><title>The Remainder Theorem</title>
+<idx>Remainder Theorem for Polynomial</idx>
+<statement><p>Let <m>F</m> be a field, p(x) a polynomial over <m>F</m>, and <m>a \in  F</m>. Then <m>p(x) = (x-a)q(x) + p(a)</m>, where q(x) is some polynomial over <m>F</m>.</p></statement>
+</theorem> 
 
-<p>What does it mean to divide one polynomial by a second (nonzero) polynomial? What is the result?</p>
+<p>The proof of this next theorem is advanced, but it would be reasonable to expect that you could invoke in the course of solving a problem.</p>
+<theorem xml:id="theorm-ft-algebra"><title>The  Fundamental Theorem of Algebra<title>
+<idx>Fundamental Theorem of Algebra</idx>
+<statement><p>Every non-constant polynomial in a single variable with complex coefficients has at least one complex root.</p></statement>
+</theorem>
+<remark><p>You could use a induction proof to show that <xref ref="theorm-ft-algebra" text="title"/> implies that a polynomial of degree <m>n</m> over the complex numbers can be factored into the product of <m>n</m> monomial factors. </p></remark>
 
-<p>If <m>p(x)</m> and <m>q(x)</m> are polynomials of degree <m>m</m> and <m>n</m>, how are the degrees of <m>p(x) + q(x)</m>, <m>p(x)q(x)</m>,<m>p(q(x))</m>
-and <m>q(p(x))</m> related to <m>m</m> and <m>n</m>?</p>
-
-<p>Why is it customary to consider the degree of the zero polynomial to be undefined?</p>
-
-<p>Let <m>p(x)</m> be a polynomial and <m>\alpha</m> a number.  What is the relationship between <m>p(\alpha )</m> and division of <m>p(x)</m> by <m>x - \alpha</m>?</p>
-
-<p>If the degree of <m>p(x)</m> is <m>n</m> with roots <m>x_1</m>, <m>x_2</m>, <m>\ldots , x_n</m> (possibly repeated). How are <m>a_0</m>, <m>a_{n-2}</m> and <m>a_{n-1}</m>
-related to the roots of <m>p(x)</m>?</p>
+<p><title>Vieta Relations</title><idx>Vieta Relations</idx> Suppose that  <m>p(x) = \sum_{k=0}^n a_k x^k</m> has <m>n</m> roots: <m>x_1</m>, <m>x_2</m>, <m>\ldots , x_n</m> (possibly repeated).  The Vieta relations give us a way to equate these roots with the coefficients of <m>p(x)</m>. The three most commonly used of these are
+<ol>
+<li><p><m> \prod_{k=1}^n x_k = (-1)^n \frac{a_0}{a_n}</m></p></li>
+<li><p></p> \sum_{1\le i \lt j\le n} x_i x_j = \frac{a_{n-2}}{a_n}</li>
+<li><p> \sum_{i=1}^n x_i =  \frac{a_{n-1}}{a_n}</p></li>
+</ol>
+</p>
 
 </section>  
 

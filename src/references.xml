@@ -3,7 +3,7 @@
 <introduction>
 <p>Many of the problems in this book have been used in multiple sources.  If  a problem was set in a know competition, it cited in the problem statement.   For most other problems, no effort has been made to identify when it was first posed, but most of the problems in this book among the following list of sources.  An additional source of problems are the problem sections of the Mathematical Association of America journals:
 <ul>
-<li><p>The American Mathematical Monthley</p></li>
+<li><p>The American Mathematical Monthly</p></li>
 <li><p>Mathematics Magazine</p></li>
 <li><p>The College Mathematics Journal</p></li>
 </ul>
@@ -11,12 +11,13 @@ For problems that were posed in these journals, the source is cited with the pro
 
 <p>Problems from past exams are used in several cases.  A list of the competitions from which I've drawn examples follows.
 <ul>
-<li xml:id="maa_ne_contest"><p>MAA Northeast Section Collegiate Math Competition</p></li>
+<li><p>MAA Northeast Section Collegiate Math Competition</p></li>
 <li><p>Virginia Tech Regional Mathematics Contest</p></li>
 <li><p>William Lowell Putnam Mathematics Competition (naturally!)</p></li>
 </ul>
 </p>
 </introduction>
+<biblio type ="raw" xml:id="biblio-aigner">Aigner, Martin and Ziegler, G\"unter M., <title>Proofs from THE BOOK</title>, Springer, New York, 2010.</biblio>
 <biblio type="raw" xml:id="biblio-putnam-2">Alexanderson, Klosinski and Larson, <title>The William Lowell Putnam mathematical competition. Problems and solutions: 1965-1984</title>, MAA, 19__</biblio>
 <biblio type="raw" xml:id="ayad-2018">Ayad, Mohamed, <title>Galois Theory and Applications</title>, World Scientific, 2018</biblio>
 <biblio type="raw" xml:id="doerr-2019">Doerr, A, and K. Levasseur, <title>Applied Discrete Structures</title></biblio>
@@ -28,4 +29,5 @@ For problems that were posed in these journals, the source is cited with the pro
 <biblio type="raw" xml:id="biblio-kemeny">John G. Kemeny and J. Laurie Snell, <title>Finite Markov Chains</title>, Undergraduate Texts in Mathematics, Springer-Verlag, New York, 1976.</biblio> 
 <biblio type="raw" xml:id="biblio-klamkin-1986">Klamkin, M. S., <title>International Mathematical Olympiads 1978-1985 and Forty Supplementary Problems</title>, Mathematical Association of America, 1986.</biblio>
 <biblio type="raw" xml:id="biblio-propp">Propp, J. (2018), <title>Prof.  Engel’s  marvelously  improbable  machines</title>, <journal>Math Horizons</journal>, 26(2):  5–9. doi.org/10.1080/10724117.2018.1518840.</biblio>
-<biblio type="raw" xml:id="biblio-torrence">Bruce Torrence, <title>Passing the Buck and Firing Fibonacci: Adventures with the Stochastic Abacus</title>, <journal>The American Mathematical Monthly</journal>, May 2019, <volume>126</volume> <number>5</number>, 387<ndash />399, doi.org/10.1080/00029890.2019.1577089.</biblio></references>
+<biblio type="raw" xml:id="biblio-torrence">Bruce Torrence, <title>Passing the Buck and Firing Fibonacci: Adventures with the Stochastic Abacus</title>, <journal>The American Mathematical Monthly</journal>, May 2019, <volume>126</volume> <number>5</number>, 387<ndash />399, doi.org/10.1080/00029890.2019.1577089.</biblio>
+</references>

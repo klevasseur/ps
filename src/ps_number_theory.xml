@@ -27,7 +27,7 @@ We can easily verify that for any <m>n</m>, the residue of <m>n^2\pmod{7}</m> is
 <me> a + m\cdot q_1\equiv b \pmod{n} \Rightarrow  m\cdot q_1\equiv b-a \pmod{n}</me>
 We know that since <m>m</m> and <m>n</m> are relatively prime, there exist integers <m>s</m> and <m>t</m> such that <me>m \cdot s + n \cdot t = 1  \Rightarrow   m \cdot s \equiv 1 \pmod{n}</me>
 and so 
-<me>q_1\equiv s(b-a) \pmod{n}  \Rightarrow   x = a + m\cdot (s(b-a)+ n q_2)= x = a + m\cdot s\cdot(b-a)+ (m\cdot n) q_2) </me>
+<me>q_1\equiv s(b-a) \pmod{n}  \Rightarrow   x = a + m\cdot (s(b-a)+ n q_2)= x = a + m\cdot s\cdot(b-a)+ (m\cdot n) q_2 </me>
 for some integer <m>q_2</m>. This set of solutions constitutes one residue class mod <m>m \dot n</m> and so there is a unique solution in the desired set.</p>
 </example>
 

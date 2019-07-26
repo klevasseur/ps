@@ -2,7 +2,7 @@
 <!-- MBX -->
 <chapter xml:id="c-inequalities">
 <title>Inequalities</title>
-<introduction><p>As with most topics, we could spend a whole semester on inequalities.  I normally concentrate on the relationship between the arithmetic, geometric and harmonic means, the Cauchy-Bunyakovsky-Schwarz inequality, and Young's inequality in a single class</p>
+<introduction><p>As with most topics, we could spend a whole semester on inequalities.  I normally concentrate on the relationship between the arithmetic, geometric and harmonic means, the Cauchy-Bunyakovsky-Schwarz inequality, and Young's inequality in a single class.</p>
 </introduction>
 <section xml:id="s-means"><title>Means</title>
 <idx>Arithmetic Mean</idx><idx>Geometric Mean</idx>
@@ -39,11 +39,11 @@ with equality when <m>x=4y</m>, which implies that the maximum is attained when 
 <theorem><title>Cauchy-Bunyakovsky-Schwarz Inequality</title><idx>Cauchy-Bunyakovsky-Schwarz Inequality</idx><idx>CBS Inequality</idx>
 <statement>
 <p>If <m>x</m> and <m>y</m> are vectors in <m>\mathbb{R}^n</m>, then  
-<me>\left(\sum _{i=1}^n x_i y_i\right){}^2\leq \left(\sum _{i=1}^n x_i^2\right)\left(
+<me>\left(\sum _{i=1}^n x_i y_i\right)^2\leq \left(\sum _{i=1}^n x_i^2\right)\left(
 \sum _{i=1}^n y_i^2\right)</me>
  with equality if and only if the two vectors are scalar multiples of one another.</p>
 </statement>
-<proof><p>There are many proofs of this inequality.  Here is a brief one from THE BOOK. We observe that the inequality can be express more compactly using norm and inner product notation as <m> (x, y)^2 \leq \left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 </m>. </p>
+<proof><p>There are many proofs of this inequality.  Here is a brief one from <xref ref="biblio-aigner"/>. We observe that the inequality can be express more compactly using norm and inner product notation as <m> (x, y)^2 \leq \left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 </m>. </p>
 <p>We can assume that both <m>x</m> and <m>y</m> are nonzero vectors, for otherwise the inequality is obvious.  Let <m>\alpha</m> be a real variable, and consider the square of the norm of the vector <m>\alpha x + y</m>.  If <m>x</m> and <m>y</m> are linearly independent, then <m>\left\Vert \alpha x + y\right\Vert \gt 0</m>
 <me>\begin{split}
 			\left\Vert \alpha x + y \right\Vert &amp;= (\alpha x + y,\alpha x + y)\\
@@ -246,10 +246,43 @@ x^y + y^x \lt x^x + y^y  &amp; \Leftrightarrow x^y - x^x \lt y^y-y^x\\
 </statement>
 <!-- 
 <hint><p></p></hint>
+ -->
+<solution><p>First, note that 
+<me>2x^2+3y^2+4z^2=1 \Rightarrow  (\sqrt{2}x)^2 +(\sqrt{3}y)^2 + (2z)^2 =1.</me> 
+Then 
+<me>\begin{split}
+	f(x, y, z)^2 
+	&amp; = (5x - 6y +7z)^2 
+	&amp; = (\frac{5}{\sqrt{2}}\cdot(\sqrt{2} x) - \frac{6}{\sqrt{3}}\cdot(\sqrt{3} y)+\frac{7}{2}\cdot (3 z))^2\\
+	&amp; \leq \left(\frac{5}{\sqrt{2}}\right)^2+\left(\frac{6}{\sqrt{3}}\right)^2+\left(\frac{7}{2}\right)^2\\
+	&amp; = \frac{147}{4}
+	\end{split}
+	</me>
+Therefore <m>f(x,y,z)\leq \frac{1}{2} \sqrt{147}</m>.</p></solution>
+</exercise>
+<exercise xml:id="rearrangement-inequality">
+<idx>Rearrangement Inequality</idx>
+<statement>
+<p>Let <m>\{a_k\}</m> and <m>\{b_k\}</m> are two non-decreasing sequences of <m>n</m> real numbers.  Let <m>\sigma</m> be a permutation of the indices 1 through <m>n</m>.  Prove that 
+<me>\sum_{k=1}^n a_k b_k \ge \sum_{k=1}^n a_k b_{\sigma(k)}.</me>
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+ -->
+<solution><p>(Outline)  Start with the case of <m>n=2</m>, which is proven by expanding <m>(a_2 - a_1)(b_2-b_1)</m> which is a nonnegative number.  Once that is done, prove the general case by showing that if we permute the <m>b_k</m>'s in any way other than the identity permutation, there are two of the <m>b_k</m>'s that we can transpose to increase the sum.  This inequality is called the Rearrangement Inequality</p></solution>
+</exercise>
+<exercise>
+<statement>
+<p>Let <m>a, b, c</m> be positive real numbers.  Prove that  
+<me>\frac{a}{b+c} + \frac{b}{a+c}+ \frac{c}{a+b} \ge \frac{3}{2}</me>
+</p>
+</statement>
+<hint><p>Assume <m>a \ge b \ge c</m> and note that this implies <m>\frac{1}{b+c} \ge \frac{1}{a+c} \ge \frac{1}{a+b}</m>.</p></hint>
+<!-- 
 <solution><p></p></solution>
  -->
 </exercise>
-
 
 </exercises>
 </chapter> 

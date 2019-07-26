@@ -2,9 +2,11 @@
 <!-- MBX -->
 <chapter xml:id="c-linear-algebra">
 <title>Linear Algebra</title>
+<!-- 
 <introduction><p>to be added</p>
-</introduction><section>
-<title>Examples</title>
+</introduction>
+ -->
+<section xml:id="sect-linear-examples"><title>Examples</title>
 <example xml:id="ex-oddtown-la"><title>Oddtown</title>
 <p>In a town with <m>n</m> people, <m>m</m> clubs have been formed. Every club have an odd number of members, and every two clubs have an even number of members in common. Prove that <m>m \leq  n</m>.</p>
 <p>Let <m>M</m> be that <m>n \times m</m> matrix where <m>M_{ij}</m> is equal to 1 if person <m>i</m> belongs to club <m>j</m>, and 0 otherwise.</p>
@@ -56,6 +58,25 @@
 <solution><p></p></solution>
  -->
 </exercise>
+
+<exercise>
+<statement>
+<p> Let <m>A</m> be a square matrix, <m>A \neq I</m>, and suppose there exists a positive integer <m>m</m> such that <m>A^m=I</m>.  Calculate <m>det(I + A + A^2 + \cdots + A^{m-1})</m>.</p>
+</statement>
+<hint><p>The matrix that you want the determinant of is a finite geometric series.</p></hint>
+
+<solution><p>In general, we have 
+	<me>(I +  A + A^2 + \cdots + A^{m-1})(I -A)=(I-A^m).</me>
+But the right side is the zero matrix and so for every nonzero vector <m>x</m>, 
+<me>(I +  A + A^2 + \cdots + A^{m-1})(I -A)\vec{x}=\vec{0}.</me>
+Since <m>I-A \neq \vec{O}</m>, there exist nonzero vectors <m>\vec{x}</m> and <m>\vec{y}</m> such that <m>(I-A)\vec{x} = \vec{y}</m>.  This gives us 
+<me> (I +  A + A^2 + \cdots + A^{m-1})\vec{y}=\vec{0}</me>
+which implies that <m>I +  A + A^2 + \cdots + A^{m-1}</m> is singular and so its determinant is zero.
+</p><p>This problem was from the 2006 MAA Northeast Section Math Competition.</p></solution>
+</exercise>
+
+
+
 <exercise>
 <statement>
 <p>Let's call a real <m>3 \times 3</m> matrix a <q>magic square</q> if all its row-sums and column-sums are equal to 0. Show that all magic squares form a vector space. Find its dimension.
