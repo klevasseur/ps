@@ -29,37 +29,36 @@ of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <
 </theorem> 
 
 <p>The proof of this next theorem is advanced, but it would be reasonable to expect that you could invoke in the course of solving a problem.</p>
-<theorem xml:id="theorm-ft-algebra"><title>The  Fundamental Theorem of Algebra<title>
+<theorem xml:id="theorm-ft-algebra"><title>The  Fundamental Theorem of Algebra</title>
 <idx>Fundamental Theorem of Algebra</idx>
 <statement><p>Every non-constant polynomial in a single variable with complex coefficients has at least one complex root.</p></statement>
 </theorem>
-<remark><p>You could use a induction proof to show that <xref ref="theorm-ft-algebra" text="title"/> implies that a polynomial of degree <m>n</m> over the complex numbers can be factored into the product of <m>n</m> monomial factors. </p></remark>
+<remark><p>You could prove by induction that <xref ref="theorm-ft-algebra" text="title"/> implies that a polynomial of degree <m>n</m> over the complex numbers can be factored into the product of <m>n</m> monomial factors. </p></remark>
 
-<p><title>Vieta Relations</title><idx>Vieta Relations</idx> Suppose that  <m>p(x) = \sum_{k=0}^n a_k x^k</m> has <m>n</m> roots: <m>x_1</m>, <m>x_2</m>, <m>\ldots , x_n</m> (possibly repeated).  The Vieta relations give us a way to equate these roots with the coefficients of <m>p(x)</m>. The three most commonly used of these are
+<observation><title>Vieta Relations</title><idx>Vieta Relations</idx><p> Suppose that  <m>p(x) = \sum_{k=0}^n a_k x^k</m> has <m>n</m> roots: <m>x_1</m>, <m>x_2</m>, <m>\ldots , x_n</m> (possibly repeated).  The Vieta relations give us a way to equate these roots with the coefficients of <m>p(x)</m>. The three most commonly used of these are
 <ol>
 <li><p><m> \prod_{k=1}^n x_k = (-1)^n \frac{a_0}{a_n}</m></p></li>
-<li><p></p> \sum_{1\le i \lt j\le n} x_i x_j = \frac{a_{n-2}}{a_n}</li>
-<li><p> \sum_{i=1}^n x_i =  \frac{a_{n-1}}{a_n}</p></li>
+<li><p><m> \sum_{1\le i \lt j\le n} x_i x_j = \frac{a_{n-2}}{a_n}</m></p></li>
+<li><p><m> \sum_{i=1}^n x_i = - \frac{a_{n-1}}{a_n}</m></p></li>
 </ol>
 </p>
+</observation>
 
 </section>  
 
 <exercises>
 <title>Exercises</title>
 
+<!-- 
 <exercise>
 <statement><p>
  If <m>z=a + b i</m> is a complex number then <m>\bar{z}= a -b i</m> is its complex conjugate. Prove that for any two complex numbers <m>z</m> and <m>w</m>,
  <m>\overline{z+w}=\bar{z}+\bar{w}</m> and <m>\overline{z\cdot w}=\bar{z}\cdot \bar{w}</m>.   The second identity implies <m>\overline{z^n}=\bar{z}^n</m>
 for all positive integers <m>n</m>, which can be proven by induction, but don{'}t do this.
-
 </p></statement>
-<!-- 
 <hint><p></p></hint>
 <solution><p></p></solution>
- -->
-</exercise>
+</exercise> -->
 
 <exercise>
 <statement><p>

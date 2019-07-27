@@ -15,6 +15,7 @@
 with equality if and only if all the <m>a_i</m> are equal.</p></statement>
 <proof><p>A proof by induction.  We leave the proof for <m>n=2</m> as an exercise.  Then we assume that for some <m>n \geq 2</m>, the inequality is true and then assume we have <m>n+1</m> numbers.</p> </proof>
 </theorem>
+
 <p>The AM/GM inequality can be used in optimization.  Here is an example.</p>
 <example><statement><p>Problem:  If <m>x</m> and <m>y</m> are positive real numbers such that <m>x+2y=1</m>, what is the largest possible value of <m>x^2 y</m>?</p>
 <p>A first attempt at this problem might be to write this:
@@ -23,7 +24,7 @@ with equality if and only if all the <m>a_i</m> are equal.</p></statement>
 	<me>
 	\begin{split}
 		x^2 y &amp;= \frac{1}{4} \cdot x\cdot x\cdot (4 y) \\
-			&amp;\leq  \frac{1}{4} \left( \frac{(2(x+2y)}{3} \right)^3\\
+			&amp;\leq  \frac{1}{4} \left( \frac{2(x+2y)}{3} \right)^3\\
 			&amp; = \frac{1}{4} \left( \frac{2}{3} \right)^3 = \frac{2}{27} 
 			\end{split}</me>
 with equality when <m>x=4y</m>, which implies that the maximum is attained when <m>y=\frac{1}{6}</m> and <m>x=\frac{2}{3}</m>.</p>
@@ -116,7 +117,7 @@ def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
 </exercise>
 <exercise><idx>Harmonic Mean</idx>
 <statement>
-<p>How does the <term>harmonic mean</term> of two nonnegative real numbers, <m>a</m> and <m>b</m>,  <m>\frac{2}{\frac{1}{a}+\frac{1}{b}}</m> compare with the geometric and arithmetic means?
+<p>How does the <term>harmonic mean</term> of two nonnegative real numbers, <m>a</m> and <m>b</m>,  <m>\frac{2}{\frac{1}{a}+\frac{1}{b}}</m>, compare with the geometric and arithmetic means?
 </p>
 </statement>
 <hint><p>Select two simple numbers and compute their harmonic, geometric and arithmetic means.  If there is going to be consistency, you know what is should be.  Then the hard work is to prove it!</p></hint>
@@ -124,8 +125,8 @@ def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise>
-<statement><p>Let <m>a</m> and <m>b</m> be positive real numbers. Identify and prove the relationship between their <em>Quadratic Mean</em>, <m>\sqrt{\frac{a^2 + b^2}{2}}</m> and their other means.
+<exercise><idx>Quadratic Mean</idx>
+<statement><p>Let <m>a</m> and <m>b</m> be positive real numbers. Identify and prove the relationship between their <term>Quadratic Mean</term>, <m>\sqrt{\frac{a^2 + b^2}{2}}</m>, and their other means.
 </p>
 </statement>
 <!-- 
@@ -251,8 +252,7 @@ x^y + y^x \lt x^x + y^y  &amp; \Leftrightarrow x^y - x^x \lt y^y-y^x\\
 <me>2x^2+3y^2+4z^2=1 \Rightarrow  (\sqrt{2}x)^2 +(\sqrt{3}y)^2 + (2z)^2 =1.</me> 
 Then 
 <me>\begin{split}
-	f(x, y, z)^2 
-	&amp; = (5x - 6y +7z)^2 
+	f(x, y, z)^2 &amp; = (5x - 6y +7z)^2\\
 	&amp; = (\frac{5}{\sqrt{2}}\cdot(\sqrt{2} x) - \frac{6}{\sqrt{3}}\cdot(\sqrt{3} y)+\frac{7}{2}\cdot (3 z))^2\\
 	&amp; \leq \left(\frac{5}{\sqrt{2}}\right)^2+\left(\frac{6}{\sqrt{3}}\right)^2+\left(\frac{7}{2}\right)^2\\
 	&amp; = \frac{147}{4}
