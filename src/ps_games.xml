@@ -2,30 +2,65 @@
 <!-- MBX -->
 <chapter xml:id="c-games">
 <title>Games</title>
-<introduction><p>Mathematical games are a common type of problem in the Putnam. The two most recent cases have been difficult, A5 in 2017 and B5 in 2014.</p>
-</introduction><section>
-<title>Examples</title>
-<p>
-In analyzing games, it is  always assumed that players use optimal strategies, i. e., they make rational moves in their best interests.</p>
-</section>  
+<introduction><p>Mathematical games are a common type of problem in the Putnam. The two most recent cases have been difficult, A5 in 2017 and B5 in 2014.  In analyzing games, it is  always assumed that players use optimal strategies, i. e., they make rational moves in their best interests.</p>
+</introduction>
 <section>
-<title>Finite Two Person Games</title>
-<p>A finite game like nim goes here.</p>
+<title>Finite Two Person Games - Nim</title><idx>Nim</idx>
+<p>Nim is the name associated with a variety of games in which players take turns removing stones, sticks or some other objects from one or more piles, with the winner normally being the last player who can make a valid move.</p>
+<p>Here is one of the simplest versions of Nim. We start with a single pile of stones. Let's say 14.  A valid move for either player is to remove 1, 2 or 3 stones from the pile. That's all there is to the game.  With an initial pile of 14, the first player will aways win.  Here is why:  The first player will remove 2 piles from the pile leaving twelve stones.   Now the second player is free to remove 1, 2, or 3 stones.  Player 1 will respond by removing however many stones are needed to leave player 2 with eight stones.  The long-term strategy for player 1 is to always leave player 2 with a multiple of four stones.   Player 2 can never respond in such a way that player 1's strategy can't be continued.  Eventually, player 2 will be left with four stones.   Clearly player 1 is destined to win.   Of course if the starting number of stones is a multiple of 4, it's player 2 who is destined to win using the same strategy.</p>
+<p>Warm-up:  How does the game change if the moves that are allowed are to remove 1, 2 or 4 stones, but not 3 stones?
+</p>
 </section>  
-
 <section>
 <title>Mind Games</title>
 <p>Some games cannot really be played in that they would require an infinite number of moves. Other game-related problems ask a long term strategy, such as the following, where playing the game once is not the point.</p>
-<example xml:id="ex-near-far"><idx>Near-Far</idx>
-<statement><p>Near-Far, from E and F</p>
-</statement>
+<example xml:id="example-near-far">
+<title>Near-Far</title><idx>Near-Far</idx>
+<p>In the game Near-Far, Alpha and Beta each select a point in the closed unit disc. Alpha wins if the points are within 1/2 of each other and Beta wins if they are not. They play the game repeatedly. What is the best strategy for each of them to adopt, and what is the probability of Alpha winning?</p>
+
+<p>It would seem that the best strategy for Beta would be to select a random point on the edge of the disc. Even if Alpha knows this, the best response is to select a point that “covers” as much of the edge as possible. This can be done by selecting a point <m>\sqrt{3}/2</m> units from the center of the disc, covering an arc of length  <m>\pi/3</m>. If they both stick to these stratagem, the probability Alpha wins is <m>\frac{1}{6}</m>. However, Beta can also select the center of the disc, being sure of winning if Alpha sticks to the strategy described above. Knowing this, Alpha should employ a mixed strategy, also selecting the center on occasion. </p>
+
+<p>The mixed strategies can be summarized with a matrix showing the expected pay-off for Alpha.  The C-strategy is to select the center of the disc while the E-strategies are to select a random point on the disc at distances of <m>\sqrt{3}/2</m> and 1 for Alpha and Beta, respectively. </p>
+<table>
+  <title>
+    Mixed Strategy Matrix for Near-Far
+  </title>
+  <tabular>
+    <row>
+      <cell>   </cell>
+      <cell>   </cell>
+      <cell>Beta   </cell>
+      <cell>   </cell>
+    </row>
+    <row>
+      <cell>   </cell>
+      <cell right="medium" bottom="medium">  </cell>
+      <cell bottom="medium">  C     </cell>
+      <cell bottom="medium">  E      </cell>
+    </row>
+    <row>
+      <cell> Alpha  </cell>
+      <cell right="medium">  C  </cell>
+      <cell right="medium" bottom="medium">  1  </cell>
+      <cell bottom="medium">  -1  </cell>
+    </row>
+    <row>
+      <cell>   </cell>
+      <cell right="medium"> E  </cell>
+      <cell right="medium">-1</cell>
+      <cell> <m> -\frac{2}{3}</m>  </cell>
+    </row>
+  </tabular>
+</table>
+<p>If Alpha chooses the C-strategy with probability <m>\alpha</m> and Beta chooses C with probability <m>\beta</m>, then the expected payoff for Alpha will be 
+<me>A(\alpha,\beta)= \frac{7\alpha \beta}{3}-\frac{\alpha}{3}-\frac{\beta}{3}-\frac{ 2}{3}</me>
+This function has a saddle point at <m>\alpha = \beta = \frac{1}{7}</m> and its value there is <m>-\frac{5}{7}</m>, which implies that the probability Alpha wins is <m> \frac{1}{7}</m>.</p> 
+
 </example>
 </section>  
-
-
 <exercises>
 <title>Problems</title>
-<exercise><title>Nim</title>
+<exercise><title>Nim Piles</title>
 <statement><p>
 This game starts with three piles of stones. The piles contain 5, 7, and 11 stones. Two players take turns. On each turn, a player
 must remove at least one stone, and may remove any number of stones provided they all come from the same pile. The goal is to be the last player

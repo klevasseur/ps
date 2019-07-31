@@ -35,14 +35,16 @@ of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <
 </theorem>
 <remark><p>You could prove by induction that <xref ref="theorm-ft-algebra" text="title"/> implies that a polynomial of degree <m>n</m> over the complex numbers can be factored into the product of <m>n</m> monomial factors. </p></remark>
 
-<observation><title>Vieta Relations</title><idx>Vieta Relations</idx><p> Suppose that  <m>p(x) = \sum_{k=0}^n a_k x^k</m> has <m>n</m> roots: <m>x_1</m>, <m>x_2</m>, <m>\ldots , x_n</m> (possibly repeated).  The Vieta relations give us a way to equate these roots with the coefficients of <m>p(x)</m>. The three most commonly used of these are
+<theorem><title>Vieta Relations</title><idx>Vieta Relations</idx>
+<statement><p> Suppose that  <m>p(x) = \sum_{k=0}^n a_k x^k</m> has <m>n</m> roots: <m>x_1</m>, <m>x_2</m>, <m>\ldots , x_n</m> (possibly repeated).  The Vieta relations give us a way to equate these roots with the coefficients of <m>p(x)</m>. The three most commonly used of these are
 <ol>
 <li><p><m> \prod_{k=1}^n x_k = (-1)^n \frac{a_0}{a_n}</m></p></li>
 <li><p><m> \sum_{1\le i \lt j\le n} x_i x_j = \frac{a_{n-2}}{a_n}</m></p></li>
 <li><p><m> \sum_{i=1}^n x_i = - \frac{a_{n-1}}{a_n}</m></p></li>
 </ol>
 </p>
-</observation>
+</statement>
+</theorem>
 
 </section>  
 

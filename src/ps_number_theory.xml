@@ -213,7 +213,7 @@ Prove that <m>n</m> is divisible by 4.</p>
 <solution>
 <p>(Proof by induction) Let <m>p(n)</m> be the statement that there exists an <m>n</m> digit integer with base 10 representation using only digits 2 and 3 that is divisible by <m>2^n</m>.  The basis, <m>p(1)</m> is clearly true since 2 satisfies the conditions.</p>
 <p>Assume <m>p(n)</m> is true for some <m>n \ge 1</m>, and <m>a=2^n b</m> satisfies the conditions in that case.  If <m>b</m> is odd, then <m>3\cdot 10^n + a = 2^n(5^n\cdot 3 + b)</m> prepends <m>a</m> with the digit 3 and is divisible by <m>2^{n+1}</m> since <m>5^n\cdot 3 + b</m> is odd.  If <m>b</m> is even, then <m>2\cdot 10^n + a = 2^{n+1}\cdot 5^n + 2^n\cdot a</m> satisfies the desired condition since both terms of the sum are divisible by <m>2^{n+1}</m> and 2 is prepended to <m>a</m>.</p>
-<p>A second proof, attributed to Nicholas Raymond, is to note that there are <m>2^n</sm> different positive integers with <m>n</m> digits, each 2 or 3.  We can prove that there is a one-to one correspondence between these integers and the residues <m>\mod{2^n}</m>, <m>\left{0, 1, 2, \dots, 2^n-1\right}</m>.  This implies that exactly one of these integers is congruent to 0 and so must be divisible by <m>2^n</m>.</p>
+<p>A second proof, attributed to Nicholas Raymond, is to note that there are <m>2^n</m> different positive integers with <m>n</m> digits, each 2 or 3.  We can prove that there is a one-to one correspondence between these integers and the residues <m>\mod{2^n}</m>, <m>\{ 0, 1, 2, \dots, 2^{n-1} \}</m>.  This implies that exactly one of these integers is congruent to 0 and so must be divisible by <m>2^n</m>.</p>
 </solution>
 </exercise>
 
