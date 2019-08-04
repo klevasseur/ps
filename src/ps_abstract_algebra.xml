@@ -11,9 +11,9 @@
 <p>Let <m>G</m> be a group.</p>
 <example><title>1969 Putnam, altered</title>
 <p>Show that a group cannot be the union of two of its proper subgroups.</p>
-<p>Assume <m>H</m> and <m>K</m> are subgroups of some group <m>G</m>, and that <m>x \in H-K</m>, <m>y \in K-H</m>.  In order for the union to be a subgroup, it must be closed and <m>x*y</m> must be in <m>H</m> or in <m>K</m>.  Assume it's in <m>H</m>.
+<p>Assume <m>H</m> and <m>K</m> are subgroups of some group <m>G</m>, and that <m>x \in H-K</m>, <m>y \in K-H</m>.  We know that <m>x*y</m> must be in either <m>H</m> or <m>K</m>.  Assume it's in <m>H</m>.
 <me>x \in H \Rightarrow x^{-1} \in H \Rightarrow x^{-1}*(x*y) = y \in H</me>
-This contradiction implies that the union isn't closed and we are done.</p>
+This contradiction implies that no such pair of subgroups exists.</p>
 </example>
 </section>  
 <section>

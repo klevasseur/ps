@@ -13,9 +13,11 @@ Warm-up  Prove that any two consecutive Fibonacci numbers are coprime.  Note:  t
 </p>
 </section>  
 
+<!-- 
 <section><title>Topic</title>
-<p>--</p>
-</section>  
+<p>~~</p>
+</section> 
+ --> 
 <section><title>Generating Functions</title>
 <idx>Counting Binary Trees</idx>
 <p>Students should know how to derive the power series representation of a function, but might not be familiar with the inverse process of identifying  a function, given its power series.   This is a particulary powerful tool for deriving a formula from a combinitorial sequence. We will illustrate this technique by deriving a formula for the number of different binary trees with <m>n</m> vertices.</p>

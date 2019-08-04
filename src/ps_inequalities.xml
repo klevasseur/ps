@@ -45,9 +45,9 @@ with equality when <m>x=4y</m>, which implies that the maximum is attained when 
  with equality if and only if the two vectors are scalar multiples of one another.</p>
 </statement>
 <proof><p>There are many proofs of this inequality.  Here is a brief one from <xref ref="biblio-aigner"/>. We observe that the inequality can be express more compactly using norm and inner product notation as <m> (x, y)^2 \leq \left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 </m>. </p>
-<p>We can assume that both <m>x</m> and <m>y</m> are nonzero vectors, for otherwise the inequality is obvious.  Let <m>\alpha</m> be a real variable, and consider the square of the norm of the vector <m>\alpha x + y</m>.  If <m>x</m> and <m>y</m> are linearly independent, then <m>\left\Vert \alpha x + y\right\Vert \gt 0</m>
+<p>We can assume that both <m>x</m> and <m>y</m> are nonzero vectors, for otherwise the inequality is obvious.  Let <m>\alpha</m> be a real variable, and consider the square of the norm of the vector <m>\alpha x + y</m>.  If <m>x</m> and <m>y</m> are linearly independent, then <m>\left\Vert \alpha x + y\right\Vert \gt 0</m>.  We expand the square of this norm:
 <me>\begin{split}
-			\left\Vert \alpha x + y \right\Vert &amp;= (\alpha x + y,\alpha x + y)\\
+			\left\Vert \alpha x + y \right\Vert^2 &amp;= (\alpha x + y,\alpha x + y)\\
 								&amp;  = \alpha^2 \left\Vert x \right\Vert^2 + 2 \alpha (x, y) + \left\Vert y \right\Vert
 	\end{split}
 </me>
@@ -69,8 +69,6 @@ This quadratic polynomial in <m>\alpha</m> has no real roots and so the discrimi
 </p> </proof>
 </theorem>
 <theorem>
-	<title>__</title>
-	<idx>__</idx>
 		<statement><p>If <m>f</m> is a strictly increasing function on the positive real numbers, <m>f(0)=0</m>, and <m>a</m> and <m>b</m> are positive real numbers, then 
 		<me>a b \leq \int_0^a f(x) \, dx +\int_0^b f^{-1}(y) \, dy</me></p></statement>
 <proof><p>If <m>b=f(a)</m>, then the rectangle <m>[0,a]\times[0,b]</m> is divided into two regions, the region below the curve <m>y=f(x)</m>, and the region to the left of <m>x = f^{-1}(y)</m>.  The sum of the two integrals is exactly equal to the area, <m>a\cdot b</m>.  If <m>f(a) \gt b</m>, the region whose area  <m>\int_0^b f^{-1}(y) \, dy</m> computes is contained within the rectangle, but the region whose area <m>\int_0^a f(x) \, dx</m> computes spills outside the rectangle, making the inequality a strict one.  This case is illustrated by <xref ref="figure-young" />.  In the other case, where <m>f(a) \lt b</m>, the excess area that makes the inequality a strict one is accounted for by <m>\int_0^b f^{-1}(y) \, dy</m>.

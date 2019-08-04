@@ -64,9 +64,11 @@ for all positive integers <m>n</m>, which can be proven by induction, but don{'}
 
 <exercise>
 <statement><p>
-Let <m>p(x)</m> be a polynomial over the real numbers. \\
-(a) Prove that if <m>z=a + b i</m> is a root of <m>p(x)</m>, then <m>\bar{z}= a -b i</m> is also a root of <m>p(x)</m>.\\
-(b) Prove that <m>p(x)</m> can be factored into a product of linear and quadratic polynomials with real coefficients.
+Let <m>p(x)</m> be a polynomial over the real numbers.
+<ol label="(a)">
+<li><p>Prove that if <m>z=a + b i</m> is a root of <m>p(x)</m>, then <m>\bar{z}= a -b i</m> is also a root of <m>p(x)</m>.</p></li>
+<li><p>Prove that <m>p(x)</m> can be factored into a product of linear and quadratic polynomials with real coefficients.</p></li>
+</ol>
 </p></statement>
 <!-- 
 <hint><p></p></hint>

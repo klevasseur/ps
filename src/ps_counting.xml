@@ -5,12 +5,12 @@
 <introduction><p>___ </p>
 </introduction>
 <section><title>Counting Two Ways</title>
-<p>Most students are familiar with formula for a binomial coefficient,<m>\binom{n}{k}</m>. Here, we will derive the forumla by two-way counting.</p>
+<p>Most students are familiar with formula for a binomial coefficient,<m>\binom{n}{k}</m>. Here, we will derive the formula by two-way counting.</p>
 <example xml:id="ex-binomial-coeff-formula">
 <idx>Binomial Coefficient Formula, Derivation</idx>
 <statement>
 <p>The binomial coefficient <m>\binom{n}{k}</m> represents the  the number of <m>k</m> element subsets of an <m>n</m> element set , <m>0\leq k\leq n</m>.</p>
-<p>We will count the number of ways to permute <m>k</m>  objects from a set of <m>n</m> elements two ways.  First, we can first choose one of the <m>k</m> element subsets of of the set, and second, choose one of the <m>k!</m>  permutations of those elements. By the rule of products, we can do this <m> \binom{n}{k} \cdot k!</m>.  A second approach is to select the the elements from our set to go into positions 1 through <m>k</m> in the permutation immediately.  The number of ways of doing this is <m>n \cdot (n-1)\cdot \cdots \cdot (n-(k-1))</m>.   The two expressions count the same number and so they are equal. By equating the solve for the value of the  binomial coefficient:  <m>\binom{n}{k} =\frac{n!}{k! \cdot (n-k)!}</m>.</p>
+<p>We will count the number of ways to permute <m>k</m>  objects from a set of <m>n</m> elements two ways.  First, we can first choose one of the <m>k</m> element subsets of of the set, and second, choose one of the <m>k!</m>  permutations of those elements. By the rule of products, we can do this <m> \binom{n}{k} \cdot k!</m>.  A second approach is to select the the elements from our set to go into positions 1 through <m>k</m> in the permutation immediately.  The number of ways of doing this is <m>n \cdot (n-1)\cdot \cdots \cdot (n-(k-1))</m>.   The two expressions count the same number and so they are equal. We equate them and then solve for the value of the  binomial coefficient:  <m>\binom{n}{k} =\frac{n!}{k! \cdot (n-k)!}</m>.</p>
 </statement>
 </example>
 </section>  
@@ -42,7 +42,7 @@ The contradiction we arrive at, <m>H \gt H</m>, implies that the series does ind
 <statement>
 <p>Let <m>S</m> be a set of real numbers which is closed under multiplication (that is, if <m>a</m> and <m>b</m> are in <m>S</m>, then so is <m>a b</m>). Let <m>T</m> and <m>U</m> be disjoint subsets of <m>S</m> whose union is <m>S</m>. Given that the product of any three (not necessarily distinct) elements of <m>T</m> is in <m>T</m> and that the product of any three elements of <m>U</m> is in <m>U</m>, show that at least one of the two subsets <m>T</m>, <m>U</m> is closed under multiplication.</p>
 </statement>
-<solution><p>Assume neither <m>T</m> nor <m>U</m> is closed.  Then there exist <m>t_1, t_2\in T</m> and <m>u_1, u_2 \in U</m> such that <m>t_1\cdot t_2 \in U</m> and <m>u_1 \cdot u_2 \in T</m>.  If we consider <m>(t_1\cdot t_2)\cdot(u_1 \cdot u_2)</m> to be a product of either three elements of <m>T</m> or <m>U</m>, meaning that it would be in the intersection, which is a contradiction.  Therefore one of the sets is closed.</p>
+<solution><p>Assume neither <m>T</m> nor <m>U</m> is closed.  Then there exist <m>t_1, t_2\in T</m> and <m>u_1, u_2 \in U</m> such that <m>t_1\cdot t_2 \in U</m> and <m>u_1 \cdot u_2 \in T</m>.  We can observe that <m>(t_1\cdot t_2)\cdot(u_1 \cdot u_2)</m> is a product of either three elements of <m>T</m>, or a product of three elements of <m>U</m>, meaning that it would be in the intersection, which is a contradiction.  Therefore one of the sets is closed.</p>
 </solution>
 </exercise>
 <exercise number="2">

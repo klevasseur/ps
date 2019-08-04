@@ -5,11 +5,11 @@
 <introduction><p>This chapter contains note on the way I teach a problem solving class.  I'm sure that there are plenty of variations that work at least as well, and I hope this will provide the reader with ideas for their own system.</p>
 </introduction>
 <section><title>Before the first class</title>
-<p>Students in my class are required to compete in the Putnam but in a typical year there are an equal number of students who are not in class who are interested in the Putnam.  Since it's never to early to start preparing, I post warm-up problems on Piazza.com.   As students register for the class, many in the spring, I add them to the Piazza list, which also includes the non-registered students.  I post problems that are not quite up to the difficulty of Putnam problems - in fact many are way easier.  However, this lets students rediscover some basic concepts.  Solutions are available to students even if they register late, and so these problems serve as a starting point to the course.</p>
+<p>Students in my class are required to compete in the Putnam but in a typical year there are an equal number of students who are not in class who are interested in the Putnam.  Since it's never too early to start preparing, I post warm-up problems on Piazza.com.   As students register for the class, many in the spring, I add them to the Piazza list, which also includes the non-registered students.  I post problems that are not quite up to the difficulty of Putnam problems - in fact many are way easier.  However, this lets students rediscover some basic concepts.  Solutions are available to students even if they register late, and so these problems serve as a starting point to the course.</p>
 </section>
 <section><title>The first class</title>
 <p>In the first class, we review two basic proof tools, mathematical induction and the pigeonhole principle. I suggest starting the class by reviewing these two topics through examples.  I try to be as careful as possible in writting the solutions in a logically coherent form, setting the tone for what I will expect to see from students.   The choice of Fermat's Little Theorem for the induction proof also anticipates a later class in which we do Number Theory.  I don't dwell on these examples any longer than necessary, shooting for a total time of around 30 minutes.</p>
-<p>I normally divide the class into groups of 2, 3 or 4 to work on problems.  Exactly how this is done depends on class size, and other factors.   The first problem is a warm-up in that I expect several students to have seen it already.  I instruct the class to work  on this one first with the expectation that most groups will complete it within ten minutes.   I circulate among the groups to help anyone who is struggling with the first problem.   I assign the rest of the problems to different groups.  I encourage the groups to put solutions on the board when they are ready.  When a few problems have been written out, we take a break from solving to review the solutions. Groups that have completed a problem are assigned a new one and we continue until the period is almost over.  Normally a few problems are left unsolved and they are assigned for homework.</p>
+<p>I normally divide the class into groups of 2, 3 or 4 to work on problems.  Exactly how this is done depends on class size, and other factors.   The first problem, dealing with the sum of the first <m>n</m> odd positive integers, is a warm-up that I expect most students to have seen it already.  I instruct the class to work on this one first with the expectation that most groups will complete it within ten minutes.   I circulate among the groups to help anyone who is struggling with the first problem.   The rest of the problems are assigned to different groups.  The groups are encouraged to put solutions on the board when they are ready.  When a few problems have been written out, we take a break from solving to review the solutions. Groups that have completed a problem are assigned a new one and we continue until the period is almost over.  Normally a few problems are left unsolved and they are assigned for homework.  Students are also instructed to read <xref ref="c-tricks" text="title" />.</p>
 </section>
 <section><title>Subsequent classes</title>
 <p>In the second class, we spend some time discussing further progress in the Week 1 problems.   After that, we focus on some counting techniques and indirect proofs.  Again, we spend only a short time reviewing these concepts.  I leave plenty of time to work on these new problems. Students should be aware that not every solution to problems that are posed in a given week use the technique that is highlighted in that week. </p>
@@ -19,14 +19,14 @@
 <p>With the assumption that we have to start somewhere, I give students a list, certainly not complete, of topics that expect students to have a good grasp of to participate in the class.  This list is far from complete, but highlights topics that appear in many of the problems we encounter. Most of the topics from calculus are not on the list, but are also assumed.</p>
 <list><title>Prerequisites</title>
 <ul>
+<li><p>Polynomial operations and properties.</p></li>
 <li><p>Properties of the complex numbers</p></li>
 <li><p>Geometric series, both finite and infinite.  Alternating series.</p></li>
-<li><p>Basic properties of polynomials.</p></li>
+<li><p>Basic Geometry</p></li>
 <li><p>The definition of the trigonometric functions as circular functions, basic trigonometric identities.  Laws of sine and cosine.</p></li>
 <!-- 
 <li><p>Expected Value of a random variable.</p></li>
  -->
-<li><p></p></li>
 </ul>
 <conclusion><p>There are several other topics could be listed here but I do spend a short amount of time reviewing them, such as induction and modular arithmetic.</p></conclusion>
 </list>

@@ -118,7 +118,7 @@ A=Matrix([[i==j or i==n-1 or j==n-1 for i in range(n)] for j in range(n)] )
 <p>Informally, the Pigeonhole Principle says that if you have more pigeons than you have pigeonholes, then at least one pair of pigeons have to share the same pigeonhole. The trick to using this simple idea is to identify the pigeons and pigeonholes in a problem.  Here is a relatively simple example. A clue that we can use the Pigeonhole Principle problem in this case is that we are asked to prove the existence of two objects that share a property.</p> 
 	<example xml:id="e-pigeons-1">
 		<p>Prove that every set of 10 two-digit integer numbers has two disjoint subsets with the same sum of elements. (Subsets are pigeons, possible sums are holes)</p>
-		<p>We want two subsets with the same sum, so consider the possible sums to be pigeonholes, and now picture subsets of our ten integer set to be the pigeons. We are not given a specific set of integers, but we can identify the range of possible sums of elements in their subsets.  The smallest sum is 1 while the largest proper subset is <m>91+92+\cdots+99 =855 </m>.  There are <m>2^{10}-2 = 1022 &gt; 855</m> non-empty proper subsets of a ten element set.  Therefore, if we imagine each subset to roost with its sum, we are sure there there must be two subsets with the same sum.  Now those two subsets may not be disjoint, but if we simply remove elements from their intersection from both subsets, we are done.
+		<p>We want two subsets with the same sum, so consider the possible sums to be pigeonholes, and now picture subsets of our ten integer set to be the pigeons. We are not given a specific set of integers, but we can identify the range of possible sums of elements in their subsets.  The smallest sum is 1 while the largest proper subset is <m>91+92+\cdots+99 =855 </m>.  There are <m>2^{10}-2 = 1022 &gt; 855</m> non-empty proper subsets of a ten element set.  Therefore, if we imagine each subset to roost with its sum, we are sure there there must be two subsets with the same sum.  Now those two subsets may not be disjoint, but if we simply remove elements in their intersection, we are done.
 		</p>
 	</example>
 </section>  
@@ -165,8 +165,10 @@ A=Matrix([[i==j or i==n-1 or j==n-1 for i in range(n)] for j in range(n)] )
 	Show that a <m>2^n \times  2^n</m> square with a corner tile removed can be covered without overlaps by L-shaped figures (each figure contains 3 tiles). (If you feel adventurous, how about an <m>n \times  n</m> square for arbitrary <m>n</m>?)
 </p>
 </statement>
+<!-- 
 <solution><p></p>
 </solution>
+ -->
 </exercise>
 <exercise number="6">
 <statement>
@@ -175,8 +177,10 @@ A=Matrix([[i==j or i==n-1 or j==n-1 for i in range(n)] for j in range(n)] )
 	</p>
 
 </statement>
+<!-- 
 <solution><p></p>
 </solution>
+ -->
 </exercise>
 <exercise number="7">
 <statement>
@@ -191,8 +195,10 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 </p>
 
 </statement>
+<!-- 
 <solution><p></p>
 </solution>
+ -->
 </exercise>
 <exercise number="8">
 <statement>
@@ -237,8 +243,10 @@ If you use the formula to compute a few more terms of the sequence, the pattern 
 	Prove that any positive integer can be represented as <m>\pm 1^2\pm 2^2\pm 3^2\pm \cdots \pm n^2</m> for some positive integer <m>n</m> and some choice of signs. 
 </p>
 </statement>
+<!-- 
 <solution><p></p>
 </solution>
+ -->
 </exercise>
 <exercise number="12">
 <statement>
