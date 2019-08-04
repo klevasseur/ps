@@ -13,12 +13,12 @@
 <p>The conditions of problem translate to the following with respect to the dot products of these vectors.
 <me>\textrm{Each club has an odd number of members }\Rightarrow  v_i\cdot v_i = 1</me>
 and
-<me>\textrm{Any two clubs have an even number of members in common }\Rightarrow  v_i\cdot v_j = 0 \textrm{ if }i\neqj</me>
+<me>\textrm{Any two clubs have an even number of members in common }\Rightarrow  v_i\cdot v_j = 0 \textrm{ if }i\neq j</me>
 </p>
-<p>Now, assume  <m>\sum{i=1}^m c_i v_i = \vect{0}</m>.  We will show that each <m>c_k = 0 using the linearity of the dot product.</m>.
+<p>Now, assume  <m>\sum{i=1}^m c_i v_i = \vec{0}</m>.  We will show that each <m>c_k = 0 using the linearity of the dot product.</m>.
 <me>
 \begin{split}
-0 &amp; = v_k \cdot \vect{0}\\
+0 &amp; = v_k \cdot \vec{0}\\
 	&amp; = v_k \cdot \sum{i=1}^m c_i v_i\\
 	&amp; = \sum{i=1}^m c_i (v_k \cdot v_i)\\
 	&amp; = c_k (v_k \cdot v_k)\\

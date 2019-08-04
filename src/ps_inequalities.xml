@@ -11,9 +11,25 @@
 <theorem><title>The AM/GM inequality</title>
 <idx>AM/GM inequality</idx>
 <statement><p>Assume <m>n \geq 2</m>.  If <m>a_i</m>, <m>i = 1, 2, \dots, n</m> are non-negative real numbers, then
-<me>\left(a_1 a_2\cdots  a_n\right){}^{1/n}\leq  \frac{a_1+a_2+\cdots +a_n}{n}</me>
+<me>\left(a_1 a_2\cdots  a_n\right)^{1/n}\leq  \frac{a_1+a_2+\cdots +a_n}{n}</me>
 with equality if and only if all the <m>a_i</m> are equal.</p></statement>
-<proof><p>A proof by induction.  We leave the proof for <m>n=2</m> as an exercise.  Then we assume that for some <m>n \geq 2</m>, the inequality is true and then assume we have <m>n+1</m> numbers.</p> </proof>
+<proof><p>A proof by induction, but a somewhat non-conventional one taken from <xref ref="biblio-aigner" text="title"/>. If <m>n \ge 2</m> then let <m>P(n)</m> the inequality for <m>n</m> numbers.  Instead of going forward one step at a time starting at 2, we start at 2, prove the two general implications  <m>P(n)\Rightarrow P(n-1)</m>  and <m>P(n)\Rightarrow P(2n)</m>.  After proving the basis, <m>n=2</m>, we can applied these two implications in several ways; for example, we can to get the truth for values <m>4, 3, 8, 7, 6, 5, 16, 15, \dots</m>.</p>
+<p>We leave the proof for <m>n=2</m> as an exercise.  Then we assume that for some <m>n \geq 2</m>, the inequality is true and then assume we have <m>2n</m> numbers.
+<me>\begin{split}
+\prod_{k=1}^{2n} a_k &amp;=\left(\prod_{k=1}^{n} a_k \right)\left(\prod_{k=n+1}^{2n} a_k  \right) \\	
+		&amp; \leq \left(\sum_{k=1}^{n} \frac{a_k}{n} \right)^n \left(\sum_{k=n+1}^{2n} \frac{a_k}{n} \right)^n \quad \textrm{ by }P(n)\\
+		&amp; \leq \left(\frac{\sum_{k=1}^{2n} \frac{a_k}{n}}{2}\right)^{2n} \quad \textrm{ by }P(2)\\
+		&amp; = \left(\frac{\sum_{k=1}^{2n} a_k}{2n}\right)^{2n} 
+\end{split}
+</me>
+Now if <m>n \ge 3</m> we assume <m>P(n)</m> is true and we have <m>n-1</m> numbers. We append the arithmetic mean of these numbers, <m>A = \sum_{k=1}^{n-1} \frac{a_k}{n-1}</m> and apply <m>P(n)</m>:
+<me>\begin{split}
+\left(\prod_{k=1}^{n-1} a_k\right)A &amp; \leq \left(\frac{\left(\prod_{k=1}^{n-1} a_k\right) + A}{n}\right)^n\\
+		&amp; = \left( \frac{(n-1)A + A}{n} \right)^n = A^n
+\end{split}
+</me>
+dividing by <m>A</m>, we get <m>\left(\prod_{k=1}^{n-1} a_k\right) \leq A^{n-1} = \left(\frac{\sum_{k=1}{n-1} a_{k}}{n-1}\right)^{n-1}</m>.
+</p> </proof>
 </theorem>
 
 <p>The AM/GM inequality can be used in optimization.  Here is an example.</p>
