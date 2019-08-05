@@ -18,17 +18,21 @@
 <section><title>Some <q>Prerequisite</q> Topics</title>
 <p>With the assumption that we have to start somewhere, I give students a list, certainly not complete, of topics that expect students to have a good grasp of to participate in the class.  This list is far from complete, but highlights topics that appear in many of the problems we encounter. Most of the topics from calculus are not on the list, but are also assumed.</p>
 <list><title>Prerequisites</title>
-<ul>
-<li><p>Polynomial operations and properties.</p></li>
-<li><p>Properties of the complex numbers</p></li>
-<li><p>Geometric series, both finite and infinite.  Alternating series.</p></li>
-<li><p>Basic Geometry</p></li>
-<li><p>The definition of the trigonometric functions as circular functions, basic trigonometric identities.  Laws of sine and cosine.</p></li>
-<!-- 
-<li><p>Expected Value of a random variable.</p></li>
- -->
-</ul>
-<conclusion><p>There are several other topics could be listed here but I do spend a short amount of time reviewing them, such as induction and modular arithmetic.</p></conclusion>
+	<ul>
+	<li><p>Polynomial operations and properties.</p></li>
+	<li><p>Properties of the complex numbers</p></li>
+	<li><p>Geometric series, both finite and infinite.  Alternating series.</p></li>
+	<li><p>Basic Geometry</p></li>
+	<li><p>The definition of the trigonometric functions as circular functions, basic trigonometric identities.  Laws of sine and cosine.</p></li>
+	</ul>
+<conclusion><p>There are several other topics could be listed here but I do spend a short amount of time reviewing them, such as induction and modular arithmetic.</p>
+<p>Topics that are not addressed but could be added in the future:
+	<ul>
+		<li><p>Covexity, Jenson's Inequality</p></li>
+		<li><p>Symmetry</p></li>
+	</ul>
+</p>
+</conclusion>
 </list>
 </section>
 </chapter>

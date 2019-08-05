@@ -168,9 +168,11 @@ The sum of the digits of <m>S(4444^{4444})</m> is no more than the sum of the di
 
 <exercise number="11">
 <statement>
-<p>Each of the numbers <m>x_1</m>, <m>x_2</m>, ..., <m>x_n</m> equal 1 or -1, and <me>x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots+x_{n-3}x_{n-2}x_{n-1}x_n+\\
-   x_{n-2}x_{n-1}x_nx_1+x_{n-1}x_nx_1x_2+x_nx_1x_2x_3=
-0</me>.
+<p>Each of the numbers <m>x_1</m>, <m>x_2</m>, ..., <m>x_n</m> equal 1 or -1, and
+ <me>\begin{split}
+x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots\\+x_{n-3}x_{n-2}x_{n-1}x_n+
+   x_{n-2}x_{n-1}x_nx_1+x_{n-1}x_nx_1x_2+x_nx_1x_2x_3=0
+	\end{split}</me>.
 Prove that <m>n</m> is divisible by 4.</p>
 </statement>
 <!-- 

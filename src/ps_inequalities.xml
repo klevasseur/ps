@@ -13,18 +13,18 @@
 <statement><p>Assume <m>n \geq 2</m>.  If <m>a_i</m>, <m>i = 1, 2, \dots, n</m> are non-negative real numbers, then
 <me>\left(a_1 a_2\cdots  a_n\right)^{1/n}\leq  \frac{a_1+a_2+\cdots +a_n}{n}</me>
 with equality if and only if all the <m>a_i</m> are equal.</p></statement>
-<proof><p>A proof by induction, but a somewhat non-conventional one taken from <xref ref="biblio-aigner" text="title"/>. If <m>n \ge 2</m> then let <m>P(n)</m> the inequality for <m>n</m> numbers.  Instead of going forward one step at a time starting at 2, we start at 2, prove the two general implications  <m>P(n)\Rightarrow P(n-1)</m>  and <m>P(n)\Rightarrow P(2n)</m>.  After proving the basis, <m>n=2</m>, we can applied these two implications in several ways; for example, we can to get the truth for values <m>4, 3, 8, 7, 6, 5, 16, 15, \dots</m>.</p>
+<proof><p>A proof by induction, but a somewhat unconventional one taken from <xref ref="biblio-aigner" text="title"/>. If <m>n \ge 2</m> then let <m>P(n)</m> the inequality for <m>n</m> numbers.  Instead of going forward one step at a time starting at 2, we start at 2 and prove the two general implications  <m>P(n)\Rightarrow P(n-1)</m>  and <m>P(n)\Rightarrow P(2n)</m>.  After proving the basis, <m>n=2</m>, we can apply these two implications in several ways; for example, we can infer the truth for values <m>4, 3, 8, 7, 6, 5, 16, 15, 14, \dots, 9, 32, 31, 30 \dots</m>.</p>
 <p>We leave the proof for <m>n=2</m> as an exercise.  Then we assume that for some <m>n \geq 2</m>, the inequality is true and then assume we have <m>2n</m> numbers.
 <me>\begin{split}
 \prod_{k=1}^{2n} a_k &amp;=\left(\prod_{k=1}^{n} a_k \right)\left(\prod_{k=n+1}^{2n} a_k  \right) \\	
-		&amp; \leq \left(\sum_{k=1}^{n} \frac{a_k}{n} \right)^n \left(\sum_{k=n+1}^{2n} \frac{a_k}{n} \right)^n \quad \textrm{ by }P(n)\\
+		&amp; \leq \left(\sum_{k=1}^{n} \frac{a_k}{n} \right)^n \left(\sum_{k=n+1}^{2n} \frac{a_k}{n} \right)^n \quad \textrm{ by }P(n)\textrm{, twice}\\
 		&amp; \leq \left(\frac{\sum_{k=1}^{2n} \frac{a_k}{n}}{2}\right)^{2n} \quad \textrm{ by }P(2)\\
 		&amp; = \left(\frac{\sum_{k=1}^{2n} a_k}{2n}\right)^{2n} 
 \end{split}
 </me>
-Now if <m>n \ge 3</m> we assume <m>P(n)</m> is true and we have <m>n-1</m> numbers. We append the arithmetic mean of these numbers, <m>A = \sum_{k=1}^{n-1} \frac{a_k}{n-1}</m> and apply <m>P(n)</m>:
+Now if <m>n \ge 3</m> we assume <m>P(n)</m> is true and we have <m>n-1</m> numbers. We append the arithmetic mean of these numbers, <m>A = \sum_{k=1}^{n-1} \frac{a_k}{n-1}</m>, to our collection and apply <m>P(n)</m>:
 <me>\begin{split}
-\left(\prod_{k=1}^{n-1} a_k\right)A &amp; \leq \left(\frac{\left(\prod_{k=1}^{n-1} a_k\right) + A}{n}\right)^n\\
+\left(\prod_{k=1}^{n-1} a_k\right)A &amp; \leq \left(\frac{\left(\sum{k=1}^{n-1} a_k\right) + A}{n}\right)^n\\
 		&amp; = \left( \frac{(n-1)A + A}{n} \right)^n = A^n
 \end{split}
 </me>
@@ -115,9 +115,7 @@ def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
                     <description>A rectangle with area <m>a b</m> is included in the shaded regions</description>
                 </image>
             </figure>
- 
-<p>--</p>
-</section>  
+ </section>  
 <exercises><title>Problems</title>
 <exercise>
 <statement>
@@ -131,7 +129,7 @@ def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
 </exercise>
 <exercise><idx>Harmonic Mean</idx>
 <statement>
-<p>How does the <term>harmonic mean</term> of two nonnegative real numbers, <m>a</m> and <m>b</m>,  <m>\frac{2}{\frac{1}{a}+\frac{1}{b}}</m>, compare with the geometric and arithmetic means?
+<p>How does the <term>harmonic mean</term> of two nonnegative real numbers, <m>a</m> and <m>b</m>,  <m>\frac{2}{\frac{1}{a}+\frac{1}{b}}</m>, compare with their geometric and arithmetic means?
 </p>
 </statement>
 <hint><p>Select two simple numbers and compute their harmonic, geometric and arithmetic means.  If there is going to be consistency, you know what is should be.  Then the hard work is to prove it!</p></hint>

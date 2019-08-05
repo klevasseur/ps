@@ -2,8 +2,10 @@
 <!-- MBX -->
 <chapter xml:id="c-counting">
 <title>Counting and Indirect Proofs</title>
+<!-- 
 <introduction><p>___ </p>
 </introduction>
+ -->
 <section><title>Counting Two Ways</title>
 <p>Most students are familiar with formula for a binomial coefficient,<m>\binom{n}{k}</m>. Here, we will derive the formula by two-way counting.</p>
 <example xml:id="ex-binomial-coeff-formula">

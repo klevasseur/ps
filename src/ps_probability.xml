@@ -5,10 +5,12 @@
 <introduction><p>If <m>x</m> is a random variable with outcomes <m>x_1, x_2. x_3, \ldots</m> and corresponding probabilities <m>p_1, p_2, p_3, \ldots</m>, then the expected value of <m>x</m> is <m>x_1p_2+ x_2p_2+ x_3p_3+\ldots</m>.</p>
 </introduction>
 
+<!-- 
 <section>
 <title>Examples</title>
 <p>Warm-up: What is the probability that a random five-card poker hand is a flush? a straight? </p>
 </section>  
+ -->
 
 <section xml:id="s-conditional-probability">
 <title>Conditional Probability</title>

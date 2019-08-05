@@ -107,9 +107,7 @@ which always has 3 real solutions if both <m>s</m>  and <m>t</m> are nonzero.   
 </exercise>
 <exercise>
 <statement><p>
-Consider the following game played with a deck of <m>2n</m> cards numbered from 1 to <m>2n</m>. The deck is randomly shuffled and <m>n</m> cards are dealt
-to each of two players. Beginning with A, the players take turns discarding one of their remaining cards and announcing its number. The game ends
-as soon as the sum of the numbers on the discarded cards is divisible by <m>2n + 1</m>. The last person to discard wins the game. Assuming optimal strategy
+Consider the following game played by players A and B with a deck of <m>2n</m> cards numbered from 1 to <m>2n</m>. The deck is randomly shuffled and <m>n</m> cards are dealt to each of two players. Beginning with A, the players take turns discarding one of the remaining cards of their choice and announcing its number. The game ends as soon as the sum of the numbers on the discarded cards is divisible by <m>2n + 1</m>. The last person to discard wins the game. Assuming optimal strategy
 by both A and B, what is the probability that A wins?
 </p></statement>
 <!-- 
@@ -137,7 +135,7 @@ Therefore, for all <m>n</m>, <m>n</m> differs from a prime by a some bounded val
 
 <exercise>
 <statement><p>
-In  Determinant Tic-Tac-Toe, Player 1 enters a 1 in an empty 3 $\times $ 3 matrix. Player 0 counters with a 0 in a vacant position, and play
+In  Determinant Tic-Tac-Toe, Player 1 enters a 1 in an empty <m>3\times 3</m> matrix. Player 0 counters with a 0 in a vacant position, and play
 continues in turn until the <m>3 \times  3</m> matrix is completed with five 1's and four 0's. Player 0 wins if the determinant is 0 and player 1
 wins otherwise. Assuming both players pursue optimal strategies, who will win and how?
 </p></statement>

@@ -184,7 +184,7 @@ between the tips of the hands changing at one o’clock?</p></statement>
 <hint><p>Look at the <q>partial products.</q></p></hint>
  -->
 <solution>
- <p>(From MAA Northeast Section Competition, 2006) As depicted in <xref ref="fig-sageplot-clock-hands" text="type-global"/>, let <m>\theta</m> and <m>\ell</m> be the angle between the hands and the distance between the tips of the hands, respectively.  The hour hand of a clock goes around once every 12 hours or, in radians per hour....</p>
+ <p>(From MAA Northeast Section Competition, 2006) As depicted in <xref ref="fig-sageplot-clock-hands" text="type-global"/>, let <m>\theta</m> and <m>\ell</m> be the angle between the hands and the distance between the tips of the hands, respectively.  </p>
  <figure xml:id="fig-sageplot-clock-hands">
   <caption>Illustration of the variables in the clock problem</caption>
   <image xml:id="sageplot-clock-hands">
@@ -203,9 +203,9 @@ between the tips of the hands changing at one o’clock?</p></statement>
 		</sageplot>
 </image>
 </figure>
-<p>The minute hand goes around once per hour, or at the rate of <m>2 \pi \frac{rad}{h}</m>.
+<p>The hour hand of a clock goes around once every 12 hours or, <m>\frac{\pi}{6}</m> radians per hour. The minute hand goes around once per hour, or at the rate of <m>2 \pi</m>  radians per hour.
 So the angle <m>\theta</m> between them (measuring clockwise from the minute hand to the hour hand) is changing at the rate of 
-<me>\frac{d\theta}{dt} = \frac{\pi}{6}-2\pi \quad \textrm{rad/h} </me> </p>
+<me>\frac{d\theta}{dt} = \frac{\pi}{6}-2\pi \quad \textrm{rad/hr} </me> </p>
 <p>We want <m>\frac{d\ell}{dt}</m> at one o'clock, so we use the Law of Cosines establish a relationship between <m>\theta</m> and <m>\ell</m>.  If we differentiate that equation with respect to time  we get 
 	<men xml:id="clock-diff-of-law-of-cosines"> 2 \ell \frac{d\ell}{dt} = -64(-sin \theta)\frac{d\theta}{dt}</men>
 At one o'clock, <m>\theta = \pi/6</m>.   The Law of Cosines formula gives us the value of <m>\ell</m> at that time and  then  we can use <xref ref="clock-diff-of-law-of-cosines" text="type-global"/> evaluated at <m>\pi/6</m> to get a final answer, which is <m>-\frac{88\pi}{3 \sqrt{80-33\sqrt{3}}}</m></p>
