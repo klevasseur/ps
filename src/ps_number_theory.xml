@@ -41,7 +41,7 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
 <p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em> if <m>b c - ad = \pm 1</m>.  
 <ol label="(a)">
 	<li><p>Prove that if <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are close, then <m>\frac{a+c}{b+d}</m> is close to both <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>.</p></li>
-	<li><p>Find ten rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
+	<li><p>Find five rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
 </ol>
 </p>
 </statement>
@@ -220,11 +220,11 @@ Prove that <m>n</m> is divisible by 4.</p>
 </solution>
 </exercise>
 <exercise><statement><p>Let <m>0 \leq k \leq n</m> be integers, <m>n \neq 0</m> and let <m>p</m> be a prime.  Consider the base <m>p</m> representations of <m>n</m> and <m>k</m> with the latter padded with zeros to have the same number of digits as the former:
-<me> n = \sum{i=0}^r n_i p^i \textrm{  and   }k = \sum{i=0}^r k_i.</me>
+<me> n = \sum_{i=0}^r n_i p^i \textrm{  and   }k = \sum_{i=0}^r k_i p^i.</me>
 with <m>0 \leq k_i,n_i \lt p</m>, <m>n_r \neq 0</m>.
 <ol label="(a)">
-<li><p>Prove that <m>\binom{n}{k} \equiv \prod_{i=0}^r binom{n_i}{k_i} \pmod{p}</m>.</p></li>
-<li><p>Compute \binom{77}{17} \pmod{11}.</p></li>
+<li><p>Prove that <m>\binom{n}{k} \equiv \prod_{i=0}^r \binom{n_i}{k_i} \pmod{p}</m>.</p></li>
+<li><p>Compute <m>\binom{75}{17} \pmod{11}</m>.</p></li>
 </ol>
 </p>
 </statement>
