@@ -170,7 +170,7 @@ The sum of the digits of <m>S(4444^{4444})</m> is no more than the sum of the di
 <statement>
 <p>Each of the numbers <m>x_1</m>, <m>x_2</m>, ..., <m>x_n</m> equal 1 or -1, and
  <me>\begin{split}
-x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots\\+x_{n-3}x_{n-2}x_{n-1}x_n+
+x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots+x_{n-3}x_{n-2}x_{n-1}x_n+\\
    x_{n-2}x_{n-1}x_nx_1+x_{n-1}x_nx_1x_2+x_nx_1x_2x_3=0
 	\end{split}</me>.
 Prove that <m>n</m> is divisible by 4.</p>
@@ -219,6 +219,18 @@ Prove that <m>n</m> is divisible by 4.</p>
 <p>A second proof, attributed to Nicholas Raymond, is to note that there are <m>2^n</m> different positive integers with <m>n</m> digits, each 2 or 3.  We can prove that there is a one-to one correspondence between these integers and the residues <m>\mod{2^n}</m>, <m>\{ 0, 1, 2, \dots, 2^{n-1} \}</m>.  This implies that exactly one of these integers is congruent to 0 and so must be divisible by <m>2^n</m>.</p>
 </solution>
 </exercise>
-
+<exercise><statement><p>Let <m>0 \leq k \leq n</m> be integers, <m>n \neq 0</m> and let <m>p</m> be a prime.  Consider the base <m>p</m> representations of <m>n</m> and <m>k</m> with the latter padded with zeros to have the same number of digits as the former:
+<me> n = \sum{i=0}^r n_i p^i \textrm{  and   }k = \sum{i=0}^r k_i.</me>
+with <m>0 \leq k_i,n_i \lt p</m>, <m>n_r \neq 0</m>.
+<ol label="(a)">
+<li><p>Prove that <m>\binom{n}{k} \equiv \prod_{i=0}^r binom{n_i}{k_i} \pmod{p}</m>.</p></li>
+<li><p>Compute \binom{77}{17} \pmod{11}.</p></li>
+</ol>
+</p>
+</statement>
+<solution>
+<p>Note that <m>(1+x)^n \equiv \prod_{i=0}^{r} (1+x^{p^i})^{n_i} \Mod{p}</m>.  Look at the coefficient of <m>x^k</m> on both sides of this equivalence.</p>
+</solution>
+</exercise>
 </exercises>
 </chapter> 

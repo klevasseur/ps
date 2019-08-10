@@ -242,6 +242,16 @@ x^n-a_nx-b_n</m> is divisible by <m>p(x)</m>.    Hint:  If true, then for all <m
  -->
 </exercise>
 
+<exercise>
+<statement>
+<p>Let <m>n</m> be a nonnegative integer and let <m>S(n)</m> be the number of solutions to <m>x + 2 y + 2 z = n</m> in the nonnegative integers.  Find a formula for <m>S(n)</m>.
+</p>
+</statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
 
 </exercises>
 </chapter> 

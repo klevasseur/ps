@@ -9,11 +9,14 @@
 <backmatter xml:id="backmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
  	   
 <solutions  xml:id="solutions-backmatter" project="hint solution answer" inline="hint solution answer" divisional="hint"> 
-        <title>Hints and Solutions to Selected Exercises</title>
+        <title>Hints <!--and Solutions--> to Selected Exercises</title>
+        <idx><h>Hints</h></idx>
         <idx><h>Solutions</h></idx>
+<!-- 
         <introduction>
         	<p>Some solutions are partial.</p>
         </introduction>
+ -->
 </solutions>
 
 <!-- --> <!-- inline="hint solution answer" divisional="hint solution answer" project="hint solution answer" -->

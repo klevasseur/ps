@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <references><idx><h>References</h></idx>
 <introduction>
-<p>Many of the problems in this book have been used in multiple sources.  If  a problem was set in a know competition, it cited in the problem statement.   For most other problems, no effort has been made to identify when it was first posed, but most of the problems in this book among the following list of sources.  An additional source of problems are the problem sections of the Mathematical Association of America journals:
+<p>Many of the problems in this book have been used in multiple sources.  If  a problem was set in a know competition, it is cited in the problem solution.   For most other problems, no effort has been made to identify when it was first posed, but most of the problems in this book come the following list of sources.</p>
+<p>The problem sections of  Mathematical Association of America journals:
 <ul>
 <li><p>The American Mathematical Monthly</p></li>
 <li><p>Mathematics Magazine</p></li>
 <li><p>The College Mathematics Journal</p></li>
 </ul>
-For problems that were posed in these journals, the source is cited with the problems.</p>
+</p>
 
 <p>Problems from past exams are used in several cases.  A list of the competitions from which I've drawn examples follows.
 <ul>
@@ -16,6 +17,7 @@ For problems that were posed in these journals, the source is cited with the pro
 <li><p>William Lowell Putnam Mathematics Competition (naturally!)</p></li>
 </ul>	
 </p>
+<p>Problems and ideas for problems come from the following books:</p>
 </introduction>
 <biblio type ="raw" xml:id="biblio-aigner">Aigner, Martin and Ziegler, G<m>\"{u}</m>nter M., <title>Proofs from THE BOOK</title>, Springer, New York, 2010.</biblio>
 <biblio type="raw" xml:id="biblio-putnam-2">Alexanderson, Klosinski and Larson, <title>The William Lowell Putnam Mathematical Competition. Problems and Solutions: 1965-1984</title>, MAA, 1985</biblio>
