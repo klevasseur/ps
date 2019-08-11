@@ -249,8 +249,11 @@ x^n-a_nx-b_n</m> is divisible by <m>p(x)</m>.    Hint:  If true, then for all <m
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+<solution><p>The generating function for <m>S</m> is  
+<me>s(z)= (1+z+z^2+z^3+\cdots)(1+z^2+z^4+z^6+\cdots)^2.</me>
+All that is left is to identify a formula for the coefficient of <m>z^n</m>.
+</p></solution>
 </exercise>
 
 </exercises>
