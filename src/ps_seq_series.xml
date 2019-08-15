@@ -4,12 +4,10 @@
 <title>Sequences and Series</title>
 <introduction><p></p>
 </introduction>
-<section><title></title>
-<idx></idx><idx></idx>
-<p>The Fibonacci sequence:   <m>f_0=1,\text{  }f_1= 1</m>, and for <m>n\geq 2</m>, <m>f_n= f_{n-2}+f_{n-1}</m>.
-Warm-up  Prove that any two consecutive Fibonacci numbers are coprime.  Note:  the terms  <q>coprime</q>  and   <q>relatively prime</q>
- mean the same thing, have no common factor other than 1.
-
+<section><title>The Fibonacci sequence</title>
+<idx></idx>Fibonacci sequence<idx></idx>
+<p>The Fibonacci sequence is defined by  <m>f_0=1</m>, <m>f_1= 1</m>, and for <m>n\geq 2</m>, <m>f_n= f_{n-2}+f_{n-1}</m>.
+Warm-up  Prove that any two consecutive Fibonacci numbers are coprime.  Note:  the terms  <q>coprime</q>  and   <q>relatively prime</q> mean the same thing, have no common factor other than 1.
 </p>
 </section>  
 

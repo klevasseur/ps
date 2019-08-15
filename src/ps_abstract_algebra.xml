@@ -95,5 +95,18 @@ and we can get <m>(x*y)*x</m>	similarly.  Combining these equalities with the tw
 <p>We haven't used general associativity here, and in fact there are nonassociative binary operations that satisfy the premises. One such is the operation on the integers defined by <m>x*y = -(x+y)</m>.</p>
 </solution>
 </exercise>
+
+<exercise>
+<statement>
+<p>Let <m>G</m> be a finite group with identity <m>e</m>.  If <m>G</m> contains elements <m>g</m> and <m>h</m> such that
+<me>g^5=e \textrm{  and  }g h g^{-1} = h^2,</me>
+determine the order of <m>h</m>.
+</p>
+</statement>
+<solution>
+<p>The order of <m>h</m> is 31. Note that the given conditions imply that neither <m>g</m> nor <m>h</m> can equal <m>e</m>, so the order of <m>h</m> is greater than 1.  Start with <m>g^2 h (g^{-1})^{2}</m> and note that it reduces to <m>h^4</m>.  Repeat with <m>g^3</m> replacing <m>g^2</m> and continue.</p>
+</solution>
+</exercise>
+
 </exercises>
 </chapter>
