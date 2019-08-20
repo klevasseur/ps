@@ -35,9 +35,9 @@
 		<copyright>
 			<year>2019</year>
 			<holder>Ken Levasseur</holder>
-			<minilicense>Creative Commons Attribution-Noncommercial-ShareAlike 3.0 United States License. 2011-2017</minilicense>
+			<minilicense>Creative Commons Attribution-ShareAlike 3.0 United States License. 2011-2017</minilicense>
 <!-- 
-			<creativecommons BY="yes" NC="yes" SA="yes" version="4.0"/>
+			<creativecommons BY="yes" NC="no" SA="yes" version="4.0"/>
  -->
 
 			<shortlicense>Problem Solving by  Kenneth Levasseur is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States License. You are free to Share: copy and redistribute the material in any medium or format; Adapt: remix, transform, and build upon the material. You may not use the material for commercial purposes.  The licensor cannot revoke these freedoms as long as you follow the license terms.
@@ -54,8 +54,8 @@ COMMENTED OUT TEMPORARILY
 --> 
 	<!-- Accepted order: acknowledgements, forewords, prefaces -->
 
-<xi:include href="./acknowledgement.xml" />
 <!-- 
+<xi:include href="./acknowledgement.xml" />
 
 <preface xml:id="ads-preface"><title>Preface</title>
 <p>This book is designed for use in a university course for students who are not as the Putnam Fellow level, but who aspire to compete in the Putnam.</p>
