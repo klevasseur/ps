@@ -229,7 +229,7 @@ with <m>0 \leq k_i,n_i \lt p</m>, <m>n_r \neq 0</m>.
 </p>
 </statement>
 <solution>
-<p>Note that <m>(1+x)^n \equiv \prod_{i=0}^{r} (1+x^{p^i})^{n_i} \Mod{p}</m>.  Look at the coefficient of <m>x^k</m> on both sides of this equivalence.</p>
+<p>Note that <m>(1+x)^n \equiv \prod_{i=0}^{r} (1+x^{p^i})^{n_i} \pmod{p}</m>.  Look at the coefficient of <m>x^k</m> on both sides of this equivalence.</p>
 </solution>
 </exercise>
 </exercises>
