@@ -74,12 +74,12 @@ Therefore Euler's formula is true for this case.</p>
 							  0 &amp; 1 &amp; 1\\
 							  1 &amp; 1 &amp; 1 \end{pmatrix}</m>.
 What is the determinant of <m>A(n)</m>?</p>
-<p>To solve this problem, we can expand the determinant along the first row.  This gives us two minors to evalute, one of which is the determinant of <m>A(n-1)</m>.  The other minor is a smatrix that takes a form like this one, in the case were we are expanding <m>\lvert A(5)\rvert</m>: <m>\begin{pmatrix}
+<p>To solve this problem, we can expand the determinant along the first row.  This gives us two minors to evalute, one of which is the determinant of <m>A(n-1)</m>.  The other minor is a matrix that takes a form like this one, in the case were we are expanding <m>\lvert A(5)\rvert</m>: <m>\begin{pmatrix}
 							  0 &amp; 1 &amp; 0 &amp; 0\\
 							  0 &amp; 0 &amp; 1 &amp; 0\\
 							  0 &amp; 0 &amp; 0 &amp; 1\\
 							  1 &amp; 1 &amp; 1 &amp; 1 \end{pmatrix}</m>.</p>
-<p>By shifting the bottom row up, one row at a time, with <m>n-2</m> shifts, we get an upper triangular matrix with all 1's in the diagonal, and so the minor is  <m>(-1)^{(n-2)}</m>  The cofactor corresponding to this minor will have a sign <m>(-1)^{n+1}</m>.  Therefore the value of the cofactor will be<m>(-1)^{n+1}\cdot (-1)^{(n-2)}= -1</m> and so we have
+<p>By shifting the bottom row up, one row at a time, with <m>n-2</m> shifts, we get an upper triangular matrix with all 1's in the diagonal, and so the minor is  <m>(-1)^{(n-2)}</m>  The cofactor corresponding to this minor will have a sign <m>(-1)^{n+1}</m>.  Therefore the value of the cofactor will be <m>(-1)^{n+1}\cdot (-1)^{(n-2)}= -1</m> and so we have
 <me>\lvert A(n) \rvert = \lvert A(n-1) \rvert -1</me>.  Since <m>\lvert A(1) \rvert = 1</m>, we conclude that <m>\lvert A(n) \rvert = 2-n </m></p>							  
 
 
@@ -213,7 +213,7 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 </exercise>
 <exercise number="9">
 <statement>
-<p>Show that there is a positive term of the Fibonacci sequence that is divisible by 1000. Recall that the Fibonacci sequence is defined by <m>F_0=F_1= 1</m> and for <m>n>1</m>, <m>F_n= F_{n-1}+F_{n-2}</m>.
+<p>Show that there is a positive term of the Fibonacci sequence that is divisible by 1000. Recall that the Fibonacci sequence is defined by <m>F_0=0</m>, <m>F_1= 1</m> and for <m>n>1</m>, <m>F_n= F_{n-1}+F_{n-2}</m>. Note: The starting values of 0 and 1 are often replaced with 1 and 1, but for this problem it's slightly easier to structure a proof.
 </p>
 
 </statement>
@@ -226,7 +226,7 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 	</p>
 
 </statement>
-<answer><p>The probability that the number of heads is odd is <m>\frac{n}{n+1}.</m></p></answer>
+<answer><p>The probability that the number of heads is odd is <m>\frac{n}{2n+1}.</m></p></answer>
  <solution><p>Let <m>p_n</m> be the probability that after tossing the first <m>n</m> coins, an odd number of heads have appeared.  Clearly <m>p_1 = \frac{1}{3}</m>.  If <m>n \gt 1</m>,
  	<me>\begin{split}
  		p_n &amp;= \frac{1}{2n+1}  (1-p_{n-1}) + \frac{2n}{2n+1} p_{n-1}\\
@@ -266,7 +266,7 @@ Solving for <m>F</m>, we get 6 for the expected number of flips.  </p>
 Let <m>a_1, a_2, \dots , a_n</m> be the integers and let <m>s_1, s_2, \dots , s_n</m> be the partial sums, <m>s_k=\sum _{i=1}^k
 a_i</m>.  If one of the sums is divisible by <m>n</m> then we are done, so assume none are multiples of <m>n</m>.  By the pigeonhole principle,
 there must be two partial sums that have the same residue mod <m>n</m>.  Let <m>l \lt m </m> be such that 
-	<me>s_l\equiv s_m(mod n) \Rightarrow s_m-s_l= \sum _{k=l+1}^m a_k=n q</me> for some integer <m>q</m>.  Therefore the set we are looking for is <m>\left\{a_{l+1}, \ldots, a_m\right\}</m>.
+	<me>s_l\equiv s_m \pmod{n} \Rightarrow s_m-s_l= \sum _{k=l+1}^m a_k=n q</me> for some integer <m>q</m>.  Therefore the set we are looking for is <m>\left\{a_{l+1}, \ldots, a_m\right\}</m>.
 </p></solution>
 </exercise>
 <exercise>
