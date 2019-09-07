@@ -118,7 +118,7 @@ A=Matrix([[i==j or i==n-1 or j==n-1 for i in range(n)] for j in range(n)] )
 <p>Informally, the Pigeonhole Principle says that if you have more pigeons than you have pigeonholes, then at least one pair of pigeons have to share the same pigeonhole. The trick to using this simple idea is to identify the pigeons and pigeonholes in a problem.  Here is a relatively simple example. A clue that we can use the Pigeonhole Principle problem in this case is that we are asked to prove the existence of two objects that share a property.</p> 
 	<example xml:id="e-pigeons-1">
 		<p>Prove that every set of 10 two-digit integer numbers has two disjoint subsets with the same sum of elements. (Subsets are pigeons, possible sums are holes)</p>
-		<p>We want two subsets with the same sum, so consider the possible sums to be pigeonholes, and now picture subsets of our ten integer set to be the pigeons. We are not given a specific set of integers, but we can identify the range of possible sums of elements in their subsets.  The smallest sum is 1 while the largest proper subset is <m>91+92+\cdots+99 =855 </m>.  There are <m>2^{10}-2 = 1022 &gt; 855</m> non-empty proper subsets of a ten element set.  Therefore, if we imagine each subset to roost with its sum, we are sure there there must be two subsets with the same sum.  Now those two subsets may not be disjoint, but if we simply remove elements in their intersection, we are done.
+		<p>We want two subsets with the same sum, so consider the possible sums to be pigeonholes, and now picture subsets of our ten integer set to be the pigeons. We are not given a specific set of integers, but we can identify the range of possible sums of elements in their subsets.  The smallest sum is 10 while the largest proper subset is <m>91+92+\cdots+99 =855 </m>. That gives us 846 pigeonholes.  There are <m>2^{10}-2 = 1022 &gt; 845</m> non-empty proper subsets of a ten element set.  Therefore, if we imagine each subset to roost with its sum, we are sure there there must be two subsets with the same sum.  Now those two subsets may not be disjoint, but if we simply remove elements in their intersection, we are done.
 		</p>
 	</example>
 </section>  
@@ -195,10 +195,8 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 </p>
 
 </statement>
-<!-- 
-<solution><p></p>
+<solution><p>We define a <q>good shift</q> to be one for which the partial sums are all positive. The property we wish to prove is obviously true for <m>n=1</m>.  Now assume that for some <m>k \geq 1</m> that it's true for all sequences of length <m>k</m>.  Consider a integer sequence of length <m>k+1</m>.  Since the sum of the terms is 1, there must exist at least one nonnegative term and among them all, there must be one that is preceded by a positive term. We can assume that these two terms are at the end of the sequence, <m>x_k, x_{k+1}</m>.  Now consider the sequence of length <m>k</m> defined by <m>y_j = x_j</m> if <m>j \lt k</m>  and  <m>y_k=x_k+x_{k+1}</m>.  By the induction hypothesis, this sequence has a unique good shift.  In that shifted sequence, wherever y_k is located  we replace it with the two terms <m>x_k, x_{k+1}</m>. The partial sums this expanded sequence are still all positive so we have a good shift of the original sequence.  Finally, we see that this good shift is unique. Every good shift of the original sequence can produce a good shift of the reduced <m>y</m>-sequence and we know that only one of those exist.</p>
 </solution>
- -->
 </exercise>
 <exercise number="8">
 <statement>
