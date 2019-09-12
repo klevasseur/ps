@@ -131,6 +131,13 @@ A=Matrix([[i==j or i==n-1 or j==n-1 for i in range(n)] for j in range(n)] )
 </statement>
 <hint><p>Look at the first few examples.</p>
 </hint>
+<solution><p>First a bit of advice: It is often much easier to write a solution by <q>inventing</q> notation.  In this case, instead of referring to <q>the sum of the first <m>n</m> consecutive odd positive integers,</q> we define <m>s(n)</m> to be that sum.</p>
+<p>We claim that <m>s(n)=n^2</m>.  There are many proofs of this fact.  First we observe that the <m>k</m>th odd positive integer is <m>2k-1</m> and so <m>s(n)=\sum_{k=1}^n 2k-1</m></p>
+<p>The basis is clearly true:  <m>s(1)=\sum_{k=1}^1 2k-1 = 1 = 1^2</m>.</p>
+<p>Now assume that for some <m>n\geq 1</m> we have <m>s(n)=n^2</m>.  Then
+<me> s(n+1) = \sum_{k=1}^{n+1} 2k-1= s(n) + 2n + 1 = n^2 + 2n +1 = (n+1)^2.</me>
+This completes the induction proof.</p>
+</solution>
 </exercise>
 <exercise number="2">
 <statement>
@@ -195,7 +202,7 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 </p>
 
 </statement>
-<solution><p>We define a <q>good shift</q> to be one for which the partial sums are all positive. The property we wish to prove is obviously true for <m>n=1</m>.  Now assume that for some <m>k \geq 1</m> that it's true for all sequences of length <m>k</m>.  Consider a integer sequence of length <m>k+1</m>.  Since the sum of the terms is 1, there must exist at least one nonnegative term and among them all, there must be one that is preceded by a positive term. We can assume that these two terms are at the end of the sequence, <m>x_k, x_{k+1}</m>.  Now consider the sequence of length <m>k</m> defined by <m>y_j = x_j</m> if <m>j \lt k</m>  and  <m>y_k=x_k+x_{k+1}</m>.  By the induction hypothesis, this sequence has a unique good shift.  In that shifted sequence, wherever y_k is located  we replace it with the two terms <m>x_k, x_{k+1}</m>. The partial sums this expanded sequence are still all positive so we have a good shift of the original sequence.  Finally, we see that this good shift is unique. Every good shift of the original sequence can produce a good shift of the reduced <m>y</m>-sequence and we know that only one of those exist.</p>
+<solution><p>We define a <q>good shift</q> to be one for which the partial sums are all positive. The property we wish to prove is obviously true for <m>n=1</m>.  Now assume that for some <m>k \geq 1</m> that it's true for all sequences of length <m>k</m>.  Consider an integer sequence of length <m>k+1</m>.  Since the sum of the terms is 1, there must exist at least one nonnegative term and among them all, there must be one that is preceded by a positive term. We can assume that these two terms are at the end of the sequence, <m>x_k, x_{k+1}</m>.  Now consider the sequence of length <m>k</m> defined by <m>y_j = x_j</m> if <m>j \lt k</m>  and  <m>y_k=x_k+x_{k+1}</m>.  By the induction hypothesis, this sequence has a unique good shift.  In that shifted sequence, wherever <m>y_k</m> is located  we replace it with the two terms <m>x_k, x_{k+1}</m>. The partial sums this expanded sequence are still all positive so we have a good shift of the original sequence.  Finally, we see that this good shift is unique. Every good shift of the original sequence can produce a good shift of the reduced <m>y</m>-sequence and we know that only one of those exist.</p>
 </solution>
 </exercise>
 <exercise number="8">
