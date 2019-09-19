@@ -156,6 +156,8 @@ This completes the induction proof.</p>
 </statement>
 <hint><p>Count the number of pairs that can up to 101.</p>
 </hint>
+<solution><p>Note that <m>S</m> is drawn from <m>\{3i + 1 \vert 0 \leq i \leq 33 \}</m>, which contains 34 integers that can be paired up in such a way that if <m>i + j = 33</m>, then  <m>(1+3i)+ (1+3j)=101</m>.  There are 17 such pairs, and so of the 18 elements in <m>S</m>, at least one of the pairs that add to 101 must be included.</p> 
+</solution>
 </exercise>
 <exercise number="4">
 <statement>
@@ -165,6 +167,10 @@ This completes the induction proof.</p>
 </statement>
 <hint><p>Each integer has a maximal odd factor.</p>
 </hint>
+<solution>
+<p>For each integer is in <m> A = \{1, 2, 3, \dots, 100\}</m> is equal to <m>2^k m</m>, where <m>m</m> is an odd integer in <m>B= \{1, 3, 5, \dots, 99\}</m>.  Since <m>\lvert B \rvert =50</m> and we have selected 51 integers from <m>A</m>, there must be two in <m>B</m> with the form <m>2^j n</m> and <m>2^k n</m>, where <m>j \lt k</m> and <m>n \in B</m>, and we have the second as a multiple of the first.
+</p>
+</solution>
 </exercise>
 <exercise number="5">
 <statement>
@@ -202,7 +208,7 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 </p>
 
 </statement>
-<solution><p>We define a <q>good shift</q> to be one for which the partial sums are all positive. The property we wish to prove is obviously true for <m>n=1</m>.  Now assume that for some <m>k \geq 1</m> that it's true for all sequences of length <m>k</m>.  Consider an integer sequence of length <m>k+1</m>.  Since the sum of the terms is 1, there must exist at least one nonnegative term and among them all, there must be one that is preceded by a positive term. We can assume that these two terms are at the end of the sequence, <m>x_k, x_{k+1}</m>.  Now consider the sequence of length <m>k</m> defined by <m>y_j = x_j</m> if <m>j \lt k</m>  and  <m>y_k=x_k+x_{k+1}</m>.  By the induction hypothesis, this sequence has a unique good shift.  In that shifted sequence, wherever <m>y_k</m> is located  we replace it with the two terms <m>x_k, x_{k+1}</m>. The partial sums this expanded sequence are still all positive so we have a good shift of the original sequence.  Finally, we see that this good shift is unique. Every good shift of the original sequence can produce a good shift of the reduced <m>y</m>-sequence and we know that only one of those exist.</p>
+<solution><p>We define a <q>good shift</q> to be one for which the partial sums are all positive. The property we wish to prove is obviously true for <m>n=1</m>.  Now assume that for some <m>k \geq 1</m> that it's true for all sequences of length <m>k</m>.  Consider an integer sequence of length <m>k+1</m>.  Since the sum of the terms is 1, there must exist at least one nonnegative term and among them all, there must be one that is preceded by a positive term. We can assume that these two terms are at the end of the sequence, <m>x_k, x_{k+1}</m>.  Now consider the sequence of length <m>k</m> defined by <m>y_j = x_j</m> if <m>j \lt k</m>  and  <m>y_k=x_k+x_{k+1}</m>.  By the induction hypothesis, this sequence has a unique good shift.  In that shifted sequence, wherever <m>y_k</m> is located  we replace it with the two terms <m>x_k, x_{k+1}</m>. The partial sums of this expanded sequence are still all positive so we have a good shift of the original sequence.  Finally, we see that this good shift is unique. Every good shift of the original sequence can produce a good shift of the reduced <m>y</m>-sequence and we know that only one of those exists.</p>
 </solution>
 </exercise>
 <exercise number="8">
@@ -212,7 +218,7 @@ has all of its partial sums positive. (By a partial sum we mean the sum of the f
 </p>
 
 </statement>
-<solution><p>Solution 1:  If the circle is placed at the origin of the Cartesian plane, we see that the interior can be divided into 60  one by one squares and partial squares.  Since there are 61 points, the Pigeonhole Principle can be applied, were any rule would be applied to point on the boundary of squares.</p>
+<solution><p>Solution 1:  If the center of the circle is placed at the origin of the Cartesian plane, we see that the interior can be divided into 60  one by one squares and partial squares.  Since there are 61 points, the Pigeonhole Principle can be applied, were any rule would be applied to point on the boundary of squares.</p>
 <p>Solution 2:  For each point, place a disk of radius <m>\frac{\sqrt{2}}{2}</m> centered at that point. The area of each disk is <m>\frac{\pi}{2}</m>.  The 61 disks cover a total area of <m>\frac{61\pi}{2}</m>.  These disks are contained within a circle of area <m>(4+ \frac{\sqrt{2}}{2})^2 \pi</m> which is less than <m>\frac{61\pi}{2}</m>.  Therefore two of the disks must overlap and so their centers must be within <m>\sqrt{2},</m> of one another.</p>
 </solution>
 </exercise>

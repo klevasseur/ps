@@ -7,8 +7,8 @@
 </introduction>
 <section>
 <title>Examples</title>
-<example xml:id="example-riemann-limit"><p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m>, <m>\frac{1}{n} \sum _{k=1}^n
-  \left(\frac{k}{n}\right)^5</m> and maybe disguise it to some extent.  Then ask for the limit as <m>n</m> goes to infinity.  Naturally the answer is simply the integral, <m>\frac{1}{6}</m>.   The first part of solving B-1 in the 1976 Putnam was to identify a slightly more disguised example.</p>
+<example xml:id="example-riemann-limit"><p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m>, 
+<m> \sum _{k=1}^n \left(\frac{k}{n}\right)^5 \cdot \frac{1}{n}</m> and maybe disguise it to some extent.  Then ask for the limit as <m>n</m> goes to infinity.  Naturally the answer is simply the integral, <m>\frac{1}{6}</m>.   The first part of solving B-1 in the 1976 Putnam was to identify a slightly more disguised example.</p>
 <blockquote><p>Evaluate
 	<me>\lim_{n\to\infty} \frac{1}{n} \sum _{k=1}^n \left(\left\lfloor
   								 	\frac{2 n}{k}\right\rfloor -2
@@ -25,14 +25,14 @@
 	                &amp; \Leftrightarrow k \leq \frac{1}{x} \lt k +1 \\
 	 						&amp; \Leftrightarrow \frac{1}{k+1} \lt x \leq \frac{1}{k}
 	 			\end{split}</me></p>
-<p>
+<p>Therefore,
 <me>\begin{split}
-		 k \leq \frac{1}{x} \le k +1  &amp;\Leftrightarrow 2k \leq \frac{2}{x} \le 2k +2 \\
-											&amp;\Leftrightarrow  \lfloor \frac{2}{x}\rfloor = 2k \textrm{ or } 2k + 1.
+		 k \leq \frac{1}{x} \lt k +1  &amp;\Leftrightarrow 2k \leq \frac{2}{x} \lt 2k +2 \\
+											&amp;\Leftrightarrow  \lfloor \frac{2}{x} \rfloor = 2k \textrm{ or } 2k + 1.
 	\end{split}</me>
 If <m>\frac{1}{k+1} \lt x \leq \frac{2}{2k+1}</m>, we have <m>\lfloor \frac{2}{x}\rfloor = 2k+1</m>; and if <m>\frac{2}{2k+1} \lt x \leq \frac{1}{k}</m>, we have <m>[\frac{2}{x}] = 2k</m>.  Therefore,  on the interval <m>(\frac{1}{k+1}, \frac{1}{k}]</m>, 
 
-<me>f(x)==\begin{cases} 1 &amp; \textrm{if } \frac{1}{k+1} \lt x \leq \frac{2}{2k+1}\\
+<me>f(x)=\begin{cases} 1 &amp; \textrm{if } \frac{1}{k+1} \lt x \leq \frac{2}{2k+1}\\
 							0 &amp; \textrm{if } \frac{2}{2k+1} \lt x \leq \frac{1}{k}
 							\end{cases}
 </me>
@@ -100,7 +100,7 @@ Determine the value of <m>\lim _{n\to \infty }\sum _{k=1}^n \frac{k}{k^2+n^2}</m
 </exercise>
 <exercise number="5">
 <statement><p>
-Let <m>p(x)</m> be a polynomial of even degree with a positive leading coefficient. Suppose <m>	</m> for every <m>x</m>. Show
+Let <m>p(x)</m> be a polynomial of even degree with a positive leading coefficient. Suppose <m>p(x)\geq p''(x)	</m> for every <m>x</m>. Show
 that <m>p(x) \geq  0</m> for every <m>x</m>.
 </p></statement>
 <!-- 
@@ -178,11 +178,7 @@ Evaluate the infinite product <m>\prod _{n=2}^{\infty } \frac{n^3-1}{n^3+1}</m>.
 
 <exercise number="12">
 <statement><p>
-The minute hand on a watch is 8 mm long and the hour hand is 4 mm long. How fast is the distance
-between the tips of the hands changing at one o’clock?</p></statement>
-<!-- 
-<hint><p>Look at the <q>partial products.</q></p></hint>
- -->
+The minute hand on a watch is 8 mm long and the hour hand is 4 mm long. What is the rate of change (in <m>mm/hr</m>) of  the distance between the tips of the hands at one o’clock?</p></statement>
 <solution>
  <p>(From MAA Northeast Section Competition, 2006) As depicted in <xref ref="fig-sageplot-clock-hands" text="type-global"/>, let <m>\theta</m> and <m>\ell</m> be the angle between the hands and the distance between the tips of the hands, respectively.  </p>
  <figure xml:id="fig-sageplot-clock-hands">
