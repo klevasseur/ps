@@ -54,7 +54,7 @@ COMMENTED OUT TEMPORARILY
 --> 
 	<!-- Accepted order: acknowledgements, forewords, prefaces -->
 
-<!-- 
+ 
 <xi:include href="./acknowledgement.xml" />
 
 <preface xml:id="ads-preface"><title>Preface</title>
@@ -65,6 +65,6 @@ COMMENTED OUT TEMPORARILY
 			<line>Lowell, MA</line>
 			</attribution>
 </preface>
- -->
+
 
 </frontmatter>

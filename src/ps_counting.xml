@@ -103,7 +103,7 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 <statement>
 <p>Every point of three-dimensional space is colored red, green, or blue. Prove that one of the colors attains all distances, meaning that any positive real number represents the distance between two points of this color.</p>
 </statement>
-<hint><p>If false, there are <q>non-attainable</q> distances for each color.  Call them <m>r</m>, <m>g</m> and <m>b</m>, with  <m> r \leq g \leq b</m>.</p>
+<hint><p>If false, there are <q>non-attainable</q> distances for each color. Select one for each color.  Call them <m>r</m>, <m>g</m> and <m>b</m>, with  <m> r \geq g \geq b</m>.  Select any red point, call it <m>R</m>, and consider the surface of the sphere of radius <m>r</m> centered at <m>R</m>.   This is a blue/green sphere.   Now select any green point, <m>G</m> on the surface. If we consider <m>G</m> to be a pole of the blue/green sphere, the intersection of the blue/green sphere with the sphere of radius <m>g</m>  centered at <m>G</m> is a parallel on the blue/green sphere that is blue.  Given our assumptions about the unattainable distances, there must be points on the blue parallel that are <m>b</m> units apart, which is a contradiction.</p>
 </hint>
 </exercise>
 
@@ -116,7 +116,7 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 <m>p_1^{\alpha_1}\cdot p_2^{\alpha_2}\cdot \cdots \cdot p_m^{\alpha_m}</m>, then it has 
 <m>(\alpha_1 + 1)\cdot (\alpha_2 + 1)\cdot \cdots \cdot (\alpha_m + 1)</m> divisors.</p>
 <p>By inclusion-exclusion, the number divisors of either number is the sum of the numbers of divisors of each number minus the number of common divisors.  The numbers that divide both are divisors of <m>2^{40}\cdot 5^{30}</m>.  Therefore, the answer is 
-<me>41 \cdot 41 + 61 \cdot 31 - 41\cdot 31 = 2301.</me></p>
+<me>41\cdot\41 + 61\cdot\31 - 41\cdot31 = 2301.</me></p>
 </solution>
 </exercise>
 
