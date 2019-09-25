@@ -209,7 +209,7 @@ So the angle <m>\theta</m> between them (measuring clockwise from the minute han
 	<men xml:id="clock-diff-of-law-of-cosines"> 2 \ell \frac{d\ell}{dt} = -64(-sin \theta)\frac{d\theta}{dt}</men>
 At one o'clock, <m>\theta = \pi/6</m>.   The Law of Cosines formula gives us the value of <m>\ell</m> at that time and  then  we can use <xref ref="clock-diff-of-law-of-cosines" text="type-global"/> evaluated at <m>\pi/6</m> to get a final answer, which is <m>-\frac{88\pi}{3 \sqrt{80-33\sqrt{3}}}</m></p>
 
-<p>Without a calculator, it's unlikely that you would ever be expected to approximate this number, but with that aid, we find that the tips of the hands are decreasing at a rate of −18.6 mm/h at 1:00.</p>
+<p>Without a calculator, it's unlikely that you would ever be expected to approximate this number, but with that aid, we find that the tips of the hands are decreasing at a rate of 18.6 mm/h at 1:00.</p>
 </solution>
 </exercise>
 

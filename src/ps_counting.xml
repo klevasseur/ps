@@ -116,7 +116,7 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 <m>p_1^{\alpha_1}\cdot p_2^{\alpha_2}\cdot \cdots \cdot p_m^{\alpha_m}</m>, then it has 
 <m>(\alpha_1 + 1)\cdot (\alpha_2 + 1)\cdot \cdots \cdot (\alpha_m + 1)</m> divisors.</p>
 <p>By inclusion-exclusion, the number divisors of either number is the sum of the numbers of divisors of each number minus the number of common divisors.  The numbers that divide both are divisors of <m>2^{40}\cdot 5^{30}</m>.  Therefore, the answer is 
-<me>41\cdot\41 + 61\cdot\31 - 41\cdot31 = 2301.</me></p>
+<me>41\cdot 41 + 61\cdot 31 - 41\cdot 31 = 2301.</me></p>
 </solution>
 </exercise>
 
