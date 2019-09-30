@@ -24,11 +24,11 @@ with equality if and only if all the <m>a_i</m> are equal.</p></statement>
 </me>
 Now if <m>n \ge 3</m> we assume <m>P(n)</m> is true and we have <m>n-1</m> numbers. We append the arithmetic mean of these numbers, <m>A = \sum_{k=1}^{n-1} \frac{a_k}{n-1}</m>, to our collection and apply <m>P(n)</m>:
 <me>\begin{split}
-\left(\prod_{k=1}^{n-1} a_k\right)A &amp; \leq \left(\frac{\left(\sum{k=1}^{n-1} a_k\right) + A}{n}\right)^n\\
+\left(\prod_{k=1}^{n-1} a_k\right)A &amp; \leq \left(\frac{\left(\sum_{k=1}^{n-1} a_k\right) + A}{n}\right)^n\\
 		&amp; = \left( \frac{(n-1)A + A}{n} \right)^n = A^n
 \end{split}
 </me>
-dividing by <m>A</m>, we get <m>\left(\prod_{k=1}^{n-1} a_k\right) \leq A^{n-1} = \left(\frac{\sum_{k=1}{n-1} a_{k}}{n-1}\right)^{n-1}</m>.
+dividing by <m>A</m>, we get <m>\left(\prod_{k=1}^{n-1} a_k\right) \leq A^{n-1} = \left(\frac{\sum_{k=1}^{n-1} a_{k}}{n-1}\right)^{n-1}</m>.
 </p> </proof>
 </theorem>
 
