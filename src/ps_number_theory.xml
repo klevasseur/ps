@@ -76,7 +76,7 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
  -->
 </exercise>
 
-<exercise number="4"><statement><p>Does there exist a positive integer with the property that the sum of the (base 10) digits if it’s square is equal to 100?  If so, find one. What if 100 is replaced with 2019?</p></statement></exercise>
+<exercise number="4"><statement><p>Does there exist a positive integer with the property that the sum of the (base 10) digits of it’s square is equal to 100?  If so, find one. What if 100 is replaced with 2019?</p></statement></exercise>
 
 <exercise number="5">
 <statement>
@@ -122,11 +122,17 @@ for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and <m>p</m> is prime.</p>
 <p>Let <m>f(n)=n +[\sqrt{n}]</m> where <m>[x]</m> is the largest integer less than or equal to <m>x</m>.  Prove that, for every positive integer <m>m</m>, the sequence <me>m, f(m), f(f(m)), f(f(f(m))), \dots</me> contains at least one square of an integer.</p>
 </statement>
 <hint><p>Assume <m>m = k^2 + j</m> where <m>0 \leq j \leq 2k</m>.</p></hint>
-<!-- 
 <solution>
-<p></p>
+<p>Let <m>m = k^2 + j</m> where <m>0 \leq j \leq 2k</m>. We consider this the <m>(k,j)</m> position, with an excess of <m>j</m>.  Consider the following three cases depending on the current position.
+	<ul>
+		<li><p>Case 0: <m>j=0</m>. In this case, we are done! </p></li>
+		<li><p>Case 1: <m>1 \leq j \leq j</m>.  <m>f(m)=k^2 + j + k</m>; so <m>f(m)</m> places us in position <m>(k,j+k)</m> which is Case 2 since  <m>k+1 \leq j +k \leq 2k.</m></p></li>
+		<li><p>Case 2: <m>k+1 \leq j \leq 2k</m>.   In this case,<m>0 \leq j-k-1 \leq k-1</m>, and 
+		<m>f(m)=k^2 + j + k = k^2 +2k + 1 + j -k -1 =(k+1)^2 + j-k-1</m>. This puts us into either Case 0 or Case 1.</p></li>
+	</ul>
+Notice that applying <m>f</m> successively bounces us between cases 1 and 2 until we are sent into Case 0.  Starting in Case 1 with an excess of <m>j</m>, the excess increases by <m>k</m> in the next application of <m>f</m> but then the next application of <m>f</m> decreases the excess by <m>k+1</m>, so that these two application reduce the excess by 1, to <m>j-1</m>.  Therefore, <m>2 j</m> steps after being in case 1, we are done.
+</p>
 </solution>
- -->
 </exercise>
 
 <exercise number="9">
@@ -138,7 +144,7 @@ integers greater than or equal to 2. Prove that there are no other solutions tha
 <!-- 
 <hint><p></p></hint>
 <solution>
-<p></p>
+<p>This was A3 in the 1976 Putnam.</p>
 </solution>
  -->
  </exercise>
