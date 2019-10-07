@@ -123,14 +123,14 @@ for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and <m>p</m> is prime.</p>
 </statement>
 <hint><p>Assume <m>m = k^2 + j</m> where <m>0 \leq j \leq 2k</m>.</p></hint>
 <solution>
-<p>Let <m>m = k^2 + j</m> where <m>0 \leq j \leq 2k</m>. We consider this the <m>(k,j)</m> position, with an excess of <m>j</m>.  Consider the following three cases depending on the current position.
+<p>(Based on a solution by Steven Oslan)  Let <m>m = k^2 + j</m> where <m>0 \leq j \leq 2k</m>. We consider this the <m>(k,j)</m> position, with an excess of <m>j</m>.  Consider the following three cases depending on the current position.
 	<ul>
 		<li><p>Case 0: <m>j=0</m>. In this case, we are done! </p></li>
-		<li><p>Case 1: <m>1 \leq j \leq j</m>.  <m>f(m)=k^2 + j + k</m>; so <m>f(m)</m> places us in position <m>(k,j+k)</m> which is Case 2 since  <m>k+1 \leq j +k \leq 2k.</m></p></li>
-		<li><p>Case 2: <m>k+1 \leq j \leq 2k</m>.   In this case,<m>0 \leq j-k-1 \leq k-1</m>, and 
-		<m>f(m)=k^2 + j + k = k^2 +2k + 1 + j -k -1 =(k+1)^2 + j-k-1</m>. This puts us into either Case 0 or Case 1.</p></li>
+		<li><p>Case 1: <m>1 \leq j \leq k</m>.  <m>f(m)=k^2 + j + k</m>; so <m>f(m)</m> places us in position <m>(k,j+k)</m> which is Case 2 since  <m>k+1 \leq j +k \leq 2k.</m></p></li>
+		<li><p>Case 2: <m>k+1 \leq j \leq 2k</m>.   In this case, 
+		<m>f(m)=k^2 + j + k = = (k+1)^2 + j-k-1</m>, and <m>0 \leq j-k-1 \leq k-1</m>. This puts us into either Case 0 or Case 1.</p></li>
 	</ul>
-Notice that applying <m>f</m> successively bounces us between cases 1 and 2 until we are sent into Case 0.  Starting in Case 1 with an excess of <m>j</m>, the excess increases by <m>k</m> in the next application of <m>f</m> but then the next application of <m>f</m> decreases the excess by <m>k+1</m>, so that these two application reduce the excess by 1, to <m>j-1</m>.  Therefore, <m>2 j</m> steps after being in case 1, we are done.
+Notice that applying <m>f</m> successively bounces us between cases 1 and 2 until we are sent into Case 0.  Starting in Case 1 with an excess of <m>j</m>, the excess increases by <m>k</m> in the next application of <m>f</m> but then the following application of <m>f</m> decreases the excess by <m>k+1</m>, so that these two application reduce the excess by 1, to <m>j-1</m>.  Therefore, <m>2 j</m> steps after being in case 1, we are done.
 </p>
 </solution>
 </exercise>
@@ -175,19 +175,17 @@ The sum of the digits of <m>S(4444^{4444})</m> is no more than the sum of the di
 
 <exercise number="11">
 <statement>
-<p>Each of the numbers <m>x_1</m>, <m>x_2</m>, ..., <m>x_n</m> equal 1 or -1, and
+<p>Let <m>n</m> be an integer greater than or equal to four.  Each of the numbers <m>x_1</m>, <m>x_2</m>, ..., <m>x_n</m> equal 1 or -1, and
  <me>\begin{split}
 x_1x_2x_3x_4+x_2x_3x_4x_5+x_3x_4x_5x_6+\cdots+x_{n-3}x_{n-2}x_{n-1}x_n+\\
    x_{n-2}x_{n-1}x_nx_1+x_{n-1}x_nx_1x_2+x_nx_1x_2x_3=0
 	\end{split}</me>.
 Prove that <m>n</m> is divisible by 4.</p>
 </statement>
-<!-- 
-<hint><p></p></hint>
+<hint><p>Use odd/even parity twice.</p></hint>
 <solution>
-<p></p>
+<p>The fact that each term equal <m>\pm 1</m> and they balance to 0 implies that <m>n</m> must be even.  To infer a further factor of 2 in <m>n</m> we note that if the terms in the given sum are multiplied the result is <m>(-1)^{n/2}</m>.   But if we look at this product closely we see that each of the <m>x_i</m>'s appears four times, so the product must be 1.  Therefore <m>n/2</m> is even and we are done.</p>
 </solution>
- -->
 </exercise>
 
 <exercise number="12">

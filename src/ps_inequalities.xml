@@ -56,22 +56,25 @@ with equality when <m>x=4y</m>, which implies that the maximum is attained when 
 <theorem><title>Cauchy-Bunyakovsky-Schwarz Inequality</title><idx>Cauchy-Bunyakovsky-Schwarz Inequality</idx><idx>CBS Inequality</idx>
 <statement>
 <p>If <m>x</m> and <m>y</m> are vectors in <m>\mathbb{R}^n</m>, then  
-<me>\left(\sum _{i=1}^n x_i y_i\right)^2\leq \left(\sum _{i=1}^n x_i^2\right)\left(
-\sum _{i=1}^n y_i^2\right)</me>
+<men xml:id="eq-cbs">\left(\sum _{i=1}^n x_i y_i\right)^2\leq \left(\sum _{i=1}^n x_i^2\right)\left(
+\sum _{i=1}^n y_i^2\right)</men>
  with equality if and only if the two vectors are scalar multiples of one another.</p>
 </statement>
 <proof><p>There are many proofs of this inequality.  Here is a brief one from <xref ref="biblio-aigner"/>. We observe that the inequality can be express more compactly using norm and inner product notation as <m> (x, y)^2 \leq \left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 </m>. </p>
 <p>We can assume that both <m>x</m> and <m>y</m> are nonzero vectors, for otherwise the inequality is obvious.  Let <m>\alpha</m> be a real variable, and consider the square of the norm of the vector <m>\alpha x + y</m>.  If <m>x</m> and <m>y</m> are linearly independent, then <m>\left\Vert \alpha x + y\right\Vert \gt 0</m>.  We expand the square of this norm:
 <me>\begin{split}
 			\left\Vert \alpha x + y \right\Vert^2 &amp;= (\alpha x + y,\alpha x + y)\\
-								&amp;  = \alpha^2 \left\Vert x \right\Vert^2 + 2 \alpha (x, y) + \left\Vert y \right\Vert
+								&amp;  = \alpha^2 \left\Vert x \right\Vert^2 + 2 \alpha (x, y) + \left\Vert y \right\Vert^2
 	\end{split}
 </me>
 This quadratic polynomial in <m>\alpha</m> has no real roots and so the discriminant, <m>4 (x, y)^2 - 4\left\Vert x \right\Vert^2 \left\Vert y \right\Vert^2 \lt 0</m>, which implies CBS.</p>
 <p>If  <m>x</m> and <m>y</m> are linearly dependent, we get equality since the discriminant would equal zero.</p>
 </proof>
 </theorem>
-
+<example><title><q>The 1-Trick</q><p>From <xref ref="bibilo-steele-2004" />.  Show that for each real sequence <m>x_1, x_2, \dots, x_n</m> one has 
+	<me>x_1 + x_2 + \cdots + x_n \leq \sqrt{n} \left(x_1^2 + x_2^2 + \cdots + x_n^2\right)^{1/2} </me> </p>
+<p>As the title suggest, we can derive this quite simply by taking <m>y_k = 1</m> for all <m>k</m> in <xref ref="eq-cbs"/>. </p> 
+</example>
 </section>  
 <section><title>Young's Inequality</title>
 <p>Given positive numbers  and  whose reciprocals add up to one, the product  of two positive real numbers  and  is less than or equal to a weighted sum of <m>p^{th}</m> and <m>q^{th}</m> powers  of <m>a</m> and <m>b</m>.

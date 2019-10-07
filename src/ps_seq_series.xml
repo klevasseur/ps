@@ -110,7 +110,6 @@ a general formula.  Use your observation to examine the ratios of consecutive Fi
 <solution><p></p></solution>
  -->
 </exercise>
-
 <exercise>
 <statement>
 <p>Evaluate  <m>\lim_{n\to \infty }  \left(\frac{1}{n+1}+ \frac{1}{n+2}+ \cdots +\frac{1}{2n}\right)</m>
@@ -252,6 +251,10 @@ x^n-a_nx-b_n</m> is divisible by <m>p(x)</m>.    Hint:  If true, then for all <m
 <me>s(w)= (1+w+w^2+w^3+\cdots)(1+w^2+w^4+w^6+\cdots)^2.</me>
 All that is left is to identify a formula for the coefficient of <m>w^n</m>.
 </p></solution>
+</exercise>
+<exercise>
+<statement>
+<p>Evaluate <m>\sum_{n=1}^{\infty} \frac{n}{n^4+n^2+1}</m>.</p></statement>
 </exercise>
 
 </exercises>
