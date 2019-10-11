@@ -71,7 +71,7 @@ This quadratic polynomial in <m>\alpha</m> has no real roots and so the discrimi
 <p>If  <m>x</m> and <m>y</m> are linearly dependent, we get equality since the discriminant would equal zero.</p>
 </proof>
 </theorem>
-<example><p><!-- <p>From <xref ref="bibilo-steele-2004" />, -->This illustrates the <q>1-Trick.</q>  Show that for each real sequence <m>x_1, x_2, \dots, x_n</m> one has 
+<example><p>From <xref ref="biblio-steele-2004" />, This illustrates the <q>1-Trick.</q>  Show that for each real sequence <m>x_1, x_2, \dots, x_n</m> one has 
 	<me>x_1 + x_2 + \cdots + x_n \leq \sqrt{n} \left(x_1^2 + x_2^2 + \cdots + x_n^2\right)^{1/2} </me> </p>
 <p>As the title suggest, we can derive this quite simply by taking <m>y_k = 1</m> for all <m>k</m> in <xref ref="eq-cbs"/>. </p> 
 </example>
