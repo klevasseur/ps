@@ -54,7 +54,7 @@ of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <
 <exercise><title>Rational Roots of Polynomials over the Integers</title>
 <statement><p>
 <ol label="(a)">
-<li><p>Let <m>p(x)= q_n x^n + q_{n-1}x^{n-1}+ \cdots +q_1 x + q_0</m> be a polynomials over the integers with <m>n\geq 1</m>, <m>q_n, q_0 \neq 0</m>.  Prove that if <m>a/b \in \mathbb{Q}</m> is a root of <m>p(x)</m>, then  <m>a \vert q_0</m> and <m>b \vert q_n</m></p></li>
+<li><p>Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial over the integers with <m>n\geq 1</m>, <m>a_n, a_0 \neq 0</m>.  Prove that if <m>a/b \in \mathbb{Q}</m> is a root of <m>p(x)</m>, then  <m>a \vert a_0</m> and <m>b \vert a_n</m></p></li>
 <li><p>Find all rational roots of <m>p(x)=36 x^3-81 x^2+38 x-5</m>.</p></li>
 </ol></p>
 </statement>
@@ -64,6 +64,16 @@ of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <
 <li><p>The roots are <m>1/3, 5/3</m> and <m>1/4</m>.</p></li>
 </ol></p></solution>
 </exercise>
+
+<exercise>
+<statement><p>
+Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial with <m>n\geq 1</m>, <m>a_n, a_0 \neq 0</m>. How are the roots of <m>p(x)</m> and the roots of  <m>q(x)= a_0 x^n + a_1 x^{n-1}+ \cdots +a_{n-1} x + a_n</m> related?</p>
+</statement>
+<solution><p>
+<m>\alpha</m> is a root of <m>p(x)</m> if and only if  <m>\alpha^{-1}</m> is a root of  <m>q(x)</m>. 
+</p></solution>
+</exercise>
+
 
 <exercise>
 <statement><p>
@@ -142,7 +152,7 @@ Find all polynomials, <m>p(x)</m>, with real coefficients satisfying the equatio
 </exercise>
 <exercise>
 <statement><p>
-Find all polynomials <m>P(x)</m> with the property that <m>P(x)</m> is a multiple of its second derivative, <m>P\text{''}(x)</m>.
+Find all polynomials <m>P(x)</m> with the property that <m>P(x)</m> is a multiple of its second derivative, <m>P''(x)</m>.
 
 </p></statement>
 <!-- 
