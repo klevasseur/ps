@@ -73,9 +73,9 @@ to take a stone. What player has a definite winning strategy; i. e. will always 
 </exercise>
 <exercise>
 <statement><p>
-A line of squares is laid out starting with square 1, then square 2 to its right, square 3 further right, etc.  The number of squares can be as long as you like. Put some coins in some of the squares.  For example.  one on square 1, two on square 3, one on square 5, and one on square 6.  Take turns moving one coin to the left. There are no restrictions otherwise. You can jump onto or over other coins, or jump clear off the line. You can have any number of coins on a square. Your aim is to be the person who makes the last move. 
+A line of squares is laid out starting with square 1, then square 2 to its right, square 3 further right, etc.  The number of squares can be as long as you like. Put some coins in some of the squares.  For example.  one on square 1, two on square 3, and one on square 6.  Take turns moving one coin any positive number of squares to the left. There are no restrictions otherwise. You can jump onto or over other coins, or jump clear off the line. You can have any number of coins on a square. Your aim is to be the person who makes the last move.   If players 1 and 2 alternate moves with player 1 going first, who will win?    
 </p></statement>
-<!-- 
+ ≥≥≥≥<!-- 
 <hint><p></p></hint>
 <solution><p></p></solution>
  -->
@@ -165,6 +165,14 @@ player selects an interval inside <m>[c, d]</m>, and so on. The game goes on for
 <solution><p></p></solution>
  -->
 </exercise>
-
+<exercise>
+<statement><p>
+Players 2 and 3 alternate removing stones in a nim-type game with player 2 going first and winner being the one to remove the last stone. Player 2 may remove either 1 or 2 stones in any move and Player 3 can remove either 1 or 3 stones in any move.  If the pile starts with <m>n</m> stones, for what value of <m>n</m> will Player 2 win the game?
+</p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
 </exercises>
 </chapter>
