@@ -3,9 +3,9 @@
 <chapter xml:id="c-polynomials">
 <title>Polynomials</title>
 <section><title>Prerequisite Knowledge</title>
-<p>The most common way to define a polynomials is as algebraic expression of the form <m>a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m>, where <m>n</m> is a nonnegative integer, the <m>a_i</m> are in some predetermined set, and <m>x</m> is not in that set.  Alternatively, we can define polynomials recursively.</p>
+<p>The most common way to define a <term>polynomial</term> in <m>x</m> is as an algebraic expression of the form <m>a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m>, where <m>n</m> is a nonnegative integer, the <m>a_i</m> are in some predetermined set, and <m>x</m> is not in that set.  Alternatively, we can define polynomials recursively.</p>
 <definition>
-	<title>Polynomial over <m>S</m></title>
+	<title>Polynomial in <m>x</m> over <m>S</m></title>
 	<idx>Polynomial</idx>
 	<statement><p> Let <m>S</m> be a set of numbers and <m>x</m> an element outside of <m>S</m>. 
 		<ul>
@@ -46,7 +46,7 @@ of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <
 </p>
 </statement>
 </theorem>
-<p>Although indeterminates are usually simple symbols like <m>x</m> or <m>y</m>, they can be any expression.  For example, <m>\cos{2 \theta}= 2 \cos{\theta} - 1</m> is a polynomial in <m>\cos{\theta}</m>.  In fact, for every positive integer <m>n</m>,  <m>\cos{n \theta}</m> is a polynomial in <m>\cos{\theta}</m>. See <xref ref="exercise-chebyshev" />.
+<p>Although indeterminates are usually simple symbols like <m>x</m> or <m>y</m>, they can be any expression.  For example, <m>\cos{2 \theta}= 2 \cos{\theta} - 1</m> is a polynomial in <m>\cos{\theta}</m>.  In fact, for every positive integer <m>n</m>,  <m>\cos{n \theta}</m> is a polynomial in <m>\cos{\theta}</m>. See <xref ref="exercise-chebyshev" />.</p>
 </section>  
 
 <exercises>
@@ -187,9 +187,7 @@ Determine all polynomials <m>P(x)</m> such that <m>P\left(x^2+1\right)=P(x)^2+1<
  -->
 </exercise>
 <exercise xml:id="exercise-chebyshev"><title>Chebyshev Polynomials of the First Kind</title><idx>Chebyshev Polynomials</idx>
-<statement><p>
-Prove that if <m>n</m> is a nonnegative integer then <m>\cos{n \theta}</m>  is a polynomial in <m>\cos{\theta}</m>. If <m>\cos{n \theta} = T_n(\cos{\theta})</m>, then <m>T_n(x)</m> is the <m>n</m>th Chebyshev Polynomial of the First kind.</m>.
-</p></statement>
+<statement><p>Prove that if <m>n</m> is a nonnegative integer then <m>\cos{n \theta}</m>  is a polynomial in <m>\cos{\theta}</m>. If <m>\cos{n \theta} = T_n(\cos{\theta})</m>, then <m>T_n(x)</m> is the <m>n</m>th Chebyshev Polynomial of the First kind.</p></statement>
 <!-- 
 <hint><p></p></hint>
 <solution><p></p></solution>

@@ -76,18 +76,21 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
  -->
 </exercise>
 
-<exercise number="4"><statement><p>Does there exist a positive integer with the property that the sum of the (base 10) digits of it’s square is equal to 100?  If so, find one. What if 100 is replaced with 2019?</p></statement></exercise>
+<exercise number="4"><statement><p>Does there exist a positive integer with the property that the sum of the (base 10) digits of it’s square is equal to 100?  If so, find one. What if 100 is replaced with 2019?</p></statement>
+<hint>
+<p>Before launching into a search simple test of whether a number we seek exists mod 9 is worth considering since the sum of the digits of a positive integer is congruent mod 9 to the integer itself.   Controlling the digits of a square is easiest with certain special numbers.   One such type number is <m>10^k-d</m> where <m>k</m> is a positive integer and <m>d</m> is a digit.</p>  
+</hint>
+<solution><p>Observe that <m>(10^k - 2)^2</m> is an integer whose digits consist of <m>k</m> nines, a single six, some zeros, and then a 4.   Therefore we get the number when <m>k=9</m>.  Following the pattern of digits in <m>11^2</m>, <m>111^2</m>, <m>1111^2, \dots</m> doesn't quite get what we want, but prepending an integer with all ones with a 10 works.   Since <m>2019 \equiv 2 \pmod{9}</m> no square can have sum of digits equal to 2019.</p></solution>
+</exercise>
 
 <exercise number="5">
 <statement>
-<p>Let <m>\varphi (k)</m> be the number of integers in the set <m>\{1,2, \ldots  , k-1\}</m> that are relatively prime to <m>k</m>. Find and prove a formula
+<p>Let <m>\varphi(k)</m> be the number of integers in the set <m>\{1,2, \ldots  , k-1\}</m> that are relatively prime to <m>k</m>. Find and prove a formula
 for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and <m>p</m> is prime.</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution>
-<p></p>
-</solution>
+
  -->
 </exercise>
 
