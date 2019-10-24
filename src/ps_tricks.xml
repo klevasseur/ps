@@ -83,10 +83,10 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 </example>
 <remark><p><idx>Pochhammer symbol</idx> The Pochhammer symbol is the notation  <m>(x)_n</m>, where <m>n</m> is a non-negative integer. It is commonly used to represent the <q>falling factorial</q> expression  <m>x\cdot(x-1)\cdot(x-2)\cdot \cdots \cdot (x-(k-1))</m>.  This gives a more concise way to express the expansion we have just examined as <m>\sum_{n=0}^{\infty} \frac{(\frac{1}{2})_n}{n!} (-x)^n</m>.  However, you still need to get into the weeds and manipulate the expression in the end. </p></remark>
 <p>A different sense in which generalization applies to problem solving is when a problem is more easily solved by first generalizing the context of the problem.  This problem from the 1982 Putnam is a good example.</p>
-<example xml:id="example-putnam-integral"><title>A Putnam Integral</title>
+<example xml:id="example-putnam-integral"><title>A Putnam Integral</title><idx>Leibniz Integration Rule</idx>
 <p>Evaluate <m>\int_0^{\infty} \frac{\tan^{-1}(\pi  x)-\tan^{-1}(x)}{x} \, dx</m>.</p>
 <p>The integral can be evaluated by generalizing it first to a function: 
-<m>F(y)=\int_0^{\infty} \frac{\tan ^{-1}(y x)-\tan ^{-1}(x)}{x} \, dx</m>. We then can differentiate with respect to <m>y</m> to get a simple expression of <m>F(y)</m>.  After applying the obvious condition <m>F(1)=0</m>, we can substitute <m>\pi</m> for <m>y</m> to get our final answer.  We leave it as an exercise for you to get the final answer of <m>\frac{1}{2} \pi  \ln(\pi )</m></p>
+<m>F(y)=\int_0^{\infty} \frac{\tan ^{-1}(y x)-\tan ^{-1}(x)}{x} \, dx</m>. We then can differentiate with respect to <m>y</m> to get a simple expression of <m>F(y)</m>.  After applying the obvious condition <m>F(1)=0</m>, we can substitute <m>\pi</m> for <m>y</m> to get our final answer.  We leave it as an exercise for you to get the final answer of <m>\frac{1}{2} \pi  \ln(\pi )</m>.   The fact that we can of differentiant inside an integral as is suggested here is referred to as the <term>Leibniz Integration Rule</term>.</p>
 </example>
 </section>  
 <exercises>
@@ -128,6 +128,16 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 <solution><p></p>
 </solution>
  -->
+</exercise>
+<exercise number="5">
+<statement>
+<p>Evaluate <m>\int_0^1 \frac{t^3-1}{\log (t)} \, dt</m>.</p>
+</statement>
+<solution>
+<p>Let <m>G(x)=\int_0^1 \frac{t^x-1}{\log (t)} \, dt </m>. By the Leibniz Integration Rule, 
+<me>G'(x)=\int_0^1 \partial_x \left(\frac{t^x-1}{\ln(t)}\right)\, dt = \int_0^1 t^x \, dt = \frac{1}{x+1}.</me>
+Therefore,  <m>G(x) = \ln{\lvert x+1 \rvert} + C</m>, and since <m>G(0)=0</m>, <m>C=0</m>.   Finally we get <m>G(3) = ln(4)</m>.</p>
+</solution>
 </exercise>
 </exercises>
 </chapter> 
