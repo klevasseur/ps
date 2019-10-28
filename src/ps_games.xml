@@ -75,8 +75,7 @@ to take a stone. What player has a definite winning strategy; i. e. will always 
 <statement><p>
 A line of squares is laid out starting with square 1, then square 2 to its right, square 3 further right, etc.  The number of squares can be as long as you like. Put some coins in some of the squares.  For example.  one on square 1, two on square 3, and one on square 6.  Take turns moving one coin any positive number of squares to the left. There are no restrictions otherwise. You can jump onto or over other coins, or jump clear off the line. You can have any number of coins on a square. Your aim is to be the person who makes the last move.   If players 1 and 2 alternate moves with player 1 going first, who will win?    
 </p></statement>
- ≥≥≥≥<!-- 
-<hint><p></p></hint>
+<!-- 
 <solution><p></p></solution>
  -->
 </exercise>
@@ -107,8 +106,7 @@ which always has 3 real solutions if both <m>s</m>  and <m>t</m> are nonzero.   
 </exercise>
 <exercise>
 <statement><p>
-Consider the following game played by players A and B with a deck of <m>2n</m> cards numbered from 1 to <m>2n</m>. The deck is randomly shuffled and <m>n</m> cards are dealt to each of two players. Beginning with A, the players take turns discarding one of the remaining cards of their choice and announcing its number. The game ends as soon as the sum of the numbers on the discarded cards is divisible by <m>2n + 1</m>. The last person to discard wins the game. Assuming optimal strategy
-by both A and B, what is the probability that A wins?
+Consider the following game played by players A and B with a deck of <m>2n</m> cards numbered from 1 to <m>2n</m>. The deck is randomly shuffled and <m>n</m> cards are dealt to each of two players. Beginning with A, the players take turns discarding one of the remaining cards of their choice and announcing its number. The game ends as soon as the sum of the numbers on the discarded cards is divisible by <m>2n + 1</m>. The last person to discard wins the game. Assuming optimal strategy by both A and B, what is the probability that A wins?
 </p></statement>
 <!-- 
 <hint><p></p></hint>
@@ -147,8 +145,7 @@ wins otherwise. Assuming both players pursue optimal strategies, who will win an
 
 <exercise>
 <statement><p>
-  Alice and Barbara play a game with a pack of <m>2n</m> cards, on each of which is written a positive integer. The pack is shuffled and the
-cards laid out in a row, with the numbers facing upwards. Alice starts, and the girls take turns to remove one card from either end of the row, until Barbara picks up the final card. Each girl's score is the sum of the numbers on her chosen cards at the end of the game.  Is either player sure to win?
+Alice and Barbara play a game with a pack of <m>2n</m> cards, on each of which is written a positive integer. There is no restriction on the size of integers and whether they repeat or not.   The pack is shuffled and the cards laid out in a row, with the numbers facing upwards. Alice starts, and the girls take turns to remove one card from either end of the row, until Barbara picks up the final card. Each girl's score is the sum of the numbers on her chosen cards at the end of the game. High score wins  Is either player sure to win?
 </p></statement>
 <!-- 
 <hint><p></p></hint>
