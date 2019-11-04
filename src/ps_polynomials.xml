@@ -204,16 +204,19 @@ Find all polynomials <m>P(x)</m> with the property that <m>P(x)</m> is a multipl
 </exercise>
 <exercise>
 <statement><p>
-The zeros of the polynomial <m>P(x) = x^3 - 10x + 11</m> are <m>u</m>, <m>v</m>, and <m>w</m>. Determine the value of <m>\arctan  u + \arctan
- v + \arctan  w</m>.   
-
-Hint: 
-
-</p></statement>
+The zeros of the polynomial <m>P(x) = x^3 - 10x + 11</m> are <m>u</m>, <m>v</m>, and <m>w</m>. Determine the value of <m>\arctan  u + \arctan v + \arctan  w</m>. </p></statement>
 <hint><p><m>\tan(s+t)=\frac{\tan  s + \tan  t }{1-(\tan  s )(\tan  t)}</m>.</p></hint>
-<!-- 
-<solution><p></p></solution>
- -->
+<solution><p>By the Vieta relations, <m>u+v+w=0</m>, <m>u\dot v + u \dot w + v \dot w = -10</m>, and <m>u\dot v\dot w = -11</m>.</p><p>Let <m>\arctan u = U</m>,  <m>\arctan v = V</m>, and  <m>\arctan w = W</m>, and then
+<me>
+\begin{split}
+\tan(U+V+W) &amp;= \frac{\tan U + \tan V +\tan W - \tan U \dot \tan V \dot \tan W}
+						{1 -(\tan U \dot \tan V + \tan U \dot \tan W + \tan V \dot \tan W)}\\
+			&amp;=\frac{u + v + w - u\dot v\dot w}{1-(u\dot v + u \dot w + v \dot w)}\\
+			&amp;= \frac{0-(-11)}{1-(-10)}=1
+\end{split}
+</me>
+Therefore, <m>U+V+W = \frac{\pi}{4} + \pi k</m> for some integer <m>k</m>.  By the Vieta relation, two of he roots must be positive and one negative, so the sum of the arctangents of the roots must be <m>\frac{\pi}{4}</m>.</p>
+</solution>
 </exercise>
 <exercise>
 <statement><p>

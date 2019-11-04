@@ -137,6 +137,7 @@ a general formula.  Use your observation to examine the ratios of consecutive Fi
 <p>Express <m>\sum _{k=1}^{\infty } \frac{6^k}{\left(3^{k+1}-2^{k+1}\right) \left(3^k-2^k\right)}</m> as a rational number.
 </p>
 </statement>
+<answer><p>The series converges to 2</p></answer>
 <!-- 
 <hint><p></p></hint>
 <solution><p></p></solution>
