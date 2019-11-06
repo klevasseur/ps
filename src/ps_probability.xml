@@ -38,7 +38,7 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
 <title>Exercises</title>
 <exercise>
 <statement>
-<p>Shanille O'Keal shoots free throws on a basketball court. She hits the first and misses the second, and thereafter the probability that she hits the next shot is equal to the proportion of shots she has hit so far. What is the probability that she hits exactly 50 of  her first 100 shots?</p>
+<p>Steph Kuri shoots free throws on a basketball court. She makes the first and misses the second, and thereafter the probability that she makes the next shot is equal to the proportion of shots she has made so far. What is the probability that she makes exactly 50 of her first 100 shots?</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -58,7 +58,6 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
 <statement>
 <p>Four players in a game, N(orth),W(est),S(out), and E(ast) sit at a round table. N holds a gold coin. One of three things happen, each with probability 1/3: N passes the coin to his right to W, N passes the coin to his left to E, or N walks away with the coin and the game is over. In the first two cases, the holder of the coin repeats the previous step, passing the coin to the right or left, or keeping the coin. What are the probabilities of winning for the four players?</p>
 </statement>
-<!-- <hint><p></p></hint> -->
 <solution>
 <p>We will abbreviate the probability that player <m>X</m> wins to <m>P(X)</m>.  By the symmetry of the game, <m>P(W)=P(E)</m>.  Also, we observe that 
 	<me>\begin{split}
@@ -138,7 +137,7 @@ the closest integer to <m>x/y</m> is even? Express the answer in the form <m>r +
 <statement>
 <p>Begin with the set <m>\{1,2,\dots,n\}</m>. Toss a coin <m>n</m> times, once for each member of the set. Keep the elements that scored <q>Heads</q> and discard the elements that got <q>Tails</q>. You now have a certain subset <m>S</m> of the original set. Call this whole process a <q>step</q>. Now take a step from <m>S</m>. That is, toss a coin for each element of <m>S</m>, and keep those that get <q>Heads</q>, getting a sub-subset <m>S'</m>, etc. This game halts when the empty set is reached. Let <m>f(n,k,r)</m> be the probability that after <m>k</m> steps, exactly <m>r</m> objects remain.
 <ol label="(a)">
-<li><p>Find a recurrence relation for <m>f</m>, find the generating function for f, and find f itself. </p></li>
+<li><p>Find a recurrence relation for <m>f</m>, find the generating function for <m>f</m>, and find <m>f</m> itself. </p></li>
 <li><p>What is the average number of steps in a complete game?</p></li>
 </ol>
 </p>
