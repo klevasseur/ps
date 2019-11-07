@@ -98,18 +98,24 @@ all 63 games. Your score is then computed as follows: 32 points for correctly pr
 <statement>
 <p>Three real numbers <m>a</m>, <m>b</m>, <m>c</m> are randomly (and uniformly) chosen from the interval <m>[0, 1]</m>. What is the probability that there exists a triangle with sides <m>a</m>, <m>b</m>, <m>c</m>?</p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p>Given any <m>c</m> between 0 and 1, we can determine the probablity that <m>a</m> and <m>b</m> combine with <m>c</m> to form a triangle by measuring the area of the region indicated by the inequalities in <xref ref="fig-prob-of-triangle"/>. That probability is <m>\frac{(4-3c)c}{2}</m>. We can then integrate this probability over the interval <m>[0,1]</m> to get a probability for the three random numbers of <m>\frac{1}{2}</m></p>
+         <figure xml:id="fig-prob-of-triangle">
+                <caption>Region of triangle formation
+                </caption>
+                <image source="images/fig-prob-of-triangle.png">
+                    <description>For a given  <m>c</m> the region in the <m>a b</m>-plane in which a triangle is formed.</description>
+                </image>
+            </figure>
+
+</solution>
 </exercise>
 <exercise>
 <statement>
 <p>Let <m>p_n</m> be the probability that <m>c + d</m> is a perfect square, where the integers <m>c</m> and <m>d</m> are selected independently at random from the set <m>\{1, . . . , n\}</m>. Find <m>\lim_{n\to \infty } \, \sqrt{n} p_n</m>.</p>
 </statement>
+<hint><p>Start by counting points in the diagonals of the square array of lattice points <m>(c,d)</m>.  There are two formulae for the number of points: one for diagonals that produce the squares of the numbers 2 through <m>\lfloor \sqrt{n+1} \rfloor\</m>, and a second for those that produce squares fo the the numbers from <m>\lfloor \sqrt{n+1} \rfloor\+1</m> to <m>\lfloor \sqrt{2n} \rfloor\</m>.</p></hint>
 <!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
+<solution><p>This was a 1982 Putnam problem.</p></solution>
  -->
 </exercise>
 <exercise>
