@@ -102,7 +102,7 @@ all 63 games. Your score is then computed as follows: 32 points for correctly pr
          <figure xml:id="fig-prob-of-triangle">
                 <caption>Region of triangle formation
                 </caption>
-                <image source="images/fig-prob-of-triangle.png">
+                <image source="images/prob-of-triangle.png">
                     <description>For a given  <m>c</m> the region in the <m>a b</m>-plane in which a triangle is formed.</description>
                 </image>
             </figure>
@@ -113,7 +113,7 @@ all 63 games. Your score is then computed as follows: 32 points for correctly pr
 <statement>
 <p>Let <m>p_n</m> be the probability that <m>c + d</m> is a perfect square, where the integers <m>c</m> and <m>d</m> are selected independently at random from the set <m>\{1, . . . , n\}</m>. Find <m>\lim_{n\to \infty } \, \sqrt{n} p_n</m>.</p>
 </statement>
-<hint><p>Start by counting points in the diagonals of the square array of lattice points <m>(c,d)</m>.  There are two formulae for the number of points: one for diagonals that produce the squares of the numbers 2 through <m>\lfloor \sqrt{n+1} \rfloor\</m>, and a second for those that produce squares fo the the numbers from <m>\lfloor \sqrt{n+1} \rfloor\+1</m> to <m>\lfloor \sqrt{2n} \rfloor\</m>.</p></hint>
+<hint><p>Start by counting points in the diagonals of the square array of lattice points <m>(c,d)</m> such that <m>c+d</m> is a square.  There are two formulae for the number of points: one for diagonals that produce the squares of the numbers 2 through <m>\lfloor \sqrt{n+1} \rfloor</m>, and a second for those that produce squares of the the numbers from <m>\lfloor \sqrt{n+1} \rfloor +1</m> to <m>\lfloor \sqrt{2n} \rfloor</m>.</p></hint>
 <!-- 
 <solution><p>This was a 1982 Putnam problem.</p></solution>
  -->

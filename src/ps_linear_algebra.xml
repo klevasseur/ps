@@ -15,7 +15,7 @@
 and
 <me>\textrm{Any two clubs have an even number of members in common }\Rightarrow  v_i\cdot v_j = 0 \textrm{ if }i\neq j</me>
 </p>
-<p>Now, assume  <m>\sum{i=1}^m c_i v_i = \vec{0}</m>.  We will show that each <m>c_k = 0 using the linearity of the dot product.</m>.
+<p>Now, assume  <m>\sum{i=1}^m c_i v_i = \vec{0}</m>.  We will show that each <m>c_k = 0</m> using the linearity of the dot product.
 <me>
 \begin{split}
 0 &amp; = v_k \cdot \vec{0}\\
