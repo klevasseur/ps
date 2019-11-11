@@ -79,8 +79,7 @@ Finally, since someone must win eventually, <m>P(N)+P(W)+P(S)+P(E)=1</m>.  The f
 of seven series, where the winner is the first to win four games, what is the probability that the series lasts seven games?</p></statement>
 <answer><p><m>\frac{5}{16}</m></p></answer>
 <solution><p>
-In order for the series to go seven games, the teams must split the first six games. Imagine that they play out six games no matter what happens.
-There are <m>2^6</m> equally likely outcomes and in <m>\binom{6}{3}=20</m> of the cases the teams split. Therefore, the probability of a seven games
+In order for the series to go seven games, the teams must split the first six games. Imagine that they play out six games no matter what happens.  There are <m>2^6</m> equally likely outcomes and in <m>\binom{6}{3}=20</m> of the cases the teams split. Therefore, the probability of a seven games
 series <m>\frac{20}{2^6}= \frac{5}{16}</m>.</p></solution>
 </exercise>
 
@@ -158,10 +157,11 @@ the closest integer to <m>x/y</m> is even? Express the answer in the form <m>r +
 <statement>
 <p>An urn contains a number of colored balls, with the same number of balls in each color. If 20 balls of a new color are added to the urn, the probability of drawing (without replacement) two balls of the same color is not changed. How many balls are in the urn (before the new balls are added)?</p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p>Let <m>c</m> be the number of colors represented in the urn and <m>n</m> the number of balls of each color.  The condition we want to satisfy is <m>\frac{c (n-1) n+380}{(c n+19)
+   (c n+20)}=\frac{n-1}{c n-1}</m>.  Manipulating this equation, we get <m>\frac{n (c (2 n-21)+19)}{(c
+   n-1) (c n+19) (c n+20)}=0</m>, which implies that <m>c(2 n-21)+19=0</m>.  The only pair integer pairs <m>(c,n)</m> to this equation are <m>(1,1)</m> and <m>(19,10)</m>.  The first must be rejected, and so the only solution is that there are initially 10 balls of each of 19 colors. Adding 20 of a new color will not change the probability of matching colors.  In either case the probability will be <m>\frac{1}{19}</m>. This is the only solution.</p>
+</solution>
+
 </exercise>
 
 <exercise>
@@ -170,8 +170,10 @@ the closest integer to <m>x/y</m> is even? Express the answer in the form <m>r +
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+<solution><p>Let <m>X</m> be a random variable that is the length of a phone call. The probability that a call lasts no more than one minute is <m>Pr(X \lt 1) = \int_{0}^{1} \, e^{-t} dt = \frac{e-1}{e}</m>.  The probability that it lasts less than two minutes given that it last at least one minute is 
+<me>Pr(X \lt 2 | X \geq 1)= \frac{Pr(1 \leq X \lt 2)}{Pr(X \geq 1)} = \frac{\frac{e-1}{e^2}}{\frac{1}{e}}=\frac{e-1}{e}</me> 
+The property that these two probabilities are equal is called  memorylessness.  </p></solution>
 </exercise>
 
 </exercises>
