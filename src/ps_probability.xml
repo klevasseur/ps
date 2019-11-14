@@ -33,7 +33,7 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
 
 <p>In the example above, the random event of two children being born in sequence has four equally likely outcomes; BB, BG, GB, GG.  We are told that one of the first three has occured, so <m>P(H) =\frac{3}{4}</m> in this case.   The condition that one of the children is boy and both are boys is the same the condition that both are boys, so <m>P(A \wedge H) = \frac{1}{4}</m> in this case, therefore the probability we want is <m>\frac{1/4}{3/4} =\frac{1}{3}</m>.  This conclusion often surprises people.  Did it surprise you?</p>  
 </section>  
-
+<!-- Kelly criterion ?-->
 <exercises>
 <title>Exercises</title>
 <exercise>

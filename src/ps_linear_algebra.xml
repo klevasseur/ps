@@ -46,10 +46,7 @@ Therefore we have derived the inequality.</p></example>
 <p>Let <m>A</m> and <m>B</m> be <m>n\times n</m> matrices satisfying <m>A+B = A B</m>. Show that <m>A B = B A</m>.
 </p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p>Consider the product <m>(I-A)(I-B)</m>.</p></solution>
 </exercise>
 <exercise>
 <statement>
@@ -146,20 +143,16 @@ which implies that <m>I +  A + A^2 + \cdots + A^{m-1}</m> is singular and so its
 <p>It is well known that all real-valued functions on <m>\mathbb{R}</m> form a vector space. Does the function <m>\sin  x</m> belong to the linear span of the functions <m>1</m>, <m>\cos x</m>, <m>\cos 2 x</m>, <m>\cos 3 x,\ldots</m>?    How about the function <m>\sin^2 x</m>?
 </p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p>Suppose <m>\sin x = \sum_{k=1}^m \lambda_k \cos{k x}. Then we should have 
+<me> \int_{-\pi }^{\pi } \sin^2(x) \, dx = \int_{-\pi }^{\pi } \sin(x)(\sum_{k=1}^m \lambda_k \cos{k x} ) \, dx</me>
+</p></solution>
 </exercise>
 <exercise>
 <statement>
 <p>Think of a square matrix as placed on a checkerboard, so that the leading diagonal consists entirely of white squares. Then if the signs of all the entries on black squares are changed, prove that the eigenvalues are unchanged.
 </p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p>Let <m>M</m> be the diagonal matrix with <m>M_{i i}=(-1)^i</m>.  Then if <m>A</m> is the given square matrix, <m>M A M</m> is the matrix that has the <q>black entries</q> of <m>A</m> negated. </p></solution>
 </exercise>
 </exercises>
 </chapter>
