@@ -8,7 +8,8 @@
 </introduction>
 <section>
 <title>Groups</title>
-<p>Let <m>G</m> be a group.</p>
+
+<p>Let <m>G</m> be a group. Recall that the order of  <m>g \in G</m> is the minimum positive integer <m>k</m> such that <m>g^k</m> is the group identity.</p>
 <example><title>1969 Putnam, altered</title>
 <p>Show that a group cannot be the union of two of its proper subgroups.</p>
 <p>Assume <m>H</m> and <m>K</m> are subgroups of some group <m>G</m>, and that <m>x \in H-K</m>, <m>y \in K-H</m>.  We know that <m>x*y</m> must be in either <m>H</m> or <m>K</m>.  Assume it's in <m>H</m>.
@@ -108,5 +109,52 @@ determine the order of <m>h</m>.
 </solution>
 </exercise>
 
+<exercise>
+<statement>
+<p>A transposition on a set <m>S</m> is a function <m>\tau</m> such that <m>\tau(i)=j</m> and <m>\tau(j)=i</m>, where <m>i \neq j</m> and <m>\tau(k)=k</m> for <m>k \neq i, j</m>.  A fundamental theorem involving permutations (which we will take as given) is that every permutation is a composition of an even number of transpositions or odd transpositions, but not both.   Prove that exactly half of the elements of <m>S_n</m> are <q>even.</q>
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>In abstract algebra, the symmetric group <m>S_n</m> is the group of all permutations on <m>\{1, 2, \dots, n\}</m>; i. e., bijections on <m>\{1, 2, \dots, n\}</m>.  <m>S_n</m> is a group of order <m>n!</m>.  What is the smallest value of <m>n</m> for which there exists an element of order 10?, of order 20?
+</p>
+</statement>
+<!-- 
+<solution>
+<p> </p>
+</solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Consider the puzzle below, where one can rotate each of the three triangles. For example, rotating the middle triangle in (A) once gives the configuration in (B).
+</p>
+         <figure xml:id="fig-group-puzzle-1">
+                <caption>Spinning Triangles Puzzle
+                </caption>
+                <image source="images/fig-group-puzzle-1.png">
+                    <description>A puzzle involving three equilateral triangles with numbered vertices, where each triangle can spin 120 degrees.</description>
+                </image>
+            </figure>
+
+<p>Prove that it there is no sequence of rotations that produce the
+following configuration, starting from (A).</p>
+        <figure xml:id="fig-group-puzzle-2">
+                <caption>Spinning Triangles Puzzle - Impossible Configuration
+                </caption>
+                <image source="images/fig-group-puzzle-2.png">
+                    <description>A configuration in the puzzle that can't be attained.</description>
+                </image>
+            </figure>
+
+</statement>
+<!-- 
+<solution>
+<p> </p>
+</solution>
+ -->
+</exercise>
 </exercises>
 </chapter>

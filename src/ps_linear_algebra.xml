@@ -113,10 +113,10 @@ which implies that <m>I +  A + A^2 + \cdots + A^{m-1}</m> is singular and so its
 <statement>
 <p>Let <m>A</m> be the <m>n\times n</m> matrix whose entry in the <m>i</m>-th row and <m>j</m>-th column is <m>\frac{1}{\min (i,j)}</m> for <m>1 \leq  i,j \leq  n</m>. Compute <m>\det (A)</m>.</p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<hint><p>Expand the determinant along the last row of the matrix.</p></hint>
+<solution><p>Let <m>A_n</m> be the <m>n</m> by <m>n</m> version of the matrix. Assume <m>n \geq 3</m>. Expand the determinant of <m>A_n</m> along the last row. If <m>1 \leq k \leq n-1</m> then the minor <m>M_{n k}</m> is the determinant of a matrix with two identical columns, which is zero.    This leaves two nonzero term in the expansion. In both of the terms, the minor is the determinant of <m>A_{n-1}</m>.  Therefore, 
+<me>det(A_{n}) = - a_{n,n-1}  det(A_{n-1}) + a_{n,n-1}  det(A_{n-1}) =\frac{-1}{(n-1)n} \cdot det(A_{n-1}).</me></p>
+<p>Combining this recursion with the initial values of <m>det(A_{1})=1</m> and <m>det(A_{2})=-frac{1}{2}</m>, we see that  <m>det(A_{n}) = \frac{(-1)^n}{n! (n-1)!}</m></p></solution>
 </exercise>
 <exercise>
 <statement>
@@ -138,15 +138,7 @@ which implies that <m>I +  A + A^2 + \cdots + A^{m-1}</m> is singular and so its
 <solution><p></p></solution>
  -->
 </exercise>
-<exercise>
-<statement>
-<p>It is well known that all real-valued functions on <m>\mathbb{R}</m> form a vector space. Does the function <m>\sin  x</m> belong to the linear span of the functions <m>1</m>, <m>\cos x</m>, <m>\cos 2 x</m>, <m>\cos 3 x,\ldots</m>?    How about the function <m>\sin^2 x</m>?
-</p>
-</statement>
-<solution><p>Suppose <m>\sin x = \sum_{k=1}^m \lambda_k \cos{k x}. Then we should have 
-<me> \int_{-\pi }^{\pi } \sin^2(x) \, dx = \int_{-\pi }^{\pi } \sin(x)(\sum_{k=1}^m \lambda_k \cos{k x} ) \, dx</me>
-</p></solution>
-</exercise>
+
 <exercise>
 <statement>
 <p>Think of a square matrix as placed on a checkerboard, so that the leading diagonal consists entirely of white squares. Then if the signs of all the entries on black squares are changed, prove that the eigenvalues are unchanged.
@@ -154,5 +146,16 @@ which implies that <m>I +  A + A^2 + \cdots + A^{m-1}</m> is singular and so its
 </statement>
 <solution><p>Let <m>M</m> be the diagonal matrix with <m>M_{i i}=(-1)^i</m>.  Then if <m>A</m> is the given square matrix, <m>M A M</m> is the matrix that has the <q>black entries</q> of <m>A</m> negated. </p></solution>
 </exercise>
+
+<exercise>
+<statement>
+<p>It is well known that all real-valued functions on <m>\mathbb{R}</m> form a vector space. Does the function <m>\sin  x</m> belong to the linear span of the functions <m>1</m>, <m>\cos x</m>, <m>\cos 2 x</m>, <m>\cos 3 x,\ldots</m>?    How about the function <m>\sin^2 x</m>?
+</p>
+</statement>
+<solution><p>Suppose <m>\sin x = \sum_{k=1}^m \lambda_k \cos{k x}</m>. Then we should have 
+<me> \int_{-\pi }^{\pi } \sin^2(x) \, dx = \int_{-\pi }^{\pi } \sin(x)(\sum_{k=1}^m \lambda_k \cos{k x} ) \, dx</me>
+</p></solution>
+</exercise>
+
 </exercises>
 </chapter>
