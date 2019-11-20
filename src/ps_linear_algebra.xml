@@ -123,10 +123,8 @@ which implies that <m>I +  A + A^2 + \cdots + A^{m-1}</m> is singular and so its
 <p>The dashboard of a nuclear power station has several lights. Some lights are on and some are off. There are also several buttons. Pressing each button changes the state of several lights (from on to off and from off to on). It is known that for every set of lights there exists a button connected to an odd number of lights in this set. Show that one can turn off all lights by pressing some buttons.
 </p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<hint><p>Start by creating a matrix, one row for each button and a column for each light.</p></hint>
+<solution><p>Assume there are <m>n</m> buttons and <m>m</m> lights.  Let <m>A</m> be the <m>n \times m</m> matrix such that <m>A_{i j} = 1</m> if and only if button <m>i</m> is connected to light <m>j</m>.  Let <m>\Delta</m> be a set of lights.  We represent this set by an <m>m</m> dimensional column vector <m>\delta</m> such that <m>\delta_{i} = 1</m> if and only if light <m>i</m> is in <m>\Delta</m>. </p></solution>
 </exercise>
 <exercise>
 <statement>

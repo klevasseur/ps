@@ -109,16 +109,16 @@ determine the order of <m>h</m>.
 </solution>
 </exercise>
 
-<exercise>
+<exercise><idx>Symmetric Group</idx>
 <statement>
-<p>A transposition on a set <m>S</m> is a function <m>\tau</m> such that <m>\tau(i)=j</m> and <m>\tau(j)=i</m>, where <m>i \neq j</m> and <m>\tau(k)=k</m> for <m>k \neq i, j</m>.  A fundamental theorem involving permutations (which we will take as given) is that every permutation is a composition of an even number of transpositions or odd transpositions, but not both.   Prove that exactly half of the elements of <m>S_n</m> are <q>even.</q>
+<p>In abstract algebra, the symmetric group <m>S_n</m> is the group of all permutations on <m>\{1, 2, \dots, n\}</m>; i. e., bijections on <m>\{1, 2, \dots, n\}</m>.  A transposition in <m>S_n</m> is a function <m>\tau</m> such that <m>\tau(i)=j</m> and <m>\tau(j)=i</m>, where <m>i \neq j</m> and <m>\tau(k)=k</m> for <m>k \neq i, j</m>.  A fundamental theorem involving permutations (which we will take as given) is that every permutation is a composition of an even number of transpositions or  an odd number of transpositions, but not both.   Prove that exactly half of the elements of <m>S_n</m> are <q>even.</q>
 </p>
 </statement>
 </exercise>
 
 <exercise>
 <statement>
-<p>In abstract algebra, the symmetric group <m>S_n</m> is the group of all permutations on <m>\{1, 2, \dots, n\}</m>; i. e., bijections on <m>\{1, 2, \dots, n\}</m>.  <m>S_n</m> is a group of order <m>n!</m>.  What is the smallest value of <m>n</m> for which there exists an element of order 10?, of order 20?
+<p><m>S_n</m> is a group of order <m>n!</m>.  What is the smallest value of <m>n</m> for which there exists an element of order 10?, of order 20?
 </p>
 </statement>
 <!-- 
