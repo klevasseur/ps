@@ -94,10 +94,15 @@ which implies that <m>I +  A + A^2 + \cdots + A^{m-1}</m> is singular and so its
 <p>Let's call a real <m>3 \times 3</m> matrix a <q>magic square</q> if all its row-sums and column-sums are equal to 0. Show that all magic squares form a vector space. Find its dimension.
 </p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p>The dimension is four.  If we let the entries in the two by two block in the top left of the a matrix be arbitrary, then the other five entries are determined in the pattern 
+<me>\left(
+\begin{array}{ccc}
+ x_1 &amp; x_2 &amp; -x_1-x_2 \\
+ x_3 &amp; x_4 &amp; -x_3-x_4 \\
+ -x_1-x_3 &amp; -x_2-x_4 &amp; x_1+x_2+x_3+x_4 \\
+\end{array}
+\right)</me>
+This produces a set of four matrices that can easily be shown to be linearly independent and so is a basis.  </p></solution>
 </exercise>
 <exercise>
 <statement>
