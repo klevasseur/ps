@@ -20,6 +20,10 @@
     <!-- Added operator \aut - TWJ 4/6/2013  -->
     <!-- Added operator \Hom - TWJ 8/19/2010 -->
     <macros>
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\ZZ}{\mathbb{Z}}
 \newcommand{\identity}{\mathrm{id}}
 \newcommand{\notdivide}{{\not{\mid}}}
 \newcommand{\notsubset}{\not\subset}
