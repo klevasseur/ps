@@ -34,7 +34,8 @@ So <m>f(9999) = \sum_{1}^{9999}(\sqrt{k + 1} - \sqrt{k}) = \sqrt{9999 + 1} - \sq
 <me>3ab-2018(a+b)=0</me>
 By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>2018^2</m> to both sides completes a product of two binomial factors on the the left side:
 <me>(3a-2018)(3b-2018) = 2018^2.</me></p>
-<aside><p>Problem posers often like to involve the current year in at least one problem in a competition; so it's a good idea to be familiar with the current year's factorization.</p></aside>
+<aside><title>On year numbers.</title>
+<p>Problem posers often like to involve the current year in at least one problem in a competition; so it's a good idea to be familiar with the current year's factorization.</p></aside>
 <p>From the Putnam Archive:</p>
 <blockquote><p>With this equation, we can identify solutions the original equation in the positive integers. Each of the factors is congruent to <m>1 \pmod 3</m>. There are <m>6</m> positive factors of <m>2018^2 = 2^2 \cdot 1009^2</m> that are congruent to <m>1 \pmod 3</m>: <m>1</m>, <m>2^2</m>, <m>1009</m>, <m>2^2 \cdot 1009</m>, <m>1009^2</m>, <m>2^2 \cdot 1009^2</m>. These lead to the <m>6</m> possible pairs: <m>(a,b) = (673,1358114)</m>, <m>(674,340033)</m>, <m>(1009,2018)</m>, <m>(2018,1009)</m>, <m>(340033,674)</m>, and <m>(1358114,673)</m>.</p>
 
@@ -54,7 +55,7 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 <p><me>g(2t)=\frac{f(\cos{2t})}{\sin{2t}}=\frac{2 \cos{t}\: f(\cos{t})}{2\sin{t}\cos{t}}=g(t)</me>
 Combining this with the periodicity of <m>g</m> tells us that
 <me>g(1+\frac{n \pi}{2^k})=g(2^{k+1}+2 \pi n) = g(2^{k+1})=g(1)</me>
-The continuity of <m>g</m> in its domain and the density of <m>{1+\frac{n \pi}{2^k} \mid n,k \in \mathbb{Z}}</m> implies that <m>g</m> must be constant.</p>
+The continuity of <m>g</m> in its domain and the density of <m>\{1+\frac{n \pi}{2^k} \mid n,k \in \mathbb{Z}\}</m> implies that <m>g</m> must be constant.</p>
 <p>Returning our attention to <m>f</m> we have <m>f(\cos{t})= c \sin{t}</m> for some constant <m>c</m>, which implies <m>f(x) = c \sqrt{1-x^2}</m> for <m>x \in (-1,1)</m>.  Finally, this tells us that <m>f</m> must be even.  However, when we turn to the original fuctional equation,
  <m>x f(x)=f(2x^2-1)</m> we have an odd function on the left and an even function on the right.  Our only possibility is the desired conclusion.</p>
 </example>
