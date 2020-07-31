@@ -17,9 +17,9 @@
 <li><p>William Lowell Putnam Mathematics Competition (naturally!)</p></li>
 </ul>	
 </p>
-<p>Problems and ideas for problems come from the following books:</p>
+<p>Problems and ideas for problems come from the following books and web sites:</p>
 </introduction>
-<biblio type ="raw" xml:id="biblio-aigner">Aigner, Martin and Ziegler, G<m>\"{u}</m>nter M., <title>Proofs from THE BOOK</title>, Springer, New York, 2010.</biblio>
+<biblio type ="raw" xml:id="biblio-aigner">Aigner, M. and Ziegler, G, <title>Proofs from THE BOOK</title>, Springer, New York, 2010.</biblio>
 <biblio type="raw" xml:id="biblio-putnam-2">Alexanderson, Klosinski and Larson, <title>The William Lowell Putnam Mathematical Competition. Problems and Solutions: 1965-1984</title>, MAA, 1985</biblio>
 <biblio type="raw" xml:id="biblio-ayad-2018">Ayad, Mohamed, <title>Galois Theory and Applications</title>, World Scientific, 2018</biblio>
 <biblio type="raw" xml:id="biblio-barbeau-1989">Barbeau, E. J., <title>Polynomials</title>, Springer-Verlag, 1989</biblio>
@@ -28,6 +28,7 @@
 <biblio type="raw" xml:id="biblio-titu-2007">Gelcam, R. and  T. Andreescu, <title>Putnam and Beyond</title>, Springer, 2007</biblio>
 <biblio type="raw" xml:id="biblio-putnam-1">Gleason, Greenwood and Kelly, <title>The William Lowell Putnam Mathematical Competition. Problems and solutions: 1938-1964</title>, MAA, 1978</biblio>
 <biblio type="raw" xml:id="biblio-havil-2003">Havil, Julian <title>Gamma, Exploring Euler's Constant</title>, Princeton U Press, 2003.</biblio>
+<biblio type="raw" xml:id="biblio-putnam-archive">Kedlaya, Kiran<title>The Putnam Archive</title>, <url href="https://kskedlaya.org/putnam-archive/">https://kskedlaya.org/putnam-archive/</url></biblio>
 <biblio type="raw" xml:id="biblio-putnam-3">Kedlaya, Poonen and Vakil, <title>The William Lowell Putnam Mathematical Competition 1985-2000: Problems, Solutions and Commentary</title>, MAA, 2002</biblio>
 <biblio type="raw" xml:id="biblio-kemeny">John G. Kemeny and J. Laurie Snell, <title>Finite Markov Chains</title>, Undergraduate Texts in Mathematics, Springer-Verlag, New York, 1976.</biblio> 
 <biblio type="raw" xml:id="biblio-klamkin-1986">Klamkin, M. S., <title>International Mathematical Olympiads 1978-1985 and Forty Supplementary Problems</title>, Mathematical Association of America, 1986.</biblio>
