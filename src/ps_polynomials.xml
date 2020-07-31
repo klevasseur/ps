@@ -46,7 +46,48 @@ of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <
 </p>
 </statement>
 </theorem>
-<p>Although indeterminates are usually simple symbols like <m>x</m> or <m>y</m>, they can be any expression.  For example, <m>\cos{2 \theta}= 2 \cos{\theta} - 1</m> is a polynomial in <m>\cos{\theta}</m>.  In fact, for every positive integer <m>n</m>,  <m>\cos{n \theta}</m> is a polynomial in <m>\cos{\theta}</m>. See <xref ref="exercise-chebyshev" />.</p>
+<paragraphs><title>Polynomials in an Expression</title>
+<p>Although indeterminates are usually simple symbols like <m>x</m> or <m>y</m>, they can be any expression. For example, <m>y =\frac{1}{x^3}-\frac{1}{x} -1</m> is not a polynomial in <m>x</m>.  However, if we treat the expression <m>\frac{1}{x}</m> as an indeterminate, then we can view <m>y</m> as  <m>y =(\frac{1}{x})^3-\frac{1}{x} -1</m>, a polynomial in <m>\frac{1}{x}</m>. </p>
+<p>Another example is <m>\cos{2 \theta}= 2 \cos{\theta} - 1</m>, which is a polynomial in <m>\cos{\theta}</m>.  In fact, for every positive integer <m>n</m>,  <m>\cos{n \theta}</m> is a polynomial in <m>\cos{\theta}</m>. See <xref ref="exercise-chebyshev" />.</p>
+</paragraphs>
+</section>  
+
+<section><title>Examples</title>
+<example><title>2019 Putnam, B5</title>
+<p>Here is an recent Putnam problem that can be attacked using a variety of properties of polynomials.</p>
+<p>Let <m>F_m</m> be the <m>m</m>th Fibonacci number, defined by <m>F_1 = F_2 = 1</m> and <m>F_m = F_{m-1} + F_{m-2}</m> for all <m>m \geq 3</m>.
+Let <m>p(x)</m> be the polynomial of degree <m>1008</m> such that <m>p(2n+1) = F_{2n+1}</m> for <m>n=0,1,2,\dots,1008</m>. Find integers <m>j</m> and <m>k</m> such that <m>p(2019) = F_j - F_k</m>.</p>
+<p>Probably the simplest solution uses differences.  Observe that if we consider a related polynomial, <m>q(x)</m>, such that  <m>q(n) = F_{2n+1}</m> for <m>n=0,1,2,\dots,1008</m>, the first differences, <m>q(n+1)-q(n)</m>, <m>n=0,1,2,\dots,1007</m> are the Fibonacci numbers <m>F_2, F_4, \dots, F_{2016}</m>. The second differences are the odd-indexed Fibonacci numbers between the first differences.  The third differences are back to the even indexed values, etc.   Since the 1008th difference computed from the first 1009 values of <m>q(x)</m> is <m>F_1009</m>. Since the degree of <m>q(x)</m> is 1008, all 1008th differences must be  <m>F_{1009}</m>.  We can compute another diagonal of the difference array for <m>q(x)</m> to see that <m>q(1009) = F_{1009}+F_{1010}+\dots +F_{2017}</m>.  Using <m>F_{i}=F_{i+2}-F_{i+1}</m> this last sum reduces to <m>F_{2019}-F_{1010}</m>.  This provides us with the desired values of <m>j</m> and <m>k</m>.</p>
+
+<p>A second solution, which was published in <xref ref="biblio-putnam-archive"/>, uses the Lagrange interpolation formula: given <m>x_0,\dots,x_n</m> and <m>y_0,\dots,y_n</m>, the unique polynomial <m>P</m> of degree at most <m>n</m> satisfying <m>P(x_i) = y_i</m> for <m>i=0,\dots,n</m> is
+<me>
+\sum_{i=0}^n P(x_i) \prod_{j \neq i} \frac{x-x_j}{x_i-x_j}
+</me>
+Write 
+<me>
+F_n = \frac{1}{\sqrt{5}}(\alpha^n - \beta^{-n}), \qquad \alpha = \frac{1+\sqrt{5}}{2}, \beta = \frac{1-\sqrt{5}}{2}.
+</me>
+For <m>\gamma \in \mathbb{R}</m>, let <m>p_\gamma(x)</m> be the unique polynomial of degree at most 1008 satisfying
+<me>
+p_1(2n+1) = \gamma^{2n+1}, p_2(2n+1) = \gamma^{2n+1} \, (n=0,\dots,1008);
+</me>
+then <m>p(x) = \frac{1}{\sqrt{5}}(p_\alpha(x) - p_\beta(x))</m>.</p>
+<p>By Lagrange interpolation,
+<me>\begin{split}
+p_\gamma(2019) &amp;= \sum_{n=0}^{1008} \gamma^{2n+1} \prod_{0 \leq j \leq 1008, j \neq n} \frac{2019-(2j+1)}{(2n+1)-(2j+1)}\\
+&amp;= \sum_{n=0}^{1008} \gamma^{2n+1} \prod_{0 \leq j \leq 1008, j \neq n} \frac{1009-j}{n-j}\\
+&amp;= \sum_{n=0}^{1008} \gamma^{2n+1} (-1)^{1008-n} \binom{1009}{n} \\
+&amp;= -\gamma ((\gamma^2-1)^{1009} - (\gamma^2)^{1009})\\
+\end{split}</me>
+For <m>\gamma \in \{\alpha, \beta\}</m> we have <m>\gamma^2 = \gamma + 1</m> and so
+<me>
+p_\gamma(2019) = \gamma^{2019} - \gamma^{1010}.
+</me>
+We thus deduce that <m>p(x) = F_{2019} - F_{1010}</m> as claimed.
+</p>
+
+</example>
+
 </section>  
 
 <exercises>
@@ -227,6 +268,14 @@ Determine all polynomials <m>P(x)</m> such that <m>P\left(x^2+1\right)=P(x)^2+1<
 <solution><p></p></solution>
  -->
 </exercise>
+<exercise xml:id="exercise-p2019b5-related">
+<statement><p>Let <m>a, b \in \RR</m>, <m>a \neq 0</m>. Prove that if <m>p(x)</m> and <m>q(x)</m> are polynomials of degree <m>n</m>, <m>n \geq 1</m>, such that <m>p(a k +b)=q(x)</m>, <m>k = 0, 1, \dots, n</m>, then 
+<m>p(a x + b)=q(x)</m></p></statement>
+<!-- 
+<hint><p></p></hint>
+<solution><p></p></solution>
+ -->
+</exercise>
 <exercise xml:id="exercise-chebyshev"><title>Chebyshev Polynomials of the First Kind</title><idx>Chebyshev Polynomials</idx>
 <statement><p>Prove that if <m>n</m> is a nonnegative integer then <m>\cos{n \theta}</m>  is a polynomial in <m>\cos{\theta}</m>. If <m>\cos{n \theta} = T_n(\cos{\theta})</m>, then <m>T_n(x)</m> is the <m>n</m>th Chebyshev Polynomial of the First kind.</p></statement>
 <!-- 
@@ -235,5 +284,4 @@ Determine all polynomials <m>P(x)</m> such that <m>P\left(x^2+1\right)=P(x)^2+1<
  -->
 </exercise>
 </exercises>
-</chapter> 
-
+</chapter>

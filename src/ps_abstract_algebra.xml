@@ -131,35 +131,35 @@ determine the order of <m>h</m>.
 <statement>
 <p>Consider the puzzle below, where one can rotate each of the three triangles. For example, rotating the middle triangle in (A) once gives the configuration in (B).
 </p>
+<!-- 
 <image source="images/fig-group-puzzle-1" width="70%">
     <description>A puzzle involving three equilateral triangles with numbered vertices, where each triangle can spin 120 degrees.</description>
 </image>
 
-   <!-- 
-      <figure xml:id="fig-group-puzzle-1">
+ -->
+         <figure xml:id="fig-group-puzzle-1">
                 <caption>Spinning Triangles Puzzle
                 </caption>
                 <image source="images/fig-group-puzzle-1.png">
                     <description></description>
                 </image>
             </figure>
- -->
 
 <p>Prove that it there is no sequence of rotations that produce the
 following configuration, starting from (A).</p>
+<!-- 
  <image source="images/fig-group-puzzle-2" width="35%">
     <description>A configuration in the puzzle that can't be reached.</description>
 </image>
+ -->
 
- <!-- 
-      <figure xml:id="fig-group-puzzle-2">
+       <figure xml:id="fig-group-puzzle-2">
                 <caption>Spinning Triangles Puzzle - Impossible Configuration
                 </caption>
                 <image source="images/fig-group-puzzle-2.png">
                     <description>A configuration in the puzzle that can't be reached.</description>
                 </image>
             </figure>
- -->
 
 </statement>
 <!-- 
