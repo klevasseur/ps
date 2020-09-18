@@ -2,7 +2,7 @@
 <!-- MBX -->
 <chapter xml:id="c-prerequisites">
 <title>Format for a Problem Solving Class</title>
-<introduction><p>This chapter contains note on the way I teach a problem solving class.  I'm sure that there are plenty of variations that work at least as well, and I hope this will provide the reader with ideas for their own system.</p>
+<introduction><p>This chapter contains notes on the way I teach a problem solving class.  I'm sure that there are plenty of variations that work at least as well, and I hope this will provide the reader with ideas for their own system.</p>
 </introduction>
 <section><title>Before the first class</title>
 <p>Students in my class are required to compete in the Putnam but in a typical year there are an equal number of students who are not in class who are interested in the Putnam.  Since it's never too early to start preparing, I post warm-up problems on Piazza.com.   As students register for the class, many in the spring, I add them to the Piazza list, which also includes the non-registered students.  I post problems that are not quite up to the difficulty of Putnam problems - in fact many are way easier.  However, this lets students rediscover some basic concepts.  Solutions are available to students even if they register late, and so these problems serve as a starting point to the course.</p>
@@ -22,7 +22,7 @@
 	<li><p>Polynomial operations and properties.</p></li>
 	<li><p>Properties of the complex numbers</p></li>
 	<li><p>Geometric series, both finite and infinite.  Alternating series.</p></li>
-	<li><p>Matrix Algebra</p></li>
+	<li><p>Matrix Algebra	</p></li>
 	<li><p>Basic Geometry</p></li>
 	<li><p>The definition of the trigonometric functions as circular functions, basic trigonometric identities.  Laws of sine and cosine.</p></li>
 	</ul>
