@@ -162,7 +162,7 @@ integers greater than or equal to 2. Prove that there are no other solutions tha
 <solution>
 <p>Let <m>S(n)</m> be the sum of the base 10 digits of <m>n</m>.  Since  <m>10^k \equiv 1 \pmod{9}</m> for all <m>k \geq 0</m>, 
 <me>s \equiv S(n) \equiv S^{2}(n) \equiv S^{3}(n) \pmod{9}</me>,
-we can determine the reside of the desired value mod 9 by identifying the pattern in the powers of <m>4444</m>. 
+we can determine the residue of the desired value mod 9 by identifying the pattern in the powers of <m>4444</m>. 
 <me>\begin{split}
 4444^1 \equiv 7 \pmod{9}\\
 4444^2 \equiv 4 \pmod{9}\\
@@ -195,12 +195,18 @@ Prove that <m>n</m> is divisible by 4.</p>
 <statement>
 <p>Find all positive integers <m>n</m> such that <m>n!</m> ends in exactly 1000 zeros.</p>
 </statement>
-<!-- 
-<hint><p></p></hint>
+<hint><p>Count the factors of 5 in <m>n!</m>.</p></hint>
 <solution>
-<p></p>
-</solution>
+<p>The number of zeros that appear at the end of <m>n!</m> is equal to the total number of factors of 5 in <m>n!</m>.  We also need factors of 2, but there are an excess of those as we increase <m>n</m>.  The number of factors of 5 in <m>n!</m> is 
+<me>z(n)=\sum_{k=1}^{\infty} \lfloor \frac{n}{5^k} \rfloor</me>
+The first term of this sum is <m>800</m> when <m>n=4000</m> and <m>1000</m> when <m>n=5000</m>, so direct calculation starting at <m>4000</m> would seem to make sense. In fact <m>z(4005)=1000</m> Therefore integers from <m>4005</m> to <m>4009</m> are what we are looking for.  
+<!-- 
+Some calculation can be avoided if you are aware of a Theorem attributed to Legandre that says that if <m>p</p> is a prime, then the number of factors of <m>p</m> in <m>n!</m> is 
+<m>\frac{n−s_{p}(n)}{p−1}</m>, where <m>s_{p}(n)</m> is the sum of the digits in the base <m>p</m> representation of <m>n</m>.  Since <m>1000_{ten}=1300_{five}</m>, <m>s_5(1000)=4</m>.  Therefore we would solve <m>1000=\frac{n-4}{4}</m>.  This gives us 4004	
  -->
+</p>
+</solution>
+
 </exercise>
 
 <exercise number="13">
@@ -208,11 +214,11 @@ Prove that <m>n</m> is divisible by 4.</p>
 <p>Prove that among any three distinct integers we can find two, say <m>a</m> and <m>b</m>, such that the number <m>a^3b - a b^3</m> is a multiple of 10.</p>
 </statement>
 <!-- 
-<hint><p></p></hint>
+<hint><p></p></hint> -->
 <solution>
-<p></p>
+<p>No matter which two integers are selected, <m>f(a,b)=a^3b - a b^3=a b (a-b)(a+b)</m> will be even.  If <m>a</m> and <m>b</m> are odd, their sum will be even. Less obvious is whether  <m>f(a,b)</m> will be divisible by 5. Not every pair produces a multiple of 5, such as <m>f(2,1)=6</m>.  If any one of the given integers is a multiple of 5, we are done, so assume we have no multiples of five given.  This means that each of the three integers can be mapped to one of the two sets <m>\{1,4\}</m> or <m>\{2,3\}</m> according to which set its residue mod 5 belongs.   By the pigeonhole principle, there are two integers, <m>a</m> and <m>b</m>, that map to the same set.  If their residues are equal, then they differ by a multiple of 5 and if their residues are different, their sum is a multiple of 5.  Either way, <m>f(a,b)</m> be a multiple of 5.</p>
 </solution>
- -->
+
 </exercise>
 <exercise number="14">
 <statement>

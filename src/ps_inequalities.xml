@@ -135,7 +135,7 @@ def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
 <p>How does the <term>harmonic mean</term> of two nonnegative real numbers, <m>a</m> and <m>b</m>,  <m>\frac{2}{\frac{1}{a}+\frac{1}{b}}</m>, compare with their geometric and arithmetic means?
 </p>
 </statement>
-<hint><p>Select two simple numbers and compute their harmonic, geometric and arithmetic means.  If there is going to be consistency, you know what is should be.  Then the hard work is to prove it!</p></hint>
+<hint><p>Select two simple numbers and compute their harmonic, geometric and arithmetic means.  If there is going to be consistency, you know what it should be.  Then the hard work is to prove it!</p></hint>
 <!-- 
 <solution><p></p></solution>
  -->
@@ -166,8 +166,9 @@ def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
 		&amp; \Rightarrow  l w h \leq 54
 		\end{split}
 		</me>
-with equality when <m>l = 2w = 2h = 6</m>. Thus, the maximum is attained when <m>l=6</m> and <m>w=h=3</m>.
+with equality when <m>l = 2w = 2h = 6</m>. Thus, the maximum, 54, is attained when <m>l=6</m> and <m>w=h=3</m>.
 </p>
+<p>One could also argue, using calculus, that since the quantities <m>l</m>, <m>2w</m>, and <m>2h</m>  can be though of as edge lengths of a rectangular prism, its volume is maximized by a cube. This implies <m>l = 2w = 2h = 6</m>.  </p>
 </solution>
 </exercise>
 <exercise>
@@ -176,37 +177,42 @@ with equality when <m>l = 2w = 2h = 6</m>. Thus, the maximum is attained when <m
 a_i^4\geq \frac{1}{n^3}</m>
 </p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<hint><p>Extend the <q>one trick.</q></p></hint>
+<solution><p>The CBS inequalty using the <q>one trick</q> implies
+<me>1=\sum_{k=1}^n a_k \dot 1 \leq \sqrt{n} \dot (\sum_{k=1}^n (a_k)^{2})^{1/2}</me>
+Square both sides and divide by <m>n</m> to get the desired first inequality.</p>
+<p>For the second inequality, we use the same trick:
+<me> \frac{1}{n} \leq \sum_{k=1}^n a_k^{2} \dot 1 \leq \left(\sum_{k=1}^n a_k^{4}\right)^{1/2} \left(n\right)^{1/2} </me>and we are just a few algebra steps away.</p></solution>
 </exercise>
 <exercise>
-<statement>
-<p>(a)  Compute the determinant <m>D= \left| 
+<statement><ol label="(a)">
+<li><p>(a)  Compute the determinant <m>D= \left| 
 \begin{array}{ccc}
  a &amp; b &amp; c \\
  c &amp; a &amp; b \\
  b &amp; c &amp; a 
-\end{array} \right|</m> two ways to derive the identity <m>a^3+b^3+c^3-3 a b c =(a+b+c) \left(a^2+b^2+c^2-a b-b c - c a\right)</m>.
-
-(b)  Prove that if <m>x</m>, <m>y</m>, and <m>z</m> are distinct real numbers, then <m>\sqrt[3]{x-y}+ \sqrt[3]{y-z}+\sqrt[3]{z-x}\neq 0</m>.
-</p>
+\end{array} \right|</m> two ways to derive the identity <m>a^3+b^3+c^3-3 a b c =(a+b+c) \left(a^2+b^2+c^2-a b-b c - c a\right)</m>.</p></li>
+<li><p>Prove that if <m>x</m>, <m>y</m>, and <m>z</m> are distinct real numbers, then <m>\sqrt[3]{x-y}+ \sqrt[3]{y-z}+\sqrt[3]{z-x}\neq 0</m>.
+</p></li></ol>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p><ol label="(a)"><li><p>One way to compute <m>D</m> is to use the familiar method of repeating the first two columns of the matrix and then taking products of diagonals, where the diagonals from top right to bottom left are negated.  This method produces the left side of the desired equality.  For the second computation, add the second and third rows of the matrix to the first row, which doesn't change the value of the determinant  Then expand along the first row to get the right side.</p></li>
+<li>If you set <m>a</m>, <m>b</m>, and <m>c</m> to equal the three cube roots, the left side is clearly nonzero, and the right side has <m>\sqrt[3]{x-y}+ \sqrt[3]{y-z}+\sqrt[3]{z-x}\neq 0</m> as a factor, implying the desired inequality.</li></ol></p></solution>
 </exercise>
 <exercise>
 <statement>
 <p>Let <m>x_1+x_2+x_3=\frac{\pi }{2}</m>, where the <m>x_i</m> are positive.   Show that  <m>\sin  x_1\sin  x_2 \sin  x_3\leq \frac{1}{8}</m>.
 </p>
 </statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p>
+<me>
+	\begin{split}
+	\frac{1}{2} = \sin{\frac{\pi}{6}} &amp;=\sin{\left( \frac{x_1+x_2+x_3}{3}\right)}\\
+					&amp; \geq \frac{\sin{x_1}+\sin{x_2}+\sin{x_3}}{3} \quad \textrm{by Jensen's inequality}\\
+					&amp; \geq \sqrt[3]{\sin{x_1}\dot \sin{x_2}\dot \sin{x_3}} \quad \textrm{AM-GM inequality}
+	\end{split}
+</me>
+Cube both ends of this chain of inequalities and you get the desired result.
+</p></solution>
 </exercise>
 <exercise>
 <statement>
@@ -273,9 +279,9 @@ Then
 	&amp; = \frac{147}{4}
 	\end{split}
 	</me>
-Therefore <m>f(x,y,z)\leq \frac{1}{2} \sqrt{147}</m>.</p></solution>
+Therefore <m>f(x,y,z)\leq \frac{7}{2} \sqrt{3}</m>.</p></solution>
 </exercise>
-<exercise xml:id="rearrangement-inequality">
+<exercise xml:id="rearrangement-inequality"><title>The Rearrangement Inequality</title>
 <idx>Rearrangement Inequality</idx>
 <statement>
 <p>Let <m>\{a_k\}</m> and <m>\{b_k\}</m> are two non-decreasing sequences of <m>n</m> real numbers.  Let <m>\sigma</m> be a permutation of the indices 1 through <m>n</m>.  Prove that 
@@ -285,7 +291,7 @@ Therefore <m>f(x,y,z)\leq \frac{1}{2} \sqrt{147}</m>.</p></solution>
 <!-- 
 <hint><p></p></hint>
  -->
-<solution><p>(Outline)  Start with the case of <m>n=2</m>, which is proven by expanding <m>(a_2 - a_1)(b_2-b_1)</m> which is a nonnegative number.  Once that is done, prove the general case by showing that if we permute the <m>b_k</m>'s in any way other than the identity permutation, there are two of the <m>b_k</m>'s that we can transpose to increase the sum.  This inequality is called the Rearrangement Inequality</p></solution>
+<solution><p>(Outline)  Start with the case of <m>n=2</m>, which is proven by expanding <m>(a_2 - a_1)(b_2-b_1)</m> which is a nonnegative number.  Once that is done, prove the general case by showing that if we permute the <m>b_k</m>'s in any way other than the identity permutation, there are two of the <m>b_k</m>'s that we can transpose to increase the sum.</p></solution>
 </exercise>
 <exercise>
 <statement>

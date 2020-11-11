@@ -57,7 +57,7 @@ of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <
 <p>Here is an recent Putnam problem that can be attacked using a variety of properties of polynomials.</p>
 <p>Let <m>F_m</m> be the <m>m</m>th Fibonacci number, defined by <m>F_1 = F_2 = 1</m> and <m>F_m = F_{m-1} + F_{m-2}</m> for all <m>m \geq 3</m>.
 Let <m>p(x)</m> be the polynomial of degree <m>1008</m> such that <m>p(2n+1) = F_{2n+1}</m> for <m>n=0,1,2,\dots,1008</m>. Find integers <m>j</m> and <m>k</m> such that <m>p(2019) = F_j - F_k</m>.</p>
-<p>Probably the simplest solution uses differences.  Observe that if we consider a related polynomial, <m>q(x)</m>, such that  <m>q(n) = F_{2n+1}</m> for <m>n=0,1,2,\dots,1008</m>, the first differences, <m>q(n+1)-q(n)</m>, <m>n=0,1,2,\dots,1007</m> are the Fibonacci numbers <m>F_2, F_4, \dots, F_{2016}</m>. The second differences are the odd-indexed Fibonacci numbers between the first differences.  The third differences are back to the even indexed values, etc.   Since the 1008th difference computed from the first 1009 values of <m>q(x)</m> is <m>F_1009</m>. Since the degree of <m>q(x)</m> is 1008, all 1008th differences must be  <m>F_{1009}</m>.  We can compute another diagonal of the difference array for <m>q(x)</m> to see that <m>q(1009) = F_{1009}+F_{1010}+\dots +F_{2017}</m>.  Using <m>F_{i}=F_{i+2}-F_{i+1}</m> this last sum reduces to <m>F_{2019}-F_{1010}</m>.  This provides us with the desired values of <m>j</m> and <m>k</m>.</p>
+<p>Probably the simplest solution uses differences.  Observe that if we consider a related polynomial, <m>q(x)</m>, such that  <m>q(n) = F_{2n+1}</m> for <m>n=0,1,2,\dots,1008</m>, the first differences, <m>q(n+1)-q(n)</m>, <m>n=0,1,2,\dots,1007</m> are the Fibonacci numbers <m>F_2, F_4, \dots, F_{2016}</m>. The second differences are the odd-indexed Fibonacci numbers between the first differences.  The third differences are back to the even indexed values, etc.   Since the 1008th difference computed from the first 1009 values of <m>q(x)</m> is <m>F_{1009}</m>. Since the degree of <m>q(x)</m> is 1008, all 1008th differences must be  <m>F_{1009}</m>.  We can compute another diagonal of the difference array for <m>q(x)</m> to see that <m>q(1009) = F_{1009}+F_{1010}+\dots +F_{2017}</m>.  Using <m>F_{i}=F_{i+2}-F_{i+1}</m> this last sum reduces to <m>F_{2019}-F_{1010}</m>.  This provides us with the desired values of <m>j</m> and <m>k</m>.</p>
 
 <p>A second solution, which was published in <xref ref="biblio-putnam-archive"/>, uses the Lagrange interpolation formula: given <m>x_0,\dots,x_n</m> and <m>y_0,\dots,y_n</m>, the unique polynomial <m>P</m> of degree at most <m>n</m> satisfying <m>P(x_i) = y_i</m> for <m>i=0,\dots,n</m> is
 <me>
@@ -96,7 +96,7 @@ We thus deduce that <m>p(x) = F_{2019} - F_{1010}</m> as claimed.
 <exercise><title>Rational Roots of Polynomials over the Integers</title>
 <statement><p>
 <ol label="(a)">
-<li><p>Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial over the integers with <m>n\geq 1</m>, <m>a_n, a_0 \neq 0</m>.  Prove that if <m>a/b \in \mathbb{Q}</m> is a root of <m>p(x)</m>, then  <m>a \vert a_0</m> and <m>b \vert a_n</m></p></li>
+<li><p>Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial over the integers with <m>n\geq 1</m>, <m>a_n, a_0 \neq 0</m>.  Prove that if <m>c/d \in \mathbb{Q}</m>, <m>gcd(c,d)=1</m>, is a root of <m>p(x)</m>, then  <m>c \vert a_0</m> and <m>d \vert a_n</m></p></li>
 <li><p>Find all rational roots of <m>p(x)=36 x^3-81 x^2+38 x-5</m>.</p></li>
 </ol></p>
 </statement>
@@ -114,8 +114,8 @@ We note that since <m>gcd(c, d) = 1</m>, and <m>d</m> explicitly divides the sec
 <statement><p>
 Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial with <m>n\geq 1</m>, <m>a_n, a_0 \neq 0</m>. How are the roots of <m>p(x)</m> and the roots of  <m>q(x)= a_0 x^n + a_1 x^{n-1}+ \cdots +a_{n-1} x + a_n</m> related?</p>
 </statement>
-<solution><p>
-<m>\alpha</m> is a root of <m>p(x)</m> if and only if  <m>\alpha^{-1}</m> is a root of  <m>q(x)</m>. 
+<solution><p>By our assumptions, <m>0</m> is not a root of <m>p(x)</m>.  The roots of <m>q(x)</m> are related by the condition
+<m>\alpha</m> is a root of <m>p(x)</m> if and only if  <m>\alpha^{-1}</m> is a root of  <m>q(x)</m>.  
 </p></solution>
 </exercise>
 
@@ -219,10 +219,7 @@ Using the substitution suggested above, we get the quadratic polynomial <m>2 (t^
 <statement><p>
 Prove that there is no polynomial with integer coefficients <m>P(x)</m> with the property that <m>P(7) = 5</m> and <m>P(15) = 9</m>.
 </p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<solution><p>Let <m>Q(x)=P(x)-5</m>.  On one hand, <m>Q(15)=P(15)-5 = 4</m>.  However, since <m>Q(7)=0</m>, <m>Q(x)=(x-7)R(x)</m> for some polynomial <m>R(x)</m> which has integer coefficients.  But <m>Q(15)=(15-7)R(15)=8 R(15)</m> is a multiple of <m>8</m>.  Which contradicts our previous value of <m>4</m>.</p></solution>
 </exercise>
 <exercise>
 <statement><p>
