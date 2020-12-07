@@ -36,7 +36,9 @@
 		<xi:include href="./ps_geometry.xml" />                        
 		<xi:include href="./ps_probability.xml" />                        
 		<xi:include href="./ps_linear_algebra.xml" />
-		<xi:include href="./ps_abstract_algebra.xml" />                        
+		<xi:include href="./ps_abstract_algebra.xml" />
+		<xi:include href="./ps_competition_2020.xml" />
+		                        
 		<xi:include href="./backmatter.xml" />            
  <!-- 
 -->

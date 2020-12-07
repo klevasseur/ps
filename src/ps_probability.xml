@@ -56,7 +56,7 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
 </exercise>
 <exercise>
 <statement>
-<p>Four players in a game, N(orth),W(est),S(out), and E(ast) sit at a round table. N holds a gold coin. One of three things happen, each with probability 1/3: N passes the coin to his right to W, N passes the coin to his left to E, or N walks away with the coin and the game is over. In the first two cases, the holder of the coin repeats the previous step, passing the coin to the right or left, or keeping the coin. What are the probabilities of winning for the four players?</p>
+<p>Four players in a game, N(orth), W(est), S(outh), and E(ast) sit at a round table. N holds a gold coin. One of three things happen, each with probability 1/3: N passes the coin to his right to W, N passes the coin to his left to E, or N walks away with the coin and the game is over. In the first two cases, the holder of the coin repeats the previous step, passing the coin to the right or left, or keeping the coin. What are the probabilities of winning for the four players?</p>
 </statement>
 <solution>
 <p>We will abbreviate the probability that player <m>X</m> wins to <m>P(X)</m>.  By the symmetry of the game, <m>P(W)=P(E)</m>.  Also, we observe that 

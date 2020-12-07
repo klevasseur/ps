@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+<chapter xml:id="c-competition_2020">
+<title>2020 UML Problem Solving Competition</title>
+<introduction><p>A three hour local competition was held on December 5, 2020 in place of the Putnam, which was delayed until February 2021.</p>
+</introduction>
+
+<section><title>Results</title>
+<p>--</p>
+</section>
+
+  
+<exercises><title>Problems</title>
+<exercise>
+<statement>
+<p>Let <m>R</m> denote the set of points <m>(x, y)</m> satisfying <m>x^2 - 4 \lvert x \rvert +y^2 + 3 \leq 0</m>. What is the area of <m>R</m>?
+</p>
+</statement>
+<answer><p><m>2\pi</m>.</p></answer>
+<solution><p>If <m>x \geq 0</m>, then the inequality is <m>(x-2)^2 +y^2 \le 1</m>, which is a disk of radius <m>1</m> entirely to the right of the <m>y</m> axis, which has area <m>\pi</m>.  If <m>x \lt 0</m>, then the inequality is <m>(x+2)^2 +y^2 \le 1</m> which is a disk of radius <m>1</m> entirely to the left of the <m>y</m> axis, which has area <m>\pi</m>.</p></solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>Let <m>f(n)</m> be the number of <m>n</m>-letter words that can formed with the letters A,B,C and such that the letter A occurs an even number of times. For example, when <m>n = 1</m>, there are 2 such words, namely B,C so <m>f (1) = 2</m>; when <m>n = 2</m>, there are 5 such words, namely AA,BB,BC,CB,CC, so <m>f(2) = 5</m>. Find, with proof, a simple formula for <m>f(n)</m>. (The formula should not involve a summation.)
+</p>
+</statement>
+<answer><p><m>f(n)= \frac{1}{4} ((n+1)(n+3)+\frac{1}{2}(1+(-1)^n))</m></p></answer>
+<solution><p>One solution to this problem is to identify that <m>f(n)</m> is the coefficient of <m>x^n</m> in <me>(1+x+x^2+x^3+\dots)^2(1+x^2+x^4+x^6+\dots)= \frac{1}{(1-x)^3(1+x)}</me></p></solution>
+
+</exercise>
+
+<exercise>
+<statement>
+<p>An equilateral triangle in the first quadrant has vertices at the points <m>(0, 0)</m>, <m>(x_1, 5)</m>, and <m>(x_2, 12)</m>. What is the ordered pair <m>(x_1, x_2)</m>?  Show your work.
+</p>
+</statement>
+<answer><p><m>(x_1,x_2)=(\frac{19}{\sqrt{3}},\frac{2}{\sqrt{3}})</m></p></answer>
+<solution><p>If we consider the points as complex numbers, then <m>x_2 + 12\,i</m> must be equal to the product  <m>(x_1 + 5\,i)(\cos{(\pi/3)} + \sin{(\pi/3)} \,i)</m>,  This lets you solve for the unknowns.</p></solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>A square matrix <m>A</m> has a "square root" if there exists a matrix <m>B</m> such that <m>B^2 = A</m>.
+<ol label="(a)"><li><p> Prove that <m>\left(
+\begin{array}{cc}
+ 0 &amp; 1 \\
+ 0 &amp; 0 \\
+\end{array}
+\right)</m>  has no square root.</p></li>
+<li><p>Determine, with proof, whether <m>\left(
+\begin{array}{ccc}
+ 0 &amp; 0 &amp; 1 \\
+ 0 &amp; 0 &amp; 0 \\
+ 0 &amp; 0 &amp; 0 \\
+\end{array}
+\right)</m> has a square root.</p></li></ol>
+</p>
+</statement>
+<answer><p></p></answer>
+<solution><p></p></solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>Let <m>n</m> be a positive integer.  Find all <m>(n+1)</m>-tuples <m>(n, x_1, x_2, \dots , x_n)</m> where the <m>x_i</m> are positive real numbers and satisfy the equations
+<me>
+\begin{array}{cc}
+ x_1 + x_2 + \dots + x_n = 9 \\
+ \textrm{and}\\
+ \frac{1}{x_1}+\frac{1}{x_2} + \dots + \frac{1}{x_n} = 1. \\
+\end{array}
+</me>
+</p>
+</statement>
+<answer><p>The only solutions are <m>(3,1,1,1)</m>, <m>(2,\frac{3}{2} \left(3-\sqrt{5}\right) , \frac{3}{2} \left(3+\sqrt{5}\right))</m>, and <m>(2,\frac{3}{2} \left(3+\sqrt{5}\right) , \frac{3}{2} \left(3-\sqrt{5}\right))</m>.</p></answer>
+<solution><p>Under the assumptions of the problem, the arithmetic mean of the numbers is <me>\frac{ x_1 + x_2 + \dots + x_n}{n} = \frac{1}{n}</me> and the harmonic mean is 
+<me>\frac{n}{ \frac{1}{x_1}+\frac{1}{x_2} + \dots + \frac{1}{x_n}} = \frac{n}{9}.</me> Since the harmonic mean is always less than or equal to the arithmetic mean, it must be that  
+<m>\frac{n}{9} \leq  \frac{1}{n}</m> or <m>n \leq 3</m>.  This leaves us with the only possibilities for <m>n</m> being 2 or 3 since 1 is clearly impossible.  If <m>n=3</m>, the two means are equal and the only way that can happen is if all the <m>x_i</m> are equal.  That give us the first solution.  For the second, we have two numbers <m>a</m> and <m>b</m> such that 
+	<me> a + b = 9 \quad\textrm{and }\quad  \frac{1}{a}+\frac{1}{b}=1.</me>
+	Solving this system of equations give us the other two solutions.
+	</p></solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+At the Hard Math Casino there is a wheel with the numbers 1, 2, 3 and 4.  When you spin the wheel, a pointer points to one of the numbers, each with probability <m>\frac{1}{4}</m>. You are given a “target number” which  is a positive integer <m>n</m>. You spin the wheel repeatedly, adding the resulting  numbers and win the game if you get a sum of exactly <m>n</m>. Let <m>p(n)</m> be the probability of winning if your target number is <m>n</m>.  What is <m>lim_{n\rightarrow \infty}\, p(n)</m>?
+
+</p>
+</statement>
+<answer><p><m>\frac{2}{5}</m></p></answer>
+<solution><p>To develop a recursive solution we note that <m>p(0)=1</m>. For <m>n \geq 4</m> we write the following equations.
+<me>
+\begin{array}{ccccccc}
+p(1)=&amp;\frac{1}{4} P(0)&amp;&amp;&amp;&amp;&amp;\\
+p(2)=&amp;\frac{1}{4} P(0)&amp;+\frac{1}{4} P(1)&amp;&amp;&amp;&amp;\\
+p(3)=&amp;\frac{1}{4} P(0)&amp;+\frac{1}{4} P(1)&amp;+\frac{1}{4} P(2)&amp;&amp;&amp;\\
+p(4)=&amp;\frac{1}{4} P(0)&amp;+\frac{1}{4} P(1)&amp;+\frac{1}{4} P(2)&amp;+\frac{1}{4} P(3)&amp;&amp;\\
+p(5)=&amp; &amp;\quad \frac{1}{4} P(1)&amp;+\frac{1}{4} P(2)&amp;+\frac{1}{4} P(3)&amp;+\frac{1}{4} P(4)&amp;\\
+&amp; &amp; \vdots\\&amp;&amp;&amp;&amp;\\
+p(k)=&amp; &amp; \frac{1}{4} P(k-4)&amp;+\frac{1}{4} P(k-3)&amp;+\frac{1}{4} P(k-2)&amp;+\frac{1}{4} P(k-1)&amp;\\
+&amp; &amp; \vdots&amp;&amp;&amp;&amp;\\
+p(n-1)= &amp;&amp;\frac{1}{4} P(n-5)&amp;+\frac{1}{4} P(n-4)&amp;+\frac{1}{4} P(n-3)&amp;+\frac{1}{4} P(n-2)&amp; \\
+p(n)= &amp; &amp;&amp;\quad \frac{1}{4} P(n-4)&amp;+\frac{1}{4} P(n-3)&amp;+\frac{1}{4} P(n-2)&amp;+\frac{1}{4} P(n-1)\\
+\end{array}
+</me>
+If you add these equations, <m>p(1)</m> through <m>p(n-4)</m> cancel, leaving, after some rearrangement
+<me>p(n) + \frac{3}{4} p(n-1)+\frac{1}{2} p(n-2) + \frac{1}{4} p(n-3)=1.</me>
+If we assume that the limit in question exists and equals <m>P</m>, then we can take the limit of this equation to get
+<me>P+\frac{3}{4} P+\frac{1}{2} P + \frac{1}{4} P=1 \Rightarrow P = \frac{2}{5}.</me>
+All that is left is to prove that the limit exists.
+</p></solution>
+</exercise>
+
+</exercises>
+</chapter> 
