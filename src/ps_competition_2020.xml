@@ -25,8 +25,8 @@
 <p>Let <m>f(n)</m> be the number of <m>n</m>-letter words that can formed with the letters A,B,C and such that the letter A occurs an even number of times. For example, when <m>n = 1</m>, there are 2 such words, namely B,C so <m>f (1) = 2</m>; when <m>n = 2</m>, there are 5 such words, namely AA,BB,BC,CB,CC, so <m>f(2) = 5</m>. Find, with proof, a simple formula for <m>f(n)</m>. (The formula should not involve a summation.)
 </p>
 </statement>
-<answer><p><m>f(n)= \frac{1}{4} ((n+1)(n+3)+\frac{1}{2}(1+(-1)^n))</m></p></answer>
-<solution><p>One solution to this problem is to identify that <m>f(n)</m> is the coefficient of <m>x^n</m> in <me>(1+x+x^2+x^3+\dots)^2(1+x^2+x^4+x^6+\dots)= \frac{1}{(1-x)^3(1+x)}</me></p></solution>
+<answer><p><m>f(n)= \frac{1}{2} \left(1+3^n\right)</m></p></answer>
+<solution><p>One solution to this problem is to identify that if a string of length <m>n</m>, <m>n \geq 2</m>, is to be counted, then either it ends in a A or it doesn't. If it ends in an A, then it is proceeded by a string of length <m>n-1</m> that isn't counted because there are an odd number       of A's in that string.   If the string does not end with an A, then it is proceeded by a one of the <m>f(n-1)</m> strings that we are counting.  Therefore, <m>f(n)</m> satisfies the equations <me>f(n)= (3^{n-1} -f(n-1))+ 2\,f(n-1) \textrm{   and    } f(1)=2</me>.  </p></solution>
 
 </exercise>
 
@@ -42,13 +42,13 @@
 <exercise>
 <statement>
 <p>A square matrix <m>A</m> has a "square root" if there exists a matrix <m>B</m> such that <m>B^2 = A</m>.
-<ol label="(a)"><li><p> Prove that <m>\left(
+<ol label="(a)"><li><p> Prove that <m>A = \left(
 \begin{array}{cc}
  0 &amp; 1 \\
  0 &amp; 0 \\
 \end{array}
 \right)</m>  has no square root.</p></li>
-<li><p>Determine, with proof, whether <m>\left(
+<li><p>Determine, with proof, whether <m>B=\left(
 \begin{array}{ccc}
  0 &amp; 0 &amp; 1 \\
  0 &amp; 0 &amp; 0 \\
@@ -57,8 +57,17 @@
 \right)</m> has a square root.</p></li></ol>
 </p>
 </statement>
-<answer><p></p></answer>
-<solution><p></p></solution>
+<solution><p><ol label="(a)">
+<li><p>The minimal polynomial of a square matrix <m>A</m> is the monic polynomial, <m>p(x)</m>, of least degree such that <m>p(A)</m> is the zero matrix.  Two fundamental properties of the minimal polynomial are that an <m>n \times n</m> matrix always has a degree less than or equal to <m>n</m>; and if a polynomial <m>q(x)</m> satisfies <m>q(A)=\textbf{0}</m> then <m>p(x)</m> divides evenly into <m>q(x)</m>.  Now, assume there exists a two by two matrix <m>R</m> such that <m>R^2=A</m>.  Notice that <m>R^4 = A^2 = \textbf{0}</m> and so the minimal polynomial of <m>R</m> is a divisor of the <m>x^4</m>.  Since <m>R^1 \neq \textbf{0}</m> it must be that <m>R^2 =\textbf{0}</m>, which contradicts that <m>R</m> is a square root of <m>A</m>.   </p></li>
+<li><p>If one suspects that <m>B</m> has no square root, the argument used in part (a) breaks down because the minimal polynomial could have degree three or less.  In fact, <m>B</m> has  an infinite number of square roots, including <m>\left(
+\begin{array}{ccc}
+ 0 &amp; 1 &amp; 0 \\
+ 0 &amp; 0 &amp; 1 \\
+ 0 &amp; 0 &amp; 0 \\
+\end{array}
+\right)</m>.</p></li>
+</ol>
+</p></solution>
 </exercise>
 
 <exercise>
@@ -74,9 +83,12 @@
 </p>
 </statement>
 <answer><p>The only solutions are <m>(3,1,1,1)</m>, <m>(2,\frac{3}{2} \left(3-\sqrt{5}\right) , \frac{3}{2} \left(3+\sqrt{5}\right))</m>, and <m>(2,\frac{3}{2} \left(3+\sqrt{5}\right) , \frac{3}{2} \left(3-\sqrt{5}\right))</m>.</p></answer>
-<solution><p>Under the assumptions of the problem, the arithmetic mean of the numbers is <me>\frac{ x_1 + x_2 + \dots + x_n}{n} = \frac{1}{n}</me> and the harmonic mean is 
-<me>\frac{n}{ \frac{1}{x_1}+\frac{1}{x_2} + \dots + \frac{1}{x_n}} = \frac{n}{9}.</me> Since the harmonic mean is always less than or equal to the arithmetic mean, it must be that  
-<m>\frac{n}{9} \leq  \frac{1}{n}</m> or <m>n \leq 3</m>.  This leaves us with the only possibilities for <m>n</m> being 2 or 3 since 1 is clearly impossible.  If <m>n=3</m>, the two means are equal and the only way that can happen is if all the <m>x_i</m> are equal.  That give us the first solution.  For the second, we have two numbers <m>a</m> and <m>b</m> such that 
+<solution><p>Under the assumptions of the problem, the arithmetic mean of the numbers is 
+
+<me>\frac{ x_1 + x_2 + \dots + x_n}{n} = \frac{9}{n}</me> and the harmonic mean is 
+<me>\frac{n}{ \frac{1}{x_1}+\frac{1}{x_2} + \dots + \frac{1}{x_n}} = n.</me>
+ Since the harmonic mean is always less than or equal to the arithmetic mean, it must be that  
+<m>n \leq  \frac{9}{n}</m> or <m>n \leq 3</m>.  This leaves us with the only possibilities for <m>n</m> being 2 or 3 since 1 is clearly impossible.  If <m>n=3</m>, the two means are equal and the only way that can happen is if all the <m>x_i</m> are equal.  That give us the first solution.  For the second, we have two numbers <m>a</m> and <m>b</m> such that 
 	<me> a + b = 9 \quad\textrm{and }\quad  \frac{1}{a}+\frac{1}{b}=1.</me>
 	Solving this system of equations give us the other two solutions.
 	</p></solution>
