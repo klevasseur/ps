@@ -6,7 +6,14 @@
 </introduction>
 
 <section><title>Results</title>
-<p>--</p>
+<p>
+<ul>
+<li><p>First Place:  Payton Collins, Senior Math major</p></li>
+<li><p>Second Place: Nurlan Gasimli, Freshman Math major</p></li>
+<li><p>Third Place: Charles Mirabile, Senior CS major</p></li>
+<li><p>Second Place among Freshmen/Sophomores:  Hunter Marion, Sophomore Math major</p></li>
+</ul>
+</p>
 </section>
 
   
@@ -26,7 +33,7 @@
 </p>
 </statement>
 <answer><p><m>f(n)= \frac{1}{2} \left(1+3^n\right)</m></p></answer>
-<solution><p>One solution to this problem is to identify that if a string of length <m>n</m>, <m>n \geq 2</m>, is to be counted, then either it ends in a A or it doesn't. If it ends in an A, then it is proceeded by a string of length <m>n-1</m> that isn't counted because there are an odd number       of A's in that string.   If the string does not end with an A, then it is proceeded by a one of the <m>f(n-1)</m> strings that we are counting.  Therefore, <m>f(n)</m> satisfies the equations <me>f(n)= (3^{n-1} -f(n-1))+ 2\,f(n-1) \textrm{   and    } f(1)=2</me>.  </p></solution>
+<solution><p>One solution to this problem is to identify that if a string of length <m>n</m>, <m>n \geq 2</m>, is to be counted, then either it ends in a A or it doesn't. If it ends in an A, then it is preceeded by a string of length <m>n-1</m> that isn't counted because there are an odd number of A's in that string.   If the string does not end with an A, then it is proceeded by a one of the <m>f(n-1)</m> strings that we are counting.  Therefore, <m>f(n)</m> satisfies the equations <me>f(n)= (3^{n-1} -f(n-1))+ 2\,f(n-1) \textrm{   and    } f(1)=2</me>.  </p></solution>
 
 </exercise>
 
