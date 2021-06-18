@@ -122,7 +122,18 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 </solution>
  -->
 </exercise>
-<exercise number="4">
+
+<exercise>
+<statement>
+<p>Let <m>f(x)=\frac{1}{\sqrt{1+x}}</m>.  Estimate the value of <m>f(\frac{1}{2})</m> with a fractional binomial expansion so that the error is less than <m>\frac{1}{100}</m>.</p>
+</statement>
+<solution><p>The fractional binomial expansion of <m>f(x)</m> is the alternating series
+ <me>1 - \frac{1}{2} x +  \frac{3}{8} x^2- \frac{5}{16} x^3 +  \frac{35}{128} x^4 - \cdots </me> which converges when <m>x=\frac{1}{2}</m>.   The fourth degree term at <m>\frac{1}{2}</m> has a value less than <m>\frac{1}{100}</m>, and so we can estimate the value of <m>f(\frac{1}{2})</m> with sufficient accuracy by adding the previous terms, which gives us an estimate of <m>\frac{103}{128}</m>.</p>
+</solution>
+</exercise>
+
+
+<exercise>
 <statement>
 <p>Complete the derivation of the value of the integral in <xref ref="example-putnam-integral" />.</p>
 </statement>
@@ -131,7 +142,7 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 </solution>
  -->
 </exercise>
-<exercise number="5">
+<exercise>
 <statement>
 <p>Evaluate <m>\int_0^1 \frac{t^3-1}{\log (t)} \, dt</m>.</p>
 </statement>

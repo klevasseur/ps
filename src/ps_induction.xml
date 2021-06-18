@@ -19,7 +19,7 @@
   <mrow>                \amp= (n^p -n)  +\sum_{k=1}^{p-1} {\binom{p}{k} n^{p-k} }</mrow>
 </md>
 </p>
-<p>The first term is divisible by <m>p</m> by the induction hypothesis, and the the second is also divisible by <m>p</m> because <m>\binom{p}{k}</m> is divisible by <m>p</m> for <m>k = 1, 2,\dots,p-1</m>.  Therefore, the theorem is true for all positive values of <m>n</m>.  Finally, the theorem is clearly true for negative values of <m>n</m>.</p> 
+<p>The first term is divisible by <m>p</m> by the induction hypothesis, and the the second is also divisible by <m>p</m> because <m>\binom{p}{k}</m> is divisible by <m>p</m> for <m>k = 1, 2,\dots,p-1</m>.  Therefore, the theorem is true for all positive values of <m>n</m>.  Finally, given the truth of the theorem for positive integers, it is clearly true for negative values.</p> 
 </proof>
 </theorem>
 <p>There may appear to be gaps in the proof from the point of view of a typical undergraduate course. Saying as we did at the end that something is clearly true may not be acceptable to some instructors in some courses.  However, in the context of preparing for the Putnam, knowing how basic your arguments need to be is important.  In this author's opinion the negative case is sufficiently obvious to skip the details. The same is true of the statement that <m>\binom{p}{k}</m> is divisible by <m>p</m> for <m>k = 1, 2,\dots,p-1</m>.</p>
