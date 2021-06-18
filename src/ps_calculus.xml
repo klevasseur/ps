@@ -232,14 +232,14 @@ for each <m>x</m> in the interval <m>\lim_{n\to \infty } f_n(x) = f(x)</m>,  the
    n)!}{n! n^n}\right)</m>.
 </p></statement>
 <hint><p>Think Riemann sum.</p></hint>
-<answer><m>ln(4)-1</m></answer>
+<answer><p><m>ln(4)-1</m></p></answer>
 <solution><p></p></solution>
 </exercise>
 <exercise>
 <statement><p>
  Evaluate <m>\lim_{n \rightarrow \infty} \frac{1}{n}\ln \left(\prod_{k=1}^{n} \frac{ n^2+k^2}{n^2}\right)</m>.
 </p></statement>
-<answer><m>-2+\frac{\pi }{2}+\log (2)</m></answer>
+<answer><p><m>-2+\frac{\pi }{2}+\log (2)</m></p></answer>
 <solution><p></p></solution>
 </exercise>
 </exercises>
