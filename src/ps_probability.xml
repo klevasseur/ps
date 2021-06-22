@@ -32,10 +32,35 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
 </theorem>
 
 <p>In the example above, the random event of two children being born in sequence has four equally likely outcomes; BB, BG, GB, GG.  We are told that one of the first three has occured, so <m>P(H) =\frac{3}{4}</m> in this case.   The condition that one of the children is boy and both are boys is the same the condition that both are boys, so <m>P(A \wedge H) = \frac{1}{4}</m> in this case, therefore the probability we want is <m>\frac{1/4}{3/4} =\frac{1}{3}</m>.  This conclusion often surprises people.  Did it surprise you?</p>  
+</section>
+<section xml:id="s-geometric-probability">
+<p>Some probabilty problems can be solved using geometric means. Here is an example that illustrates the technique.</p>
+<example xml:id="ex-geometric-probability"><title> </title>
+<p>
+What is the probability that the sum of two randomly chosen numbers in the interval <m>[0, 1]</m> does not exceed 1 and their product exceeds <m>\frac{3}{16}</m>?
+</p>
+<p>This is a routine in that we can think of a selection of the random numbers as throwing a dart at a square dartboard so that each point on the dartboard is equally likely.  This isn't realistic for good dart players, but imagine it anyways!  The condition on which  we want to assess the probablity determines a region on the dartboard.  The area of that region divided by the total area of the dartboard, which is 1, is the probabily we are looking for.   This means the problem reduces to the computation of the area shown in <ref xref="fig-geom-prob"/>, which can be done with basic calculus in this case.</p>
+            <figure xml:id="fig-geom-prob">
+                <caption>A target on a square dart board
+                </caption>
+                <image source="images/fig-geom-prob.png" width="60%">
+                    <description>A plot of the region bounded above by <m>y=1-x</m> and below by <m>x y = \frac{3}{16}</m></description>
+                </image>
+            </figure>
+</example>
+<p>The challenge of geometric probability problems tends to be identification of regions that represent the possible outcomes and the outcomes that are of interest. The dimension can be higher than two. </p>
 </section>  
 <!-- Kelly criterion ?-->
 <exercises>
 <title>Exercises</title>
+<exercise>
+<statement>
+<p>Suppose that <m>n</m>  integers, <m>n \geq 3</m> are randomly arranged in some list.  We might question whether they have ended up on strictly increasing order.   To test for this unlikely event, we might examine the first two numbers in the list.  Since their positions are random, the probability that they are in increasing order, is <m>\frac{1}{2}</m>. If they are in order, we might next make a comparison of the second and third numbers, the third and fourth numbers, etc. Since each pair can be in it's current relative position or in the reverse, the probability of each pair being in order is <m>\frac{1}{2}</m>. If we continue to the end with increasing orders and the last two integers are in order, then we might conclude that the probability that the whole list is ordered is <m>\frac{1}{2^{n-1}}.  Is this correct?  </p>
+</statement>
+<hint><p>We wouldn't ask if the logic were correct!</p></hint>
+<solution><p>This logic is incorrect.  Taken from a different point of view, there are <m>n!</m> ways in which the integers can be arranged, and only one of them is completely sorted, so the probability we seek is <m>\frac{1}{n!}</m>.  How the logic that produces an incorrect result breaks down can be seen in the second step.  The first three numbers need to be in order.  It's true that the second and third numbers are in order is <m>\frac{1}{2}</m>, but the probabilty that they are in order given that the first two are in order is <m>\frac{1}{3}</m>.
+<me>P((k_2\lt k3)  \mid (k_1\lt k_2))= \frac{P((k_2\lt k_3) \land (k_1\lt k_2))}{P(k_1\lt k_2)}=\frac{1/6}{1/2}= \frac{1}{3}.</me> </p></solution>
+</exercise>
 <exercise>
 <statement>
 <p>Steph Kuri shoots free throws on a basketball court. She makes the first and misses the second, and thereafter the probability that she makes the next shot is equal to the proportion of shots she has made so far. What is the probability that she makes exactly 50 of her first 100 shots?</p>
@@ -45,6 +70,8 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
 <solution><p></p></solution>
  -->
 </exercise>
+
+
 <exercise>
 <statement>
 <p>King Arthur is sick of fights for inheritance and decides to announce the following law. From now on, no family will be allowed to have another child after a boy is born. What will happen to the percentage of males if the law is followed?</p>
