@@ -9,7 +9,7 @@
 <section xml:id="sect-linear-examples"><title>Examples</title>
 <example xml:id="ex-oddtown-la"><title>Oddtown</title>
 <p>In a town with <m>n</m> people, <m>m</m> clubs have been formed. Every club has an odd number of members, and every two clubs have an even number of members in common. Prove that <m>m \leq  n</m>.</p>
-<p>Let <m>v_i</m> be the membership vector for club <m>i</m>:  <m>(v_i)_j = 1</m> and only if person  <m>j</m> belongs to club <m>i</m>. W view these <m>m</m> vectors as being in the vector space <m>\mathbb{Z}_2^n</m> of <m>n</m>-tuples of integers mod 2.  We will prove that the set of vectors <m>\{v_1, v_2, \dots, v_m\}</m> is linearly independent, which implies that <m>m \leq  n</m>.</p>
+<p>Let <m>v_i</m> be the membership vector for club <m>i</m>:  <m>(v_i)_j = 1</m> and only if person  <m>j</m> belongs to club <m>i</m>. We view these <m>m</m> vectors as being in the vector space <m>\mathbb{Z}_2^n</m> of <m>n</m>-tuples of integers mod 2.  We will prove that the set of vectors <m>\{v_1, v_2, \dots, v_m\}</m> is linearly independent, which implies that <m>m \leq  n</m>.</p>
 <p>The conditions of problem translate to the following with respect to the dot products of these vectors.
 <me>\textrm{Each club has an odd number of members }\Rightarrow  v_i\cdot v_i = 1</me>
 and
