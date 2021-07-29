@@ -154,7 +154,7 @@ This completes the induction proof.</p>
 		Let <m>S</m> be any set of 18 distinct integers chosen from the arithmetic progression <m>1, 4, 7, \dots , 100</m>. Prove that there must be two integers in <m>S</m> whose sum is 101.
 	</p>
 </statement>
-<hint><p>Count the number of pairs that can up to 101.</p>
+<hint><p>Count the number of pairs that can add up to 101.</p>
 </hint>
 <solution><p>Note that <m>S</m> is drawn from <m>\{3i + 1 \vert 0 \leq i \leq 33 \}</m>, which contains 34 integers that can be paired up in such a way that if <m>i + j = 33</m>, then  <m>(1+3i)+ (1+3j)=101</m>.  There are 17 such pairs, and so of the 18 elements in <m>S</m>, at least one of the pairs that add to 101 must be included.</p> 
 </solution>
