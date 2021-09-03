@@ -51,7 +51,7 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 <p>The restriction on <m>x</m> and the expression <m>2 x^2 -1</m> may remind one of the identity <m>2\cos^2{x} - 1 = \cos{2 x}</m>; and so the substitution <m>x = \cos{t}</m> is a reasonable step leading to <m>f(\cos{2t})=2 \cos{t} f(\cos{t})</m>.</p>
 <p>The next step in several published solutions is to define a second function, <m>g</m>, by
  <me>g(t)=\frac{f(\cos{t})}{\sin{t}}, \textrm{ where } t\neq \pi k, k\in \mathbb{Z}</me>
- A <q>meta exercises</q> is to provide a motivation for this definition.</p>
+ A <q>meta exercise</q> is to provide a motivation for this definition.</p>
 <p><me>g(2t)=\frac{f(\cos{2t})}{\sin{2t}}=\frac{2 \cos{t}\: f(\cos{t})}{2\sin{t}\cos{t}}=g(t)</me>
 Combining this with the periodicity of <m>g</m> tells us that
 <me>g(1+\frac{n \pi}{2^k})=g(2^{k+1}+2 \pi n) = g(2^{k+1})=g(1)</me>
@@ -68,7 +68,7 @@ The continuity of <m>g</m> in its domain and the density of <m>\{1+\frac{n \pi}{
 <example><title>Fractional Binomial Expansion</title><idx>Fractional Binomial Expansion</idx>
 <p>The power series series expansion about <m>x=0</m> of an expression such as <m>\sqrt{1-x}</m> certainly can be derived using basic calculus tools, but an alternate approach can be taken by (correctly) assuming that the binomial expansion theorem applies for the exponent <m>\frac{1}{2}</m>.  If <m>m</m> is a positive integer, <m>\binom{m}{n} =0</m> for <m>n \gt m</m>, but a reasonable generalization of <m>\binom{\alpha}{n}</m> for a non-integer <m>\alpha</m> is <me>\frac{\prod_{k=0}^{n-1} (\alpha-k)}{n!}</me> which will never equal zero for non-integral values of <m>\alpha</m>.  Thus we have 
 	<me>\sqrt{1-x} = \sum_{n=0}^{\infty} \binom{\frac{1}{2}}{n} (-x)^n</me>
-The first two terms of this sum are 1 and <m>-\frac{1}{2} x</m>. We will preceed to simplify the general form of the coefficient of <m>x^n</m> for <m>n \gt 1</m>.
+The first two terms of this sum are 1 and <m>-\frac{1}{2} x</m>. We will proceed to simplify the general form of the coefficient of <m>x^n</m> for <m>n \gt 1</m>.
 <me>	
 	\begin{split}
 	 \binom{\frac{1}{2}}{n} (-1)^n

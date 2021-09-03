@@ -256,7 +256,12 @@ The zeros of the polynomial <m>P(x) = x^3 - 10x + 11</m> are <m>u</m>, <m>v</m>,
 Therefore, <m>U+V+W = \frac{\pi}{4} + \pi k</m> for some integer <m>k</m>.  By the Vieta relation, two of he roots must be positive and one negative, so the sum of the arctangents of the roots must be <m>\frac{\pi}{4}</m>.</p>
 </solution>
 </exercise>
-
+<exercise>
+<statement>
+	<p>Find a quadratic polynomial with the property that the sum of the squares of its roots is equal to <m>113</m>.
+	</p>
+</statement>
+</exercise>
 <exercise>
 <statement>
 	<p>Let <m>p(t)</m> be any quadratic polynomial.  It is easily verified that 
