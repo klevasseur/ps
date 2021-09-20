@@ -186,7 +186,7 @@ This completes the induction proof.</p>
 <exercise number="6">
 <statement>
 	<p>
-		Given nine points inside the unit square, prove that some three of them form a triangle whose area does not exceed <m>1/8</m>.
+		Given nine points inside the unit square, with no three colinear, prove that some three of them form a triangle whose area does not exceed <m>1/8</m>.
 	</p>
 
 </statement>
