@@ -259,11 +259,11 @@ for each <m>x</m> in the interval <m>\lim_{n\to \infty } f_n(x) = f(x)</m>,  the
 
 <exercise>
 <statement><p>
- Evaluate <m>\lim{n \rightarrow \infty} \frac{1}{n}\log \left(\frac{ (2
+ Evaluate <m>\lim_{n \rightarrow \infty} \frac{1}{n}\log \left(\frac{ (2
    n)!}{n! n^n}\right)</m>.
 </p></statement>
 <hint><p>Think Riemann sum.</p></hint>
-<answer><p><m>ln(4)-1</m></p></answer>
+<answer><p><m>\ln{4}-1</m></p></answer>
 <solution><p></p></solution>
 </exercise>
 <exercise>
