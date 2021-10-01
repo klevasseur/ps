@@ -112,8 +112,12 @@ Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m>  for all <m>n\geq 1</m>.
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+<solution><p>We first generalize the problem of finding the maximizing partition of size 2 for the lower sum of <m>\int_a^b \frac{1}{x} \, dx</m>  for arbitrary real <m>a, b</m> where <m>a \lt b</m>. The lower sum in this case is <m>L=(t_1-a)\frac{1}{t_1} + (b-t_1)\frac{1}{b}</m> differentiating <m>L</m> with respect to <m>t_1</m> and setting the derivative equal to zero yeilds a maximum at <m>t_1=\sqrt{a b}</m>.
+  Therefore the optimal partition in part (a) is <m>\left\{1,\sqrt{2},2\right\}</m>. Our general observation can be used to argue that in the general case of <m>n</m> subintervals, the maximum lower sum must be attained with partition points that are powers of the <m>n^{\textrm{th}}</m> root of 2,
+   <me>\left\{1,2^{1/n},2^{2/n},\dots, 2^{(n-1)/n)},2 \right\}.</me>
+With this partition, we can see that movement of any interior value will reduce the value of the lower sum by focusing in the interval that is partitioned by the moving value and it's two neighbors. 
+   </p></solution>
 </exercise>
 <exercise number="4">
 <statement><p>
@@ -259,13 +263,14 @@ for each <m>x</m> in the interval <m>\lim_{n\to \infty } f_n(x) = f(x)</m>,  the
 
 <exercise>
 <statement><p>
- Evaluate <m>\lim_{n \rightarrow \infty} \frac{1}{n}\ln\left(\frac{ (2
-   n)!}{n! n^n}\right)</m>.
+ Evaluate 
+ <m>\lim_{n \rightarrow \infty} \frac{1}{n}\ln{\left(\frac{(2n)!}{n! n^n}\right)}</m>.
 </p></statement>
 <hint><p>Think Riemann sum.</p></hint>
 <answer><p><m>\ln{4}-1</m></p></answer>
 <solution><p>We can simplify the logarithm in the limit first:
-<me>\ln\left(\frac{ (2 n)!}{n! n^n}\right) = \sum_{k=1}^n \ln{}\frac{n+k}{n}}</me> </p></solution>
+<me>\ln\left(\frac{ (2 n)!}{n! n^n}\right) = \sum_{k=1}^n \ln{(\frac{n+k}{n})}</me> </p>
+<p>The limit then becomes <m>\lim_{n \rightarrow \infty} \frac{1}{n}\sum_{k=1}^n \ln{(1+\frac{k}{n})}</m>, which is the limit of Riemann sums for the integral <m>\int_0^1 \ln{(1+x)}\,dx</m>, which evaluates to <m>\ln{4}-1</m>.</p></solution>
 </exercise>
 <exercise>
 <statement><p>
