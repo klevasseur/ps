@@ -11,7 +11,6 @@
 
 <p>We had just proven an instance of a more general theorem called <em>Dirichlet's Theorem</em>, which states that if <m>4k+3</m> is replaced with <m>\alpha k + \beta</m> where <m>\gcd(\alpha,\beta)=1</m> we get the same conclusion, that there are an infinite number of primes of that form.</p>
 </section>
-
 <section>
 <title>Residues</title>
 <p>The residues of integers modulo <m>n</m>, <m>n \geq 2</m> are the remainders upon dividing integers by <m>n</m>.  We start with a simple use of residues.</p>
@@ -41,6 +40,26 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
 </example>
 
 </section>  
+<section>
+<title>Euler's Theorem</title>
+<p></p>
+
+
+<example xml:id="power-mod-21">
+<p>Compute <m>5^{159} \pmod{21}</m>.</p>
+<p>  </p>
+</example>
+<theorem><title>Euler's Theorem</title>
+<idx>Euler's Theorem</idx>
+<statement><p>Let <m>n</m> be a positive integer greater than 1 and <m>a</m> a positive integer that is relatively prime to <m>n</m>.  Then  <m>a^{\phi(n)} \equiv 1 \pmod{n}</p></statement>
+<proof>
+</proof>
+</theorem>
+<example xml:id="ex-euler-app"><title>__</title>
+<p></p>
+</example>
+
+</section>  
 
 <exercises>
 <title>Problems</title>
@@ -51,6 +70,15 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
 <ol label="(a)">
 	<li><p>Prove that if <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are close, then <m>\frac{a+c}{b+d}</m> is close to both <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>.</p></li>
 	<li><p>Find five rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
+	<li><p>Find a connection between pairs of close rational numbers, <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>, and  the determinant of the matrix 
+			<m>\left(
+			\begin{array}{cc}
+			a  &  b   \\
+			c  &  d   \\
+			\end{array}
+			\right)
+			</m>
+</p></li>
 </ol>
 </p>
 </statement>
@@ -90,13 +118,18 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
 <p><m>2025</m> is a perfect square.</p>  
 </hint>
 <answer><m>(2021,180,2029)</m></answer>
-<solution><p></p></solution>
+<solution><p>Since <m>2021 = 2025-4 = 45^2 - 2^2</m>, we can generate a Pythagorian triple from the general form <m>(b^2-a^2, 2 a b, b^2 + a^2)</m> to get the triple <m>(2021,180,2029)</m>. </p></solution>
 </exercise>
 
 <exercise number="5">
 <statement>
-<p>Let <m>\varphi(k)</m> be the number of integers in the set <m>\{1,2, \ldots  , k-1\}</m> that are relatively prime to <m>k</m>. Find and prove a formula
-for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and <m>p</m> is prime.</p>
+<p>Let <m>\varphi(k)</m> be the number of integers in the set <m>\{1,2, \ldots  , k-1\}</m> that are relatively prime to <m>k</m>.
+<ol>
+<li><p> Find and prove a formula for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and <m>p</m> is prime.</p></li>
+<li><p>Prove that if <m>a</m> and <m>b</m> are relatively prime positive integers greater than <m>1</m>, then  <m>\varphi(a \cdot b)=\varphi(a) \cdot \varphi(b)</m></p></li>
+<li><p> Determine the value of <m>\varphi(100!)</m>.</p></li>
+</ol>
+</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
