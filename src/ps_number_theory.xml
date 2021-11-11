@@ -42,21 +42,30 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
 </section>  
 <section>
 <title>Euler's Theorem</title>
-<p></p>
+<p>Euler's Theorem generalizes Fermat's Little Theorem.</p>
 
 
 <example xml:id="power-mod-21">
 <p>Compute <m>5^{159} \pmod{21}</m>.</p>
-<p>  </p>
+<p>One solution to this problem is to observe that <m>5^{159}\equiv 2 \pmod{3}</m>  by applying Fermat's little theorem with <m>p=3</m>; and then switching to calculations mod 7, find that <m>5^{159}\equiv 6 \pmod{7}</m>.  We can then use the procedure outlined in the proof of the Chinese Remander Theorem to find that <m>5^{159}\equiv 20 \pmod{21}</m>. Although this solution fine, it can be determined more efficiently with Euler's Theorem.</p>
 </example>
 <theorem><title>Euler's Theorem</title>
 <idx>Euler's Theorem</idx>
 <statement><p>Let <m>n</m> be a positive integer greater than 1 and <m>a</m> a positive integer that is relatively prime to <m>n</m>.  Then  <m>a^{\phi(n)} \equiv 1 \pmod{n}</m></p></statement>
-<proof>
+<proof><p>Consider the set <m>U_n</m> of all positive integers less than <m>n</m> that are relatively prime to <m>n</m>. The cardinality of this set is <m>\phi(n)</m>.  We note that the function <m>f</m> on <m>U_n</m> defined by <m>f(b) = a \cdot b \pmod{n}</m> is a permutation of <m>U_n</m>. Let <m>X=\prod_{x \in U_n} x</m>. Then 
+<me>
+\begin{split}
+X  &amp;= \prod_{x \in U_n} x =  \prod_{x \in U_n} f(x) \\
+	&amp;\equiv  \prod_{x \in U_n} a\cdot x \pmod{n} \\
+	&amp;\equiv  a^{\phi(n)} \prod_{x \in U_n}  x \pmod{n} \\
+	&amp; = a^{\phi(n)} \cdot X
+\end{split}
+</me>
+Multiplying both sides of the equivalence <m>X \equiv a^{\phi(n)} \cdot X \pmod{n}</m> by the mod <m>n</m> inverse of <m>X</m> gets us the desired result.</p>
 </proof>
 </theorem>
-<example xml:id="ex-euler-app"><title>__</title>
-<p></p>
+<example xml:id="ex-euler-app">
+<p>Revisiting the previous example, we can compute the value of <m>\phi(21)</m> based on the exercise on <xref ref="exercise-euler-phi" text="title"/>:  <m>\phi(21)=\phi(3)\cdot\phi(7)=2 \cdot 6 = 12</m>.  This lets us reduce <m>5^{159}</m> to <m>5^{3} \pmod{21}</m>, which reduces further to 20. </p>
 </example>
 
 </section>  
@@ -121,7 +130,8 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
 <solution><p>Since <m>2021 = 2025-4 = 45^2 - 2^2</m>, we can generate a Pythagorian triple from the general form <m>(b^2-a^2, 2 a b, b^2 + a^2)</m> to get the triple <m>(2021,180,2029)</m>. </p></solution>
 </exercise>
 
-<exercise number="5">
+<exercise number="5" xml:id="exercise-euler-phi"><title>Euler's Phi Function</title>
+<idx>Euler's Phi Function</idx>
 <statement>
 <p>Let <m>\varphi(k)</m> be the number of integers in the set <m>\{1,2, \ldots  , k-1\}</m> that are relatively prime to <m>k</m>.
 <ol>
@@ -287,7 +297,7 @@ Some calculation can be avoided if you are aware of a Theorem attributed to Lega
 
 <exercise><statement><p>Does there exist a positive integer with the property that the sum of the (base 10) digits of it’s square is equal to 100?  If so, find one. What if 100 is replaced with 2019?</p></statement>
 <hint>
-<p>Before launching into a search of whether a number  that we seek exists, it is worth considering the problem mod 9 since the sum of the digits of a positive integer is congruent mod 9 to the integer itself.   Controlling the digits of a square is easiest with certain special numbers.   One such type number is <m>10^k-d</m> where <m>k</m> is a positive integer and <m>d</m> is a digit.</p>  
+<p>Before launching into a search of whether a number that we seek exists, it is worth considering the problem mod 9 since the sum of the digits of a positive integer is congruent mod 9 to the integer itself.   Controlling the digits of a square is easiest with certain special numbers.   One such type number is <m>10^k-d</m> where <m>k</m> is a positive integer and <m>d</m> is a digit.</p>  
 </hint>
 <solution><p>Observe that <m>(10^k - 2)^2</m> is an integer whose digits consist of <m>k</m> nines, a single six, some zeros, and then a 4.   Therefore we get the number when <m>k=11</m>.  Following the pattern of digits in <m>11^2</m>, <m>111^2</m>, <m>1111^2, \dots</m> doesn't quite get what we want, but prepending an integer with all ones with a 10 works.   Since <m>2019 \equiv 2 \pmod{9}</m> no square can have sum of digits equal to 2019.</p></solution>
 </exercise>
