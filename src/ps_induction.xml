@@ -197,18 +197,13 @@ This completes the induction proof.</p>
 </exercise>
 <exercise number="7">
 <statement>
-<p>Given a sequence of integers <m>x_1</m>, <m>x_2</m>, <m>\dots x_n</m> whose sum is 1, prove that exactly one of the cyclic shifts
-<md>
-<mrow> x_1,x_2,\dots ,x_n </mrow>
-<mrow>  x_2,\dots,x_n,x_1  </mrow>
-<mrow> \vdots    </mrow>
-<mrow> x_n,x_1,\dots,x_{n-1}  </mrow>
-</md>
-has all of its partial sums positive. (By a partial sum we mean the sum of the first <m>k</m> terms, <m>k \leq  n</m>.
+<p>Prove that every positive integers is the sum of distinct Fibonacci numbers.
 </p>
-
 </statement>
-<solution><p>We define a <q>good shift</q> to be one for which the partial sums are all positive. The property we wish to prove is obviously true for <m>n=1</m>.  Now assume that for some <m>n \geq 1</m> that it's true for all sequences of length <m>n</m>.  Consider an integer sequence of length <m>n+1</m>.  Since the sum of the terms is 1, there must exist at least one negative term and among them all, there must be one that is preceded by a positive term. We can assume that these two terms are at the end of the sequence, <m>x_n, x_{n+1}</m>.  Now consider the sequence of length <m>n</m> defined by <m>y_j = x_j</m> if <m>j \lt n</m>  and  <m>y_n=x_n+x_{n+1}</m>.  By the induction hypothesis, this sequence has a unique good shift.  In that shifted sequence, wherever <m>y_n</m> is located  we replace it with the two terms <m>x_n, x_{n+1}</m>. The partial sums of this expanded sequence are still all positive so we have a good shift of the original sequence.  Finally, we see that this good shift is unique. Every good shift of the original sequence can produce a good shift of the reduced <m>y</m>-sequence and we know that only one of those exists.</p>
+<solution><p>We an prove this by induction. Starting with any positive integer, we remove the largest possible Fibonacci number to simplify the problem.  Our only concern is whether we would possibly need one of the Fibonacci numbers more than once.  Start by observing that 1 is a Fibonacci number.  Now assume that  all <m>k</m>, <m>1 \leq k \leq n</m> are the sum of distinct Fibonacci numbers.   Consider <m>n+1</m>.  We are done if <m>n+1</m> is a Fibonacci number.   Otherwise, it is between Fibonacci numbers:  
+<md><mrow>F_m \lt n+1 \lt F_{m+1}</mrow>
+<mrow>\quad \RightArrow \quad 0\lt(n+1)-F_m \lt F_{m+1}-F_m = F_{m-1}.</mrow></md>
+Therefore <m>F_m</m> is not needed any longer and we apply the induction hypothesis. </p>
 </solution>
 </exercise>
 <exercise number="8">
@@ -315,6 +310,23 @@ The second term is 0 which is proven by <xref ref="sum0"/>, while
 <p>Combining <xref ref="sum1" text="local"/>,<xref ref="sum2" text="local"/> and <xref ref="sum3" text="local"/> together, we have 
 <m>\sum_{k=0}^{n} (-1)^k\binom{n}{k}g(k) = 0</m>. Because <m>g(x)</m> is arbitrarily chosen, the formula must be true for all polynomials of degree <m>d + 1 \lt n</m>, completing the induction.
 </p></solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>Given a sequence of integers <m>x_1</m>, <m>x_2</m>, <m>\dots x_n</m> whose sum is 1, prove that exactly one of the cyclic shifts
+<md>
+<mrow> x_1,x_2,\dots ,x_n </mrow>
+<mrow>  x_2,\dots,x_n,x_1  </mrow>
+<mrow> \vdots    </mrow>
+<mrow> x_n,x_1,\dots,x_{n-1}  </mrow>
+</md>
+has all of its partial sums positive. (By a partial sum we mean the sum of the first <m>k</m> terms, <m>k \leq  n</m>.
+</p>
+
+</statement>
+<solution><p>We define a <q>good shift</q> to be one for which the partial sums are all positive. The property we wish to prove is obviously true for <m>n=1</m>.  Now assume that for some <m>n \geq 1</m> that it's true for all sequences of length <m>n</m>.  Consider an integer sequence of length <m>n+1</m>.  Since the sum of the terms is 1, there must exist at least one negative term and among them all, there must be one that is preceded by a positive term. We can assume that these two terms are at the end of the sequence, <m>x_n, x_{n+1}</m>.  Now consider the sequence of length <m>n</m> defined by <m>y_j = x_j</m> if <m>j \lt n</m>  and  <m>y_n=x_n+x_{n+1}</m>.  By the induction hypothesis, this sequence has a unique good shift.  In that shifted sequence, wherever <m>y_n</m> is located  we replace it with the two terms <m>x_n, x_{n+1}</m>. The partial sums of this expanded sequence are still all positive so we have a good shift of the original sequence.  Finally, we see that this good shift is unique. Every good shift of the original sequence can produce a good shift of the reduced <m>y</m>-sequence and we know that only one of those exists.</p>
+</solution>
 </exercise>
 </exercises>
 </chapter> 

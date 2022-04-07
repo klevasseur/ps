@@ -137,8 +137,7 @@ Therefore, for all <m>n</m>, <m>n</m> differs from a prime by a some bounded val
 <exercise>
 <statement><p>
 In  Determinant Tic-Tac-Toe, Player 1 enters a 1 in an empty <m>3\times 3</m> matrix. Player 0 counters with a 0 in a vacant position, and play
-continues in turn until the <m>3 \times  3</m> matrix is completed with five 1's and four 0's. Player 0 wins if the determinant is 0 and player 1
-wins otherwise. Assuming both players pursue optimal strategies, who will win and how?
+continues in turn until the <m>3 \times  3</m> matrix is completed with five 1's and four 0's. Player 0 wins if the determinant is 0 and player 1 wins otherwise. Assuming both players pursue optimal strategies, who will win and how?
 </p></statement>
 <!-- 
 <hint><p></p></hint>
@@ -157,22 +156,19 @@ Alice and Barbara play a game with a pack of <m>2n</m> cards, on each of which i
 </exercise>
 <exercise>
 <statement><p>
-A game is played as follows. The first player selects an interval [a, b]. The second player selects an interval <m>[c, d] \subset  [a, b]</m>. The first
+A game is played as follows. The first player selects an interval <m>[a, b]</m>. The second player selects an interval <m>[c, d] \subset  [a, b]</m>. The first
 player selects an interval inside <m>[c, d]</m>, and so on. The game goes on forever. The first player will win if the intersection of all segments contains a rational number. Is he going to win?
 </p></statement>
-<hint><p>One player can make a list of rational numbers in <m>[a,b]</m> and plan to avoid them sequentially.</p></hint>
-<!-- 
-<solution><p></p></solution>
- -->
+<hint><p>The key is that the rationals are countably infinite while the irrationals are not.</p></hint>
+<solution><p>The second player can make a list of rational numbers in <m>[a,b]</m> and plan to avoid them sequentially while assuring that the limit of the lengths of the intervals converges to zero.  The intersection of all intervals in the game is then a set with a single real number.  Since no rational number can be in the intersection that single number must be irrational.</p></solution>
+
 </exercise>
 <exercise>
 <statement><p>
 Players 2 and 3 alternate removing stones in a nim-type game with player 2 going first and winner being the one to remove the last stone. Player 2 may remove either 1 or 2 stones in any move and Player 3 can remove either 1 or 3 stones in any move.  If the pile starts with <m>n</m> stones, for what value of <m>n</m> will Player 2 win the game?
 </p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
+<hint><p>Player 3 can never remove an even number of stones.</p></hint>
+<solution><p>Player 2 will always win by leaving Player 3 an even number of stones.</p></solution>
 </exercise>
 </exercises>
 </chapter>

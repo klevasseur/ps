@@ -19,7 +19,7 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
 <definition xml:id="def-conditional-probability">
 	<title>Conditional Probability</title>
 	<idx>Conditional Probability</idx>
-	<notation><usage><m>P(A \mid H)</m></usage><description>Probability of <m>A</m> given <m>H</m></description></notation>
+	<notation><usage>P(A \mid H)</usage><description>Probability of <m>A</m> given <m>H</m></description></notation>
 	<statement><p>Suppose a random event takes place and let <m>H</m> a condition on the event that has a positive probability. The probability that a second condition, <m>A</m>, is met with knowledge that <m>H</m> is true is called the <q>the probability of <m>A</m> conditioned on <m>H</m>,</q> denoted <m>P(A \mid H)</m>.</p></statement>
 	</definition>
 

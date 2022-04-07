@@ -121,7 +121,7 @@ This produces a set of four matrices that can easily be shown to be linearly ind
 <hint><p>Expand the determinant along the last row of the matrix.</p></hint>
 <solution><p>Let <m>A_n</m> be the <m>n</m> by <m>n</m> version of the matrix. Assume <m>n \geq 3</m>. Expand the determinant of <m>A_n</m> along the last row. If <m>1 \leq k \leq n-1</m> then the minor <m>M_{n k}</m> is the determinant of a matrix with two identical columns, which is zero.    This leaves two nonzero term in the expansion. In both of the terms, the minor is the determinant of <m>A_{n-1}</m>.  Therefore, 
 <me>det(A_{n}) = - a_{n,n-1}  det(A_{n-1}) + a_{n,n-1}  det(A_{n-1}) =\frac{-1}{(n-1)n} \cdot det(A_{n-1}).</me></p>
-<p>Combining this recursion with the initial values of <m>det(A_{1})=1</m> and <m>det(A_{2})=-frac{1}{2}</m>, we see that  <m>det(A_{n}) = \frac{(-1)^n}{n! (n-1)!}</m></p></solution>
+<p>Combining this recursion with the initial values of <m>det(A_{1})=1</m> and <m>det(A_{2})=-\frac{1}{2}</m>, we see that  <m>det(A_{n}) = \frac{(-1)^n}{n! (n-1)!}</m></p></solution>
 </exercise>
 <exercise>
 <statement>
@@ -129,7 +129,7 @@ This produces a set of four matrices that can easily be shown to be linearly ind
 </p>
 </statement>
 <hint><p>Start by creating a matrix, one row for each button and a column for each light.</p></hint>
-<solution><p>Assume there are <m>n</m> buttons and <m>m</m> lights.  Let <m>A</m> be the <m>n \times m</m> matrix such that <m>A_{i j} = 1</m> if and only if button <m>i</m> is connected to light <m>j</m>.  Let <m>\Delta</m> be a set of lights.  We represent this set by an <m>m</m> dimensional column vector <m>\delta</m> such that <m>\delta_{i} = 1</m> if and only if light <m>i</m> is in <m>\Delta</m>. </p></solution>
+<solution><p>Assume there are <m>n</m> buttons and <m>m</m> lights.  Let <m>A</m> be the <m>n \times m</m> matrix such that <m>A_{i j} = 1</m> if and only if button <m>i</m> is connected to light <m>j</m>.  Let <m>\Delta</m> be a set of lights.  We represent this set by an <m>m</m> dimensional column vector <m>\delta</m> such that <m>\delta_{i} = 1</m> if and only if light <m>i</m> is in <m>\Delta</m>.  The given condition on sets of lights implies that if <m>\Delta</m> is a nonzero vector, <m>A \Delta</m> is nonzero. Therefore, the columns of <m>A</m> are linearly independent, <m>m \leq n</m> and the rank of <m>A</m> is <m>m</m>.  This implies that the column span of the transpose of <m>A</m> is full and every configuration of lights can be switched with some set of buttons. </p></solution>
 </exercise>
 <exercise>
 <statement>
@@ -155,7 +155,8 @@ This produces a set of four matrices that can easily be shown to be linearly ind
 <p>It is well known that all real-valued functions on <m>\mathbb{R}</m> form a vector space. Does the function <m>\sin  x</m> belong to the linear span of the functions <m>1</m>, <m>\cos x</m>, <m>\cos 2 x</m>, <m>\cos 3 x,\ldots</m>?    How about the function <m>\sin^2 x</m>?
 </p>
 </statement>
-<solution><p>Suppose <m>\sin x = \sum_{k=1}^m \lambda_k \cos{k x}</m>. Then we should have 
+<solution><p>Since <m>\sin  x</m> is an odd function and any linear combination of the cosines is even, so <m>\sin  x</m> is not in the linear span of cosines.  Using the double angle formula for cosine, we can derive <m>\sin^2 x = \frac{1}{2}-\frac{1}{2} \cos (2 x)</m>, and so <m>\sin^2 x</m> is in the span of cosines.  </p>
+<p>Alternate solution: Suppose <m>\sin x = \sum_{k=1}^m \lambda_k \cos{k x}</m>. Then we should have 
 <me> \int_{-\pi }^{\pi } \sin^2(x) \, dx = \int_{-\pi }^{\pi } \sin(x)(\sum_{k=1}^m \lambda_k \cos{k x} ) \, dx</me>
 </p></solution>
 </exercise>

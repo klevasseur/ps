@@ -126,7 +126,7 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\phi(n)} \cdot X \pmod{
 <hint>
 <p><m>2025</m> is a perfect square.</p>  
 </hint>
-<answer><m>(2021,180,2029)</m></answer>
+<answer><p><m>(2021,180,2029)</m></p></answer>
 <solution><p>Since <m>2021 = 2025-4 = 45^2 - 2^2</m>, we can generate a Pythagorian triple from the general form <m>(b^2-a^2, 2 a b, b^2 + a^2)</m> to get the triple <m>(2021,180,2029)</m>. </p></solution>
 </exercise>
 
