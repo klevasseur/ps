@@ -203,7 +203,7 @@ This completes the induction proof.</p>
 <solution><p>We an prove this by induction. Starting with any positive integer, we remove the largest possible Fibonacci number to simplify the problem.  Our only concern is whether we would possibly need one of the Fibonacci numbers more than once.  Start by observing that 1 is a Fibonacci number.  Now assume that  all <m>k</m>, <m>1 \leq k \leq n</m> are the sum of distinct Fibonacci numbers.   Consider <m>n+1</m>.  We are done if <m>n+1</m> is a Fibonacci number.   Otherwise, it is between Fibonacci numbers:  
 <md><mrow>F_m \lt n+1 \lt F_{m+1}</mrow>
 <mrow>\quad \RightArrow \quad 0\lt(n+1)-F_m \lt F_{m+1}-F_m = F_{m-1}.</mrow></md>
-Therefore <m>F_m</m> is not needed any longer and we apply the induction hypothesis. </p>
+Therefore <m>F_m</m> is not needed any longer and we apply the induction hypothesis. Notice that we also will not need <m>F_{m-1}</m> since our difference is less than it.  This prove a stronger result, that the distinct Fibonacci numbers that we need are non-consecutive. </p>
 </solution>
 </exercise>
 <exercise number="8">
