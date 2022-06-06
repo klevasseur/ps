@@ -43,7 +43,7 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 </section>  
 <section>
 <title>Trig Substitution</title>
-<p>When a real numbers have absolute value less than or equal to 1, consider equating them with cosines or sines.   Here is an example from the 2000 Putnam, Problem B4.</p>
+<p>When real numbers are known to have absolute value less than or equal to 1, consider equating them with cosines or sines.   Here is an example from the 2000 Putnam, Problem B4.</p>
 
 <example xml:id="ex-2000PutnamB4"><title>2000 Putnam, B4</title>
 <p>Let <m>f:[1,1]\rightarrow \mathbb{R}</m> be a continuous function such that <m>f(2x^21)=2xf(x)</m> for all <m>x</m>. Show that <m>f(x)=0</m> for <m>-1 \leq x \leq 1</m>.</p>
@@ -51,7 +51,8 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 <p>The restriction on <m>x</m> and the expression <m>2 x^2 -1</m> may remind one of the identity <m>2\cos^2{x} - 1 = \cos{2 x}</m>; and so the substitution <m>x = \cos{t}</m> is a reasonable step leading to <m>f(\cos{2t})=2 \cos{t} f(\cos{t})</m>.</p>
 <p>The next step in several published solutions is to define a second function, <m>g</m>, by
  <me>g(t)=\frac{f(\cos{t})}{\sin{t}}, \textrm{ where } t\neq \pi k, k\in \mathbb{Z}</me>
- A <q>meta exercise</q> is to provide a motivation for this definition.</p>
+ </p>
+<aside><p> A <q>meta exercise</q> is to provide a motivation for this definition of <m>g</m>.</p></aside>
 <p><me>g(2t)=\frac{f(\cos{2t})}{\sin{2t}}=\frac{2 \cos{t}\: f(\cos{t})}{2\sin{t}\cos{t}}=g(t)</me>
 Combining this with the periodicity of <m>g</m> tells us that
 <me>g(1+\frac{n \pi}{2^k})=g(2^{k+1}+2 \pi n) = g(2^{k+1})=g(1)</me>

@@ -106,10 +106,10 @@ A=Matrix([[i==j or i==n-1 or j==n-1 for i in range(n)] for j in range(n)] )
 <title>The Pigeonhole Principle</title>
 
             <figure xml:id="to-many-pigeons">
-                <caption>More pigeons than pigeonholes
+                <caption>More pigeons than pigeonholes.  Image by en:User:McKay CC-BY-SA-3.0 via Wikimedia Commons.
                 </caption>
                 <image source="images/TooManyPigeons.jpg">
-                    <description>An array of nine pigeonholes occupied by ten pigeons. This image by en:User:McKay CC-BY-SA-3.0 via Wikimedia Commons</description>
+                    <description>An array of nine pigeonholes occupied by ten pigeons.</description>
                 </image>
             </figure>
  

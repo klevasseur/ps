@@ -251,15 +251,6 @@ Using the substitution suggested above, we get the quadratic polynomial <m>2 (t^
 </ol></p></solution>
 </exercise>
 
-
-
-
-<exercise>
-<statement><p>
-Prove that there is no polynomial with integer coefficients <m>P(x)</m> with the property that <m>P(7) = 5</m> and <m>P(15) = 9</m>.
-</p></statement>
-<solution><p>Let <m>Q(x)=P(x)-5</m>.  On one hand, <m>Q(15)=P(15)-5 = 4</m>.  However, since <m>Q(7)=0</m>, <m>Q(x)=(x-7)R(x)</m> for some polynomial <m>R(x)</m> which has integer coefficients.  But <m>Q(15)=(15-7)R(15)=8 R(15)</m> is a multiple of <m>8</m>.  Which contradicts our previous value of <m>4</m>.</p></solution>
-</exercise>
 <exercise>
 <statement><p>
 Find all polynomials, <m>p(x)</m>, with real coefficients satisfying the equation <m>p(x-1)p(x+1) = p(p(x))</m>.

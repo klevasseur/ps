@@ -188,6 +188,26 @@ The paper is folded so that <m>A</m> and <m>C</m> coincide. Find the length of t
 <solution><p></p></solution>
  -->
 </exercise>
+
+<exercise>
+<statement>
+<p>A trapezoid and a triangle are inscribed a circle. One side of the trapezoid is a diameter of the circle and the sides of the  triangle are parallel to sides of the trapezoid. Prove that the trapezoid and triangle have the same area.
+</p>
+             <figure xml:id="fig_trap_tri">
+                <caption>Do the trapezoid and triangle have equal areas?
+                </caption>
+                <image source="images/fig_trap_tri.png" width="60%">
+                    <description>Figure described by the exercise</description>
+                </image>
+            </figure>
+
+</statement>
+<hint><p>Use coordinates with the circle at the origin and the diameter on the <m>x</m>-axis.  You can assume that the radius of the circle is <m>1</m>.</p></hint>
+<!-- 
+<solution><p></p></solution>
+ -->
+</exercise>
+
 <exercise>
 <statement>
 <p>Let <m>f</m> be a real-valued function on the plane such that for every square <m>ABCD</m> in the plane, <m>f(A) + f(B) + f(C) + f(D) = 0</m>. Does it follow that <m>f(P) = 0</m> for all points <m>P</m> in the plane?</p>
@@ -206,15 +226,16 @@ The paper is folded so that <m>A</m> and <m>C</m> coincide. Find the length of t
 <solution><p></p></solution>
  -->
 </exercise>
+<!-- 
 <exercise>
 <statement>
 <p>Right triangle <m>ABC</m> has a right angle at <m>C</m> and <m>\angle BAC = \theta</m>; the point <m>D</m> is chosen on <m>AB</m> so that <m>AC= AD= 1</m>; the point <m>E</m> is chosen on <m>BC</m> so that <m>\angle CDE = \theta</m>. The perpendicular to <m>BC</m> at <m>E</m> meets <m>AB</m> at <m>F</m>. Evaluate  <m>\lim _{\theta \to 0} EF</m>.</p>
 </statement>
-<!-- 
 <hint><p></p></hint>
 <solution><p></p></solution>
- -->
+
 </exercise>
+ -->
 <exercise>
 <statement>
 <p>Consider triangle <m>ABC</m> with the following trisection points,
