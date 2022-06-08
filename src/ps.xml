@@ -24,8 +24,8 @@
  <!-- 
 -->
 	 	<xi:include href="./ps_class_format.xml" />                        
-		<xi:include href="./ps_tricks.xml" />                        
 	 	<xi:include href="./ps_induction.xml" />                        
+		<xi:include href="./ps_tricks.xml" />                        
 		<xi:include href="./ps_counting.xml" />                        
 	 	<xi:include href="./ps_calculus.xml" />                        
 		<xi:include href="./ps_number_theory.xml" />                        
@@ -38,7 +38,8 @@
 		<xi:include href="./ps_linear_algebra.xml" />
 		<xi:include href="./ps_abstract_algebra.xml" />
 		<xi:include href="./ps_competition_2020.xml" />
-		                        
+		<xi:include href="./ps_competition_2022.xml" />
+	                        
 		<xi:include href="./backmatter.xml" />            
  <!-- 
 -->

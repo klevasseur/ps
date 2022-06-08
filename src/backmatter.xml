@@ -11,13 +11,14 @@
 <solutions  xml:id="solutions-backmatter" project="hint solution answer" inline="hint solution answer" divisional="hint"> 
         <title>Hints <!--and Solutions--> to Selected Exercises</title>
         <idx><h>Hints</h></idx>
-        <idx><h>Solutions</h></idx>
 <!-- 
+        <idx><h>Solutions</h></idx>
         <introduction>
         	<p>Some solutions are partial.</p>
         </introduction>
  -->
 </solutions>
+<xi:include href="./App-numbers.xml" />
 
 <!-- --> <!-- inline="hint solution answer" divisional="hint solution answer" project="hint solution answer" -->
 <!-- 
