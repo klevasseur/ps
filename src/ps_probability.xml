@@ -19,7 +19,7 @@ Assume that the probability that a child is born a boy is exactly <m>\frac{1}{2}
 <definition xml:id="def-conditional-probability">
 	<title>Conditional Probability</title>
 	<idx>Conditional Probability</idx>
-	<notation><usage>P(A \mid H)</usage><description>Probability of <m>A</m> given <m>H</m></description></notation>
+	<notation><usage><m>P(A \mid H)</m></usage><description>Probability of <m>A</m> given <m>H</m></description></notation>
 	<statement><p>Suppose a random event takes place and let <m>H</m> a condition on the event that has a positive probability. The probability that a second condition, <m>A</m>, is met with knowledge that <m>H</m> is true is called the <q>the probability of <m>A</m> conditioned on <m>H</m>,</q> denoted <m>P(A \mid H)</m>.</p></statement>
 	</definition>
 
@@ -168,7 +168,7 @@ the closest integer to <m>x/y</m> is even? Express the answer in the form <m>r +
 <exercise>
 <statement>
 <p>Begin with the set <m>\{1,2,\dots,n\}</m>. Toss a coin <m>n</m> times, once for each member of the set. Keep the elements that scored <q>Heads</q> and discard the elements that got <q>Tails</q>. You now have a certain subset <m>S</m> of the original set. Call this whole process a <q>step</q>. Now take a step from <m>S</m>. That is, toss a coin for each element of <m>S</m>, and keep those that get <q>Heads</q>, getting a sub-subset <m>S'</m>, etc. This game halts when the empty set is reached. Let <m>f(n,k,r)</m> be the probability that after <m>k</m> steps, exactly <m>r</m> objects remain.
-<ol label="(a)">
+<ol marker="(a)">
 <li><p>Find a recurrence relation for <m>f</m>, find the generating function for <m>f</m>, and find <m>f</m> itself. </p></li>
 <li><p>What is the average number of steps in a complete game?</p></li>
 </ol>

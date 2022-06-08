@@ -185,7 +185,7 @@ Square both sides and divide by <m>n</m> to get the desired first inequality.</p
 <me> \frac{1}{n} \leq \sum_{k=1}^n a_k^{2} \dot 1 \leq \left(\sum_{k=1}^n a_k^{4}\right)^{1/2} \left(n\right)^{1/2} </me>and we are just a few algebra steps away.</p></solution>
 </exercise>
 <exercise>
-<statement><ol label="(a)">
+<statement><ol marker="(a)">
 <li><p>(a)  Compute the determinant <m>D= \left| 
 \begin{array}{ccc}
  a &amp; b &amp; c \\
@@ -195,7 +195,7 @@ Square both sides and divide by <m>n</m> to get the desired first inequality.</p
 <li><p>Prove that if <m>x</m>, <m>y</m>, and <m>z</m> are distinct real numbers, then <m>\sqrt[3]{x-y}+ \sqrt[3]{y-z}+\sqrt[3]{z-x}\neq 0</m>.
 </p></li></ol>
 </statement>
-<solution><p><ol label="(a)"><li><p>One way to compute <m>D</m> is to use the familiar method of repeating the first two columns of the matrix and then taking products of diagonals, where the diagonals from top right to bottom left are negated.  This method produces the left side of the desired equality.  For the second computation, add the second and third rows of the matrix to the first row, which doesn't change the value of the determinant  Then expand along the first row to get the right side.</p></li>
+<solution><p><ol marker="(a)"><li><p>One way to compute <m>D</m> is to use the familiar method of repeating the first two columns of the matrix and then taking products of diagonals, where the diagonals from top right to bottom left are negated.  This method produces the left side of the desired equality.  For the second computation, add the second and third rows of the matrix to the first row, which doesn't change the value of the determinant  Then expand along the first row to get the right side.</p></li>
 <li>If you set <m>a</m>, <m>b</m>, and <m>c</m> to equal the three cube roots, the left side is clearly nonzero, and the right side has <m>\sqrt[3]{x-y}+ \sqrt[3]{y-z}+\sqrt[3]{z-x}\neq 0</m> as a factor, implying the desired inequality.</li></ol></p></solution>
 </exercise>
 <exercise>

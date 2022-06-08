@@ -49,7 +49,7 @@
 <exercise>
 <statement>
 <p>A square matrix <m>A</m> has a "square root" if there exists a matrix <m>B</m> such that <m>B^2 = A</m>.
-<ol label="(a)"><li><p> Prove that <m>A = \left(
+<ol marker="(a)"><li><p> Prove that <m>A = \left(
 \begin{array}{cc}
  0 &amp; 1 \\
  0 &amp; 0 \\
@@ -64,7 +64,7 @@
 \right)</m> has a square root.</p></li></ol>
 </p>
 </statement>
-<solution><p><ol label="(a)">
+<solution><p><ol marker="(a)">
 <li><p>The minimal polynomial of a square matrix <m>A</m> is the monic polynomial, <m>p(x)</m>, of least degree such that <m>p(A)</m> is the zero matrix.  Two fundamental properties of the minimal polynomial are that an <m>n \times n</m> matrix always has a degree less than or equal to <m>n</m>; and if a polynomial <m>q(x)</m> satisfies <m>q(A)=\textbf{0}</m> then <m>p(x)</m> divides evenly into <m>q(x)</m>.  Now, assume there exists a two by two matrix <m>R</m> such that <m>R^2=A</m>.  Notice that <m>R^4 = A^2 = \textbf{0}</m> and so the minimal polynomial of <m>R</m> is a divisor of the <m>x^4</m>.  Since <m>R^1 \neq \textbf{0}</m> it must be that <m>R^2 =\textbf{0}</m>, which contradicts that <m>R</m> is a square root of <m>A</m>.   </p></li>
 <li><p>If one suspects that <m>B</m> has no square root, the argument used in part (a) breaks down because the minimal polynomial could have degree three or less.  In fact, <m>B</m> has  an infinite number of square roots, including <m>\left(
 \begin{array}{ccc}

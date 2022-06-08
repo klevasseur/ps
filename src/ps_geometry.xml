@@ -5,7 +5,7 @@
 <title>Geometry</title>
 <introduction>
 <p>There are three basic approaches to geometric problems:
-<ol label="(1)">
+<ol marker="(1)">
 <li><p>Axiomatic approach, where everything is deduced from basic facts, such as congruence tests for triangles (SAS, ASA, and SSS), similarity of triangles,
 angles in the circle theorem, etc. These problems are good practice, but you are unlikely to see them on the Putnam exam.</p></li>
 <li><p> Method of coordinates. Points on the plane are interpreted as coordinates <m>(x,y) \in \mathbb{R}^2</m>, or vectors, or complex numbers. Calculations
@@ -40,8 +40,9 @@ Often, problems are only formulated using geometric language but the solution us
 <sidebyside>
 <figure xml:id="fig-sageplot-2segments-perp">
   <caption>Two perpendicular segments</caption>
-  <image xml:id="sageplot-2segments-perp" width="50%">
+  <image source="images/sageplot-2segments-perp.png" width="50%">
     <description>Figure illustrating the lemma, perpendicular case</description>
+<!-- 
 <sageplot>
 fig=Graphics()
 for p in [point((-1,5),size=30),point((1,1),size=30),point((4,1),size=30),point((6,2),size=30),point((8/5,-1/5),size=30,color="red")]:
@@ -62,12 +63,14 @@ fig+=line([(-1,5),(6,2)],color="purple")
 fig+=line([(-1,5),(4,1)],color="purple")
 fig.show(axes=False)
 </sageplot>
+ -->
   </image>
 </figure>  
 <figure xml:id="fig-sageplot-2segments-notperp">
   <caption>Two segments that are not perpendicular</caption>
-  <image xml:id="sageplot-2segments-notperp" width="50%">
+  <image source="images/sageplot-2segments-notperp.png" width="50%">
     <description>Figure illustrating the lemma, non-perpendicular case</description>
+<!-- 
 <sageplot>
 A=(1,1)
 B=(-1,5)
@@ -91,6 +94,7 @@ fig+=line([B,D],color="purple")
 fig+=line([B,C],color="purple")
 fig.show(axes=False)
 </sageplot>
+ -->
 </image>
 </figure>
 </sidebyside>

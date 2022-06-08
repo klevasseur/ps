@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- MBX -->
+<chapter xml:id="c-competition-2022">
+<title>2022 UML Problem Solving Competition</title>
+<introduction><p>A twp hour local competition was held on 15 April 2022.</p>
+</introduction>
+
+<section><title>Results</title>
+<p>
+<ul>
+<li><p>First Place:  Joshua Costantini, Math major</p></li>
+</ul>
+</p>
+</section>
+
+
+
+<exercises><title>Problems</title>
+<exercise>
+<statement>
+<p>How many positive integers are there which, in their decimal representation, have strictly decreasing digits? Explain!  Note:  We are counting integers such as  94310, 7 or 540 and but not 441 or 0.
+</p>
+</statement>
+<solution><p>Each number that we would count is created by selecting a subset of the digits.  The is only one two subsets fo the ten digits that we can't count, the empty set and  <m>\{0\}</m>.  Therefore, the count is <m>2^10-2=1022</m>.</p></solution>
+</exercise>
+
+<exercise>
+<statement>
+<p> Prove that there are infinitely many number pairs <m>(a,b)</m> such that <me>a+\frac{1}{b}=b+\frac{1}{a}</me> where <m>a\neq b</m>. Find the possible values of <m>ab</m>.
+</p>
+</statement>
+<!-- 
+<answer><p></p></answer>
+<solution><p></p></solution>
+ -->
+
+</exercise>
+
+<exercise>
+<statement>
+<p>Show that for all non-negative reals <m>a, b, c</m>,
+<me>\sqrt{a + \sqrt{b + \sqrt{c}}} \leq a^{1/2}+ b^{1/4} + c^{1/8}</me>
+When is there equality?
+</p>
+</statement>
+<!-- 
+<answer><p></p></answer>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+<exercise>
+<statement>
+<p>Let <m>\vec{a}</m> and  <m>\vec{b}</m>  be non zero vectors in <m>\RR^3</m> that are not multiples of one another.
+Provide a formula (with proof) for a vector bisecting the angle between <m>\vec{a}</m> and <m>\vec{b}</m>.
+</p>
+</statement>
+<!-- 
+<answer><p></p></answer>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>There are 87 airports in New England. Suppose that from each of these airports a plane takes off and flies to the nearest neighboring airport. Assuming the mutual distances between the airports are all distinct prove that there is no airport at which more than five planes land.
+</p>
+</statement>
+<!-- 
+<answer><p></p></answer>
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Tammy and Sammy play a dice game with three different six-sided dice: A, B and C. Here are the numbers on the sides of each die:
+<me>
+ \begin{array}{cc}
+A &amp; 4, 4, 4, 4, 4, 1 \\
+B &amp; 5, 5, 5, 2, 2, 2 \\
+C &amp; 6, 3, 3, 3, 3, 3 \\
+\end{array}
+</me> 
+   Tammy selects one of the dice and then Sammy selects one of the two remaining dice.  Then they each roll their die once, with the winner being the one with the higher roll.   Who has the advantage in this game and why?
+
+
+</p>
+</statement>
+<!-- 
+<answer><p></p></answer>
+<solution><p></p></solution>
+ -->
+</exercise>
+
+
+
+</exercises>
+</chapter> 

@@ -86,7 +86,7 @@ hence the conclusion.</p>
 <exercise number="3">
 <statement>
 <p>(Putnam 1972) Let <m>S</m> be a set and <m></m> a binary operation on <m>S</m> satisfying the laws
-<ol label="(i)">
+<ol marker="(i)">
 <li><p><m> x(xy)=y</m> for all <m>x,y \in S</m></p></li>
 <li><p><m> (yx)x=y</m> for all <m>x,y \in S</m></p></li>
 </ol>

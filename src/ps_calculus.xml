@@ -38,7 +38,9 @@ P_n(x) &amp; = (x^k - 1)^{n+1} \frac{d^n}{dx^n} \frac{1}{x^k - 1} \\
 </p>
  -->
 </example>
-<example xml:id="example-riemann-limit"><title>Riemann Sum and a challenging integral</title><p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m>, 
+<example xml:id="example-riemann-limit"><title>Riemann Sums and a challenging integral</title>
+<idx>Riemann Sum</idx>
+<p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m>, 
 <m> \sum _{k=1}^n \left(\frac{k}{n}\right)^5 \cdot \frac{1}{n}</m> and maybe disguise it to some extent.  Then ask for the limit as <m>n</m> goes to infinity.  Naturally the answer is simply the integral, <m>\frac{1}{6}</m>.   The first part of solving B-1 in the 1976 Putnam was to identify a slightly more disguised example.</p>
 <blockquote><p>Evaluate
 	<me>\lim_{n\to\infty} \frac{1}{n} \sum _{k=1}^n \left(\left\lfloor
@@ -102,7 +104,7 @@ Prove that <m>\sum _{k=1}^n \frac{1}{k}>\ln  (n+1)</m>  for all <m>n\geq 1</m>.
 </exercise>
 <exercise number="3">
 <statement><p>Generalizing the first part of this problem will lead to a characterization of the other parts.
-<ol label="(a)">
+<ol marker="(a)">
 <li><p>Find a partition <m>\left\{t_0=1,t_1,t_2=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size 2.</p></li>
 <li><p>Find a partition <m>\left\{t_0=1,t_1,t_2,t_3=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of <m>\int_1^2 \frac{1}{x} \, dx</m> among all other partitions of size 3.</p></li>
 <li><p>Find a partition <m>\left\{t_0=1,t_1,t_2,\ldots , t_n=2\right\}</m> of <m>[1,2]</m> that maximizes the lower Riemann sum that estimates the value of
@@ -221,8 +223,9 @@ The minute hand on a watch is 8 mm long and the hour hand is 4 mm long. What is 
  <p>(From MAA Northeast Section Competition, 2006) As depicted in <xref ref="fig-sageplot-clock-hands" text="type-global"/>, let <m>\theta</m> and <m>\ell</m> be the angle between the hands and the distance between the tips of the hands, respectively.  </p>
  <figure xml:id="fig-sageplot-clock-hands">
   <caption>Illustration of the variables in the clock problem</caption>
-  <image xml:id="sageplot-clock-hands">
+  <image source="images/sageplot-clock-hands.png">
     <description>Figure illustrating the variables in the clock problem</description>
+<!-- 
 		<sageplot>
 				fig=Graphics()
 				fig+=circle((0,0),8)
@@ -235,6 +238,7 @@ The minute hand on a watch is 8 mm long and the hour hand is 4 mm long. What is 
 				fig.axes(False)
 				fig
 		</sageplot>
+ -->
 </image>
 </figure>
 <p>The hour hand of a clock goes around once every 12 hours or, <m>\frac{\pi}{6}</m> radians per hour. The minute hand goes around once per hour, or at the rate of <m>2 \pi</m>  radians per hour.

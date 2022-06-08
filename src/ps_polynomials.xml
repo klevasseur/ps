@@ -59,7 +59,7 @@ of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <
 Let <m>p(x)</m> be the polynomial of degree <m>1008</m> such that <m>p(2n+1) = F_{2n+1}</m> for <m>n=0,1,2,\dots,1008</m>. Find integers <m>j</m> and <m>k</m> such that <m>p(2019) = F_j - F_k</m>.</p>
 <p>Probably the simplest solution uses differences.  Observe that if we consider a related polynomial, <m>q(x)</m>, such that  <m>q(n) = F_{2n+1}</m> for <m>n=0,1,2,\dots,1008</m>, the first differences, <m>q(n+1)-q(n)</m>, <m>n=0,1,2,\dots,1007</m> are the Fibonacci numbers <m>F_2, F_4, \dots, F_{2016}</m>. The second differences are the odd-indexed Fibonacci numbers between the first differences.  The third differences are back to the even indexed values, etc.   Since the 1008th difference computed from the first 1009 values of <m>q(x)</m> is <m>F_{1009}</m>. Since the degree of <m>q(x)</m> is 1008, all 1008th differences must be  <m>F_{1009}</m>.  We can compute another diagonal of the difference array for <m>q(x)</m> to see that <m>q(1009) = F_{1009}+F_{1010}+\dots +F_{2017}</m>.  Using <m>F_{i}=F_{i+2}-F_{i+1}</m> this last sum reduces to <m>F_{2019}-F_{1010}</m>.  This provides us with the desired values of <m>j</m> and <m>k</m>.</p>
 
-<p>A second solution, published in a <url href="https://youtu.be/MGljS1W4tzY">YouTube video</url>  by Prof. Mohamed Omar (Harvey Mudd)  (https://youtu.be/MGljS1W4tzY), is a variation on an earlier solution published in <xref ref="biblio-putnam-archive"/>. It uses the Lagrange interpolation formula: given <m>x_0,\dots,x_n</m> and <m>y_0,\dots,y_n</m>, the unique polynomial <m>P</m> of degree at most <m>n</m> satisfying <m>P(x_i) = y_i</m> for <m>i=0,\dots,n</m> is
+<p>A second solution, published in a <url href="https://youtu.be/MGljS1W4tzY" visual="YouTube video"/>  by Prof. Mohamed Omar (Harvey Mudd)  (https://youtu.be/MGljS1W4tzY), is a variation on an earlier solution published in <xref ref="biblio-putnam-archive"/>. It uses the Lagrange interpolation formula: given <m>x_0,\dots,x_n</m> and <m>y_0,\dots,y_n</m>, the unique polynomial <m>P</m> of degree at most <m>n</m> satisfying <m>P(x_i) = y_i</m> for <m>i=0,\dots,n</m> is
 <me>
 \sum_{i=0}^n P(x_i) \prod_{j \neq i} \frac{x-x_j}{x_i-x_j}</me>
 We construct such a polynomial as described in the problem and evaluate it at <m>2019</m> to get
@@ -134,13 +134,13 @@ Where <m>\alpha=\frac{1+\sqrt{5}}{2}</m> and <m>\beta=\frac{1-\sqrt{5}}{2}</m> a
 </exercise>
 <exercise><title>Rational Roots of Polynomials over the Integers</title>
 <statement><p>
-<ol label="(a)">
+<ol marker="(a)">
 <li><p>Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial over the integers with <m>n\geq 1</m>, <m>a_n, a_0 \neq 0</m>.  Prove that if <m>c/d \in \mathbb{Q}</m>, <m>gcd(c,d)=1</m>, is a root of <m>p(x)</m>, then  <m>c \vert a_0</m> and <m>d \vert a_n</m></p></li>
 <li><p>Find all rational roots of <m>p(x)=36 x^3-81 x^2+38 x-5</m>.</p></li>
 </ol></p>
 </statement>
 <solution><p>
-<ol label="(a)">
+<ol marker="(a)">
 <li><p>Suppose that <m>c/d</m> is a rational number reduced to lowest terms that is a root of <m>p(x)</m>. If we multiply <m>p(c/d)=0</m> by <m>d^n</m>:
 <me>a_n c^n +\left( \sum_{k=1}^{n-1}	 c^k d^{n-k}\right) + a_0 d^n = 0</me>
 We note that since <m>gcd(c, d) = 1</m>, and <m>d</m> explicitly divides the second two terms of this sum, <m>d</m> must divide <m>a_n</m>.  By similar logic we have that <m>c</m> divides <m>a_0</m>.
@@ -162,7 +162,7 @@ Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial w
 <exercise>
 <statement><p>
 Let <m>p(x)</m> be a polynomial over the real numbers.
-<ol label="(a)">
+<ol marker="(a)">
 <li><p>Prove that if <m>z=a + b i</m> is a root of <m>p(x)</m>, then <m>\bar{z}= a -b i</m> is also a root of <m>p(x)</m>.</p></li>
 <li><p>Prove that <m>p(x)</m> can be factored into a product of linear and quadratic polynomials with real coefficients.</p></li>
 </ol>
@@ -185,7 +185,7 @@ and the <m>x</m>-axis?  Is <m>T</m> bounded?
 </exercise>
 <exercise>
 <statement><p>This exercise can initiate a more general discussion of conditions under which polynomial interpolation is possible
-<ol label="(a)">
+<ol marker="(a)">
 <li><p>Given three real numbers <m>x_0 \lt x_1 \lt x_2</m>, and three more real numbers <m>y_0, y_1, y_2</m>, not necessarily distinct, does there always exist a unique polynomial, <m>p(x)</m>, of degree less than or equal to 2 such that <m>p\left(x_0\right)=y_0</m>, <m>p\left(x_1\right)=y_1</m>, and <m>p\left(x_2\right)=y_2</m>?</p></li>
 <li><p>Same as part (a) but replace <m>p\left(x_2\right)=y_2</m> with <m>p'\left(x_2\right)=y_2</m>.</p></li>
 <li><p>Same as part (a) but replace <m>p\left(x_1\right)=y_1</m> with <m>p'\left(x_1\right)=y_1</m>.</p></li>
@@ -199,7 +199,7 @@ and the <m>x</m>-axis?  Is <m>T</m> bounded?
 
 <exercise><title>Reciprocal Polynomials</title><idx>Reciprocal Polynomials</idx>
 <statement><p>A <term>reciprocal polynomial</term> is a polynomial whose coefficients are symmetric; that is, if <m>p(x) = a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m>, <m>a_n \neq 0</m> is a reciprocal polynomial of degree <m>n</m> if <m>a_n = a_0</m>, <m>a_{n-1} = a_1</m>, etc. 
-<ol label="(a)">
+<ol marker="(a)">
 <li><p>Prove that if <m>p(x)</m> is a reciprocal polynomial of odd degree, then <m>p(x) = (x+1)q(x)</m> where <m>q(x) </m> is a reciprocal polynomial of even degree.</p></li>
 <li><p>Prove that if <m>p(x) = a_{2k} x^{2k} + a_{2k-1}x^{2k-1}+ \cdots +a_{k} x^k + \cdots</m> is a reciprocal polynomial of even degree, then <m>p(x)= 0</m> can be written in the equivalent form 
   <me>a_{2k} (x^k+1/x^k) + a_{2k-1} (x^{k-1}+1/x^{k-1}) + \cdots +a_{k} </me>
@@ -211,7 +211,7 @@ and the <m>x</m>-axis?  Is <m>T</m> bounded?
 <hint><p></p></hint> -->
 
 <solution><p>
-<ol label="(a)">
+<ol marker="(a)">
 <li><p>Assume <m>p(x)</m> has odd degree <m>2n+1</m> and <m>a_{2n+1-k}=a_k</m> for <m>0 \leq k \leq n</m>. then <m>p(x)=\sum_{k=0}^n a_k(x^{2n+1-k}+x^k)</m>. The two exponents of <m>x</m> in the sum have opposite odd/even parity and so <m>p(-1) =0</m>. Therefore, <m>p(x)=(x+1)q(x)</m>.  To see that <m>q(x)</m> is  reciprocal we note that if <m>q(x)=\sum_{k=0}^{2n} b_k x^k</m>.</p>
 <p>
 <me>\begin{split}
@@ -297,7 +297,7 @@ Therefore, <m>U+V+W = \frac{\pi}{4} + \pi k</m> for some integer <m>k</m>.  By t
 	<p>Let <m>p(t)</m> be any quadratic polynomial.  It is easily verified that 
 			<me>p(1)+p(4)+p(6)+p(7) = p(2)+p(3)+p(5)+p(8).</me>
 	This problem generalizes this property.
-		<ol label="(a)">
+		<ol marker="(a)">
       <li><p>Partition the set <m>\{1, 2, 3, \dots , 15, 16\}</m> into two sets such that given any
        cubic polynomal <m>p(t)</m>, the sum of the numbers <m>p(k)</m> where <m>k</m> ranges over one of  the two sets is the same as the sum where <m>k</m> ranges over the other</p></li>
       <li><p>Generalize to polynomials of arbitrary nonnegative degree.</p></li>
@@ -308,7 +308,7 @@ Therefore, <m>U+V+W = \frac{\pi}{4} + \pi k</m> for some integer <m>k</m>.  By t
   <p>If you backtrack to the constant and linear cases of this problem, you can look for a pattern that suggests a cubic, and then general, solution.</p>
   </hint>
 <solution>
-	<p><ol label="(a)">
+	<p><ol marker="(a)">
 		<li><p></p></li>
 		<li><p>Let <m>A_1=\{1\}</m> and <m>B_1= \{2\}</m>, and for <m>n \geq 1</m>,
 		 <m>A_{n+1}=A_{n }\cup \left(2^n+B_n\right)</m>, and <m>B_{n+1}=B_{n }\cup \left(2^n+A_n\right)</m>.  We claim that  <m>\left(A_n, B_n\right)</m>  is a partition of <m>\left\{1,2,\ldots  ,2^{n+1}\right\}</m> into sets  of cardinality <m>2^n</m> such that for all polynomials of degree <m>n</m>,  <me>\sum _{k\in A_n} p(k)=\sum _{k\in B_n} p(k).</me></p></li>

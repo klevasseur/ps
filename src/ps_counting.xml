@@ -61,7 +61,8 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 </hint>
 </exercise>
 
-<exercise number="3">
+<exercise number="3"><title>Lattice Paths</title>
+<idx>Lattice Paths</idx>
 <statement>
 <p> Consider paths such as the one in the grid below that start at the bottom left, <m>(0,0),</m> and reach the top right, <m>(10,10)</m>.  These paths can only go up and to the right.  How many paths are there in all? How many of those paths pass through the point <m>(4,6)</m>?  Generalize both of your results.</p>
             <figure xml:id="lattice_path">

@@ -6,7 +6,7 @@
 </introduction>
 <section><title>The Fibonacci sequence</title>
 <idx>Fibonacci sequence</idx>
-<p>The Fibonacci sequence is defined by  <m>f_0=0</m>, <m>f_1= 1</m>, and for <m>n\geq 2</m>, <m>f_n= f_{n-2}+f_{n-1}</m>.
+<p>The Fibonacci sequence is defined by  <m>f_0=1</m>, <m>f_1= 1</m>, and for <m>n\geq 2</m>, <m>f_n= f_{n-2}+f_{n-1}</m>.
 Warm-up  Prove that any two consecutive Fibonacci numbers are coprime.  Note:  the terms  <q>coprime</q>  and   <q>relatively prime</q> mean the same thing, have no common factor other than 1.
 </p>
 </section>  
@@ -22,7 +22,7 @@ Warm-up  Prove that any two consecutive Fibonacci numbers are coprime.  Note:  t
 <definition xml:id="def-binary-tree"><title>Binary Tree</title>
 <idx>Binary Tree</idx>
 <statement>
-<p><ol label="(1)">
+<p><ol marker="(1)">
 <li><p>A tree consisting of no vertices (the empty tree) is a binary tree</p></li>
 <li><p>A vertex together with two subtrees that are both binary trees is a binary tree. The subtrees are called the left and right subtrees of the binary tree.</p></li>
 </ol></p>
@@ -85,7 +85,7 @@ G(z) &amp;= \frac{1-\sqrt{1-4 z}}{2z}\\
 
 
 This sequence of numbers is often called the <term>Catalan numbers</term>. For more information on the Catalan numbers, see the entry A000108 in The
-<url href="https://oeis.org">On-Line Encyclopedia of Integer Sequences</url>.</p>
+<url href="https://oeis.org" visual="On-Line Encyclopedia of Integer Sequences"/>.</p>
 </section>  
 <exercises><title>Problems</title>
 <exercise>
@@ -225,16 +225,16 @@ The equality of the first and last expressions implies the desired equality.
 <exercise>
 <statement>
 <p>
-<ol label="(a)">
+<ol marker="(a)">
 <li><p> How many ways can you tile a <m>2 \times  n</m> rectangle, <m>n\geq 1</m>, using <m>1\times 2</m> tiles?</p></li>
 <li><p> How many ways can you tile a <m>3 \times  2n</m> rectangle, <m>n\geq 1</m>, using <m>1\times 2</m> tiles?</p></li>
 </ol>
 </p>
 </statement>
 <solution><p>
-<ol label="(a)">
+<ol marker="(a)">
 <li><p>If <m>S(n)</m> is the number of ways to tile a <m>2 \times  n</m> rectangle, then <m>S(1)=1</m>, <m>S(2)=2</m>, and for <m>n \geq 2</m>, <m>S(n)=S(n-1)+S(n-2)</m>.  Therefore, <m>S</m> is a shifted Fibonacci sequence. </p></li>
-<li><p>If <m>T(n)</m> is the number of ways to tile a <m>3 \times  2n</m> rectangle, then <m>T(1)=3</m>, <m>T(2)=11</m>, and for <m>n \geq 2</m>, <m>T(n)=4 T(n-1)- T(n-2)</m>. See The On-Line Encyclopedia of Integer Sequences entry for this sequence: <url href="https://oeis.org/A001835">https://oeis.org/A001835</url></p></li>
+<li><p>If <m>T(n)</m> is the number of ways to tile a <m>3 \times  2n</m> rectangle, then <m>T(1)=3</m>, <m>T(2)=11</m>, and for <m>n \geq 2</m>, <m>T(n)=4 T(n-1)- T(n-2)</m>. See The On-Line Encyclopedia of Integer Sequences entry for this sequence: <url href="https://oeis.org/A001835" visual="oeis.org/A001835"/></p></li>
 </ol>
 </p></solution>
 </exercise>
