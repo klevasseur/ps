@@ -108,8 +108,17 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 </hint>
 </exercise>
 
-
 <exercise number="7">
+<statement>
+<p>The union of nine planar surfaces, each of area equal to 1, has a total area equal to 5. Prove that the overlap of some two of these surfaces has an area greater than or equal to <m>\frac{1}{9}</m>.</p>
+</statement>
+<solution><p>Let us assume that the area of the overlap of any two surfaces is less than <m>\frac{1}{9}</m>. In this case, if <m>S_1, S_2, \dots , S_9</m>  denote the nine surfaces, then the area of <m>S_1 \cup S_2</m> is greater than <m>1 + 8/9</m> , the area of <m>S_1 \cup S_2 \cup S_3</m> is greater than <m>1 + 8/9 + 7/9</m>, and we continue this line of reasoning to conclude that the area of the union of all nine regions must be greater than  
+<me>1 + 8/9 + 7/9 + \dots + 1/9 = 45/9 = 5</me> which is a contradiction. Hence the conclusion</p>
+</solution>
+</exercise>
+
+<!-- 
+<exercise number="7a">
 <statement>
 <p> How many positive integers <m>n</m> are there such that <m>n</m> is a divisor of at least one the numbers <m>10^{40}</m> and <m>20^{30}</m>?</p>
 </statement>
@@ -120,6 +129,7 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 <me>41\cdot 41 + 61\cdot 31 - 41\cdot 31 = 2301.</me></p>
 </solution>
 </exercise>
+ -->
 
 
 <exercise>

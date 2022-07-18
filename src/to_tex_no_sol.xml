@@ -2,7 +2,8 @@
 <!-- MBX -->
 <publication xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 	 <common> 
-   		<exercise-divisional solution="yes"/> 
+   		<exercise-divisional solution="no"/> 
+   		<exercise-divisional hint="no"/> 
 	 </common>
 	<html>
 		 <baseurl href="https://faculty.uml.edu/klevasseur"/>

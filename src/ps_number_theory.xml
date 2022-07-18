@@ -193,6 +193,16 @@ Notice that applying <m>f</m> successively bounces us between cases 1 and 2 unti
 
 <exercise number="9">
 <statement>
+<p>Consider the sequence <m>T</m> defined by <m>T_1=2</m> and <m>T_{n+1}=T_n^2-T_n+1</m> when <m>n \geq 1</m>. Prove that if <m>m \neq n</m> then <m>T_m</m> and <m>T_n</m> have no common factor greater than <m>1</m>.
+</p>
+</statement>
+<solution>
+<p>This was the first half of problem 6 in the afternoon session of the 1956 Putnam. For any positive integer <m>m</m> we  can prove this by induction on <m>n</m> for all <m>n \ge m</m>. We observe that the basis is true by applying the Euclidean algorithm to <m>gcd(T_{m+1}=T_m^2-T_m+1, T_m)</m>.  Then assuming <m>gcd(T_{n}, T_m)=1</m>, 
+suppose that <m>T_{n}</m> and <m>T_{m+1}</m> have a common factor <m>d</m> greater than 1./p>
+</solution>
+ </exercise>
+<exercise number="old9">
+<statement>
 <p>Find all integral solutions to <m>\left|p^r-q^s\right|=1</m>, where <m>p</m> and <m>q</m> are primes and <m>r</m> and <m>s</m> are positive
 integers greater than or equal to 2. Prove that there are no other solutions than the ones you list.
 </p>
@@ -204,7 +214,6 @@ integers greater than or equal to 2. Prove that there are no other solutions tha
 </solution>
  -->
  </exercise>
-
 <exercise number="10">
 <statement>
 <p>What is the sum of the digits of the sum of the digits of the sum of the digits of <m>4444^{4444}</m>?</p>

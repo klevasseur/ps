@@ -2,13 +2,15 @@
 <!-- MBX -->
 <publication xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 	 <common> 
-   		<exercise-divisional solution="yes"/> 
+   		<exercise-divisional solution="no"/> 
+   		<exercise-divisional answer="no"/> 
+   		<exercise-divisional hint="yes"/> 
 	 </common>
 	<html>
-		 <baseurl href="https://faculty.uml.edu/klevasseur"/>
+		 <baseurl href="https://discretemath.org"/>
 	</html>
 
-    <latex print="no" sides="two">
+    <latex print="yes" sides="two">
         <asymptote links="yes"/>
     </latex>
 </publication>

@@ -16,7 +16,7 @@
 <exercise number="1">
 <statement>
 <p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em> if <m>b c - ad = \pm</m>.  
-<ol label="(a)">
+<ol marker="(a)">
 	<li><p>Prove that if <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are close, then <m>\frac{a+c}{b+d}</m> is close to both <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>.</p></li>
 	<li><p>Find ten rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
 </ol>

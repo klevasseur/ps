@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appendix xml:id="app-numbers" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Table of Common Sequences</title>
+<p>For your convenience, here are the first few powers of 2, squares, Fibonacci numbers and values of the Euler Phi function.
+<me>\begin{array}{ccccc}
+ n &amp; 2^n &amp; n^2 &amp;F_n &amp; \phi(n) \\
+ 0 &amp;1 &amp;0 &amp;1 &amp;0 \\
+ 1 &amp;2 &amp;1 &amp;1 &amp;1 \\
+ 2 &amp;4 &amp;4 &amp;2 &amp;1 \\
+ 3 &amp;8 &amp;9 &amp;3 &amp;2 \\
+ 4 &amp;16 &amp;16 &amp;5 &amp;2 \\
+ 5 &amp;32 &amp;25 &amp;8 &amp;4 \\
+ 6 &amp;64 &amp;36 &amp;13 &amp;2 \\
+ 7 &amp;128 &amp;49 &amp;21 &amp;6 \\
+ 8 &amp;256 &amp;64 &amp;34 &amp;4 \\
+ 9 &amp;512 &amp;81 &amp;55 &amp;6 \\
+ 10 &amp;1024 &amp;100 &amp;89 &amp;4 \\
+ 11 &amp;2048 &amp;121 &amp;144 &amp;10 \\
+ 12 &amp;4096 &amp;144 &amp;233 &amp;4 \\
+ 13 &amp;8192 &amp;169 &amp;377 &amp;12 \\
+ 14 &amp;16384 &amp;196 &amp;610 &amp;6 \\
+ 15 &amp;32768 &amp;225 &amp;987 &amp;8 \\
+ 16 &amp;65536 &amp;256 &amp;1597 &amp;8 \\
+ 17 &amp;131072 &amp;289 &amp;2584 &amp;16 \\
+ 18 &amp;262144 &amp;324 &amp;4181 &amp;6 \\
+ 19 &amp;524288 &amp;361 &amp;6765 &amp;18 \\
+ 20 &amp;1048576 &amp;400 &amp;10946 &amp;8 \\
+ 21 &amp;2097152 &amp;441 &amp;17711 &amp;12 \\
+ 22 &amp;4194304 &amp;484 &amp;28657 &amp;10 \\
+ 23 &amp;8388608 &amp;529 &amp;46368 &amp;22 \\
+ 24 &amp;16777216 &amp;576 &amp;75025 &amp;8 \\
+ 25 &amp;33554432 &amp;625 &amp;121393 &amp;20 \\
+ 26 &amp;67108864 &amp;676 &amp;196418 &amp;12 \\
+ 27 &amp;134217728 &amp;729 &amp;317811 &amp;18 \\
+ 28 &amp;268435456 &amp;784 &amp;514229 &amp;12 \\
+ 29 &amp;536870912 &amp;841 &amp;832040 &amp;28 \\
+ 30 &amp;1073741824 &amp;900 &amp;1346269 &amp;8 \\
+ 31 &amp;2147483648 &amp;961 &amp;2178309 &amp;30 \\
+ 32 &amp;4294967296 &amp;1024 &amp;3524578 &amp;16 \\
+ 33 &amp;8589934592 &amp;1089 &amp;5702887 &amp;20 \\
+ 34 &amp;17179869184 &amp;1156 &amp;9227465 &amp;16 \\
+ 35 &amp;34359738368 &amp;1225 &amp;14930352 &amp;24 \\
+ 36 &amp;68719476736 &amp;1296 &amp;24157817 &amp;12 \\
+\end{array}</me>
+</p>
+
+</appendix>
