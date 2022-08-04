@@ -97,9 +97,9 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 
 <exercise number="1">
 <statement>
-<p>Let <m>a, b, c \in [0, 1]</m>. Prove that <me>\sqrt{a b c}+ \sqrt{(1a)(1b)(1c)} \leq 1</me></p>
+<p>Let <m>a, b, c \in [0, 1]</m>. Prove that <me>\sqrt{a b c}+ \sqrt{(1/a)(1/b)(1/c)} \leq 1</me></p>
 </statement>
-<hint><p>Start with proving  <m>\sqrt{a b}+ \sqrt{(1a)(1b)} \leq 1</m></p></hint>
+<hint><p>Start with proving  <m>\sqrt{a b}+ \sqrt{(1/a)(1/b)} \leq 1</m></p></hint>
 <!-- 
 <solution><p></p>
 </solution>

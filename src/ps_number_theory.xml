@@ -196,10 +196,13 @@ Notice that applying <m>f</m> successively bounces us between cases 1 and 2 unti
 <p>Consider the sequence <m>T</m> defined by <m>T_1=2</m> and <m>T_{n+1}=T_n^2-T_n+1</m> when <m>n \geq 1</m>. Prove that if <m>m \neq n</m> then <m>T_m</m> and <m>T_n</m> have no common factor greater than <m>1</m>.
 </p>
 </statement>
+<hint><p>Look closely at the first few terms of the sequence.  A plausible formula may be suggested.</p></hint>
+<!-- 
 <solution>
 <p>This was the first half of problem 6 in the afternoon session of the 1956 Putnam. For any positive integer <m>m</m> we  can prove this by induction on <m>n</m> for all <m>n \ge m</m>. We observe that the basis is true by applying the Euclidean algorithm to <m>gcd(T_{m+1}=T_m^2-T_m+1, T_m)</m>.  Then assuming <m>gcd(T_{n}, T_m)=1</m>, 
-suppose that <m>T_{n}</m> and <m>T_{m+1}</m> have a common factor <m>d</m> greater than 1./p>
+suppose that <m>T_{n}</m> and <m>T_{m+1}</m> have a common factor <m>d</m> greater than 1.</p>
 </solution>
+ -->
  </exercise>
 <exercise number="old9">
 <statement>
