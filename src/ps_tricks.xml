@@ -46,7 +46,7 @@ By distributing the 2018 we have three terms.  Multiplying by 3 and adding <m>20
 <p>When real numbers are known to have absolute value less than or equal to 1, consider equating them with cosines or sines.   Here is an example from the 2000 Putnam, Problem B4.</p>
 
 <example xml:id="ex-2000PutnamB4"><title>2000 Putnam, B4</title>
-<p>Let <m>f:[1,1]\rightarrow \mathbb{R}</m> be a continuous function such that <m>f(2x^21)=2xf(x)</m> for all <m>x</m>. Show that <m>f(x)=0</m> for <m>-1 \leq x \leq 1</m>.</p>
+<p>Let <m>f:[-1,1]\rightarrow \mathbb{R}</m> be a continuous function such that <m>f(2x^21)=2xf(x)</m> for all <m>x</m>. Show that <m>f(x)=0</m> for <m>-1 \leq x \leq 1</m>.</p>
 <p>Solution: Substitution of 1 and -1 for <m>x</m> produces <m>f(1)=f(-1)=0</m>.</p>
 <p>The restriction on <m>x</m> and the expression <m>2 x^2 -1</m> may remind one of the identity <m>2\cos^2{x} - 1 = \cos{2 x}</m>; and so the substitution <m>x = \cos{t}</m> is a reasonable step leading to <m>f(\cos{2t})=2 \cos{t} f(\cos{t})</m>.</p>
 <p>The next step in several published solutions is to define a second function, <m>g</m>, by
@@ -84,7 +84,7 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 	
 </p>
 </example>
-<remark><p><idx>Pochhammer symbol</idx> The Pochhammer symbol is the notation  <m>(x)_n</m>, where <m>n</m> is a non-negative integer. It is commonly used to represent the <q>falling factorial</q> expression  <m>x\cdot(x-1)\cdot(x-2)\cdot \cdots \cdot (x-(k-1))</m>.  This gives a more concise way to express the expansion we have just examined as <m>\sum_{n=0}^{\infty} \frac{(\frac{1}{2})_n}{n!} (-x)^n</m>.  However, you still need to get into the weeds and manipulate the expression in the end. </p></remark>
+<remark><p><idx>Pochhammer symbol</idx> The Pochhammer symbol is the notation  <m>(x)_n</m>, where <m>n</m> is a non-negative integer. It is commonly used to represent the <q>falling factorial</q> expression  <m>x\cdot(x-1)\cdot(x-2)\cdot \cdots \cdot (x-(n-1))</m>.  This gives a more concise way to express the expansion we have just examined as <m>\sum_{n=0}^{\infty} \frac{(\frac{1}{2})_n}{n!} (-x)^n</m>.  However, you still need to get into the weeds and manipulate the expression in the end. </p></remark>
 <p>A different sense in which generalization applies to problem solving is when a problem is more easily solved by first generalizing the context of the problem.  This problem from the 1982 Putnam is a good example.</p>
 <example xml:id="example-putnam-integral"><title>A Putnam Integral</title><idx>Leibniz Integration Rule</idx>
 <p>Evaluate <m>\int_0^{\infty} \frac{\tan^{-1}(\pi  x)-\tan^{-1}(x)}{x} \, dx</m>.</p>
@@ -97,9 +97,9 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 
 <exercise number="1">
 <statement>
-<p>Let <m>a, b, c \in [0, 1]</m>. Prove that <me>\sqrt{a b c}+ \sqrt{(1/a)(1/b)(1/c)} \leq 1</me></p>
+<p>Let <m>a, b, c \in [0, 1]</m>. Prove that <me>\sqrt{a b c}+ \sqrt{(1-a)(1-b)(1-c)} \leq 1</me></p>
 </statement>
-<hint><p>Start with proving  <m>\sqrt{a b}+ \sqrt{(1/a)(1/b)} \leq 1</m></p></hint>
+<hint><p>Start with proving  <m>\sqrt{a b}+ \sqrt{(1-a)(1-b)} \leq 1</m></p></hint>
 <!-- 
 <solution><p></p>
 </solution>
