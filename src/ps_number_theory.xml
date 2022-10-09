@@ -204,19 +204,19 @@ suppose that <m>T_{n}</m> and <m>T_{m+1}</m> have a common factor <m>d</m> great
 </solution>
  -->
  </exercise>
+<!-- 
 <exercise number="old9">
 <statement>
 <p>Find all integral solutions to <m>\left|p^r-q^s\right|=1</m>, where <m>p</m> and <m>q</m> are primes and <m>r</m> and <m>s</m> are positive
 integers greater than or equal to 2. Prove that there are no other solutions than the ones you list.
 </p>
 </statement>
-<!-- 
 <hint><p></p></hint>
 <solution>
 <p>This was A3 in the 1976 Putnam.</p>
 </solution>
- -->
  </exercise>
+ -->
 <exercise number="10">
 <statement>
 <p>What is the sum of the digits of the sum of the digits of the sum of the digits of <m>4444^{4444}</m>?</p>

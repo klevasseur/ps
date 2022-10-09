@@ -116,7 +116,9 @@ p(2019) &amp;=\sum_{i=0}^{1008} \frac{1}{\sqrt{5}}(\alpha^{2i+1}-\beta^{2i+1})
 </example>
 
 </section>  
-
+<section><title>The Chinese Remainder Theorem Revisited</title>
+<p>Using the division property for polynomials, we can develop the definiton of congruence modulo a polynomial.</p>
+</section>
 <exercises>
 <title>Exercises</title>
 <exercise xml:id="binet"><title>Binet's Formula</title><idx>Binet's Formula</idx>
