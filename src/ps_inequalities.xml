@@ -2,7 +2,7 @@
 <!-- MBX -->
 <chapter xml:id="c-inequalities">
 <title>Inequalities</title>
-<introduction><p>As with most topics, we could spend a whole semester on inequalities.  I normally concentrate on the relationship between the arithmetic, geometric and harmonic means, the Cauchy-Bunyakovsky-Schwarz inequality, and Young's inequality in a single class.</p>
+<introduction><p>As with most topics, we could spend a whole semester on inequalities.  I normally concentrate on the relationship between the arithmetic, geometric and harmonic means, and the Cauchy-Bunyakovsky-Schwarz inequality in class.  </p>
 </introduction>
 <section xml:id="s-means"><title>Means</title>
 <idx>Arithmetic Mean</idx><idx>Geometric Mean</idx>
@@ -83,7 +83,8 @@ This quadratic polynomial in <m>\alpha</m> has no real roots and so the discrimi
 	<title>Young's inequality</title>
 	<idx>Young's inequality</idx>
 		<statement><p>If <m>a</m> and <m>b</m> are nonnegative real numbers and <m>p</m> and <m>q</m> are positive real numbers such that <m>\frac{1}{p} + \frac{1}{q} = 1</m>, then 
-		<me>a\cdot b \leq \frac{a^{p}}{p} + \frac{b^{q}}{q}.</me></p></statement>
+		<me>a\cdot b \leq \frac{a^{p}}{p} + \frac{b^{q}}{q},</me>
+		with equality if and only if <m>f(a)=b</m>.</p></statement>
 <proof><p>The proof follows from the following more general inequality, where <m>f(x)=x^{p-1}</m>.
 </p> </proof>
 </theorem>

@@ -5,11 +5,22 @@
 <title>Number Theory </title>
 <introduction><p>The starting point for number theory is the set of positive integers.  After developing basic arithmetic properties of this set, number theory goes in countless directions and is one of the richest of all mathematical subjects. Here, we touch on just a few key ideas.</p></introduction>
 <section>
-<title>Primes</title>
+<title>Primes and Relatively Prime Pairs</title>
 <p>A prime are positive integer greater than one that are only divisible by one and itself. A fundamental theorem in number theory states that every positive integer greater than one is uniquely factorable as a product of one or more primes.</p>
 <p>You should be familiar with the fact that there are an infinite number of primes, and if pressed, should be able to prove it.  There is only one even prime, 2. If we divide an odd prime by 4, the remainder will either be 1 or 3; so every odd prime has the form <m>4k+1</m> or <m>4k+3</m>.  Here is a proof that there are an infinite number of primes of the second form. Suppose, to the contrary, that there are only a finite number of primes of the form <m>4k+3</m>, and that they are  <m>p_1=4k_1+3</m>, <m>p_2=4k_2+3, \dots</m>, <m>p_r=4k_r+3</m>.  Consider the integer <m>Q= 4(p_1 \cdot p_2 \cdot \cdots \cdot p_r)+3</m>.  We observe that <m>Q</m> is an odd integer that is not divisible by any of the <m>p_i</m>. It can be factored into a product of primes that are not in the set of <m>p_i</m> but the factors cannot all be of the form <m>4k+1</m> and so there is yet another prime of the form <m>4k+3</m> that was not accounted for in our list of such primes.  This contradiction implies that the set of these integer must be infinite. </p>
 
 <p>We had just proven an instance of a more general theorem called <em>Dirichlet's Theorem</em>, which states that if <m>4k+3</m> is replaced with <m>\alpha k + \beta</m> where <m>\gcd(\alpha,\beta)=1</m> we get the same conclusion, that there are an infinite number of primes of that form.</p>
+<p>Individual positive integers are prime, but there is a related notion concerning <em>pairs</em> of positive integers.</p>
+<definition><title>Relatively Prime</title><idx>Relatively Prime</idx>
+<statement><p>Let <m>a</m> and <m>b</m> be positive integers.  We say that they are relatively prime if their only common divisor is 1</p></statement>
+</definition>
+<p>Note that relatively prime integers need not be prime.</p>
+<p>An important function on the positive integers is the Euler phi function.</p>
+<definition><title>Euler Phi Function></title><idx>Euler Phi Function</idx><idx>Euler Totiant Function</idx><notation><usage>\varphi(n)</usage><description>The Euler phi function</description></notation>
+<statement><p>Let <m>n</m> be a positive integer. The value of <m>\varphi(n)</m> is the number of integers in the set <m>\{1, 2,\dots ,n-1\}</m> that are relatively prime to <m>n</m>. </p></statement>
+</definition>
+<p>We will explore some the properties of this function in the exercises.</p>
+
 </section>
 <section>
 <title>Residues</title>
@@ -51,21 +62,21 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
 </example>
 <theorem><title>Euler's Theorem</title>
 <idx>Euler's Theorem</idx>
-<statement><p>Let <m>n</m> be a positive integer greater than 1 and <m>a</m> a positive integer that is relatively prime to <m>n</m>.  Then  <m>a^{\phi(n)} \equiv 1 \pmod{n}</m></p></statement>
-<proof><p>Consider the set <m>U_n</m> of all positive integers less than <m>n</m> that are relatively prime to <m>n</m>. The cardinality of this set is <m>\phi(n)</m>.  We note that the function <m>f</m> on <m>U_n</m> defined by <m>f(b) = a \cdot b \pmod{n}</m> is a permutation of <m>U_n</m>. Let <m>X=\prod_{x \in U_n} x</m>. Then 
+<statement><p>Let <m>n</m> be a positive integer greater than 1 and <m>a</m> a positive integer that is relatively prime to <m>n</m>.  Then  <m>a^{\varphi(n)} \equiv 1 \pmod{n}</m></p></statement>
+<proof><p>Consider the set <m>U_n</m> of all positive integers less than <m>n</m> that are relatively prime to <m>n</m>. The cardinality of this set is <m>\varphi(n)</m>.  We note that the function <m>f</m> on <m>U_n</m> defined by <m>f(b) = a \cdot b \pmod{n}</m> is a permutation of <m>U_n</m>. Let <m>X=\prod_{x \in U_n} x</m>. Then 
 <me>
 \begin{split}
 X  &amp;= \prod_{x \in U_n} x =  \prod_{x \in U_n} f(x) \\
 	&amp;\equiv  \prod_{x \in U_n} a\cdot x \pmod{n} \\
-	&amp;\equiv  a^{\phi(n)} \prod_{x \in U_n}  x \pmod{n} \\
-	&amp; = a^{\phi(n)} \cdot X
+	&amp;\equiv  a^{\varphi(n)} \prod_{x \in U_n}  x \pmod{n} \\
+	&amp; = a^{\varphi(n)} \cdot X
 \end{split}
 </me>
-Multiplying both sides of the equivalence <m>X \equiv a^{\phi(n)} \cdot X \pmod{n}</m> by the mod <m>n</m> inverse of <m>X</m> gets us the desired result.</p>
+Multiplying both sides of the equivalence <m>X \equiv a^{\varphi(n)} \cdot X \pmod{n}</m> by the mod <m>n</m> inverse of <m>X</m> gets us the desired result.</p>
 </proof>
 </theorem>
 <example xml:id="ex-euler-app">
-<p>Revisiting the previous example, we can compute the value of <m>\phi(21)</m> based on the exercise on <xref ref="exercise-euler-phi" text="title"/>:  <m>\phi(21)=\phi(3)\cdot\phi(7)=2 \cdot 6 = 12</m>.  This lets us reduce <m>5^{159}</m> to <m>5^{3} \pmod{21}</m>, which reduces further to 20. </p>
+<p>Revisiting the previous example, we can compute the value of <m>\varphi(21)</m> based on the exercise on <xref ref="exercise-euler-phi" text="title"/>:  <m>\varphi(21)=\varphi(3)\cdot\varphi(7)=2 \cdot 6 = 12</m>.  This lets us reduce <m>5^{159}</m> to <m>5^{3} \pmod{21}</m>, which reduces further to 20. </p>
 </example>
 
 </section>  
@@ -99,15 +110,19 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\phi(n)} \cdot X \pmod{
  -->
 </exercise>
 
-<exercise number="2">
+<exercise number="2" xml:id="exercise-euler-phi"><title>Euler's Phi Function</title>
 <statement>
-<p>Prove that some positive integral power of 17 ends in 0001 (base 10).</p>
+<p>Recall that <m>\varphi(n)</m> is the number of integers in the set <m>\{1,2, \ldots  , n-1\}</m> that are relatively prime to <m>n</m>.
+<ol>
+<li><p> Find and prove a formula for <m>\varphi \left(p^k\right)</m> if <m>k\geq 1</m> and <m>p</m> is prime.</p></li>
+<li><p>Prove that if <m>a</m> and <m>b</m> are relatively prime positive integers greater than <m>1</m>, then  <m>\varphi(a \cdot b)=\varphi(a) \cdot \varphi(b)</m></p></li>
+<li><p> Determine the value of <m>\varphi(100!)</m>.</p></li>
+</ol>
+</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution>
-<p></p>
-</solution>
+
  -->
 </exercise>
 
@@ -122,7 +137,7 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\phi(n)} \cdot X \pmod{
  -->
 </exercise>
 
-<exercise number="4"><statement><p>Find a Pythagorean triple that includes the number 2021 as a side length.</p></statement>
+<exercise number="4"><statement><p>Find a Pythagorean triple that includes 2021 as a side length.</p></statement>
 <hint>
 <p><m>2025</m> is a perfect square.</p>  
 </hint>
@@ -130,22 +145,18 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\phi(n)} \cdot X \pmod{
 <solution><p>Since <m>2021 = 2025-4 = 45^2 - 2^2</m>, we can generate a Pythagorian triple from the general form <m>(b^2-a^2, 2 a b, b^2 + a^2)</m> to get the triple <m>(2021,180,2029)</m>. </p></solution>
 </exercise>
 
-<exercise number="5" xml:id="exercise-euler-phi"><title>Euler's Phi Function</title>
-<idx>Euler's Phi Function</idx>
+<exercise number="5">
 <statement>
-<p>Let <m>\varphi(k)</m> be the number of integers in the set <m>\{1,2, \ldots  , k-1\}</m> that are relatively prime to <m>k</m>.
-<ol>
-<li><p> Find and prove a formula for <m>\varphi \left(p^n\right)</m> if <m>n\geq 1</m> and <m>p</m> is prime.</p></li>
-<li><p>Prove that if <m>a</m> and <m>b</m> are relatively prime positive integers greater than <m>1</m>, then  <m>\varphi(a \cdot b)=\varphi(a) \cdot \varphi(b)</m></p></li>
-<li><p> Determine the value of <m>\varphi(100!)</m>.</p></li>
-</ol>
-</p>
+<p>Prove that some positive integral power of 17 ends in 0001 (base 10).</p>
 </statement>
 <!-- 
 <hint><p></p></hint>
-
+<solution>
+<p></p>
+</solution>
  -->
 </exercise>
+
 
 <exercise number="6">
 <statement>
