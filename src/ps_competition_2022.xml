@@ -2,7 +2,7 @@
 <!-- MBX -->
 <chapter xml:id="c-competition-2022">
 <title>2022 UML Problem Solving Competition</title>
-<introduction><p>A twp hour local competition was held on 15 April 2022.</p>
+<introduction><p>A two hour local competition was held on 15 April 2022.</p>
 </introduction>
 
 <section><title>Results</title>
@@ -26,7 +26,7 @@
 
 <exercise>
 <statement>
-<p> Prove that there are infinitely many number pairs <m>(a,b)</m> such that <me>a+\frac{1}{b}=b+\frac{1}{a}</me> where <m>a\neq b</m>. Find the possible values of <m>ab</m>.
+<p> Prove that there are infinitely many number pairs <m>(a,b)</m> such that <me>a+\frac{1}{b}=b+\frac{1}{a}</me> where <m>a\neq b</m>. Find the possible values of <m>a b</m>.
 </p>
 </statement>
 <!-- 

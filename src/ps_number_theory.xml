@@ -16,7 +16,7 @@
 </definition>
 <p>Note that relatively prime integers need not be prime.</p>
 <p>An important function on the positive integers is the Euler phi function.</p>
-<definition><title>Euler Phi Function></title><idx>Euler Phi Function</idx><idx>Euler Totiant Function</idx><notation><usage>\varphi(n)</usage><description>The Euler phi function</description></notation>
+<definition><title>Euler Phi Function</title><idx>Euler Phi Function</idx><idx>Euler Totiant Function</idx><notation><usage><m>\varphi(n)</m></usage><description>The Euler phi function</description></notation>
 <statement><p>Let <m>n</m> be a positive integer. The value of <m>\varphi(n)</m> is the number of integers in the set <m>\{1, 2,\dots ,n-1\}</m> that are relatively prime to <m>n</m>. </p></statement>
 </definition>
 <p>We will explore some the properties of this function in the exercises.</p>
@@ -86,10 +86,12 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\varphi(n)} \cdot X \pm
 <introduction><p>Before starting these problems, you might want to review the statement of <xref ref="theorem-fermat-little" text="title"/>.</p></introduction>
 <exercise number="1">
 <statement>
-<p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em> if <m>b c - ad = \pm 1</m>.  
+<p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em>
+ if <m>a d - b c = \pm 1</m>.  
 <ol marker="(a)">
 	<li><p>Prove that if <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are close, then <m>\frac{a+c}{b+d}</m> is close to both <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>.</p></li>
 	<li><p>Find five rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
+<!-- 
 	<li><p>Find a connection between pairs of close rational numbers, <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>, and  the determinant of the matrix 
 			<m>\left(
 			\begin{array}{cc}
@@ -99,6 +101,7 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\varphi(n)} \cdot X \pm
 			\right)
 			</m>
 </p></li>
+ -->
 </ol>
 </p>
 </statement>

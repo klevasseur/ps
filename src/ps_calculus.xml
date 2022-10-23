@@ -244,7 +244,10 @@ The minute hand on a watch is 8 mm long and the hour hand is 4 mm long. What is 
 <p>The hour hand of a clock goes around once every 12 hours or, <m>\frac{\pi}{6}</m> radians per hour. The minute hand goes around once per hour, or at the rate of <m>2 \pi</m>  radians per hour.
 So the angle <m>\theta</m> between them (measuring clockwise from the minute hand to the hour hand) is changing at the rate of 
 <me>\frac{d\theta}{dt} = \frac{\pi}{6}-2\pi \quad \textrm{rad/hr} </me> </p>
-<p>We want <m>\frac{d\ell}{dt}</m> at one o'clock, so we use the Law of Cosines establish a relationship between <m>\theta</m> and <m>\ell</m>.  If we differentiate that equation with respect to time  we get 
+<p>We want <m>\frac{d\ell}{dt}</m> at one o'clock, so we use the Law of Cosines establish a relationship between <m>\theta</m> and <m>\ell</m>.  
+	<men xml:id="clock-law-of-cosines">  \ell^2 = 4^2 + 8^2 -2\cdot 4\cdot 8\cdot cos\, \theta</men>
+
+If we differentiate <xref ref="clock-law-of-cosines" text="type-global"/>  with respect to time  we get 
 	<men xml:id="clock-diff-of-law-of-cosines"> 2 \ell \frac{d\ell}{dt} = -64(-sin\, \theta)\frac{d\theta}{dt}</men>
 At one o'clock, <m>\theta = \pi/6</m>.   The Law of Cosines formula gives us the value of <m>\ell</m> at that time and  then  we can use <xref ref="clock-diff-of-law-of-cosines" text="type-global"/> evaluated at <m>\pi/6</m> to get a final answer, which is <m>-\frac{22 \pi}{3 \sqrt{5-2\sqrt{3}}}</m></p>
 
