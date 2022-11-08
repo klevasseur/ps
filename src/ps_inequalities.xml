@@ -2,8 +2,22 @@
 <!-- MBX -->
 <chapter xml:id="c-inequalities">
 <title>Inequalities</title>
-<introduction><p>As with most topics, we could spend a whole semester on inequalities.  I normally concentrate on the relationship between the arithmetic, geometric and harmonic means, and the Cauchy-Bunyakovsky-Schwarz inequality in class.  </p>
+<introduction><p>As with most topics, we could spend a whole semester on inequalities.  Here we concentrate on Jensen Inequality,  the relationship between the different means, and the Cauchy-Bunyakovsky-Schwarz inequality. We also introduce Young's inequality as optional reading.  </p>
 </introduction>
+<section><title>Jensen's Inequality</title>
+<p>In calculus one hears of concave upward functions, which are function with a positive second derivative.  Functions of this type are also called convex functions.  But convex function is more general than that.  A function is convex if any line segment connecting two points on its graph lies above the graph of the function. This translates to the more formal definition that <m>f</m> is convex on an interval <m>[a,b]</m>, if for <m>a \leq t_1 \lt t_2 \leq b</m>, and <m>0 \leq \lambda \leq 1</m> it is true that 
+<me>f(\lambda t_1 + (1-\lambda) t_2) \leq \lambda f(t_1)+(1-\lambda)f(t_2).</me>
+This is the simplest form of Jensen's inequality. A more general inequality follows. </p> 
+<theorem><title>Jensen's Inequality</title>
+<idx>Jensen's Inequality</idx>
+<statement>
+<p>If <m>f</m> is convex on an interval <m>[a,b]</m>, then for <m>a \leq t_1 \lt t_2 \lt \cdots \lt t_n \leq b</m>, and positive real numbers <m>\lambda_1, \lambda_2, \dots, \lambda_n</m> such that <m>\sum_{k=1}^n \lambda_k =1</m>,
+<me>f\left(\sum_{k=1}^n \lambda_k t_k \right) \leq  \sum_{k=1}^n \lambda_k  f(t_k).</me></p>
+</statement>
+</theorem>
+<p>Although Jensen's inequality is most frequently stated for convex function, it also has a counterpart for concave functions, for which line segments lie below the graph.  The only change is to switch the inequality symbol.</p>
+</section>
+
 <section xml:id="s-means"><title>Means</title>
 <idx>Arithmetic Mean</idx><idx>Geometric Mean</idx>
 <p>There are many means on a finite number of nonnegative real numbers.  Here we focus on a few of the most common.  The <em>arithmetic mean</em> of <m>n</m> numbers, or what we often call their average, is their sum divided by <m>n</m>.  The <em>geometric mean</em> is computed by taking <m>n^{th}</m> root of their product.  We establish the relationship between these two means in the following theorem.
@@ -75,8 +89,10 @@ This quadratic polynomial in <m>\alpha</m> has no real roots and so the discrimi
 	<me>x_1 + x_2 + \cdots + x_n \leq \sqrt{n} \left(x_1^2 + x_2^2 + \cdots + x_n^2\right)^{1/2} </me> </p>
 <p>As the title suggest, we can derive this quite simply by taking <m>y_k = 1</m> for all <m>k</m> in <xref ref="eq-cbs"/>. </p> 
 </example>
-</section>  
-<section><title>Young's Inequality</title>
+</section>
+
+
+ <section><title>Young's Inequality</title>
 <p>Given positive numbers  and  whose reciprocals add up to one, the product  of two positive real numbers  and  is less than or equal to a weighted sum of <m>p^{th}</m> and <m>q^{th}</m> powers  of <m>a</m> and <m>b</m>.
 </p>
 <theorem>
@@ -150,7 +166,16 @@ def young(a=(2,(1/4,3)),b=(3/2,(1/4,3)),p=(7/4,(1/8,5,1/8))):
 <solution><p></p></solution>
  -->
 </exercise>
-
+<exercise>
+<statement>
+<p>There are many possible proofs of the AM/GM inequality.  One is a direct application of Jensen's Inequality for concave functions.  Prove it that way.
+</p>
+</statement>
+<hint><p>There is a fairly obvious choice for <m>f</m>.</p></hint>
+<!-- 
+<solution><p></p></solution>
+ -->
+</exercise>
 <exercise>
 <statement>
 <p>An express delivery service restricts the size of packages it will accept.  Packages cannot exceed 18 inches in length plus girth, i. e., <m>\text{length}+2\times\text{width} +2\times \text{height}\leq 18</m>.  Find the maximum volume of an acceptable package.
@@ -180,10 +205,10 @@ a_i^4\geq \frac{1}{n^3}</m>
 </statement>
 <hint><p>Extend the <q>one trick.</q></p></hint>
 <solution><p>The CBS inequalty using the <q>one trick</q> implies
-<me>1=\sum_{k=1}^n a_k \dot 1 \leq \sqrt{n} \dot (\sum_{k=1}^n (a_k)^{2})^{1/2}</me>
+<me>1=\sum_{k=1}^n a_k \cdot 1 \leq   (\sum_{k=1}^n (a_k)^{2})^{1/2} \cdot \sqrt{n}</me>
 Square both sides and divide by <m>n</m> to get the desired first inequality.</p>
 <p>For the second inequality, we use the same trick:
-<me> \frac{1}{n} \leq \sum_{k=1}^n a_k^{2} \dot 1 \leq \left(\sum_{k=1}^n a_k^{4}\right)^{1/2} \left(n\right)^{1/2} </me>and we are just a few algebra steps away.</p></solution>
+<me> \frac{1}{n} \leq \sum_{k=1}^n a_k^{2} \cdot 1 \leq \left(\sum_{k=1}^n a_k^{4}\right)^{1/2} \left(n\right)^{1/2} </me>and we are just a few algebra steps away.</p></solution>
 </exercise>
 <exercise>
 <statement><ol marker="(a)">
@@ -209,7 +234,7 @@ Square both sides and divide by <m>n</m> to get the desired first inequality.</p
 	\begin{split}
 	\frac{1}{2} = \sin{\frac{\pi}{6}} &amp;=\sin{\left( \frac{x_1+x_2+x_3}{3}\right)}\\
 					&amp; \geq \frac{\sin{x_1}+\sin{x_2}+\sin{x_3}}{3} \quad \textrm{by Jensen's inequality}\\
-					&amp; \geq \sqrt[3]{\sin{x_1}\dot \sin{x_2}\dot \sin{x_3}} \quad \textrm{AM-GM inequality}
+					&amp; \geq \sqrt[3]{\sin{x_1}\cdot \sin{x_2}\cdot \sin{x_3}} \quad \textrm{AM-GM inequality}
 	\end{split}
 </me>
 Cube both ends of this chain of inequalities and you get the desired result.
@@ -225,6 +250,21 @@ Cube both ends of this chain of inequalities and you get the desired result.
 <hint><p></p></hint>
 <solution><p></p></solution>
  -->
+</exercise>
+<exercise>
+<statement>
+<p>Prove that <m>\tan{a} + \tan{b} \geq 2 \tan{\sqrt{a b}}</m> for all <m>a, b \in [0,2 \pi)</m>.
+</p>
+</statement> 
+<hint><p>Use the fact that <m>\tan</m> is convex and increasing on <m> [0,2 \pi)</m>.</p></hint>
+<solution><p>
+<me>\begin{split}
+\frac{\tan{a} + \tan{b}}{2} &amp; \geq \tan{\frac{a + b}{2}}\\
+	&amp; \geq   \tan{\sqrt{a b}}
+	\end{split}
+</me>
+
+</p></solution>
 </exercise>
 <exercise>
 <statement>
@@ -280,7 +320,7 @@ Then
 	&amp; = \frac{147}{4}
 	\end{split}
 	</me>
-Therefore <m>f(x,y,z)\leq \frac{7}{2} \sqrt{3}</m>.</p></solution>
+Therefore <m>f(x,y,z)\leq \frac{7}{2} \sqrt{3}</m>.  We get equality when <m>x=\frac{5\sqrt{3}}{21}</m>, <m>y=-\frac{4\sqrt{3}}{21}</m>, and <m>z=\frac{\sqrt{3}}{6}</m>.</p></solution>
 </exercise>
 <exercise xml:id="rearrangement-inequality"><title>The Rearrangement Inequality</title>
 <idx>Rearrangement Inequality</idx>
