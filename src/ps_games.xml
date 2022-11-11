@@ -124,14 +124,15 @@ Consider the following game played by players A and B with a deck of <m>2n</m> c
 <!-- 
 <hint><p></p></hint>
  -->
-<solution><p>Assume Bob has only a finite set of initial pile sizes for which he wins, <m>B={n_1,n_2, \dots, n_M}</m>, where <m>N=max(n_i)</m>.  This means that for every <m>n \notin B</m>, Alice can leave Bob with a number of stones in <m>B</m>.
+<solution><p>The way to think about this game that if Alice has a winning position and makes any move, she has to put Bob into one of her losing positions.  Therefore if the game starts with <m>n</m> stones, there must be a prime <m>p</m> such that <m>n-(p-1)</m> is a losing position for Bob.  Therefore, if the game starts with <m>n-(p-1)</m> stones and it's Alice's turn, Bob will win.</p>
+<p>Assume Bob has only a finite set of initial pile sizes for which he wins, <m>B={n_1,n_2, \dots, n_M}</m>, where <m>N=max(n_i)</m>.  This means that for every <m>n \notin B</m>, Alice can leave Bob with a number of stones in <m>B</m>.
 <me>
 \begin{split}
 	n \notin B &amp; \Rightarrow  n = n_k + (p-1)  \textrm{  for some prime }p\\
-	 &amp;  n-p \lt N
+	 &amp;  \Rightarrow  n-p \lt N
 \end{split}
 </me>
-Therefore, for all <m>n</m>, <m>n</m> differs from a prime by a some bounded value.  Since there are arbitrarily long runs of non-primes, this is a contradiction. </p></solution>
+Therefore, for all <m>n \geq N</m>, <m>n</m> differs from a prime by a some bounded value.  Since there are arbitrarily long runs of non-primes, this is a contradiction. </p></solution>
 </exercise>
 
 <exercise>
