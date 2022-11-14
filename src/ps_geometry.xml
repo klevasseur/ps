@@ -33,7 +33,7 @@ Often, problems are only formulated using geometric language but the solution us
 	</me></p>
 <p>If we add the equations on the right and also the two on the left, we get the desired conclusion.</p>
 </case>
-<case><title>(<m>\Leftarrow</m>)</title><p>Again, let <m>M</m> be the point of intersection of the two extended segments.  In  <xref ref="fig-sageplot-2segments-notperp" text="type-global" /> we depict the case where <m>M</m> lies on both segments.  We assume the angle between the segments is not <m>\pi/2</m> and so we assume that <m>\angle AMC \gt \pi/2</m>.  Thus, the left sides of the equations on the left are now greater than the right sides, while the left sides of the equations on the right are less than the right sides.  Therefore, <m>\lvert AC \rvert^2 +  \lvert BD \rvert^2 \gt \lvert AD \rvert^2 + \lvert BC \rvert^2</m>.</p>
+<case><title>(<m>\Leftarrow</m>)</title><p>Again, let <m>M</m> be the point of intersection of the two extended segments.  In  <xref ref="fig-sageplot-2segments-notperp" text="type-global" /> we depict the case where <m>M</m> lies on both segments.  We assume the angle between the segments is not <m>\pi/2</m> and so we assume that <m>\angle AMC \gt \pi/2</m>.  Thus, the left sides of the equations above that are on the left are now greater than the right sides, while the left sides of the equations on the right are less than the right sides.  Therefore, <m>\lvert AC \rvert^2 +  \lvert BD \rvert^2 \gt \lvert AD \rvert^2 + \lvert BC \rvert^2</m>.</p>
 <p>Finally, how can this special case be used to prove the case when <m>M</m> is does not lie on both segments?</p>
 </case>
 
@@ -119,7 +119,15 @@ fig.show(axes=False)
 </exercise>
 <exercise>
 <statement>
-<p>Inscribe a rectangle of base <m>b</m> and height <m>h</m> and an isosceles triangle of base <m>b</m> in a circle of radius one as shown. For what value of <m>h</m> do the rectangle and triangle have the same area? </p>
+<p>Inscribe a rectangle of base <m>b</m> and height <m>h</m> and an isosceles triangle of base <m>b</m> in a circle of radius one as shown in <xref ref="fig-geometry2" text="type-global" />. For what value of <m>h</m> do the rectangle and triangle have the same area? </p>
+             <figure xml:id="fig-geometry2">
+                <caption>When do the rectangle and triangle have the same area?
+                </caption>
+                <image source="images/fig-geometry2.png" width="60%">
+                    <description>Inscribe a rectangle of base b and height h in a circle of radius one. Further inscribe an isosceles triangle of base b between the b-side of the rectangle and the minor arc of the circle that it determines.</description>
+                </image>
+            </figure>
+
 </statement>
 <!-- 
 <hint><p></p></hint>
@@ -138,7 +146,7 @@ just name them</p>
 </exercise>
 
 <exercise>
-<statement><p>A rectangle with sides <m>a</m> and <m>b</m>, <m>a \lt b</m> is rotated about its center, as shown in the figure, so that the two rectangles share two vertices.
+<statement><p>A rectangle with sides <m>a</m> and <m>b</m>, <m>a \lt b</m> is rotated about its center, as shown in <xref ref="rotated-rectangle" text="type-global" />, so that the two rectangles share two vertices.
  What is the area of the parallelogram that makes up the intersection of the two rectangles?</p>
              <figure xml:id="rotated-rectangle">
                 <caption>What is the area of the intersection?
@@ -195,7 +203,7 @@ The paper is folded so that <m>A</m> and <m>C</m> coincide. Find the length of t
 
 <exercise>
 <statement>
-<p>A trapezoid and a triangle are inscribed a circle. One side of the trapezoid is a diameter of the circle and the sides of the  triangle are parallel to sides of the trapezoid. Prove that the trapezoid and triangle have the same area.
+<p>A trapezoid and a triangle are inscribed a circle. One side of the trapezoid is a diameter of the circle and the sides of the  triangle are parallel to sides of the trapezoid, as shown in <xref ref="fig_trap_tri" text="type-global" />. Prove that the trapezoid and triangle have the same area.
 </p>
              <figure xml:id="fig_trap_tri">
                 <caption>Do the trapezoid and triangle have equal areas?
