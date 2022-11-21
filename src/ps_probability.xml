@@ -186,7 +186,7 @@ the closest integer to <m>x/y</m> is even? Express the answer in the form <m>r +
 </statement>
 <solution><p>Let <m>c</m> be the number of colors represented in the urn and <m>n</m> the number of balls of each color.  The condition we want to satisfy is <m>\frac{c (n-1) n+380}{(c n+19)
    (c n+20)}=\frac{n-1}{c n-1}</m>.  Manipulating this equation, we get <m>\frac{n (c (2 n-21)+19)}{(c
-   n-1) (c n+19) (c n+20)}=0</m>, which implies that <m>c(2 n-21)+19=0</m>.  The only pair integer pairs <m>(c,n)</m> to this equation are <m>(1,1)</m> and <m>(19,10)</m>.  The first must be rejected, and so the only solution is that there are initially 10 balls of each of 19 colors. Adding 20 of a new color will not change the probability of matching colors.  In either case the probability will be <m>\frac{1}{19}</m>. This is the only solution.</p>
+   n-1) (c n+19) (c n+20)}=0</m>, which implies that <m>c(2 n-21)+19=0</m>.  The only pair integer pairs <m>(c,n)</m> to this equation are <m>(1,1)</m> and <m>(19,10)</m>.  The first must be rejected, and so the only solution is that there are initially 10 balls of each of 19 colors. Adding 20 of a new color will not change the probability of matching colors.  In either case the probability will be <m>\frac{1}{21}</m>. This is the only solution.</p>
 </solution>
 
 </exercise>
