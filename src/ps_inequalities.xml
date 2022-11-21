@@ -248,8 +248,19 @@ Cube both ends of this chain of inequalities and you get the desired result.
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+<solution><p>Given the conditions of the problem, the square <m>[0,1]\times [0,1]</m> can be divided into two parts. The first is the area under the curve <m>y=f(x)</m>, and the second is the area to the left of <m>x=f^{-1}(y)</m>. Therefore, 
+	<me>\int_0^1 f(x)\,dx + \int_0^1 f^{-1}(y)\,dy = 1</me>
+The sum <m>\frac{1}{10}\sum_{k=1}^9 f(0.1k)</m> is the lower Riemann sum for the first integral, but it totally misses <m>\int_0^{0.1} f(x)\,dx</m> since <m>f(0)=0</m>.</p>
+<p>Similarly, <m>\frac{1}{10}\sum_{k=1}^9 f^{-1}(0.1k)</m> is the lower Riemann sum for the second integral, but it misses <m> \int_0^{0.1} f^{-1}(y)\,dy</m> since <m>f^{-1}(0)=0</m>.  Therefore,
+<me>\begin{split}
+	\frac{1}{10}\sum_{k=1}^9 f(0.1k)+ \frac{1}{10}\sum_{k=1}^9 f^{-1}(0.1k) &amp;\leq 
+		 1-\left(\int_0^{0.1} f(x)\,dx + \int_0^{0.1} f^{-1}(y)\,dy  \right)\\
+		 &amp; 1-0.01 = 0.99
+	\end{split}</me>
+Multiplying by <m>10</m> we get the desired inequality.
+	</p>
+</solution>
 </exercise>
 <exercise>
 <statement>
@@ -285,8 +296,17 @@ six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+<solution><p>
+<me>\begin{split}
+(1+a_1)(1+a_2)\cdots(1+a_n) &amp;\leq \left(\frac{\sum_{k=1}^n 1+a_k}{n}\right)^n \quad \textrm{by the AM/GM inequ.}\\
+	&amp;=\left(\frac{n+s}{n}\right)^n\\
+	&amp;=\sum_{k=0}^n \binomial{n}{k} \frac{s^k}{n^k}\\
+	&amp;=1 + \frac{n s}{n} + \frac{n(n-1)}{2} \frac{s^2}{n^2}+ \frac{n(n-1)(n-1)}{6} \frac{s^3}{n^3}n +\cdots\\
+	&amp;\leq  1 + s + frac{s^2}{2} + frac{s^3}{6}+ \cdots + frac{s^n}{n!}
+	\end{split}
+</me>
+</p></solution>
 </exercise>
 <exercise>
 <statement>

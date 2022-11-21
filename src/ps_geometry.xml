@@ -188,15 +188,17 @@ The paper is folded so that <m>A</m> and <m>C</m> coincide. Find the length of t
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+<solution><p>In order for a point <m>(x,y) =(x,\frac{1}{x})</m> to be on the circle of radius <m>c</m> centered at <m>(a,b)</m>, it must be a root of the polynomial
+<me>x^4-2 a x^3 + (a^2+b^2-c^2)x^2 -2b x +1.<me>
+According to the Vieta relation for the constant term, the product of the four roots must equal 1. </p></solution>
 </exercise>
 <exercise>
 <statement>
 <p>Let <m>ABC</m> be a triangle and let the angle bisector of <m>\angle A</m> intersect the side <m>BC</m> at a point <m>D</m>. Show that <m>\frac{A B}{A C} = \frac{B D}{C D}</m>.</p>
 </statement>
+<hint><p>Try the law of sines.</p></hint>
 <!-- 
-<hint><p></p></hint>
 <solution><p></p></solution>
  -->
 </exercise>
