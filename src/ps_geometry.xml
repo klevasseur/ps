@@ -190,7 +190,7 @@ The paper is folded so that <m>A</m> and <m>C</m> coincide. Find the length of t
 <hint><p></p></hint>
  -->
 <solution><p>In order for a point <m>(x,y) =(x,\frac{1}{x})</m> to be on the circle of radius <m>c</m> centered at <m>(a,b)</m>, it must be a root of the polynomial
-<me>x^4-2 a x^3 + (a^2+b^2-c^2)x^2 -2b x +1.<me>
+<me>x^4-2 a x^3 + (a^2+b^2-c^2)x^2 -2b x +1.</me>
 According to the Vieta relation for the constant term, the product of the four roots must equal 1. </p></solution>
 </exercise>
 <exercise>
