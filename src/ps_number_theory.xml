@@ -4,12 +4,14 @@
 <chapter xml:id="c-number_theory">
 <title>Number Theory </title>
 <introduction><p>The starting point for number theory is the set of positive integers.  After developing basic arithmetic properties of this set, number theory goes in countless directions and is one of the richest of all mathematical subjects. Here, we touch on just a few key ideas.</p></introduction>
-<section>
+<section xml:id="sec-primes">
 <title>Primes and Relatively Prime Pairs</title>
 <p>A prime are positive integer greater than one that are only divisible by one and itself. A fundamental theorem in number theory states that every positive integer greater than one is uniquely factorable as a product of one or more primes.</p>
-<p>You should be familiar with the fact that there are an infinite number of primes, and if pressed, should be able to prove it.  There is only one even prime, 2. If we divide an odd prime by 4, the remainder will either be 1 or 3; so every odd prime has the form <m>4k+1</m> or <m>4k+3</m>.  Here is a proof that there are an infinite number of primes of the second form. Suppose, to the contrary, that there are only a finite number of primes of the form <m>4k+3</m>, and that they are  <m>p_1=4k_1+3</m>, <m>p_2=4k_2+3, \dots</m>, <m>p_r=4k_r+3</m>.  Consider the integer <m>Q= 4(p_1 \cdot p_2 \cdot \cdots \cdot p_r)+3</m>.  We observe that <m>Q</m> is an odd integer that is not divisible by any of the <m>p_i</m>. It can be factored into a product of primes that are not in the set of <m>p_i</m> but the factors cannot all be of the form <m>4k+1</m> and so there is yet another prime of the form <m>4k+3</m> that was not accounted for in our list of such primes.  This contradiction implies that the set of these integer must be infinite. </p>
+<p>You should be familiar with the fact that there are an infinite number of primes, and if pressed, should be able to prove it.  There is only one even prime, 2. If we divide an odd prime by 4, the remainder will either be 1 or 3; so every odd prime has the form <m>4k+1</m> or <m>4k+3</m>.  Here is a proof that there are an infinite number of primes of the second form. Suppose, to the contrary, that there are only a finite number of primes of the form <m>4k+3</m>, and that they are  <m>p_1=4k_1+3</m>, <m>p_2=4k_2+3, \dots</m>, <m>p_r=4k_r+3</m>.  Consider the integer <m>Q= 4(p_1 \cdot p_2 \cdot \cdots \cdot p_r)+3</m>.  We observe that <m>Q</m> is an odd integer that is not divisible by any of the <m>p_i</m>. It can be factored into a product of primes that are not in the set of <m>p_i</m> but the factors cannot all be of the form <m>4k+1</m> and so there is yet another prime of the form <m>4k+3</m> that was not accounted for in our list of such primes.  This contradiction implies that the set of these integer must be infinite. 
+</p>
 
-<p>We had just proven an instance of a more general theorem called <em>Dirichlet's Theorem</em>, which states that if <m>4k+3</m> is replaced with <m>\alpha k + \beta</m> where <m>\gcd(\alpha,\beta)=1</m> we get the same conclusion, that there are an infinite number of primes of that form.</p>
+<p>We had just proven an instance of a more general theorem called <em>Dirichlet's Theorem</em>, which states that if <m>4k+3</m> is replaced with <m>\alpha k + \beta</m> where <m>\gcd(\alpha,\beta)=1</m> we get the same conclusion, that there are an infinite number of primes of that form.
+</p>
 <p>Individual positive integers are prime, but there is a related notion concerning <em>pairs</em> of positive integers.</p>
 <definition><title>Relatively Prime</title><idx>Relatively Prime</idx>
 <statement><p>Let <m>a</m> and <m>b</m> be positive integers.  We say that they are relatively prime if their only common divisor is 1</p></statement>
@@ -20,7 +22,6 @@
 <statement><p>Let <m>n</m> be a positive integer. The value of <m>\varphi(n)</m> is the number of integers in the set <m>\{1, 2,\dots ,n-1\}</m> that are relatively prime to <m>n</m>. </p></statement>
 </definition>
 <p>We will explore some the properties of this function in the exercises.</p>
-
 </section>
 <section>
 <title>Residues</title>

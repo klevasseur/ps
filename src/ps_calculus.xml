@@ -7,53 +7,6 @@
 </introduction>
 <section>
 <title>Examples</title>
-<example xml:id="example-putnam-2002-A1"><title>Putnam 2022 A1</title>
-<p>The first problem in the 2022 Putnam was to determine all ordered pairs of real numbers <m>(a,b)</m> such that the line <m>>y = ax+b</m>> intersects the curve <m>y = \ln(1+x^2)</m> in exactly one point.</p>
-
-<p>The solution that follows is from the Putnam Archive, with some additional clarification.</p>
-<p>Write <m>f(x) = \ln(1+x^2)</m>.
-We show that <m>y=ax+b</m> intersects <m>y=f(x)</m> in exactly one point if and only if <m>(a,b)</m> lies in one of the following groups:
-<ul>
-<li>  <m>a=b=0</m></li>
-<li><m>|a| \geq 1</m>, arbitrary <m>b</m></li>
-<li><m>0 < |a| < 1</m>, and <m>b<\ln(1-r_-)^2-|a|r_-</m> or <m>b>\ln(1-r_+)^2-|a|r_+</m>, where 
-<me>
-r_\pm = \frac{1\pm\sqrt{1-a^2}}{a}.
-</li>
-</ul>
-</p>
-
-
- <p>Since the graph of <m>y=f(x)</m> is symmetric under reflection in the <m>y</m>-axis, it suffices to consider the case <m>a \geq 0</m>: <m>y=ax+b</m> and <m>y=-ax+b</m> intersect <m>y=f(x)</m> the same number of times. For <m>a=0</m>, by the symmetry of <m>y=f(x)</m> and the fact that <m>f(x)> 0</m> for all <m>x\neq 0</m> implies that the only line <m>y=b</m> that intersects <m>y=f(x)</m> exactly once is the line <m>y=0</m>.</p>
-
- <p>We next observe that on <m>[0,\infty)</m>, <m>f'(x) = \frac{2x}{1+x^2}</m> increases on <m>[0,1]</m> from <m>f'(0)=0</m> to a maximum at <m>f'(1)=1</m>, and then decreases on <m>[1,\infty)</m> with <m>\lim_{x\to\infty} f'(x)=0</m>. In particular, <m>f'(x) \leq 1</m> for all <m>x</m> (including <m>x<0</m> since then <m>f'(x)<0</m>) and <m>f'(x)</m> achieves each value in <m>(0,1)</m> exactly twice on <m>[0,\infty)</m>.</p>
-
- <p>For <m>a \geq 1</m>, we claim that any line <m>y=ax+b</m> intersects <m>y=f(x)</m> exactly once. They must intersect at least once by the intermediate value theorem: for <m>x\ll 0</m>, <m>ax+b<0<f(x)</m>, while for <m>x \gg 0</m>, <m>ax+b>f(x)</m> since <m>\lim_{x\to\infty} \frac{\ln(1+x^2)}{x} = 0</m>. On the other hand, they cannot intersect more than once. Assume there are two points of intersection at <m>x_1, x_2</m> such that <m>x_1 \lt x_2</m> and  <m>f(x_i)=a x_i + b</m>, <m>i=1,2</m>.</p>
- <p>  For <m>a>1</m>, this follows from the mean value theorem.    Then there exists <m>c</m> with <m>x_1 \lt c \lt x_2</m> such that 
- <me>f'(c) = \frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{(a x_2 + b)-(a x_1+b)}{x2-x_1} = a</me> which is impossible since <m>f'(x)<a</m> for all <m>x</m>.</p>
- <p> For <m>a=1</m>, 
-<me>
-1 = \frac{(x_2+b)-(x_1+b)}{x_2-x_1} =\frac{f(x_2)-f(x_1)}{x_2-x_1}=\frac{\int_{x_0}^{x_1} f'(x)\,dx}{x_1-x_0} < 1,
-</me>
-which is a contradiction since <m>f'(x)</m> is continuous and <m>f'(x) \leq 1</m> with equality only at one point.</p>
-
- <p>Finally we consider <m>0<a<1</m>. We will see that there are two lines with slope <m>a</m> that are tangent to <m>y=f(x)</m>.  In both cases, the lines also intersect the functional curve at a second point.  However, if we shift the lower line down or the upper line up, we get a line that intersects at just one point. <xref ref="fig_2022A1" text="type-global" /> is a representative example, where <m>a=0.75</m>.</p>
- 
-              <figure xml:id="fig_2022A1">
-                <caption>Representative case when <m>0 \leq a \leq 1</m>
-                </caption>
-                <image source="images/fig_2022A1.png" width="60%">
-                    <description>The graph of <m>f(x)</m> and two lines with identical slopes that are tangent to <m>f(x)</m> at one point and intersects <m>f(x)</m> at a second point.</description>
-                </image>
-            </figure>
-
- 
- <p>The equation <m>f'(x) = a</m> has exactly two solutions, at <m>x=r_-</m> and <m>x=r_+</m> for <m>r_{\pm}</m> as defined above.
-If we define <m>g(x) = f(x)-ax</m>, then <m>g'(r_\pm)=0</m>; <m>g'</m> is strictly decreasing on <m>(-\infty,r_-)</m>, strictly increasing on <m>(r_-,r_+)</m>, and strictly decreasing on <m>(r_+,\infty)</m>; and <m>\lim_{x\to-\infty} g(x) = \infty</m> while <m>\lim_{x\to\infty} g(x) = -\infty</m>. It follows that <m>g(x)=b</m> has exactly one solution for <m>b<g(r_-)</m> or <m>b>g(r_+)</m>, exactly three solutions for <m>g(r_-)<b<g(r_+)</m>, and exactly two solutions for <m>b = g(r_\pm)</m>. That is, <m>y=ax+b</m> intersects <m>y=f(x)</m> in exactly one point if and only if <m>b<g(r_-)</m> or <m>b>g(r_+)</m>.</p>
-
-</example>
-
-
 <example xml:id="example-putnam-2002-A1"><title>Putnam 2002 A1</title>
 <p>The first problem in the 2002 Putnam was</p>
 <p>Let <m>k</m> be a fixed positive integer. The <m>n</m>-th derivative of
@@ -85,6 +38,51 @@ P_n(x) &amp; = (x^k - 1)^{n+1} \frac{d^n}{dx^n} \frac{1}{x^k - 1} \\
 </p>
  -->
 </example>
+
+<example xml:id="example-putnam-2022-A1"><title>Putnam 2022 A1</title>
+<p>The first problem in the 2022 Putnam was to determine all ordered pairs of real numbers <m>(a,b)</m> such that the line <m>>y = ax+b</m>> intersects the curve <m>y = \ln(1+x^2)</m> in exactly one point.</p>
+
+<p>The solution that follows is from the Putnam Archive, with some additional clarification.</p>
+<p>Write <m>f(x) = \ln(1+x^2)</m>.
+We show that <m>y=ax+b</m> intersects <m>y=f(x)</m> in exactly one point if and only if <m>(a,b)</m> lies in one of the following groups:
+<ul>
+<li><p>  <m>a=b=0</m></p></li>
+<li><p><m>|a| \geq 1</m>, arbitrary <m>b</m></p></li>
+<li><p><m>0 \lt |a| \lt 1</m>, and <m>b \lt \ln(1-r_-)^2-|a|r_-</m> or <m>b \gt \ln(1-r_+)^2-|a|r_+</m>, where <me>r_{\pm} = \frac{1 \pm \sqrt{1-a^2}}{a}.</me></p>
+</li>
+</ul>
+</p>
+
+
+ <p>Since the graph of <m>y=f(x)</m> is symmetric under reflection in the <m>y</m>-axis, it suffices to consider the case <m>a \geq 0</m>: <m>y=ax+b</m> and <m>y=-ax+b</m> intersect <m>y=f(x)</m> the same number of times. For <m>a=0</m>, by the symmetry of <m>y=f(x)</m> and the fact that <m>f(x)> 0</m> for all <m>x\neq 0</m> implies that the only line <m>y=b</m> that intersects <m>y=f(x)</m> exactly once is the line <m>y=0</m>.</p>
+
+ <p>We next observe that on <m>[0,\infty)</m>, <m>f'(x) = \frac{2x}{1+x^2}</m> increases on <m>[0,1]</m> from <m>f'(0)=0</m> to a maximum at <m>f'(1)=1</m>, and then decreases on <m>[1,\infty)</m> with <m>\lim_{x\to\infty} f'(x)=0</m>. In particular, <m>f'(x) \leq 1</m> for all <m>x</m> (including <m>x \lt 0</m> since then <m>f'(x) \lt 0</m>) and <m>f'(x)</m> achieves each value in <m>(0,1)</m> exactly twice on <m>[0,\infty)</m>.</p>
+
+ <p>For <m>a \geq 1</m>, we claim that any line <m>y=ax+b</m> intersects <m>y=f(x)</m> exactly once. They must intersect at least once by the intermediate value theorem: for <m>x \ll 0</m>, <m>ax+b \lt 0 \lt f(x)</m>, while for <m>x \gg 0</m>, <m>ax+b>f(x)</m> since <m>\lim_{x\to\infty} \frac{\ln(1+x^2)}{x} = 0</m>. On the other hand, they cannot intersect more than once. Assume there are two points of intersection at <m>x_1, x_2</m> such that <m>x_1 \lt x_2</m> and  <m>f(x_i)=a x_i + b</m>, <m>i=1,2</m>.</p>
+ <p>  For <m>a>1</m>, this follows from the mean value theorem.    Then there exists <m>c</m> with <m>x_1 \lt c \lt x_2</m> such that 
+ <me>f'(c) = \frac{f(x_2)-f(x_1)}{x_2-x_1} = \frac{(a x_2 + b)-(a x_1+b)}{x_2-x_1} = a</me> which is impossible since <m>f'(x) \lt a</m> for all <m>x</m>.</p>
+ <p> For <m>a=1</m>, 
+<me>
+1 = \frac{(x_2+b)-(x_1+b)}{x_2-x_1} =\frac{f(x_2)-f(x_1)}{x_2-x_1}=\frac{\int_{x_0}^{x_1} f'(x)\,dx}{x_1-x_0} \lt 1,
+</me>
+which is a contradiction since <m>f'(x)</m> is continuous and <m>f'(x) \leq 1</m> with equality only at one point.</p>
+
+ <p>Finally we consider <m>0 \lt a \lt 1</m>. We will see that there are two lines with slope <m>a</m> that are tangent to <m>y=f(x)</m>.  In both cases, the lines also intersect the functional curve at a second point.  However, if we shift the lower line down or the upper line up, we get a line that intersects at just one point. <xref ref="fig_2022A1" text="type-global" /> is a representative example, where <m>a=0.75</m>.</p>
+ 
+              <figure xml:id="fig_2022A1">
+                <caption>Representative case when <m>0 \leq a \leq 1</m>
+                </caption>
+                <image source="images/fig_2022A1.png" width="60%">
+                    <description>The graph of <m>f(x)</m> and two lines with identical slopes that are tangent to <m>f(x)</m> at one point and intersects <m>f(x)</m> at a second point.</description>
+                </image>
+            </figure>
+
+ 
+ <p>The equation <m>f'(x) = a</m> has exactly two solutions, at <m>x=r_-</m> and <m>x=r_+</m> for <m>r_{\pm}</m> as defined above.
+If we define <m>g(x) = f(x)-ax</m>, then <m>g'(r_\pm)=0</m>; <m>g'</m> is strictly decreasing on <m>(-\infty,r_-)</m>, strictly increasing on <m>(r_-,r_+)</m>, and strictly decreasing on <m>(r_+,\infty)</m>; and <m>\lim_{x\to-\infty} g(x) = \infty</m> while <m>\lim_{x\to\infty} g(x) = -\infty</m>. It follows that <m>g(x)=b</m> has exactly one solution for <m>b \lt g(r_-)</m> or <m>b>g(r_+)</m>, exactly three solutions for <m>g(r_-)\lt b \lt g(r_+)</m>, and exactly two solutions for <m>b = g(r_\pm)</m>. That is, <m>y=ax+b</m> intersects <m>y=f(x)</m> in exactly one point if and only if <m>b\lt g(r_-)</m> or <m>b\gt g(r_+)</m>.</p>
+
+</example>
+
 <example xml:id="example-riemann-limit"><title>Riemann Sums and a challenging integral</title>
 <idx>Riemann Sum</idx>
 <p>Typical students often have more expertise in calculus than any other subject, but there are often gaps in their understanding of the topic.  One of them is Riemann sums and their role in integration.  A common textbook example is to start with a right Riemann sum of <m>\int_0^1 x^5 \, dx</m>, 

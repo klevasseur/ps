@@ -4,7 +4,7 @@
 <title>Inequalities</title>
 <introduction><p>As with most topics, we could spend a whole semester on inequalities.  Here we concentrate on Jensen Inequality,  the relationship between the different means, and the Cauchy-Bunyakovsky-Schwarz inequality. We also introduce Young's inequality as optional reading.  </p>
 </introduction>
-<section><title>Jensen's Inequality</title>
+<section><title>Jensen's Inequality</title><idx>Convex Function</idx>
 <p>In calculus one hears of concave upward functions, which are function with a positive second derivative.  Functions of this type are also called convex functions.  But convex function is more general than that.  A function is convex if any line segment connecting two points on its graph lies above the graph of the function. This translates to the more formal definition that <m>f</m> is convex on an interval <m>[a,b]</m>, if for <m>a \leq t_1 \lt t_2 \leq b</m>, and <m>0 \leq \lambda \leq 1</m> it is true that 
 <me>f(\lambda t_1 + (1-\lambda) t_2) \leq \lambda f(t_1)+(1-\lambda)f(t_2).</me>
 This is the simplest form of Jensen's inequality. A more general inequality follows. </p> 
@@ -15,7 +15,7 @@ This is the simplest form of Jensen's inequality. A more general inequality foll
 <me>f\left(\sum_{k=1}^n \lambda_k t_k \right) \leq  \sum_{k=1}^n \lambda_k  f(t_k).</me></p>
 </statement>
 </theorem>
-<p>Although Jensen's inequality is most frequently stated for convex function, it also has a counterpart for concave functions, for which line segments lie below the graph.  The only change is to switch the inequality symbol.</p>
+<p><idx>Concave Function</idx>Although Jensen's inequality is most frequently stated for convex function, it also has a counterpart for concave functions, for which line segments lie below the graph.  The only change is to switch the inequality symbol.</p>
 </section>
 
 <section xml:id="s-means"><title>Means</title>
@@ -301,9 +301,9 @@ six edges of <m>T</m>.  What is the maximum possible volume of <m>T</m>?
 <me>\begin{split}
 (1+a_1)(1+a_2)\cdots(1+a_n) &amp;\leq \left(\frac{\sum_{k=1}^n 1+a_k}{n}\right)^n \quad \textrm{by the AM/GM inequ.}\\
 	&amp;=\left(\frac{n+s}{n}\right)^n\\
-	&amp;=\sum_{k=0}^n \binomial{n}{k} \frac{s^k}{n^k}\\
+	&amp;=\sum_{k=0}^n \binom{n}{k} \frac{s^k}{n^k}\\
 	&amp;=1 + \frac{n s}{n} + \frac{n(n-1)}{2} \frac{s^2}{n^2}+ \frac{n(n-1)(n-1)}{6} \frac{s^3}{n^3}n +\cdots\\
-	&amp;\leq  1 + s + frac{s^2}{2} + frac{s^3}{6}+ \cdots + frac{s^n}{n!}
+	&amp;\leq  1 + s + \frac{s^2}{2} + \frac{s^3}{6}+ \cdots + \frac{s^n}{n!}
 	\end{split}
 </me>
 </p></solution>
