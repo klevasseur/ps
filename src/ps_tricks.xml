@@ -8,7 +8,7 @@
 <section><title>Telescoping Sums</title>
 <idx>Telescoping Sum</idx>
 <p>Telescoping sums are occasionally embedded in more challenging problems than this one.</p>
-<example><p>Let <m>f(n)=\sum_{k=1}^n \frac{1}{\sqrt{k}+\sqrt{k+1}}</m>.  Evaluate <m>f(9999)</m>.</p>
+<example><idx>Nguyen, Tung</idx><p>Let <m>f(n)=\sum_{k=1}^n \frac{1}{\sqrt{k}+\sqrt{k+1}}</m>.  Evaluate <m>f(9999)</m>.</p>
 <p>Rationalizing the denominator reveals a <term>telescoping sum</term> here.  For any nonnegative <m>k</m>,
 <me>\begin{split}
 \frac{1}{\sqrt{k} + \sqrt{k + 1}} &amp; = \frac{\sqrt{k + 1} - \sqrt{k}}{(\sqrt{k} + \sqrt{k + 1})(\sqrt{k + 1} - \sqrt{k})}\\ 
