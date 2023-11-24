@@ -2,11 +2,5 @@
 <project ptx-version="2">
 <targets>
     <target name="print" format="pdf" output-dir="print" />
- -->
-<!-- 
-    <target name="web" format="html" output-dir="web" />
-    <target name="rs" format="html" platform="runestone" />
-    <target name="print" format="pdf" />
- -->
 </targets>
 </project>
