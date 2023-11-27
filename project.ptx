@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project ptx-version="2">
 <targets>
-    <target name="print" format="pdf" output-dir="print" />
+    <target name="print" format="pdf" output-dir="print" source="src" />
 </targets>
 </project>
