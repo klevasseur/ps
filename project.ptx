@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project ptx-version="2">
+<project ptx-version="2"  source="src" >
 <targets>
-    <target name="print" format="pdf" output-dir="print" source="src" />
+    <target name="print" format="pdf" output-dir="print"/>
+	 <target name="web" format="html" output-dir="web"/>
+<!-- 
+    <target name="rs" format="html" platform="runestone" />
+ -->
 </targets>
 </project>
