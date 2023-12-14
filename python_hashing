@@ -1,0 +1,1 @@
+trees={}trees[degreesequence]=[tree1,tree2,...]trees.keys()trees.values()trees.itemsdegreesequence in trees

@@ -1,0 +1,2 @@
+#!/bin/bash
+xsltproc --xinclude --stringparam exercise.divisional.solution "no" --stringparam exercise.divisional.answer  "no" --stringparam exercise.divisional.hint  "yes"   ../../pretext/xsl/pretext-latex.xsl src/main.ptx > ps_ns.tex

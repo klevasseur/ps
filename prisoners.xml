@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<exercise xml:id="prisoners"></statement>
+<p>Alice and Bob are prisoners of warden Charlie. Alice will be brought into Charlie's room on Sunday and shown a standard deck of 52 cards, face-up in a row in some arbitrary order. Alice can, if she wishes, interchange two cards. She then turns all cards face-down in their places and leaves the room.</p>
+
+<p>Bob is then brought to the room. Charlie calls out a random target card. Bob can turn over cards, at most 26, in an attempt to locate the target. He can base his choice of card to flip on what he has seen so far. If Bob finds the target, both prisoners are freed immediately. If he fails to find the target, they stay imprisoned.</p>
+
+<p>Find a strategy that guarantees success for the prisoners in all cases.</p>
+
+<p>Alice and Bob have the game described to them on Saturday and they are allowed to plan a strategy. On Sunday, there is no communication whatever between the prisoners; in particular, Alice has no idea what the target card will be.</p>
+</statement>
+<hint>Think of the arrangment of the cards as a permutation of the deck from some standard, prearranged ordering.</hint>
+<solution>On Saturday, Alice and Bob decide on a numbering system for the cards from 1 to 52. The arrangement that Charlie gives the cards defines a permutation, <m>\pi</m> of the numbers 1 through 52.  When Bob is told the target card, if it is card <m>k</m>, then he proceeds by flip over the card in position <m>k</m>.  If <m>l \neq k</m> is revealed, then proceed to the position of card <m>l \eq \pi(k)</m> and flip it over.  Again, if you don't see card <m>k</m> the card that is revealed determines which card to flip next.   The maximum number of flips that will be needed is the length of the cycle in <m>\pi</m> that contains <m>k</m>. If <m>k</m> happens to be in a cycle of length 27 or more, then there is a chance that Bob will fail.  This is where Alice comes in.  There can be only one cycle of length 27 or more.  Here objective is to simply break the cycle, which is always possible.  There is no need for her to do anything if all cycles have length 26 or less.
+</solution>
+
+<p>Source:  Originator not known.<!--  Piotr Krason told Kiran Kedlaya told Joe Buhler, and it is in the latest issue of Emissary, the newsletter of MSRI, Berkeley, page 11. The newsletter (with other nice problems in the problem section of Joe Buhler and Elwyn Berlekamp) is available at https://www.msri.org/web/msri/about-msri/news/emissary-newsletter --></p>
+</exercise>

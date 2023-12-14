@@ -1,0 +1,47 @@
+
+<exercise>
+<statement><p>How many positive integers not exceeding 2019 are multiples of 3 or 4 but not 5? You would count the numbers 3, 12, and 16, but not 15 or 20.</p></statement>
+<solution><p>The number of integers that are multiples of 3 or 4, but inclusion-exclusion is <m>\left\lfloor \frac{2019}{3}\right\rfloor +\left\lfloor \frac{2019}{4}\right\rfloor
+-\left\lfloor \frac{2019}{12}\right\rfloor =673+504-168=1009</m>. But we need to remove the multiples of 5 from this total. The multiples of
+5 are <m>\left\lfloor \frac{2019}{15}\right\rfloor +\left\lfloor \frac{2019}{20}\right\rfloor -\left\lfloor \frac{2019}{60}\right\rfloor =134+100-33=201</m>. The final answer is then <m>1009-201=808</m>.
+</p></solution></exercise>
+
+<exercise>
+<statement><p>For a positive constant <m>k</m>, consider the region <m>\mathcal{R}</m> bounded by the line<m>y = k x</m> and the parabola <m>y = x^2</m>. There is only
+one choice of <m>k</m> such that the solids obtained by revolving <m>\mathcal{R}</m> about the <m>x</m>-axis and the <m>y</m>-axis have the same
+volume. Find the value of this special choice of <m>k</m>.</p></statement>
+<solution><p>The volume of revolution around the <m>x</m> axis is 
+<me>\int_0^k \pi \left((k x)^2-x^4\right) \, dx=\frac{2\pi }{15}k^5</me>.
+Around the <m>y</m> axis we have (using shells) 
+<me>\int _0^k2\pi  x\left(k x-x^2\right)dx=\frac{\pi }{6}k^4</me>.
+Therefore the special <m>k</m> is <m>\frac{5}{4}</m>.
+</p></solution>
+</exercise>
+
+<exercise>
+<statement><p>A rectangle with sides <m>a</m> and <m>b</m>, <m>a<b,</m> is rotated about its center, as shown in the figure, so that the two rectangles share two vertices.
+ What is the area of the parallelogram that makes up the intersection of the two rectangles?</p></statement>
+<solution><p>
+Let <m>c</m> be the length of the horizontal sides of the parallelogram, so the area we are looking for is <m>a c</m>. The triangles that are outside
+the parallelogram are right triangles with hypotenuse <m>c</m>, and sides <m>b-c</m> and <m>a</m>.  
+<me>(b-c)^2+a^2= c^2 \Rightarrow \textrm{   }c=\frac{a^2+ b^2}{2b }\textrm{  }\Rightarrow \textrm{  Area } =\frac{a}{2b} \left(a^2+ b^2\right)</me>
+</p></solution></exercise>
+
+<exercise>
+<statement><p>Show that every set of <m>n</m> integers has a nonempty subset such that the sum of its elements is divisible by <m>n</m>.</p></statement>
+<solution><p>
+Let <m>a_1, a_2, \dots , a_n</m> be the integers and let <m>s_1, s_2, \dots , s_n</m> be the partial sums, <m>s_k=\sum _{i=1}^k
+a_i</m>.  If one of the sums is divisible by <m>n</m> then we are done, so assume none are multiples of <m>n</m>.  By the pigeonhole principle,
+there must be two partial sums that have the same residue mod <m>n</m>.  Let <m>l \lt m </m> be such that 
+	<me>s_l\equiv s_m(mod n) \Rightarrow s_m-s_l= \sum _{k=l+1}^m a_k=n q</me> for some integer <m>q</m>.  Therefore the set we are looking for is <m>\left\{a_{l+1}, \ldots, a_m\right\}</m>.
+</p></solution>
+</exercise>
+
+<exercise>
+<statement><p>Suppose two teams play a series of games in which the probability that either wins any of the games is <m>\frac{1}{2}</m>.  If they play a best
+of seven series, where the winner is the first to win four games, what is the probability that the series lasts seven games?</p></statement>
+<solution><p>
+In order for the series to go seven games, the teams must split the first six games. Imagine that they play out six games no matter what happens.
+There are <m>2^6</m> equally likely outcomes and in <m>\binom{6}{3}=20</m> of the cases the teams split. Therefore, the probability of a seven games
+series <m>\frac{20}{2^6}= \frac{5}{16}</m>.</p></solution>
+</exercise>

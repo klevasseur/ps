@@ -1,0 +1,2 @@
+#!/bin/bash
+java -classpath ../../jing-trang/build -Dorg.apache.xerces.xni.parser.XMLParserConfiguration=org.apache.xerces.parsers.XIncludeParserConfiguration -jar ../../jing-trang/build/jing.jar ../../pretext/schema/pretext.rng src/main.ptx > ps_validation.txt

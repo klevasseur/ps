@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project ptx-version="2"  source="src" >
 <targets>
-    <target name="print" format="pdf" output-dir="print"/>
-	 <target name="web" format="html" output-dir="web"/>
+    <target 
+    	name="print" 
+    	format="pdf" 
+    	output-dir="print" 
+    	publication="publication.ptx" />
+	<target name="web" format="html" output-dir="web" publication="publication.ptx" />
 <!-- 
     <target name="rs" format="html" platform="runestone" />
  -->

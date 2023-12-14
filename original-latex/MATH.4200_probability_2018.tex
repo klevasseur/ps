@@ -1,0 +1,84 @@
+%% AMS-LaTeX Created with the Wolfram Language : www.wolfram.com
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
+\begin{document}
+
+\title{Probability}
+\author{}
+\date{}
+\maketitle
+
+\pmb{ \textit{ Note:}} { }If \(x\) is a random variable with outcomes \(x_1, x_2. x_3, \ldots\) and corresponding probabilities \(p_1, p_2, p_3,
+\ldots\), then the \pmb{ expected value} of \(x\) is \(x_1p_2+ x_2p_2+ x_3p_3+\ldots\) .
+
+Warm-up: { }What is the probability that a random five-card poker hand is a flush? a straight? 
+
+Shanille O{'}Keal shoots free throws on a basketball court. She hits the first and misses the second, and thereafter the probability that she hits
+the next shot is equal to the proportion of shots she has hit so far. What is the probability that she hits exactly 50 of her first 100 shots?
+
+King Arthur is sick of fights for inheritance and decides to announce the following law. From now on, no family will be allowed to have another child
+after a boy is born. What will happen to the percentage of males if the law is followed?
+
+\pmb{ NCAA basketball pool.} There are 64 teams who play single elimination tournament, hence 6 rounds, and you have to predict all the winners in
+all 63 games. Your score is then computed as follows: 32 points for correctly predicting the final winner, 16 points for each correct finalist, and
+so on, down to 1 point for every correctly predicted winner for the first round. { }Knowing nothing about any team, you flip fair coins to decide
+every one of your 63 bets. Compute the expected number of points.
+
+Three real numbers \textit{ a}, \textit{ b}, \textit{ c} are randomly (and uniformly) chosen from the interval [0, 1]. What is the probability that
+there exists a triangle with sides \(a\), \(b\), \(c\)?
+
+Let \(p_n\) be the probability that \(c + d\) is a perfect square, where the integers \textit{ c} and \textit{ d} are selected independently at random
+from the set \(\{1, . . . , n\}\). { }Find { }\(\lim_{n\to \infty } \, \sqrt{n} p_n\).
+
+Two real numbers \(x\) and \(y\) are chosen at random in the interval (0,1) with respect to the uniform distribution. What is the probability that
+the closest integer to \(x/y\) is even? Express the answer in the form \(r + s \pi\), where \(r\) and \(s\) are rational numbers.
+
+Let \(\alpha  \in  [0,1]\) be an arbitrary number, rational or irrational. The only randomizing device is an unfair coin, with probability \(p \in
+ (0,1)\) of heads. Design a game between Alice and Bob so that Alice{'}s winning probability is exactly \(\alpha\). The game of course has to end
+in a finite number of tosses with probability 1.
+
+ Begin with the set \(\{1,2,\text{...},n\}\). { }Toss a coin \(n\) times, once for each member of the set. Keep the elements that scored {'}Heads{'}
+and discard the elements that got {'}Tails{'}. You now have a certain subset \(S\) of the original set. Call this whole process a {'}step{'}. { }Now
+take a step from \(S\). That is, toss a coin for each element of \(S\), and keep those that get {'}Heads{'}, getting a sub-subset \(S'\), etc. This
+game halts when the empty set is reached. { }Let \(f(n,k,r)\) be the probability that after \(k\) steps, exactly \(r\) objects remain. \\
+(a) Find a recurrence relation for \(f\), find the generating function for f, and find f itself. \\
+(b) What is the average number of steps in a complete game?
+
+An urn contains a number of colored balls, with the same number of balls in each color. If 20 balls of a new color are added to the urn, the probability
+of drawing (without replacement) two balls of the same color is not changed. How many balls are in the urn (before\\
+the new balls are added)?
+
+
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Quit}[]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Solve}\left[\frac{n-1}{c n-1}==\left(\frac{c n}{20+c n} \right)\left(\frac{n-1}{c n + 19}\right)+\left(\frac{20}{20+ c n}\right)\left(\frac{19}{20+c
+n -1}\right),\{n\}\right]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{\{n\to 0\},\left\{n\to \frac{21 c-19}{2 c}\right\}\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{c=19 ; n = 10}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Map}\left[\frac{21\#-19}{2\#}\&,\text{Range}[1,40]\right]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{1,\frac{23}{4},\frac{22}{3},\frac{65}{8},\frac{43}{5},\frac{107}{12},\frac{64}{7},\frac{149}{16},\frac{85}{9},\frac{191}{20},\frac{106}{11},\frac{233}{24},\frac{127}{13},\frac{275}{28},\frac{148}{15},\frac{317}{32},\frac{169}{17},\frac{359}{36},10,\frac{401}{40},\frac{211}{21},\frac{443}{44},\frac{232}{23},\frac{485}{48},\frac{253}{25},\frac{527}{52},\frac{274}{27},\frac{569}{56},\frac{295}{29},\frac{611}{60},\frac{316}{31},\frac{653}{64},\frac{337}{33},\frac{695}{68},\frac{358}{35},\frac{737}{72},\frac{379}{37},\frac{41}{4},\frac{400}{39},\frac{821}{80}\right\}\)
+\end{doublespace}
+
+\end{document}

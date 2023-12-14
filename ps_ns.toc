@@ -1,0 +1,76 @@
+\hypertarget {book-ps}{}
+\contentsline {chapter}{Preface}{iv}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Format for a Problem Solving Class}{1}{chapter.3}%
+\contentsline {section}{\numberline {1.1}Before the first class}{1}{section.4}%
+\contentsline {section}{\numberline {1.2}The first class}{1}{section.5}%
+\contentsline {section}{\numberline {1.3}Subsequent classes}{2}{section.6}%
+\contentsline {section}{\numberline {1.4}Some ``Prerequisite'' Topics}{2}{section.7}%
+\contentsline {chapter}{\numberline {2}Induction and Pigeonholes}{4}{chapter.10}%
+\contentsline {section}{\numberline {2.1}Mathematical Induction}{4}{section.11}%
+\contentsline {section}{\numberline {2.2}The Pigeonhole Principle}{7}{section.32}%
+\contentsline {section}{\numberline {2.3}Problems}{8}{section.37}%
+\contentsline {chapter}{\numberline {3}Tricks of the Trade}{10}{chapter.38}%
+\contentsline {section}{\numberline {3.1}Telescoping Sums}{10}{section.39}%
+\contentsline {section}{\numberline {3.2}Completing the Product}{10}{section.42}%
+\contentsline {section}{\numberline {3.3}Trig Substitution}{11}{section.44}%
+\contentsline {section}{\numberline {3.4}Generalization}{12}{section.48}%
+\contentsline {section}{\numberline {3.5}Exercises}{13}{section.55}%
+\contentsline {chapter}{\numberline {4}Counting and Indirect Proofs}{14}{chapter.56}%
+\contentsline {section}{\numberline {4.1}Counting Two Ways}{14}{section.57}%
+\contentsline {section}{\numberline {4.2}Indirect Proofs}{14}{section.60}%
+\contentsline {section}{\numberline {4.3}Problems}{15}{section.65}%
+\contentsline {chapter}{\numberline {5}Calculus}{17}{chapter.70}%
+\contentsline {section}{\numberline {5.1}Examples}{17}{section.71}%
+\contentsline {section}{\numberline {5.2}Exercises}{20}{section.80}%
+\contentsline {chapter}{\numberline {6}Number Theory}{22}{chapter.84}%
+\contentsline {section}{\numberline {6.1}Primes and Relatively Prime Pairs}{22}{section.85}%
+\contentsline {section}{\numberline {6.2}Residues}{23}{section.90}%
+\contentsline {section}{\numberline {6.3}Euler's Theorem}{23}{section.95}%
+\contentsline {section}{\numberline {6.4}Problems}{24}{section.102}%
+\contentsline {chapter}{\numberline {7}Inequalities}{27}{chapter.108}%
+\contentsline {section}{\numberline {7.1}Jensen's Inequality}{27}{section.109}%
+\contentsline {section}{\numberline {7.2}Means}{27}{section.112}%
+\contentsline {section}{\numberline {7.3}The CBS Inequality}{29}{section.117}%
+\contentsline {section}{\numberline {7.4}Young's Inequality}{30}{section.123}%
+\contentsline {section}{\numberline {7.5}Problems}{31}{section.143}%
+\contentsline {chapter}{\numberline {8}Sequences and Series}{33}{chapter.146}%
+\contentsline {section}{\numberline {8.1}The Fibonacci sequence}{33}{section.147}%
+\contentsline {section}{\numberline {8.2}Telescoping Series}{33}{section.148}%
+\contentsline {section}{\numberline {8.3}Generating Functions}{34}{section.151}%
+\contentsline {section}{\numberline {8.4}Problems}{35}{section.164}%
+\contentsline {chapter}{\numberline {9}Polynomials}{37}{chapter.167}%
+\contentsline {section}{\numberline {9.1}Prerequisite Knowledge}{37}{section.168}%
+\contentsline {section}{\numberline {9.2}Examples}{38}{section.186}%
+\contentsline {section}{\numberline {9.3}The Chinese Remainder Theorem Revisited}{39}{section.189}%
+\contentsline {section}{\numberline {9.4}Exercises}{40}{section.190}%
+\contentsline {chapter}{\numberline {10}Games}{42}{chapter.203}%
+\contentsline {section}{\numberline {10.1}Finite Two Person Games - Nim}{42}{section.204}%
+\contentsline {section}{\numberline {10.2}Mind Games}{42}{section.205}%
+\contentsline {section}{\numberline {10.3}See also}{43}{section.210}%
+\contentsline {section}{\numberline {10.4}Problems}{43}{section.211}%
+\contentsline {chapter}{\numberline {11}Geometry}{45}{chapter.212}%
+\contentsline {section}{\numberline {11.1}Examples}{45}{section.216}%
+\contentsline {section}{\numberline {11.2}Exercises}{46}{section.225}%
+\contentsline {chapter}{\numberline {12}Probability}{49}{chapter.232}%
+\contentsline {section}{\numberline {12.1}Conditional Probability}{49}{section.233}%
+\contentsline {section}{\numberline {12.2}Geometric Probability}{49}{section.240}%
+\contentsline {section}{\numberline {12.3}Exercises}{50}{section.245}%
+\contentsline {chapter}{\numberline {13}Linear Algebra}{53}{chapter.248}%
+\contentsline {section}{\numberline {13.1}Examples}{53}{section.249}%
+\contentsline {section}{\numberline {13.2}Exercises}{53}{section.252}%
+\contentsline {chapter}{\numberline {14}Abstract Algebra}{55}{chapter.253}%
+\contentsline {section}{\numberline {14.1}Groups}{55}{section.254}%
+\contentsline {section}{\numberline {14.2}Rings and Fields}{55}{section.257}%
+\contentsline {section}{\numberline {14.3}Exercises}{56}{section.258}%
+\contentsline {chapter}{\numberline {15}2020 UML Problem Solving Competition}{58}{chapter.267}%
+\contentsline {section}{\numberline {15.1}Results}{58}{section.268}%
+\contentsline {section}{\numberline {15.2}Problems}{58}{section.269}%
+\contentsline {chapter}{\numberline {16}2022 UML Problem Solving Competition}{60}{chapter.272}%
+\contentsline {section}{\numberline {16.1}Results}{60}{section.273}%
+\contentsline {section}{\numberline {16.2}Problems}{60}{section.274}%
+\contentsline {part}{Appendices}{62}{section*.275}%
+\contentsline {chapter}{\numberline {A}Table of Common Sequences}{62}{appendix.276}%
+\contentsline {part}{Back Matter}{64}{section*.277}%
+\contentsline {chapter}{References}{64}{appendix*.278}%
+\contentsline {chapter}{Index}{66}{section*.279}%
+\contentsfinish 
