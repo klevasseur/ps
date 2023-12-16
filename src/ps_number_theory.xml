@@ -38,8 +38,10 @@
 We can easily verify that for any <m>n</m>, the residue of <m>n^2\pmod{7}</m> is never 6.</p>
 </example>
 
-<example xml:id="example-crt"><title>Chinese Remainder Theorem</title>
+<example xml:id="example-crt"><title>Sun Tzu’s Theorem</title>
+<idx>Sun Tzu’s Theorem</idx>
 <idx>Chinese Remainder Theorem</idx>
+<p>Sun Tzu’s Theorem deals with systems of linear conguences.  Here, we see that examine a special case of the theorem.</p>
 <p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. Then there is a unique integer, <m>x</m>, in the set
 <m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a \pmod{m}</m> and
  <m>x\equiv b\pmod{n}</m>.</p>
