@@ -101,7 +101,7 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 </statement>
 <hint><p>Start with proving  <m>\sqrt{a b}+ \sqrt{(1-a)(1-b)} \leq 1</m></p></hint>
 <!-- 
-<solution><p></p>
+<solution component="im"><p></p>
 </solution>
  -->
 </exercise>
@@ -109,7 +109,7 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 <statement>
 <p>Evalute <m>\int x^3 \sqrt{4-9x^2} \, dx</m></p>
 </statement>
-<solution><p>Use the substitution <m>x = \frac{2}{3} \sin{\theta}</m>.  The final value is <m>-\frac{\left(4-9 x^2\right)^{3/2}
+<solution component="im"><p>Use the substitution <m>x = \frac{2}{3} \sin{\theta}</m>.  The final value is <m>-\frac{\left(4-9 x^2\right)^{3/2}
    \left(27 x^2+8\right)}{1215}</m>.</p>
 </solution>
 </exercise>
@@ -119,7 +119,7 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 </statement>
 <!-- 
 <hint><p>Start with proving  <m>\sqrt{a b}+ \sqrt{(1a)(1b)} \leq 1</m></p></hint>
-<solution><p></p>
+<solution component="im"><p></p>
 </solution>
  -->
 </exercise>
@@ -128,7 +128,7 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 <statement>
 <p>Let <m>f(x)=\frac{1}{\sqrt{1+x}}</m>.  Estimate the value of <m>f(\frac{1}{2})</m> with a fractional binomial expansion so that the error is less than <m>\frac{1}{100}</m>.</p>
 </statement>
-<solution><p>The fractional binomial expansion of <m>f(x)</m> is the alternating series
+<solution component="im"><p>The fractional binomial expansion of <m>f(x)</m> is the alternating series
  <me>1 - \frac{1}{2} x +  \frac{3}{8} x^2- \frac{5}{16} x^3 +  \frac{35}{128} x^4 - \cdots </me> which converges when <m>x=\frac{1}{2}</m>.   The fourth degree term at <m>\frac{1}{2}</m> has a value less than <m>\frac{1}{100}</m>, and so we can estimate the value of <m>f(\frac{1}{2})</m> with sufficient accuracy by adding the previous terms, which gives us an estimate of <m>\frac{103}{128}</m>.</p>
 </solution>
 </exercise>
@@ -139,7 +139,7 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 <p>Complete the derivation of the value of the integral in <xref ref="example-putnam-integral" />.</p>
 </statement>
 <!-- 
-<solution><p></p>
+<solution component="im"><p></p>
 </solution>
  -->
 </exercise>
@@ -147,7 +147,7 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 <statement>
 <p>Evaluate <m>\int_0^1 \frac{t^3-1}{\log (t)} \, dt</m>.</p>
 </statement>
-<solution>
+<solution component="im">
 <p>Let <m>G(x)=\int_0^1 \frac{t^x-1}{\log (t)} \, dt </m>. By the Leibniz Integration Rule, 
 <me>G'(x)=\int_0^1 \partial_x \left(\frac{t^x-1}{\ln(t)}\right)\, dt = \int_0^1 t^x \, dt = \frac{1}{x+1}.</me>
 Therefore,  <m>G(x) = \ln{\lvert x+1 \rvert} + C</m>, and since <m>G(0)=0</m>, <m>C=0</m>.   Finally we get <m>G(3) = ln(4)</m>.</p>

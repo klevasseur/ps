@@ -223,19 +223,7 @@ suppose that <m>T_{n}</m> and <m>T_{m+1}</m> have a common factor <m>d</m> great
 </solution>
  -->
  </exercise>
-<!-- 
-<exercise number="old9">
-<statement>
-<p>Find all integral solutions to <m>\left|p^r-q^s\right|=1</m>, where <m>p</m> and <m>q</m> are primes and <m>r</m> and <m>s</m> are positive
-integers greater than or equal to 2. Prove that there are no other solutions than the ones you list.
-</p>
-</statement>
-<hint><p></p></hint>
-<solution>
-<p>This was A3 in the 1976 Putnam.</p>
-</solution>
- </exercise>
- -->
+
 <exercise>
 <statement>
 <p>What is the sum of the digits of the sum of the digits of the sum of the digits of <m>4444^{4444}</m>?</p>
@@ -317,6 +305,19 @@ Some calculation can be avoided if you are aware of a Theorem attributed to Lega
 <p>A second proof, attributed to Nicholas Raymond, is to note that there are <m>2^n</m> different positive integers with <m>n</m> digits, each 2 or 3.  We can prove that there is a one-to one correspondence between these integers and the residues <m>\mod{2^n}</m>, <m>\{ 0, 1, 2, \dots, 2^{n-1} \}</m>.  This implies that exactly one of these integers is congruent to 0 and so must be divisible by <m>2^n</m>.</p>
 </solution>
 </exercise>
+
+<exercise>
+<statement>
+<p>Show that there is a positive term of the Fibonacci sequence that is divisible by 1000. Recall that the Fibonacci sequence is defined by <m>F_0=0</m>, <m>F_1= 1</m> and for <m>n>1</m>, <m>F_n= F_{n-1}+F_{n-2}</m>. Note: The starting values of 0 and 1 are often replaced with 1 and 1, but for this problem it's slightly easier to structure a proof.
+</p>
+</statement>
+<hint><p>Start with two pairs of consecutive terms that have identical remainders mod 1000.</p>
+</hint>
+<solution component="im">
+<p>For every pair of consecutive Fibonacci numbers <m>(F_n,F_{n+1})</m> map to the pair <m>(F_n mod 1000,F_{n+1} mod 1000)</m>.  Since there is an infinite number of pairs and a finite number of modular pairs, we can start with any pair of pairs <m>(F_n,F_{n+1})</m> and <m>(F_m,F_{m+1})</m> that map tot he same image.  Assume <m>n \lt m</m>.  It's not difficult to see that the pair of pairs <m>(F_{n-1},F_{n})</m> and <m>(F_{m-1},F_{m})</m> also map to the same pair mod 1000. If we repeat the process <m>n-1</m> more times we have two pairs <m>(F_{0},F_{1})</m> and <m>(F_{m-n},F_{m-n+1})</m> that map to the same pair mod 1000. But since <m>F_0 = 0</m>, we know that <m>F_{m-n} mod 1000 = 0</m> and <m>F_{n-m}</m> is divisible by 1000.</p>
+</solution>
+</exercise>
+
 <exercise><statement>
 <p>(2019 Putnam B-1) Denote by <m>\mathbb{Z}^2</m> the set of all points <m>(x,y)</m> in the plane with integer coordinates. For each integer <m>n \geq 0</m>, let <m>P_n</m> be the subset of <m>\mathbb{Z}^2</m> consisting of the point <m>(0,0)</m> together with all points <m>(x,y)</m> such that <m>x^2 + y^2 = 2^k</m> for some integer <m>k \leq n</m>. Determine, as a function of <m>n</m>, the number of four-point subsets of <m>P_n</m> whose elements are the vertices of a square.</p>
 </statement>

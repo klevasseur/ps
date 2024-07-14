@@ -205,7 +205,7 @@ This completes the induction proof.</p>
 <p>Start by observing that 1 is a Fibonacci number.  Now assume that  all <m>k</m>, <m>1 \leq k \leq n</m> are the sum of distinct nonconsecutive Fibonacci numbers.   Consider <m>n+1</m>.  We are done if <m>n+1</m> is a Fibonacci number.   Otherwise, <m>n+1</m> is between Fibonacci numbers <m>F_m</m> and <m>F_{m+1}</m>, and we use the former.  
 <me>
 F_m \lt n+1 \lt F_{m+1} \quad	 \Rightarrow \quad  0\lt (n+1)-F_m \lt F_{m+1}-F_m = F_{m-1}</me>
-Since what is left if less than <m>F_{m-1}</m>, we can apply the induction hypothesis to complete our decomposition of <m>n+1</m>. </p>
+Since what is left if less than <m>F_{m-1}</m>, we can apply the induction hypothesis to complete our decomposition of <m>n+1</m>, not using <m>F_{m-1}. </p>
 </solution>
 </exercise>
 <exercise number="8">
@@ -221,12 +221,11 @@ Since what is left if less than <m>F_{m-1}</m>, we can apply the induction hypot
 </exercise>
 <exercise number="9">
 <statement>
-<p>Show that there is a positive term of the Fibonacci sequence that is divisible by 1000. Recall that the Fibonacci sequence is defined by <m>F_0=0</m>, <m>F_1= 1</m> and for <m>n>1</m>, <m>F_n= F_{n-1}+F_{n-2}</m>. Note: The starting values of 0 and 1 are often replaced with 1 and 1, but for this problem it's slightly easier to structure a proof.
+<p>Prove that if <m>n\geq 6</m> then it is possible to cut a square into <m>n</m> smaller squares. The squares must be intact - not pasted together from non-square rectangles.
 </p>
 
 </statement>
-<hint><p>Start with two pairs of consecutive terms that have identical remainders mod 1000.</p>
-</hint>
+<hint><p>One proof involves an induction with a three-part basis.</p></hint>
 </exercise>
 <exercise number="10">
 <statement>
