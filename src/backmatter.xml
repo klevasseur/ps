@@ -19,6 +19,10 @@
 </solutions>
  -->
 
+<appendix><title>Glossary</title>
+ <xi:include href="glossary.xml"/>
+</appendix>
+
 <xi:include href="./App-numbers.xml" />
 
 <!-- --> <!-- inline="hint solution answer" divisional="hint solution answer" project="hint solution answer" -->

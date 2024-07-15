@@ -205,7 +205,7 @@ This completes the induction proof.</p>
 <p>Start by observing that 1 is a Fibonacci number.  Now assume that  all <m>k</m>, <m>1 \leq k \leq n</m> are the sum of distinct nonconsecutive Fibonacci numbers.   Consider <m>n+1</m>.  We are done if <m>n+1</m> is a Fibonacci number.   Otherwise, <m>n+1</m> is between Fibonacci numbers <m>F_m</m> and <m>F_{m+1}</m>, and we use the former.  
 <me>
 F_m \lt n+1 \lt F_{m+1} \quad	 \Rightarrow \quad  0\lt (n+1)-F_m \lt F_{m+1}-F_m = F_{m-1}</me>
-Since what is left if less than <m>F_{m-1}</m>, we can apply the induction hypothesis to complete our decomposition of <m>n+1</m>, not using <m>F_{m-1}. </p>
+Since what is left if less than <m>F_{m-1}</m>, we can apply the induction hypothesis to complete our decomposition of <m>n+1</m>, not using <m>F_{m-1}</m>. </p>
 </solution>
 </exercise>
 <exercise number="8">

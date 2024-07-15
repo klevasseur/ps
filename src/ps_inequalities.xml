@@ -16,13 +16,18 @@ This is the simplest form of Jensen's inequality. A more general inequality foll
 </statement>
 </theorem>
 <p><idx>Concave Function</idx>Although Jensen's inequality is most frequently stated for convex function, it also has a counterpart for concave functions, for which line segments lie below the graph.  The only change is to switch the inequality symbol.</p>
+<example><p>We can apply the concave version of Jenson's inequality to prove that if <m>A</m>, <m>B</m> and <m>C</m> are angles of a triangle, then <me>\sin A + \sin B + \sin C \leq \frac{3 \sqrt{3}}{2}.</me>  
+We observe that sine is a convex function on the interval <m>[0,\pi]</m>. 
+<me>\frac{\sqrt{3}}{2}=\sin(\pi/3)=\sin(\frac{A+B+C}{3})\geq \frac{\sin A+\sin B+\sin C}{3}</me>
+and the inequality follows.  Notice that this is the best upper bound on the sum of sines we can prove since the equilateral case gives us equality.</p>
+</example>
 </section>
 
 <section xml:id="s-means"><title>Means</title>
 <idx>Arithmetic Mean</idx><idx>Geometric Mean</idx>
 <p>There are many means on a finite number of nonnegative real numbers.  Here we focus on a few of the most common.  The <em>arithmetic mean</em> of <m>n</m> numbers, or what we often call their average, is their sum divided by <m>n</m>.  The <em>geometric mean</em> is computed by taking <m>n^{th}</m> root of their product.  We establish the relationship between these two means in the following theorem.
 </p>
-<theorem><title>The AM/GM inequality</title>
+<theorem xml:id="theorem-am-gm"><title>The AM/GM inequality</title>
 <idx>AM/GM inequality</idx>
 <statement><p>Assume <m>n \geq 2</m>.  If <m>a_i</m>, <m>i = 1, 2, \dots, n</m> are non-negative real numbers, then
 <me>\left(a_1 a_2\cdots  a_n\right)^{1/n}\leq  \frac{a_1+a_2+\cdots +a_n}{n}</me>
@@ -361,6 +366,16 @@ Therefore <m>f(x,y,z)\leq \frac{7}{2} \sqrt{3}</m>.  We get equality when <m>x=\
 </p>
 </statement>
 <hint><p>Assume <m>a \ge b \ge c</m> and note that this implies <m>\frac{1}{b+c} \ge \frac{1}{a+c} \ge \frac{1}{a+b}</m>.</p></hint>
+<!-- 
+<solution><p></p></solution>
+ -->
+</exercise>
+<exercise>
+<statement>
+<p>Use Jensen's inequality for an alternative proof of <xref ref="theorem-am-gm" text="title"/>.
+</p>
+</statement>
+
 <!-- 
 <solution><p></p></solution>
  -->
