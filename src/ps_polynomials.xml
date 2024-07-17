@@ -1,346 +1,351 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- MBX -->
-<chapter xml:id="c-polynomials">
-<title>Polynomials</title>
-<section><title>Prerequisite Knowledge</title>
-<p>The most common way to define a <term>polynomial</term> in <m>x</m> is as an algebraic expression of the form <m>a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m>, where <m>n</m> is a nonnegative integer, the <m>a_i</m> are in some predetermined set, and <m>x</m> is not in that set.  Alternatively, we can define polynomials recursively.</p>
-<definition>
-	<title>Polynomial in <m>x</m> over <m>S</m></title>
-	<idx>Polynomial</idx>
-	<statement><p> Let <m>S</m> be a set of numbers and <m>x</m> an element outside of <m>S</m>. 
-		<ul>
-		<li><p>Any nonzero element of <m>S</m> is a polynomial of degree zero.</p></li>
-		<li><p>Let <m>n</m> be a positive integer and <m>x \notin S</m>, <m>x \neq 0</m>.  A polynomial of degree <m>n</m> in <m>x</m> is any expression that can be written in the form <m>q(x)\cdot x + b</m>, where <m>b</m> is an element of <m>S</m> and <m>q(x)</m> is a polynomial of degree <m>n-1</m> over <m>S</m>.</p></li>
-		</ul>
-		</p>
-	</statement>
-</definition>
-<remark><p>In the remainder of this chapter, if we simply refer to a polynomial, you can assume that it is a polynomial over any field.</p></remark>
+<?xml version="1.0" encoding="UTF-8"?> <!-- MBX --> <chapter
+xml:id="c-polynomials"> <title>Polynomials</title>
+<section><title>Prerequisite Knowledge</title> <p>The most common way to
+define a <term>polynomial</term> in <m>x</m> is as an algebraic
+expression of the form <m>a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x +
+a_0</m>, where <m>n</m> is a nonnegative integer, the <m>a_i</m> are in
+some predetermined set, and <m>x</m> is not in that set.  Alternatively,
+we can define polynomials recursively.</p> <definition>
+<title>Polynomial in <m>x</m> over <m>S</m></title>
+<idx>Polynomial</idx> <statement><p> Let <m>S</m> be a set of numbers
+and <m>x</m> an element outside of <m>S</m>. <ul> <li><p>Any nonzero
+element of <m>S</m> is a polynomial of degree zero.</p></li> <li><p>Let
+<m>n</m> be a positive integer and <m>x \notin S</m>, <m>x \neq 0</m>. 
+A polynomial of degree <m>n</m> in <m>x</m> is any expression that can
+be written in the form <m>q(x)\cdot x + b</m>, where <m>b</m> is an
+element of <m>S</m> and <m>q(x)</m> is a polynomial of degree <m>n-1</m>
+over <m>S</m>.</p></li> </ul> </p> </statement> </definition>
+<remark><p>In the remainder of this chapter, if we simply refer to a
+polynomial, you can assume that it is a polynomial over any
+field.</p></remark>
 
-<p>What follows is a series of theorems and basic properties relating to polynomials.  Proofs are available from many sources.  We assume you are familiar with polynomial addition and multiplication, so we take division as a starting point.  The following is an analogue to the division property for integers.</p>
-<theorem xml:id="theorem-poly-divison-property"><title>Division Property for Polynomials</title>
-<idx>Division Property for Polynomials</idx>
-<statement><p>Let <m>F</m> be a field and let <m>p(x)</m> and <m>g(x)</m> be two polynomials
-of over <m>F</m> with <m>g(x) \neq  0</m>. Then there exist unique polynomials <m>q(x)</m> and <m>r(x)</m> in <m>F[x]</m> such that <m>p(x) = g(x) q(x) + r(x)</m>, where <m>r(x) = 0</m> or
-<m>\deg  r(x) &lt; \deg  g(x)</m>.</p></statement></theorem>
+<p>What follows is a series of theorems and basic properties relating to
+polynomials.  Proofs are available from many sources.  We assume you are
+familiar with polynomial addition and multiplication, so we take
+division as a starting point.  The following is an analogue to the
+division property for integers.</p> <theorem
+xml:id="theorem-poly-divison-property"><title>Division Property for
+Polynomials</title> <idx>Division Property for Polynomials</idx>
+<statement><p>Let <m>F</m> be a field and let <m>p(x)</m> and
+<m>g(x)</m> be two polynomials of over <m>F</m> with <m>g(x) \neq 
+0</m>. Then there exist unique polynomials <m>q(x)</m> and <m>r(x)</m>
+in <m>F[x]</m> such that <m>p(x) = g(x) q(x) + r(x)</m>, where <m>r(x) =
+0</m> or <m>\deg  r(x) &lt; \deg  g(x)</m>.</p></statement></theorem>
 
-<theorem xml:id="theorem-polynomial-remainder"><title>The Remainder Theorem</title>
-<idx>Remainder Theorem for Polynomial</idx>
-<statement><p>Let <m>F</m> be a field, p(x) a polynomial over <m>F</m>, and <m>a \in  F</m>. Then <m>p(x) = (x-a)q(x) + p(a)</m>, where q(x) is some polynomial over <m>F</m>.</p></statement>
-</theorem> 
+<theorem xml:id="theorem-polynomial-remainder"><title>The Remainder
+Theorem</title> <idx>Remainder Theorem for Polynomial</idx>
+<statement><p>Let <m>F</m> be a field, p(x) a polynomial over <m>F</m>,
+and <m>a \in  F</m>. Then <m>p(x) = (x-a)q(x) + p(a)</m>, where q(x) is
+some polynomial over <m>F</m>.</p></statement> </theorem>
 
-<p>The proof of this next theorem is advanced, but it would be reasonable to expect that you could invoke in the course of solving a problem.</p>
-<theorem xml:id="theorm-ft-algebra"><title>The  Fundamental Theorem of Algebra</title>
-<idx>Fundamental Theorem of Algebra</idx>
-<statement><p>Every non-constant polynomial in a single variable with complex coefficients has at least one complex root.</p></statement>
-</theorem>
-<remark><p>You could prove by induction that <xref ref="theorm-ft-algebra" text="title"/> implies that a polynomial of degree <m>n</m> over the complex numbers can be factored into the product of <m>n</m> monomial factors. </p></remark>
+<p>The proof of this next theorem is advanced, but it would be
+reasonable to expect that you could invoke in the course of solving a
+problem.</p> <theorem xml:id="theorm-ft-algebra"><title>The  Fundamental
+Theorem of Algebra</title> <idx>Fundamental Theorem of Algebra</idx>
+<statement><p>Every non-constant polynomial in a single variable with
+complex coefficients has at least one complex root.</p></statement>
+</theorem> <remark><p>You could prove by induction that <xref
+ref="theorm-ft-algebra" text="title"/> implies that a polynomial of
+degree <m>n</m> over the complex numbers can be factored into the
+product of <m>n</m> monomial factors. </p></remark>
 
 <theorem><title>Vieta Relations</title><idx>Vieta Relations</idx>
-<statement><p> Suppose that  <m>p(x) = \sum_{k=0}^n a_k x^k</m> has <m>n</m> roots: <m>x_1</m>, <m>x_2</m>, <m>\ldots , x_n</m> (possibly repeated).  The Vieta relations give us a way to equate these roots with the coefficients of <m>p(x)</m>. The three most commonly used of these are
-<ol>
-<li><p><m> \prod_{k=1}^n x_k = (-1)^n \frac{a_0}{a_n}</m></p></li>
-<li><p><m> \sum_{1\le i \lt j\le n} x_i x_j = \frac{a_{n-2}}{a_n}</m></p></li>
-<li><p><m> \sum_{i=1}^n x_i = - \frac{a_{n-1}}{a_n}</m></p></li>
-</ol>
-</p>
-</statement>
-</theorem>
-<paragraphs><title>Polynomials in an Expression</title>
-<p>Although indeterminates are usually simple symbols like <m>x</m> or <m>y</m>, they can be any expression. For example, <m>y =\frac{1}{x^3}-\frac{1}{x} -1</m> is not a polynomial in <m>x</m>.  However, if we treat the expression <m>\frac{1}{x}</m> as an indeterminate, then we can view <m>y</m> as  <m>y =(\frac{1}{x})^3-\frac{1}{x} -1</m>, a polynomial in <m>\frac{1}{x}</m>. </p>
-<p>Another example is <m>\cos{2 \theta}= 2 \cos{\theta} - 1</m>, which is a polynomial in <m>\cos{\theta}</m>.  In fact, for every positive integer <m>n</m>,  <m>\cos{n \theta}</m> is a polynomial in <m>\cos{\theta}</m>. See <xref ref="exercise-chebyshev" />.</p>
-</paragraphs>
-</section>  
+<statement><p> Suppose that  <m>p(x) = \sum_{k=0}^n a_k x^k</m> has
+<m>n</m> roots: <m>x_1</m>, <m>x_2</m>, <m>\ldots , x_n</m> (possibly
+repeated).  The Vieta relations give us a way to equate these roots with
+the coefficients of <m>p(x)</m>. The three most commonly used of these
+are <ol> <li><p><m> \prod_{k=1}^n x_k = (-1)^n
+\frac{a_0}{a_n}</m></p></li> <li><p><m> \sum_{1\le i \lt j\le n} x_i x_j
+= \frac{a_{n-2}}{a_n}</m></p></li> <li><p><m> \sum_{i=1}^n x_i = -
+\frac{a_{n-1}}{a_n}</m></p></li> </ol> </p> </statement> </theorem>
+<paragraphs><title>Polynomials in an Expression</title> <p>Although
+indeterminates are usually simple symbols like <m>x</m> or <m>y</m>,
+they can be any expression. For example, <m>y =\frac{1}{x^3}-\frac{1}{x}
+-1</m> is not a polynomial in <m>x</m>.  However, if we treat the
+expression <m>\frac{1}{x}</m> as an indeterminate, then we can view
+<m>y</m> as  <m>y =(\frac{1}{x})^3-\frac{1}{x} -1</m>, a polynomial in
+<m>\frac{1}{x}</m>. </p> <p>Another example is <m>\cos{2 \theta}= 2
+\cos{\theta} - 1</m>, which is a polynomial in <m>\cos{\theta}</m>.  In
+fact, for every positive integer <m>n</m>,  <m>\cos{n \theta}</m> is a
+polynomial in <m>\cos{\theta}</m>. See <xref ref="exercise-chebyshev"
+/>.</p> </paragraphs> </section>
 
-<section><title>Examples</title>
-<example><title>2019 Putnam, B5</title>
-<p>Here is an recent Putnam problem that can be attacked using a variety of properties of polynomials. </p>
-<p>Let <m>F_m</m> be the <m>m</m>th Fibonacci number, defined by <m>F_1 = F_2 = 1</m> and <m>F_m = F_{m-1} + F_{m-2}</m> for all <m>m \geq 3</m>.
-Let <m>p(x)</m> be the polynomial of degree <m>1008</m> such that <m>p(2n+1) = F_{2n+1}</m> for <m>n=0,1,2,\dots,1008</m>. Find integers <m>j</m> and <m>k</m> such that <m>p(2019) = F_j - F_k</m>.</p>
-<p>Probably the simplest solution uses differences.  Observe that if we consider a related polynomial, <m>q(x)</m>, such that  <m>q(n) = F_{2n+1}</m> for <m>n=0,1,2,\dots,1008</m>, the first differences, <m>q(n+1)-q(n)</m>, <m>n=0,1,2,\dots,1007</m> are the Fibonacci numbers <m>F_2, F_4, \dots, F_{2016}</m>. The second differences are the odd-indexed Fibonacci numbers between the first differences.  The third differences are back to the even indexed values, etc.   Since the 1008th difference computed from the first 1009 values of <m>q(x)</m> is <m>F_{1009}</m>. Since the degree of <m>q(x)</m> is 1008, all 1008th differences must be  <m>F_{1009}</m>.  We can compute another diagonal of the difference array for <m>q(x)</m> to see that <m>q(1009) = F_{1009}+F_{1010}+\dots +F_{2017}</m>.  Using <m>F_{i}=F_{i+2}-F_{i+1}</m> this last sum reduces to <m>F_{2019}-F_{1010}</m>.  This provides us with the desired values of <m>j</m> and <m>k</m>.</p>
+<section><title>Examples</title> <example><title>2019 Putnam, B5</title>
+<p>Here is an recent Putnam problem that can be attacked using a variety
+of properties of polynomials. </p> <p>Let <m>F_m</m> be the <m>m</m>th
+Fibonacci number, defined by <m>F_1 = F_2 = 1</m> and <m>F_m = F_{m-1} +
+F_{m-2}</m> for all <m>m \geq 3</m>. Let <m>p(x)</m> be the polynomial
+of degree <m>1008</m> such that <m>p(2n+1) = F_{2n+1}</m> for
+<m>n=0,1,2,\dots,1008</m>. Find integers <m>j</m> and <m>k</m> such that
+<m>p(2019) = F_j - F_k</m>.</p> <p>Probably the simplest solution uses
+differences.  Observe that if we consider a related polynomial,
+<m>q(x)</m>, such that  <m>q(n) = F_{2n+1}</m> for
+<m>n=0,1,2,\dots,1008</m>, the first differences, <m>q(n+1)-q(n)</m>,
+<m>n=0,1,2,\dots,1007</m> are the Fibonacci numbers <m>F_2, F_4, \dots,
+F_{2016}</m>. The second differences are the odd-indexed Fibonacci
+numbers between the first differences.  The third differences are back
+to the even indexed values, etc.   Since the 1008th difference computed
+from the first 1009 values of <m>q(x)</m> is <m>F_{1009}</m>. Since the
+degree of <m>q(x)</m> is 1008, all 1008th differences must be 
+<m>F_{1009}</m>.  We can compute another diagonal of the difference
+array for <m>q(x)</m> to see that <m>q(1009) = F_{1009}+F_{1010}+\dots
++F_{2017}</m>.  Using <m>F_{i}=F_{i+2}-F_{i+1}</m> this last sum reduces
+to <m>F_{2019}-F_{1010}</m>.  This provides us with the desired values
+of <m>j</m> and <m>k</m>.</p>
 
-<p>A second solution, published in a <url href="https://youtu.be/MGljS1W4tzY" visual="YouTube video"/>  by Prof. Mohamed Omar (Harvey Mudd)  (https://youtu.be/MGljS1W4tzY), is a variation on an earlier solution published in <xref ref="biblio-putnam-archive"/>. It uses the Lagrange interpolation formula: given <m>x_0,\dots,x_n</m> and <m>y_0,\dots,y_n</m>, the unique polynomial <m>P</m> of degree at most <m>n</m> satisfying <m>P(x_i) = y_i</m> for <m>i=0,\dots,n</m> is
-<me>
-\sum_{i=0}^n P(x_i) \prod_{j \neq i} \frac{x-x_j}{x_i-x_j}</me>
-We construct such a polynomial as described in the problem and evaluate it at <m>2019</m> to get
-<me>
-\begin{split}
-p(2019) &amp;=\sum_{i=0}^{1008} F_{2i+1} \prod_{j \neq i} \frac{2019-(2j-1)}{(2i-1)-(2j-1)}\\
-&amp;=\sum_{i=0}^{1008} F_{2i+1} \prod_{j \neq i} \frac{1009-j}{i-j}
-\end{split}</me>
-</p>
-<p>We observe that the product expressions inside the sum above involve factorials that can be combined into an expression that involves a binomial coefficient.
-<me>
-\begin{split}
- \prod_{j \neq i} \frac{1009-j}{i-j}&amp;=\frac{\prod_{j \neq i} {1009-j}}
-                 {\prod_{j \neq i} {i-j}}\\
-                 	&amp;\frac{1009!/(1009-i)}{i! (1008-i)! (-1)^{1008-8}}\\
-                 	&amp; (-1)^{1008-i}\binom{1009}{i}
-\end{split}
-</me>
-We now return to the value of <m>p(2019)</m> with the this expression for the product and <xref ref="binet" text="title"/> for the Fibonacci numbers.
-<me>
-\begin{split}
-p(2019) &amp;=\sum_{i=0}^{1008} \frac{1}{\sqrt{5}}(\alpha^{2i+1}-\beta^{2i+1}) 
-                   (-1)^{1008-i}\binom{1009}{i}    \\
-&amp;=\frac{1}{\sqrt{5}}\left(    
-\sum_{i=0}^{1008} \alpha^{2i+1}
-                   (-1)^{1008-i}\binom{1009}{i}-
-\sum_{i=0}^{1008} \beta^{2i+1}
-                   (-1)^{1008-i}\binom{1009}{i}
-                        \right)\\
-&amp;=\frac{1}{\sqrt{5}}\left(    
-\sum_{i=0}^{1008}(-\alpha) (\alpha^2)^i
-                   (-1)^{1009-i}\binom{1009}{i}-
-\sum_{i=0}^{1008}(-\beta) (\beta^2)^i
-                   (-1)^{1009-i}\binom{1009}{i}
-                        \right)\\
-&amp;=\frac{1}{\sqrt{5}}\left(    
-\sum_{i=0}^{1008}(-\alpha) (\alpha^2)^i
-                   (-1)^{1009-i}\binom{1009}{i}-
-\sum_{i=0}^{1008}(-\beta) (\beta^2)^i
-                   (-1)^{1009-i}\binom{1009}{i}
-                        \right)\\
-&amp;=\frac{1}{\sqrt{5}}\left(-\alpha((\alpha^2-1)^{1009} -(\alpha^2)^{1009} )
-         +\beta  ((\beta^2-1)^{1009} -(\beta^2)^{1009} )
-  \right)\\
-&amp;=\frac{1}{\sqrt{5}}\left(-\alpha((\alpha)^{1009} -(\alpha^2)^{1009} )
-         +\beta  ((\beta)^{1009} -(\beta^2)^{1009} )
-  \right)\\                       
-\end{split}</me>
-</p>
+<p>A second solution, published in a <url
+href="https://youtu.be/MGljS1W4tzY" visual="YouTube video"/>  by Prof.
+Mohamed Omar (Harvey Mudd)  (https://youtu.be/MGljS1W4tzY), is a
+variation on an earlier solution published in <xref
+ref="biblio-putnam-archive"/>. It uses the Lagrange interpolation
+formula: given <m>x_0,\dots,x_n</m> and <m>y_0,\dots,y_n</m>, the unique
+polynomial <m>P</m> of degree at most <m>n</m> satisfying <m>P(x_i) =
+y_i</m> for <m>i=0,\dots,n</m> is <me> \sum_{i=0}^n P(x_i) \prod_{j \neq
+i} \frac{x-x_j}{x_i-x_j}</me> We construct such a polynomial as
+described in the problem and evaluate it at <m>2019</m> to get <me>
+\begin{split} p(2019) &amp;=\sum_{i=0}^{1008} F_{2i+1} \prod_{j \neq i}
+\frac{2019-(2j-1)}{(2i-1)-(2j-1)}\\ &amp;=\sum_{i=0}^{1008} F_{2i+1}
+\prod_{j \neq i} \frac{1009-j}{i-j} \end{split}</me> </p> <p>We observe
+that the product expressions inside the sum above involve factorials
+that can be combined into an expression that involves a binomial
+coefficient. <me> \begin{split} \prod_{j \neq i}
+\frac{1009-j}{i-j}&amp;=\frac{\prod_{j \neq i} {1009-j}} {\prod_{j \neq
+i} {i-j}}\\ &amp;\frac{1009!/(1009-i)}{i! (1008-i)! (-1)^{1008-8}}\\
+&amp; (-1)^{1008-i}\binom{1009}{i} \end{split} </me> We now return to
+the value of <m>p(2019)</m> with the this expression for the product and
+<xref ref="binet" text="title"/> for the Fibonacci numbers. <me>
+\begin{split} p(2019) &amp;=\sum_{i=0}^{1008}
+\frac{1}{\sqrt{5}}(\alpha^{2i+1}-\beta^{2i+1})
+(-1)^{1008-i}\binom{1009}{i}    \\ &amp;=\frac{1}{\sqrt{5}}\left(
+\sum_{i=0}^{1008} \alpha^{2i+1} (-1)^{1008-i}\binom{1009}{i}-
+\sum_{i=0}^{1008} \beta^{2i+1} (-1)^{1008-i}\binom{1009}{i} \right)\\
+&amp;=\frac{1}{\sqrt{5}}\left( \sum_{i=0}^{1008}(-\alpha) (\alpha^2)^i
+(-1)^{1009-i}\binom{1009}{i}- \sum_{i=0}^{1008}(-\beta) (\beta^2)^i
+(-1)^{1009-i}\binom{1009}{i} \right)\\ &amp;=\frac{1}{\sqrt{5}}\left(
+\sum_{i=0}^{1008}(-\alpha) (\alpha^2)^i (-1)^{1009-i}\binom{1009}{i}-
+\sum_{i=0}^{1008}(-\beta) (\beta^2)^i (-1)^{1009-i}\binom{1009}{i}
+\right)\\ &amp;=\frac{1}{\sqrt{5}}\left(-\alpha((\alpha^2-1)^{1009}
+-(\alpha^2)^{1009} ) +\beta  ((\beta^2-1)^{1009} -(\beta^2)^{1009} )
+\right)\\ &amp;=\frac{1}{\sqrt{5}}\left(-\alpha((\alpha)^{1009}
+-(\alpha^2)^{1009} ) +\beta  ((\beta)^{1009} -(\beta^2)^{1009} )
+\right)\\ \end{split}</me> </p>
 
-<p>This last expression can be simplified using Binet's formula to deduce that <m>p(2019) = F_{2019} - F_{1010}</m>.
-</p>
+<p>This last expression can be simplified using Binet's formula to
+deduce that <m>p(2019) = F_{2019} - F_{1010}</m>. </p>
 
 </example>
 
-</section>  
-<section><title>The Sun Tzu’s Theorem Revisited</title>
-<p>Using the division property for polynomials, we can develop the definiton of congruence modulo a polynomial.</p>
-</section>
-<exercises>
-<title>Exercises</title>
-<exercise xml:id="binet"><title>Binet's Formula</title><idx>Binet's Formula</idx>
+</section> <section><title>Polynomial Conguences</title>
+<p>Using the division property for polynomials, we can develop the
+definitons of greatest common divisors of polynomials and  congruence modulo a polynomial.</p>
+
+<p>Given two polynomials <m>a(x)</m> and <m>b(x)</m> over some field (think of the real numbers if you're) not all that familiar with fields), a greatest common factor of the two polynomials is a polynomial <m>d(x)</m> that divides evenly into both  <m>a(x)</m> and <m>b(x)</m> and has the property that every other polynomial that divides evenly into  <m>a(x)</m> and <m>b(x)</m> also divides evenly into <m>d(x)</m>.  We will leave our some of the details but suffice to point out that the following algorthm computes a greatest common divisor of any pair of polynomials as long as they are not both equal to the zero polynomial.
+</p>  
+<algorithm><title>Polynomial Euclidean Algorithm</title>
+<statement>
+<p>Input:   <m>a(x)</m> and <m>b(x)</m> </p>
+<p><mn>
+<mrow>gcd(a(x),0)=a(x)</mrow>
+<mrow>gcd(a(x),b(x))=gcd(b(x),r(x)) \text{ if }b(x)\neq 0</mrow>
+</mn>
+where <m>r(x)</m> is the remainder upon dividing <m>b(x)</m> into <m>a(x)</m>.
+</statement>
+</algorithm>
+<p>We refer to <em>a</em> greatest common divisor here because any nonzero constant multiple of a greatest common divisor is also a greatest common divisor. In the theory of polynomial congruences, if two polynomials have a constant for a greatest common divisor, this corresponds with the integer case of being relatively prime.</p>
+<p>We will only consider examples the special case of two distinct constants in our field, <m>\alpha</m> and <m>\beta</m> and observe that <m>x-\alpha</m> and <m>x-\beta</m> are <q>relatively prime.</q>  </p>
+<definition><title>Polynomial Congruence</title>
+<idx><h>Congruence</h><h>Polynomial</h></idx>
+<statement>Let <m>m(x)</m> be a nonconstant polynomial over over a field
+<m>F</m>. Two polynomials <m>a(x)</m> and <m>b(x)</m> are congruent modulo <m>m(x)</m> 
+if <m>a(x)-b(x)</m> is evenly divisible by <m>m(x)</m>.</statement>
+</definition> 
+</section> 
+
+<exercises> <title>Exercises</title> <exercise
+xml:id="binet"><title>Binet's Formula</title><idx>Binet's Formula</idx>
 <statement><p>Derive Binet's Formula for the Fibonacci numbers:
-<me>F_n=\frac{1}{\sqrt{5}}(\alpha^{n}-\beta^{n})</me>
-Where <m>\alpha=\frac{1+\sqrt{5}}{2}</m> and <m>\beta=\frac{1-\sqrt{5}}{2}</m> are the roots of the polynomial <m>x^2-x-1</m>.
-</p>
-</statement>
-<!-- 
-<solution>
-<p>
-</p>
-</solution>
- -->
-</exercise>
+<me>F_n=\frac{1}{\sqrt{5}}(\alpha^{n}-\beta^{n})</me> Where
+<m>\alpha=\frac{1+\sqrt{5}}{2}</m> and <m>\beta=\frac{1-\sqrt{5}}{2}</m>
+are the roots of the polynomial <m>x^2-x-1</m>. </p> </statement> <!--
+<solution> <p> </p> </solution> --> </exercise>
 <exercise><title>Rational Roots of Polynomials over the Integers</title>
-<statement><p>
-<ol marker="(a)">
-<li><p>Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial over the integers with <m>n\geq 1</m>, <m>a_n, a_0 \neq 0</m>.  Prove that if <m>c/d \in \mathbb{Q}</m>, <m>gcd(c,d)=1</m>, is a root of <m>p(x)</m>, then  <m>c \vert a_0</m> and <m>d \vert a_n</m></p></li>
-<li><p>Find all rational roots of <m>p(x)=36 x^3-81 x^2+38 x-5</m>.</p></li>
-</ol></p>
-</statement>
-<solution><p>
-<ol marker="(a)">
-<li><p>Suppose that <m>c/d</m> is a rational number reduced to lowest terms that is a root of <m>p(x)</m>. If we multiply <m>p(c/d)=0</m> by <m>d^n</m>:
-<me>a_n c^n +\left( \sum_{k=1}^{n-1}	 c^k d^{n-k}\right) + a_0 d^n = 0</me>
-We note that since <m>gcd(c, d) = 1</m>, and <m>d</m> explicitly divides the second two terms of this sum, <m>d</m> must divide <m>a_n</m>.  By similar logic we have that <m>c</m> divides <m>a_0</m>.
-</p></li>
+<statement><p> <ol marker="(a)"> <li><p>Let <m>p(x)= a_n x^n +
+a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial over the
+integers with <m>n\geq 1</m>, <m>a_n, a_0 \neq 0</m>.  Prove that if
+<m>c/d \in \mathbb{Q}</m>, <m>gcd(c,d)=1</m>, is a root of <m>p(x)</m>,
+then  <m>c \vert a_0</m> and <m>d \vert a_n</m></p></li> <li><p>Find all
+rational roots of <m>p(x)=36 x^3-81 x^2+38 x-5</m>.</p></li> </ol></p>
+</statement> <solution><p> <ol marker="(a)"> <li><p>Suppose that
+<m>c/d</m> is a rational number reduced to lowest terms that is a root
+of <m>p(x)</m>. If we multiply <m>p(c/d)=0</m> by <m>d^n</m>: <me>a_n
+c^n +\left( \sum_{k=1}^{n-1}	 c^k d^{n-k}\right) + a_0 d^n = 0</me>
+We note that since <m>gcd(c, d) = 1</m>, and <m>d</m> explicitly divides
+the second two terms of this sum, <m>d</m> must divide <m>a_n</m>.  By
+similar logic we have that <m>c</m> divides <m>a_0</m>. </p></li>
 <li><p>The roots are <m>1/3, 5/3</m> and <m>1/4</m>.</p></li>
-</ol></p></solution>
-</exercise>
+</ol></p></solution> </exercise>
 
-<exercise>
-<statement><p>
-Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m> be a polynomial with <m>n\geq 1</m>, <m>a_n, a_0 \neq 0</m>. How are the roots of <m>p(x)</m> and the roots of  <m>q(x)= a_0 x^n + a_1 x^{n-1}+ \cdots +a_{n-1} x + a_n</m> related?</p>
-</statement>
-<solution><p>By our assumptions, <m>0</m> is not a root of <m>p(x)</m>.  The roots of <m>q(x)</m> are related by the condition
-<m>\alpha</m> is a root of <m>p(x)</m> if and only if  <m>\alpha^{-1}</m> is a root of  <m>q(x)</m>.  
-</p></solution>
-</exercise>
+<exercise> <statement><p> Let <m>p(x)= a_n x^n + a_{n-1}x^{n-1}+ \cdots
++a_1 x + a_0</m> be a polynomial with <m>n\geq 1</m>, <m>a_n, a_0 \neq
+0</m>. How are the roots of <m>p(x)</m> and the roots of  <m>q(x)= a_0
+x^n + a_1 x^{n-1}+ \cdots +a_{n-1} x + a_n</m> related?</p> </statement>
+<solution><p>By our assumptions, <m>0</m> is not a root of <m>p(x)</m>. 
+The roots of <m>q(x)</m> are related by the condition <m>\alpha</m> is a
+root of <m>p(x)</m> if and only if  <m>\alpha^{-1}</m> is a root of 
+<m>q(x)</m>. </p></solution> </exercise>
 
 
-<exercise>
-<statement><p>
-Let <m>p(x)</m> be a polynomial over the real numbers.
-<ol marker="(a)">
-<li><p>Prove that if <m>z=a + b i</m> is a root of <m>p(x)</m>, then <m>\bar{z}= a -b i</m> is also a root of <m>p(x)</m>.</p></li>
-<li><p>Prove that <m>p(x)</m> can be factored into a product of linear and quadratic polynomials with real coefficients.</p></li>
+<exercise> <statement><p> Let <m>p(x)</m> be a polynomial over the real
+numbers. <ol marker="(a)"> <li><p>Prove that if <m>z=a + b i</m> is a
+root of <m>p(x)</m>, then <m>\bar{z}= a -b i</m> is also a root of
+<m>p(x)</m>.</p></li> <li><p>Prove that <m>p(x)</m> can be factored into
+a product of linear and quadratic polynomials with real
+coefficients.</p></li> </ol> </p></statement> <!-- <hint><p></p></hint>
+<solution><p></p></solution> --> </exercise> <exercise> <statement><p>
+Let <m>f(x)</m> be a polynomial of degree greater than or equal to two
+with <m>f(-1)=f(1)=0</m>, and <m>f(x)>0</m> on the interval
+<m>(-1,1)</m>.  Let <m>L_{-1}</m> and <m>L_1</m> be tangents to the
+<m>f(x)</m> at <m>-1</m> and 1, respectively. What is the area,
+<m>T</m>, of the triangle formed by <m>L_{-1}</m>, <m>L_1</m>, and the
+<m>x</m>-axis?  Is <m>T</m> bounded? </p></statement> <!--
+<hint><p></p></hint> <solution><p></p></solution> --> </exercise>
+<exercise> <statement><p>This exercise can initiate a more general
+discussion of conditions under which polynomial interpolation is
+possible <ol marker="(a)"> <li><p>Given three real numbers <m>x_0 \lt
+x_1 \lt x_2</m>, and three more real numbers <m>y_0, y_1, y_2</m>, not
+necessarily distinct, does there always exist a unique polynomial,
+<m>p(x)</m>, of degree less than or equal to 2 such that
+<m>p\left(x_0\right)=y_0</m>, <m>p\left(x_1\right)=y_1</m>, and
+<m>p\left(x_2\right)=y_2</m>?</p></li> <li><p>Same as part (a) but
+replace <m>p\left(x_2\right)=y_2</m> with
+<m>p'\left(x_2\right)=y_2</m>.</p></li> <li><p>Same as part (a) but
+replace <m>p\left(x_1\right)=y_1</m> with
+<m>p'\left(x_1\right)=y_1</m>.</p></li> </ol> </p></statement> <!--
+<hint><p></p></hint> <solution><p></p></solution> --> </exercise>
+
+<exercise><title>Reciprocal Polynomials</title><idx>Reciprocal
+Polynomials</idx> <statement><p>A <term>reciprocal polynomial</term> is
+a polynomial whose coefficients are symmetric; that is, if <m>p(x) = a_n
+x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m>, <m>a_n \neq 0</m> is a
+reciprocal polynomial of degree <m>n</m> if <m>a_n = a_0</m>, <m>a_{n-1}
+= a_1</m>, etc. <ol marker="(a)"> <li><p>Prove that if <m>p(x)</m> is a
+reciprocal polynomial of odd degree, then <m>p(x) = (x+1)q(x)</m> where
+<m>q(x) </m> is a reciprocal polynomial of even degree.</p></li>
+<li><p>Prove that if <m>p(x) = a_{2k} x^{2k} + a_{2k-1}x^{2k-1}+ \cdots
++a_{k} x^k + \cdots</m> is a reciprocal polynomial of even degree, then
+<m>p(x)= 0</m> can be written in the equivalent form <me>a_{2k}
+(x^k+1/x^k) + a_{2k-1} (x^{k-1}+1/x^{k-1}) + \cdots +a_{k} </me> and
+that with the substitution <m>t=x+1/x</m>, the equation becomes a
+polynomial of degree <m>k</m> in <m>t</m>. </p></li> <li><p>Find all
+roots of the polynomial <m>2 x^4 + 5 x^3 + x^2 + 5 x + 2</m>.</p></li>
+</ol> </p></statement> <!-- <hint><p></p></hint> -->
+
+<solution><p> <ol marker="(a)"> <li><p>Assume <m>p(x)</m> has odd degree
+<m>2n+1</m> and <m>a_{2n+1-k}=a_k</m> for <m>0 \leq k \leq n</m>. then
+<m>p(x)=\sum_{k=0}^n a_k(x^{2n+1-k}+x^k)</m>. The two exponents of
+<m>x</m> in the sum have opposite odd/even parity and so <m>p(-1)
+=0</m>. Therefore, <m>p(x)=(x+1)q(x)</m>.  To see that <m>q(x)</m> is 
+reciprocal we note that if <m>q(x)=\sum_{k=0}^{2n} b_k x^k</m>.</p> <p>
+<me>\begin{split} a_{2n+1} = b_{2n} \\ a_{2n-k} = b_{2n-k}+b_{2n-k-1} 
+\textrm{ for } 1 \leq k \leq 2n\\ a_0 = b_0 \end{split} </me>
+<me>\begin{split} a_0 = a_{2n+1} \Rightarrow b_0 = b_{2n}\\ a_1 =a_{2n}
+\Rightarrow b_{2n}+b_{2n-1} = b_1+b_0 \Rightarrow b_{2n-1}=b_1\\ a_2
+=a_{2n-1} \Rightarrow b_{2n-1}+b_{2n-2} = b_2+b_1 \Rightarrow
+b_{2n-2}=b_2\\ \vdots \end{split} </me></p></li> <li> <p> If the degree
+of <m>p(x)</m> is <m>2n</m>, divide the equation <m>p(x)=0</m> by
+<m>x^n</m> to get  <me>a_n + \sum_{k=1}^n  a^{n-k} (x^k+ \frac{1}{x^k})
+=0</me> Make the substitution <m>t=x+\frac{1}{x}</m>. </p> <p>This
+substitution  produces a polynomial equation of degree <m>n</m>.  To
+prove this, let <m>\Phi_k(t) =x^k+ \frac{1}{x^k}</m>, <m>k\geq 0</m>.
+<me> \begin{split} \Phi_0(t) = 2  \textrm{ and }  \Phi_1(t)=t\\ t^2 = 
+(x+\frac{1}{x})^2 = x^2+2+\frac{1}{x^2} \Rightarrow \Phi_2(t)=t^2-2
+\end{split} </me> More generally, if <m>k \geq 2</m>, <me> t \Phi_k(t) =
+(x+\frac{1}{x})(x^k+\frac{1}{x^k})= x^{k+1}+ \frac{1}{x^{k-1}}+x^{k-1}+
+\frac{1}{x^{k+1}} \Rightarrow \Phi_{k+1}(t)= \Phi_k(t) t -\Phi_{k-1}(t)
+</me> </p> </li> <li><p> Using the substitution suggested above, we get
+the quadratic polynomial <m>2 (t^2-2) + 5 t + 1 = 2t^2 +5t-3</m>.  Its
+roots are <m>t_1=-3</m> and <m>t_2=\frac{1}{2}</m>. We then get the
+roots of the original polynomial by solving <m>x+\frac{1}{x} =t_i</m>
+for <m>i = 1, 2</m>. to get <m>\frac{1}{2} \left(-3 \pm
+\sqrt{5}\right)</m> and <m>\frac{1}{4} \left(1 \pm i
+\sqrt{15}\right)</m>. </p></li> </ol></p></solution> </exercise>
+
+<exercise> <statement><p> Find all polynomials, <m>p(x)</m>, with real
+coefficients satisfying the equation <m>p(x-1)p(x+1) = p(p(x))</m>.
+</p></statement> <!-- <hint><p></p></hint> <solution><p></p></solution>
+--> </exercise> <exercise> <statement><p> Find all polynomials
+<m>P(x)</m> with the property that <m>P(x)</m> is a multiple of its
+second derivative, <m>P''(x)</m>.
+
+</p></statement> <!-- <hint><p></p></hint> <solution><p></p></solution>
+--> </exercise>
+ <exercise> <statement><p> The zeros of the polynomial
+<m>P(x) = x^3 - 10x + 11</m> are <m>u</m>, <m>v</m>, and <m>w</m>.
+Determine the value of <m>\arctan  u + \arctan v + \arctan  w</m>.
+</p></statement> <hint><p><m>\tan(s+t)=\frac{\tan  s + \tan  t }{1-(\tan
+ s )(\tan  t)}</m>.</p></hint> <solution><p>By the Vieta relations,
+<m>u+v+w=0</m>, <m>u\cdot v + u \cdot w + v \cdot w = -10</m>, and
+<m>u\cdot v\cdot w = -11</m>.</p><p>Let <m>\arctan u = U</m>, 
+<m>\arctan v = V</m>, and  <m>\arctan w = W</m>, and then <me>
+\begin{split} \tan(U+V+W) &amp;= \frac{\tan U + \tan V +\tan W - \tan U
+\cdot \tan V \cdot \tan W} {1 -(\tan U \cdot \tan V + \tan U \cdot \tan
+W + \tan V \cdot \tan W)}\\ &amp;=\frac{u + v + w - u\cdot v\cdot
+w}{1-(u\cdot v + u \cdot w + v \cdot w)}\\ &amp;=
+\frac{0-(-11)}{1-(-10)}=1 \end{split} </me> Therefore, <m>U+V+W =
+\frac{\pi}{4} + \pi k</m> for some integer <m>k</m>.  By the Vieta
+relation, two of he roots must be positive and one negative, so the sum
+of the arctangents of the roots must be <m>\frac{\pi}{4}</m>.</p>
+</solution> </exercise> <exercise> <statement> <p>Find a quadratic
+polynomial with the property that the sum of the squares of its roots is
+equal to <m>113</m>. </p> </statement> </exercise> <exercise>
+<statement> <p>Let <m>p(t)</m> be any quadratic polynomial.  It is
+easily verified that <me>p(1)+p(4)+p(6)+p(7) = p(2)+p(3)+p(5)+p(8).</me>
+This problem generalizes this property. <ol marker="(a)">
+<li><p>Partition the set <m>\{1, 2, 3, \dots , 15, 16\}</m> into two
+sets such that given any cubic polynomal <m>p(t)</m>, the sum of the
+numbers <m>p(k)</m> where <m>k</m> ranges over one of  the two sets is
+the same as the sum where <m>k</m> ranges over the other</p></li>
+<li><p>Generalize to polynomials of arbitrary nonnegative
+degree.</p></li> </ol> </p> </statement> <hint> <p>If you backtrack to
+the constant and linear cases of this problem, you can look for a
+pattern that suggests a cubic, and then general, solution.</p> </hint>
+<solution> <p><ol marker="(a)"> <li><p></p></li> <li><p>Let
+<m>A_1=\{1\}</m> and <m>B_1= \{2\}</m>, and for <m>n \geq 1</m>,
+<m>A_{n+1}=A_{n }\cup \left(2^n+B_n\right)</m>, and <m>B_{n+1}=B_{n
+}\cup \left(2^n+A_n\right)</m>.  We claim that  <m>\left(A_n,
+B_n\right)</m>  is a partition of <m>\left\{1,2,\ldots 
+,2^{n+1}\right\}</m> into sets  of cardinality <m>2^n</m> such that for
+all polynomials of degree <m>n</m>,  <me>\sum _{k\in A_n} p(k)=\sum
+_{k\in B_n} p(k).</me></p></li> </ol></p></solution> </exercise>
+
+
+<exercise> <statement><p> Determine all polynomials <m>P(x)</m> such
+that <m>P\left(x^2+1\right)=P(x)^2+1</m> and <m>P(0)=0</m>.
+</p></statement> <!-- <hint><p></p></hint> <solution><p></p></solution>
+--> </exercise> <exercise xml:id="exercise-p2019b5-related">
+<statement><p>Let <m>a, b \in \RR</m>, <m>a \neq 0</m>. Prove that if
+<m>p(x)</m> and <m>q(x)</m> are polynomials of degree <m>n</m>, <m>n
+\geq 1</m>, such that <m>p(a k +b)=q(x)</m>, <m>k = 0, 1, \dots, n</m>,
+then <m>p(a x + b)=q(x)</m></p></statement> <!-- <hint><p></p></hint>
+<solution><p></p></solution> --> </exercise> <exercise
+xml:id="exercise-chebyshev"><title>Chebyshev Polynomials of the First
+Kind</title><idx>Chebyshev Polynomials</idx> <statement><p>Prove that if
+<m>n</m> is a nonnegative integer then <m>\cos{n \theta}</m>  is a
+polynomial in <m>\cos{\theta}</m>. If <m>\cos{n \theta} =
+T_n(\cos{\theta})</m>, then <m>T_n(x)</m> is the <m>n</m>th Chebyshev
+Polynomial of the First kind.</p></statement> <!-- <hint><p></p></hint>
+<solution><p></p></solution> --> </exercise> 
+
+<exercise><title>Sun Tzu’s Theorem Revisited</title>
+<statement>
+<p>Consider polynomials over the real numbers in this exercises, although any field would do.
+<ol>
+<li><p>Let <m>c_1</m> and <m>\alpha_1</m> be real numbers. Describe all polynomials <m>a(x)</m> that are congruent <m>c_1</m> mod <m>x-\alpha_1</m>.  Use the notation <m>a(x)\equiv c (\mod{x-\alpha_1})</m>.</p></li>
+<li><p>Suppose you are also given <m>c_2</m> and <m>\alpha_2 \neq \alpha_1</m> and find all polynomials <m>a(x)</m> that you identified in the previous part that also satisfy <m>a(x) \equiv c_2 (\mod{x-\alpha_2})</m>. </p></li>
+<li><p>Generalize the previous two steps.</p></li>
 </ol>
-</p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
-</exercise>
-<exercise>
-<statement><p>
-Let <m>f(x)</m> be a polynomial of degree greater than or equal to two with <m>f(-1)=f(1)=0</m>, and <m>f(x)>0</m> on the interval <m>(-1,1)</m>.  Let <m>L_{-1}</m>
-and <m>L_1</m> be tangents to the <m>f(x)</m> at <m>-1</m> and 1, respectively. What is the area, <m>T</m>, of the triangle formed by <m>L_{-1}</m>, <m>L_1</m>,
-and the <m>x</m>-axis?  Is <m>T</m> bounded?
-</p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
-</exercise>
-<exercise>
-<statement><p>This exercise can initiate a more general discussion of conditions under which polynomial interpolation is possible
-<ol marker="(a)">
-<li><p>Given three real numbers <m>x_0 \lt x_1 \lt x_2</m>, and three more real numbers <m>y_0, y_1, y_2</m>, not necessarily distinct, does there always exist a unique polynomial, <m>p(x)</m>, of degree less than or equal to 2 such that <m>p\left(x_0\right)=y_0</m>, <m>p\left(x_1\right)=y_1</m>, and <m>p\left(x_2\right)=y_2</m>?</p></li>
-<li><p>Same as part (a) but replace <m>p\left(x_2\right)=y_2</m> with <m>p'\left(x_2\right)=y_2</m>.</p></li>
-<li><p>Same as part (a) but replace <m>p\left(x_1\right)=y_1</m> with <m>p'\left(x_1\right)=y_1</m>.</p></li>
-</ol>
-</p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
-</exercise>
-
-<exercise><title>Reciprocal Polynomials</title><idx>Reciprocal Polynomials</idx>
-<statement><p>A <term>reciprocal polynomial</term> is a polynomial whose coefficients are symmetric; that is, if <m>p(x) = a_n x^n + a_{n-1}x^{n-1}+ \cdots +a_1 x + a_0</m>, <m>a_n \neq 0</m> is a reciprocal polynomial of degree <m>n</m> if <m>a_n = a_0</m>, <m>a_{n-1} = a_1</m>, etc. 
-<ol marker="(a)">
-<li><p>Prove that if <m>p(x)</m> is a reciprocal polynomial of odd degree, then <m>p(x) = (x+1)q(x)</m> where <m>q(x) </m> is a reciprocal polynomial of even degree.</p></li>
-<li><p>Prove that if <m>p(x) = a_{2k} x^{2k} + a_{2k-1}x^{2k-1}+ \cdots +a_{k} x^k + \cdots</m> is a reciprocal polynomial of even degree, then <m>p(x)= 0</m> can be written in the equivalent form 
-  <me>a_{2k} (x^k+1/x^k) + a_{2k-1} (x^{k-1}+1/x^{k-1}) + \cdots +a_{k} </me>
-  and that with the substitution <m>t=x+1/x</m>, the equation becomes a polynomial of degree <m>k</m> in <m>t</m>. </p></li>
-<li><p>Find all roots of the polynomial <m>2 x^4 + 5 x^3 + x^2 + 5 x + 2</m>.</p></li>
-</ol>
-</p></statement>
-<!-- 
-<hint><p></p></hint> -->
-
-<solution><p>
-<ol marker="(a)">
-<li><p>Assume <m>p(x)</m> has odd degree <m>2n+1</m> and <m>a_{2n+1-k}=a_k</m> for <m>0 \leq k \leq n</m>. then <m>p(x)=\sum_{k=0}^n a_k(x^{2n+1-k}+x^k)</m>. The two exponents of <m>x</m> in the sum have opposite odd/even parity and so <m>p(-1) =0</m>. Therefore, <m>p(x)=(x+1)q(x)</m>.  To see that <m>q(x)</m> is  reciprocal we note that if <m>q(x)=\sum_{k=0}^{2n} b_k x^k</m>.</p>
-<p>
-<me>\begin{split}
-a_{2n+1} = b_{2n} \\
-a_{2n-k} = b_{2n-k}+b_{2n-k-1}  \textrm{ for } 1 \leq k \leq 2n\\
-a_0 = b_0 
-\end{split}
-</me>
-<me>\begin{split}
-a_0 = a_{2n+1} \Rightarrow b_0 = b_{2n}\\
-a_1 =a_{2n} \Rightarrow b_{2n}+b_{2n-1} = b_1+b_0 \Rightarrow b_{2n-1}=b_1\\
-a_2 =a_{2n-1} \Rightarrow b_{2n-1}+b_{2n-2} = b_2+b_1 \Rightarrow b_{2n-2}=b_2\\
-\vdots
-\end{split}
-</me></p></li>
-<li>
-<p>
-If the degree of <m>p(x)</m> is <m>2n</m>, divide the equation <m>p(x)=0</m> by <m>x^n</m> to get  <me>a_n + \sum_{k=1}^n  a^{n-k} (x^k+ \frac{1}{x^k}) =0</me>
-Make the substitution <m>t=x+\frac{1}{x}</m>. </p>
-<p>This substitution  produces a polynomial equation of degree <m>n</m>.  To prove this, let <m>\Phi_k(t) =x^k+ \frac{1}{x^k}</m>, <m>k\geq 0</m>. 
-<me>
-\begin{split}
-\Phi_0(t) = 2  \textrm{ and }  \Phi_1(t)=t\\
-t^2 =  (x+\frac{1}{x})^2 = x^2+2+\frac{1}{x^2} \Rightarrow \Phi_2(t)=t^2-2
-\end{split}
-</me>
-More generally, if <m>k \geq 2</m>,
-<me>
-t \Phi_k(t) = (x+\frac{1}{x})(x^k+\frac{1}{x^k})= x^{k+1}+ \frac{1}{x^{k-1}}+x^{k-1}+ \frac{1}{x^{k+1}}
-       \Rightarrow \Phi_{k+1}(t)= \Phi_k(t) t -\Phi_{k-1}(t)
-</me>
 </p>
-</li>
-<li><p>
-Using the substitution suggested above, we get the quadratic polynomial <m>2 (t^2-2) + 5 t + 1 = 2t^2 +5t-3</m>.  Its roots are <m>t_1=-3</m> and <m>t_2=\frac{1}{2}</m>. We then get the roots of the original polynomial by solving <m>x+\frac{1}{x} =t_i</m> for <m>i = 1, 2</m>. to get <m>\frac{1}{2} \left(-3 \pm \sqrt{5}\right)</m> and <m>\frac{1}{4} \left(1 \pm i \sqrt{15}\right)</m>. 
-</p></li>
-</ol></p></solution>
-</exercise>
-
-<exercise>
-<statement><p>
-Find all polynomials, <m>p(x)</m>, with real coefficients satisfying the equation <m>p(x-1)p(x+1) = p(p(x))</m>.
-</p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
-</exercise>
-<exercise>
-<statement><p>
-Find all polynomials <m>P(x)</m> with the property that <m>P(x)</m> is a multiple of its second derivative, <m>P''(x)</m>.
-
-</p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
-</exercise>
-<exercise>
-<statement><p>
-The zeros of the polynomial <m>P(x) = x^3 - 10x + 11</m> are <m>u</m>, <m>v</m>, and <m>w</m>. Determine the value of <m>\arctan  u + \arctan v + \arctan  w</m>. </p></statement>
-<hint><p><m>\tan(s+t)=\frac{\tan  s + \tan  t }{1-(\tan  s )(\tan  t)}</m>.</p></hint>
-<solution><p>By the Vieta relations, <m>u+v+w=0</m>, <m>u\cdot v + u \cdot w + v \cdot w = -10</m>, and <m>u\cdot v\cdot w = -11</m>.</p><p>Let <m>\arctan u = U</m>,  <m>\arctan v = V</m>, and  <m>\arctan w = W</m>, and then
-<me>
-\begin{split}
-\tan(U+V+W) &amp;= \frac{\tan U + \tan V +\tan W - \tan U \cdot \tan V \cdot \tan W}
-						{1 -(\tan U \cdot \tan V + \tan U \cdot \tan W + \tan V \cdot \tan W)}\\
-			&amp;=\frac{u + v + w - u\cdot v\cdot w}{1-(u\cdot v + u \cdot w + v \cdot w)}\\
-			&amp;= \frac{0-(-11)}{1-(-10)}=1
-\end{split}
-</me>
-Therefore, <m>U+V+W = \frac{\pi}{4} + \pi k</m> for some integer <m>k</m>.  By the Vieta relation, two of he roots must be positive and one negative, so the sum of the arctangents of the roots must be <m>\frac{\pi}{4}</m>.</p>
-</solution>
-</exercise>
-<exercise>
-<statement>
-	<p>Find a quadratic polynomial with the property that the sum of the squares of its roots is equal to <m>113</m>.
-	</p>
 </statement>
 </exercise>
-<exercise>
-<statement>
-	<p>Let <m>p(t)</m> be any quadratic polynomial.  It is easily verified that 
-			<me>p(1)+p(4)+p(6)+p(7) = p(2)+p(3)+p(5)+p(8).</me>
-	This problem generalizes this property.
-		<ol marker="(a)">
-      <li><p>Partition the set <m>\{1, 2, 3, \dots , 15, 16\}</m> into two sets such that given any
-       cubic polynomal <m>p(t)</m>, the sum of the numbers <m>p(k)</m> where <m>k</m> ranges over one of  the two sets is the same as the sum where <m>k</m> ranges over the other</p></li>
-      <li><p>Generalize to polynomials of arbitrary nonnegative degree.</p></li>
-        </ol>
-	</p>
-</statement>
-<hint>
-  <p>If you backtrack to the constant and linear cases of this problem, you can look for a pattern that suggests a cubic, and then general, solution.</p>
-  </hint>
-<solution>
-	<p><ol marker="(a)">
-		<li><p></p></li>
-		<li><p>Let <m>A_1=\{1\}</m> and <m>B_1= \{2\}</m>, and for <m>n \geq 1</m>,
-		 <m>A_{n+1}=A_{n }\cup \left(2^n+B_n\right)</m>, and <m>B_{n+1}=B_{n }\cup \left(2^n+A_n\right)</m>.  We claim that  <m>\left(A_n, B_n\right)</m>  is a partition of <m>\left\{1,2,\ldots  ,2^{n+1}\right\}</m> into sets  of cardinality <m>2^n</m> such that for all polynomials of degree <m>n</m>,  <me>\sum _{k\in A_n} p(k)=\sum _{k\in B_n} p(k).</me></p></li>
-</ol></p></solution>
-</exercise>
-
-
-<exercise>
-<statement><p>
-Determine all polynomials <m>P(x)</m> such that <m>P\left(x^2+1\right)=P(x)^2+1</m> and <m>P(0)=0</m>.
-</p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
-</exercise>
-<exercise xml:id="exercise-p2019b5-related">
-<statement><p>Let <m>a, b \in \RR</m>, <m>a \neq 0</m>. Prove that if <m>p(x)</m> and <m>q(x)</m> are polynomials of degree <m>n</m>, <m>n \geq 1</m>, such that <m>p(a k +b)=q(x)</m>, <m>k = 0, 1, \dots, n</m>, then 
-<m>p(a x + b)=q(x)</m></p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
-</exercise>
-<exercise xml:id="exercise-chebyshev"><title>Chebyshev Polynomials of the First Kind</title><idx>Chebyshev Polynomials</idx>
-<statement><p>Prove that if <m>n</m> is a nonnegative integer then <m>\cos{n \theta}</m>  is a polynomial in <m>\cos{\theta}</m>. If <m>\cos{n \theta} = T_n(\cos{\theta})</m>, then <m>T_n(x)</m> is the <m>n</m>th Chebyshev Polynomial of the First kind.</p></statement>
-<!-- 
-<hint><p></p></hint>
-<solution><p></p></solution>
- -->
-</exercise>
-</exercises>
+</exercises> 
 </chapter>

@@ -38,19 +38,39 @@
 We can easily verify that for any <m>n</m>, the residue of <m>n^2\pmod{7}</m> is never 6.</p>
 </example>
 
-<example xml:id="example-crt"><title>Sun Tzu’s Theorem</title>
+<p>Sun Tzu’s Theorem deals with systems of linear conguences. You may also see this theorem listed as the Chinese Remainder Theorem in older references.  It can be stated for any number of congruences, but we will keep things simple by using only two. </p>
+
+
+<theorem><title>Sun Tzu’s Theorem</title>
 <idx>Sun Tzu’s Theorem</idx>
 <idx>Chinese Remainder Theorem</idx>
-<p>Sun Tzu’s Theorem deals with systems of linear conguences.  Here, we see that examine a special case of the theorem.</p>
+<statement>
 <p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. Then there is a unique integer, <m>x</m>, in the set
 <m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a \pmod{m}</m> and
  <m>x\equiv b\pmod{n}</m>.</p>
-<p>In order for an integer to satisfy the first conguence, we need <m>x = a + m\cdot q_1</m> for some integer <m>q_1</m>.  Substitution into the second congruence gives us 
+ </statement>
+ <proof>
+ <p>In order for an integer to satisfy the first conguence, we need <m>x = a + m\cdot q_1</m> for some integer <m>q_1</m>.  Substitution into the second congruence gives us 
 <me> a + m\cdot q_1\equiv b \pmod{n} \Rightarrow  m\cdot q_1\equiv b-a \pmod{n}</me>
 We know that since <m>m</m> and <m>n</m> are relatively prime, there exist integers <m>s</m> and <m>t</m> such that <me>m \cdot s + n \cdot t = 1  \Rightarrow   m \cdot s \equiv 1 \pmod{n}</me>
 and so 
 <me>q_1\equiv s(b-a) \pmod{n}  \Rightarrow   x = a + m\cdot (s(b-a)+ n q_2)= x = a + m\cdot s\cdot(b-a)+ (m\cdot n) q_2 </me>
 for some integer <m>q_2</m>. This set of solutions constitutes one residue class mod <m>m \cdot n</m> and so there is a unique solution in the desired set.</p>
+ </proof>
+ 
+ </theorem>
+ 
+ 
+
+<example xml:id="example-crt">
+<p>Find all integers that statisfy the two congruences
+<mn>
+<mrow>x\equiv 3\pmod{7}</mrow>
+<mrow>x\equiv 5\pmod{11}.</mrow>
+</mn>
+The first congruence is satisfied by any integer of the form <m>x=3+7k</m>, so we substitute this general form into the second congruence:
+<me>3+7k \equiv 5 \mod{11} \Rightarrow 7k \equiv 2 \mod{11} \Rightarrow k \equiv 5 \mod{11}</me>
+Therefore, <m>k=5 + 11 l</m>, <m>l\in \mathbb{Z}</m> and so  <m>x=3 + 7(5+11l)=38+77l</m></p>
 </example>
 
 </section>  
