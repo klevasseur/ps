@@ -25,7 +25,10 @@
 </section>
 <section>
 <title>Residues</title>
-<p>The residues of integers modulo <m>n</m>, <m>n \geq 2</m> are the remainders upon dividing integers by <m>n</m>.  We start with a simple use of residues.</p>
+<p>The residues of integers modulo <m>n</m>, <m>n \geq 2</m> are the remainders upon dividing integers by <m>n</m>.
+A residue class is a set of all integers that have the same residue.  Residue classes mod <m>n</m> are sets of the of form <m>\{k +n q \mid q \in \mathbb{Z}\}</m>.  Every residue class contains exactly one integer between <m>0</m> and <m>n-1</m>, inclusive, which is the residue for all of the elements of the class.  If two integers, <m>a</m> and <m>b</m>  belong to the same residue class mod <m>n</m>, we may write <m>a \equiv b \pmod{n}</m>.  You can do many of the standard operations on equivalences as you can on equations.  For example, you and add/subtract an integer from both sides.  Multiplication is a little trickier.  You can only multiply on both sides of an equivalence by an integer that is relatively prime to the modulus.
+</p>
+<p>  We start with a simple use of residues.</p>
 <example xml:id="mod7">
 <p>Show that <m>n^2+ 1</m> is divisible by 7 for no positive integer <m>n</m>.
 </p>
@@ -41,12 +44,12 @@ We can easily verify that for any <m>n</m>, the residue of <m>n^2\pmod{7}</m> is
 <p>Sun Tzu’s Theorem deals with systems of linear conguences. You may also see this theorem listed as the Chinese Remainder Theorem in older references.  It can be stated for any number of congruences, but we will keep things simple by using only two. </p>
 
 
-<theorem><title>Sun Tzu’s Theorem</title>
+<theorem xml:id="theorem-suntzu"><title>Sun Tzu’s Theorem</title>
 <idx>Sun Tzu’s Theorem</idx>
 <idx>Chinese Remainder Theorem</idx>
 <statement>
-<p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. Then there is a unique integer, <m>x</m>, in the set
-<m>\{0,1,2,\ldots , m n -1\}</m> such that <m>x\equiv a \pmod{m}</m> and
+<p>Let <m>a, b</m> be integers and <m>m, n</m> positive integers such that <m>\gcd (m,n)=1</m>. Then there is a unique residue class <m>\{x+ n m k \mid k\in \mathbb{Z}\}</m> such that 
+<m>x \in \{0,1,2,\ldots , m n -1\}</m> with <m>x\equiv a \pmod{m}</m> and
  <m>x\equiv b\pmod{n}</m>.</p>
  </statement>
  <proof>
@@ -55,7 +58,7 @@ We can easily verify that for any <m>n</m>, the residue of <m>n^2\pmod{7}</m> is
 We know that since <m>m</m> and <m>n</m> are relatively prime, there exist integers <m>s</m> and <m>t</m> such that <me>m \cdot s + n \cdot t = 1  \Rightarrow   m \cdot s \equiv 1 \pmod{n}</me>
 and so 
 <me>q_1\equiv s(b-a) \pmod{n}  \Rightarrow   x = a + m\cdot (s(b-a)+ n q_2)= x = a + m\cdot s\cdot(b-a)+ (m\cdot n) q_2 </me>
-for some integer <m>q_2</m>. This set of solutions constitutes one residue class mod <m>m \cdot n</m> and so there is a unique solution in the desired set.</p>
+for some integer <m>q_2</m>. This set of solutions constitutes one residue class mod <m>m \cdot n</m>.</p>
  </proof>
  
  </theorem>
@@ -64,26 +67,26 @@ for some integer <m>q_2</m>. This set of solutions constitutes one residue class
 
 <example xml:id="example-crt">
 <p>Find all integers that statisfy the two congruences
-<mn>
+<mdn>
 <mrow>x\equiv 3\pmod{7}</mrow>
 <mrow>x\equiv 5\pmod{11}.</mrow>
-</mn>
+</mdn>
 The first congruence is satisfied by any integer of the form <m>x=3+7k</m>, so we substitute this general form into the second congruence:
-<me>3+7k \equiv 5 \mod{11} \Rightarrow 7k \equiv 2 \mod{11} \Rightarrow k \equiv 5 \mod{11}</me>
+<me>3+7k \equiv 5 \pmod{11} \Rightarrow 7k \equiv 2 \pmod{11} \Rightarrow k \equiv 5 \pmod{11}</me>
 Therefore, <m>k=5 + 11 l</m>, <m>l\in \mathbb{Z}</m> and so  <m>x=3 + 7(5+11l)=38+77l</m></p>
 </example>
 
 </section>  
 <section>
 <title>Euler's Theorem</title>
-<p>Euler's Theorem generalizes Fermat's Little Theorem.</p>
+<p>Euler's Theorem generalizes <xref ref="theorem-fermat-little" text="title"/>.</p>
 
 
 <example xml:id="power-mod-21">
 <p>Compute <m>5^{159} \pmod{21}</m>.</p>
-<p>One solution to this problem is to observe that <m>5^{159}\equiv 2 \pmod{3}</m>  by applying Fermat's little theorem with <m>p=3</m>; and then switching to calculations mod 7, find that <m>5^{159}\equiv 6 \pmod{7}</m>.  We can then use the procedure outlined in the proof of the Chinese Remander Theorem to find that <m>5^{159}\equiv 20 \pmod{21}</m>. Although this solution fine, it can be determined more efficiently with Euler's Theorem.</p>
+<p>One solution to this problem is to observe that <m>5^{159}\equiv 2 \pmod{3}</m>  by applying Fermat's little theorem with <m>p=3</m>; and then switching to calculations mod 7, find that <m>5^{159}\equiv 6 \pmod{7}</m>.  We can then use the procedure outlined in the proof of <xref ref="theorem-suntzu" text="title"/> to find that <m>5^{159}\equiv 20 \pmod{21}</m>. Although this solution fine, it can be determined more efficiently with Euler's Theorem.</p>
 </example>
-<theorem><title>Euler's Theorem</title>
+<theorem xml:id="theorem-euler"><title>Euler's Theorem</title>
 <idx>Euler's Theorem</idx>
 <statement><p>Let <m>n</m> be a positive integer greater than 1 and <m>a</m> a positive integer that is relatively prime to <m>n</m>.  Then  <m>a^{\varphi(n)} \equiv 1 \pmod{n}</m></p></statement>
 <proof><p>Consider the set <m>U_n</m> of all positive integers less than <m>n</m> that are relatively prime to <m>n</m>. The cardinality of this set is <m>\varphi(n)</m>.  We note that the function <m>f</m> on <m>U_n</m> defined by <m>f(b) = a \cdot b \pmod{n}</m> is a permutation of <m>U_n</m>. Let <m>X=\prod_{x \in U_n} x</m>. Then 
@@ -358,7 +361,7 @@ Some calculation can be avoided if you are aware of a Theorem attributed to Lega
 <me>1\cdot 3\cdot 5\cdot \cdots \cdot (2n-1) + 2\cdot 4\cdot 6\cdot \cdots \cdot  2n</me>
 is divisible by <m>2n + 1</m>. Furthermore, show by counterexample that the hypothesis that <m>n</m> is odd is necessary.</p></statement>
 <hint>
-<p>Note that <m>2n \equiv -1 \mod{2n+1}</m>, <m>2n-2 \equiv  -3 \mod{2n+1}</m>, etc.</p>  
+<p>Note that <m>2n \equiv -1 \pmod{2n+1}</m>, <m>2n-2 \equiv  -3 \pmod{2n+1}</m>, etc.</p>  
 </hint>
 </exercise>
 

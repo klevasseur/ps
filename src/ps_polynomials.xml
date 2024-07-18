@@ -144,15 +144,17 @@ definitons of greatest common divisors of polynomials and  congruence modulo a p
 <algorithm><title>Polynomial Euclidean Algorithm</title>
 <statement>
 <p>Input:   <m>a(x)</m> and <m>b(x)</m> </p>
-<p><mn>
+<p><mdn>
 <mrow>gcd(a(x),0)=a(x)</mrow>
 <mrow>gcd(a(x),b(x))=gcd(b(x),r(x)) \text{ if }b(x)\neq 0</mrow>
-</mn>
-where <m>r(x)</m> is the remainder upon dividing <m>b(x)</m> into <m>a(x)</m>.
+</mdn>
+where <m>r(x)</m> is the remainder upon dividing <m>b(x)</m> into <m>a(x)</m>.</p>
 </statement>
 </algorithm>
-<p>We refer to <em>a</em> greatest common divisor here because any nonzero constant multiple of a greatest common divisor is also a greatest common divisor. In the theory of polynomial congruences, if two polynomials have a constant for a greatest common divisor, this corresponds with the integer case of being relatively prime.</p>
-<p>We will only consider examples the special case of two distinct constants in our field, <m>\alpha</m> and <m>\beta</m> and observe that <m>x-\alpha</m> and <m>x-\beta</m> are <q>relatively prime.</q>  </p>
+<p>We refer to <em>a</em>
+ greatest common divisor here because any nonzero constant multiple of a greatest common divisor is also a greatest common divisor. In the theory of polynomial congruences, if two polynomials have a constant for a greatest common divisor, this corresponds with the integer case of being relatively prime.</p>
+<p>We will only consider examples the special case of two distinct constants in our field, 
+<m>\alpha</m> and <m>\beta</m> and observe that <m>x-\alpha</m> and <m>x-\beta</m> are <q>relatively prime.</q>  </p>
 <definition><title>Polynomial Congruence</title>
 <idx><h>Congruence</h><h>Polynomial</h></idx>
 <statement>Let <m>m(x)</m> be a nonconstant polynomial over over a field
@@ -340,12 +342,14 @@ Polynomial of the First kind.</p></statement> <!-- <hint><p></p></hint>
 <statement>
 <p>Consider polynomials over the real numbers in this exercises, although any field would do.
 <ol>
-<li><p>Let <m>c_1</m> and <m>\alpha_1</m> be real numbers. Describe all polynomials <m>a(x)</m> that are congruent <m>c_1</m> mod <m>x-\alpha_1</m>.  Use the notation <m>a(x)\equiv c (\mod{x-\alpha_1})</m>.</p></li>
-<li><p>Suppose you are also given <m>c_2</m> and <m>\alpha_2 \neq \alpha_1</m> and find all polynomials <m>a(x)</m> that you identified in the previous part that also satisfy <m>a(x) \equiv c_2 (\mod{x-\alpha_2})</m>. </p></li>
-<li><p>Generalize the previous two steps.</p></li>
+<li><p>Let <m>c_1</m> and <m>\alpha_1</m> be real numbers. Describe all polynomials <m>a(x)</m> that are congruent to <m>c_1</m> mod <m>x-\alpha_1</m>.  </p></li>
+<li><p>Suppose you are also given <m>c_2</m> and <m>\alpha_2 \neq \alpha_1</m> and find all polynomials <m>a(x)</m> that you identified in the previous part that also satisfy <m>a(x) \equiv c_2 \pmod{x-\alpha_2}</m>. </p></li>
+<li><p>Generalize the previous two steps. What are we doing here?</p></li>
 </ol>
 </p>
 </statement>
 </exercise>
+
+
 </exercises> 
 </chapter>
