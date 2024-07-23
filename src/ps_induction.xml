@@ -292,7 +292,7 @@ for all positive integers <m>n \gt 0 = d</m>. Note at if <m>n = 0</m> the sum ab
 <men xml:id="sum1">
 \begin{split}
 \sum_{k=0}^{n} (-1)^k\binom{n}{k}g(k) &amp;= \sum_{k=0}^{n} (-1)^k\binom{n}{k}\left[kh(k) + c\right]\\
-		&amp; = \sum_{k=0}^{n} (-1)^k\binom{n}{k}k \cot h(k) + \sum_{k=0}^{n} (-1)^k\binom{n}{k}c.
+		&amp; = \sum_{k=0}^{n} (-1)^k\binom{n}{k}k \cdot h(k) + \sum_{k=0}^{n} (-1)^k\binom{n}{k}c.
 \end{split}
 </men>
 The second term is 0 which is proven by <xref ref="sum0"/>, while 
