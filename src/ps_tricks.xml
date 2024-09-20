@@ -103,17 +103,17 @@ This general formula actually works for all <m>n</m>, including 0 and 1.   Thus,
 <solution component="im"><p>We start by proving the simpler inequality <m>\sqrt{a b}+ \sqrt{(1-a)(1-b)} \leq 1</m> for all <m>a, b \in [0, 1]</m>.  The constraints on <m>a</m> and <m>b</m> suggest that we make the substitutions <m>a=\cos^2{\alpha}</m> and <m>b=\cos^2{\beta}</m>, where <m>\alpha, \beta \in [0,\pi/2]</m>. Then
 <me>
 \begin{split}
-	\sqrt{a b}+ \sqrt{(1-a)(1-b)} &= \cos{\alpha} \cos{\beta} +  \sin{\alpha} \sin{\beta} \\
-			&=\cos{(\alpha - \beta)}\\
-			&\leq 1
+	\sqrt{a b}+ \sqrt{(1-a)(1-b)} &amp;= \cos{\alpha} \cos{\beta} +  \sin{\alpha} \sin{\beta} \\
+			&amp;=\cos{(\alpha - \beta)}\\
+			&amp;\leq 1
 \end{split}
 </me>
 For the original inequality we make the additional substitution <m>c=\cos^2{\gamma}</m>, <m>\gamma \in [0,\pi/2]</m>,  and we use the fact that <m>0 \leq \cos{\gamma},\sin{\gamma} \leq 1</m>:
 <me>
 \begin{split}
-	\sqrt{a b c}+ \sqrt{(1-a)(1-b)(1-c)} &= \cos{\alpha} \cos{\beta} \cos{\gamma} +  \sin{\alpha} \sin{\beta}  \sin{\gamma}\\
-			&\leq \cos{\alpha} \cos{\beta} +  \sin{\alpha} \sin{\beta} \\
-			&\leq 1
+	\sqrt{a b c}+ \sqrt{(1-a)(1-b)(1-c)} &amp;= \cos{\alpha} \cos{\beta} \cos{\gamma} +  \sin{\alpha} \sin{\beta}  \sin{\gamma}\\
+			&amp;\leq \cos{\alpha} \cos{\beta} +  \sin{\alpha} \sin{\beta} \\
+			&amp;\leq 1
 \end{split}
 </me>
 </p>
@@ -152,10 +152,20 @@ For the original inequality we make the additional substitution <m>c=\cos^2{\gam
 <statement>
 <p>Complete the derivation of the value of the integral in <xref ref="example-putnam-integral" />.</p>
 </statement>
-<!-- 
-<solution component="im"><p></p>
+<solution component="im"><p>
+Let 
+<me>F(y) =\int_{0}^{\infty} \frac{\tan^{-1}(y x)-\tan^{-1}(x)}{x} \, dx</me>
+We not that <m>F(0)=0</m> and
+<me>
+\begin{split}
+F'(y) &amp;=\int_{0}^{\infty} \frac{1}{x} \frac{1}{1+x^2 y^2} x \, dx\\
+	  &amp;=\int_{0}^{\infty}  \frac{1}{1+x^2 y^2}  \, dx\\
+	  &amp;=\left. \frac{1}{y} \tan^{-1}(yx) \right|_{0}^{\infty} \\
+	  &amp;=\frac{\pi}{2 y}
+\end{split}</me>
+Therefore <m>F(y)=\frac{\pi}{2} \ln{y} + C</m> and since <m>F(0)=0</m>, <m>C=0</m>.  Finally, our integral is <m>F(\pi)=\pi^2\ln{\pi}</m>.
+</p>
 </solution>
- -->
 </exercise>
 <exercise>
 <statement>
