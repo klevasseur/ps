@@ -160,7 +160,7 @@ We not that <m>F(0)=0</m> and
 \begin{split}
 F'(y) &amp;=\int_{0}^{\infty} \frac{1}{x} \frac{1}{1+x^2 y^2} x \, dx\\
 	  &amp;=\int_{0}^{\infty}  \frac{1}{1+x^2 y^2}  \, dx\\
-	  &amp;=\left. \frac{1}{y} \tan^{-1}(yx) \right|_{0}^{\infty} \\
+	  &amp;=\frac{1}{y} \tan^{-1}(yx) \right|_{0}^{\infty} \\
 	  &amp;=\frac{\pi}{2 y}
 \end{split}</me>
 Therefore <m>F(y)=\frac{\pi}{2} \ln{y} + C</m> and since <m>F(0)=0</m>, <m>C=0</m>.  Finally, our integral is <m>F(\pi)=\pi^2\ln{\pi}</m>.
