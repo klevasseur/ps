@@ -96,7 +96,17 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 <p>Prove that the number of odd coefficients in each row of Pascal's triangle is a power of 2.</p>
 
 </statement>
-<solution><p></p>
+<solution><p>A <q>proof with no words</q> is provided here, but here are some explanatory words.   By induction, if the first <m>2^n</m> rows contain a number of ones that is a power of two, then the next <m>2^n</m> rows contain duplicates of the previous <m>2^n</m> rows and so they also have a power of <m>2</m> for a number of odd entries. In the figure provided, 1's represent odd numbers. Note that in row <m>2^n-1</m>, all entries are odd. This produces the triangle of even numbers, represented by 0's in the middle triangle from row <m>2^n</m> through row <m>2^n-2</m>. 
+
+</p>
+            <figure xml:id="fig-binomial-odds">
+                <caption>A proof with no works
+                </caption>
+                <image source="images/fig-binomial-odds.png" width="60%">
+                    <description>A triangle consisting of the first two rows of Pascal's triangle appears separately from an inductive image consisting of three copies of the first <m>2^n</m> rows. and a triangle of zeros.  The top triangle represents the mod 2 entries of rows 0 through <m>2^n-1</m> of Pascal's triangle.  Below is are two more copies surrounding an inverted triangle of zeros.  The solution text further describes this image.</description>
+                </image>
+            </figure>
+
 </solution>
 </exercise>
 <exercise number="6">
@@ -131,7 +141,7 @@ How many ways can I give away the tickets? There are two ways to count. Find bot
 </exercise>
  -->
 
-<exercise number="1">
+<exercise number="8">
 <statement>
 <p>Let <m>S</m> be a set of real numbers which is closed under multiplication (that is, if <m>a</m> and <m>b</m> are in <m>S</m>, then so is <m>a b</m>). Let <m>T</m> and <m>U</m> be disjoint subsets of <m>S</m> whose union is <m>S</m>. Given that the product of any three (not necessarily distinct) elements of <m>T</m> is in <m>T</m> and that the product of any three elements of <m>U</m> is in <m>U</m>, show that at least one of the two subsets <m>T</m>, <m>U</m> is closed under multiplication.</p>
 </statement>
