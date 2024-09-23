@@ -131,11 +131,12 @@ For the original inequality we make the additional substitution <m>c=\cos^2{\gam
 <statement>
 <p>For any triangle <m>ABC</m>, prove that <me>\tan{A}+\tan{B}+\tan{C} = \tan{A}\cdot \tan{B}\cdot \tan{C}</me></p>
 </statement>
-<!-- 
-<hint><p>Start with proving  <m>\sqrt{a b}+ \sqrt{(1a)(1b)} \leq 1</m></p></hint>
-<solution component="im"><p></p>
+<solution component="im">
+<p>Since <m>A +B = \pi - C</m>, <m>\tan{(A+B)} = \tan{(\pi-C)}=-\tan{C}</m>.  Applying the addition formula for tangent to the left side of this equality we have <me>\frac{\tan{A}+\tan{B}}{1-\tan{A}\tan{B}}=-\tan{C}</me>
+and the desired equality follows.
+</p>
 </solution>
- -->
+
 </exercise>
 
 <exercise>
@@ -154,15 +155,16 @@ For the original inequality we make the additional substitution <m>c=\cos^2{\gam
 </statement>
 <solution component="im"><p>
 Let 
-<me>F(y) =\int_{0}^{\infty} \frac{\tan^{-1}(y x)-\tan^{-1}(x)}{x} \, dx</me>
+<me>F(y) =\int_{0}^{\infty} \frac{\tan^{-1}{(y x)}-\tan^{-1}{x}}{x} \, dx</me>
 We not that <m>F(0)=0</m> and
 <me>
 \begin{split}
 F'(y) &amp;=\int_{0}^{\infty} \frac{1}{x} \frac{1}{1+x^2 y^2} x \, dx\\
 	  &amp;=\int_{0}^{\infty}  \frac{1}{1+x^2 y^2}  \, dx\\
-	  &amp;=\frac{1}{y} \tan^{-1}(yx) \right|_{0}^{\infty} \\
+	  &amp;=\left.\frac{1}{y} \tan^{-1}{(yx)} \right|_{0}^{\infty} \\
 	  &amp;=\frac{\pi}{2 y}
 \end{split}</me>
+
 Therefore <m>F(y)=\frac{\pi}{2} \ln{y} + C</m> and since <m>F(0)=0</m>, <m>C=0</m>.  Finally, our integral is <m>F(\pi)=\pi^2\ln{\pi}</m>.
 </p>
 </solution>
