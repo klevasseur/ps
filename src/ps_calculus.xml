@@ -245,13 +245,13 @@ Prove that <m>\lim_{x\to \infty } f(x)</m> exists and is less than or equal to <
 <solution component="im">
 	<p>First we note tha <m>f</m> is increasing  since its derivaitve is positive and so <m>f(x)>1</m> for <m>x \gt 1</m>, and
 		<me>f'(x)=\frac{1}{x^2+f(x)^2} \lt \frac{1}{x^2+1}.</me>
-Since <m>f</m> is increasing, if we can bound <m>f(x)</m> above we will know that is converges and it's limit less than or equal to the bound.
+Since <m>f</m> is increasing, if we can bound <m>f(x)</m> above we will know that is converges at infinity and it's limit less than or equal to the bound.
 <me>
 	\begin{split}
 		f(x) &amp;= 1 + \int_1^x f'(t)\,dt \\
 			&amp;\lt 1+\int_1^x \frac{1}{t^2+1}\,dt\\
 			&amp;=1+ (\left. \tan^{-1} t \right|_1^x)\\
-			&amp;\lt 1+ (\left. \tan^{-1} t \right|_1^{\infty}})\\
+			&amp;\lt 1+ (\left. \tan^{-1} t \right|_1^{\infty})\\
 			&amp;=1+\frac{\pi}{4}
 	\end{split}
 </me> 
