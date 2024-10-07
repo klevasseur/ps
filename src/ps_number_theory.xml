@@ -19,7 +19,7 @@
 <p>Note that relatively prime integers need not be prime.</p>
 <p>An important function on the positive integers is the Euler phi function.</p>
 <definition><title>Euler Phi Function</title><idx>Euler Phi Function</idx><idx>Euler Totiant Function</idx><notation><usage><m>\varphi(n)</m></usage><description>The Euler phi function</description></notation>
-<statement><p>Let <m>n</m> be a positive integer. The value of <m>\varphi(n)</m> is the number of integers in the set <m>\{1, 2,\dots ,n-1\}</m> that are relatively prime to <m>n</m>. </p></statement>
+<statement><p>Let <m>n</m> be a positive integer. The value of <m>\varphi(n)</m> is the number of integers in the set <m>\{1, 2,\dots ,n\}</m> that are relatively prime to <m>n</m>. </p></statement>
 </definition>
 <p>We will explore some the properties of this function in the exercises.</p>
 </section>
