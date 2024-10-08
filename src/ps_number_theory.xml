@@ -84,7 +84,7 @@ Therefore, <m>k=5 + 11 l</m>, <m>l\in \mathbb{Z}</m> and so  <m>x=3 + 7(5+11l)=3
 
 <example xml:id="power-mod-21">
 <p>Compute <m>5^{159} \pmod{21}</m>.</p>
-<p>One solution to this problem is to observe that <m>5^{159}\equiv 2 \pmod{3}</m>  by applying Fermat's little theorem with <m>p=3</m>; and then switching to calculations mod 7, find that <m>5^{159}\equiv 6 \pmod{7}</m>.  We can then use the procedure outlined in the proof of <xref ref="theorem-suntzu" text="title"/> to find that <m>5^{159}\equiv 20 \pmod{21}</m>. Although this solution fine, it can be determined more efficiently with Euler's Theorem.</p>
+<p>One solution to this problem is to observe that <m>5^{159}\equiv 2 \pmod{3}</m>  by applying Fermat's little theorem with <m>p=3</m>; and then switching to calculations mod 7, find that <m>5^{159}\equiv 6 \pmod{7}</m>.  We can then use the procedure outlined in the proof of <xref ref="theorem-suntzu" text="title"/> to find that <m>5^{159}\equiv 20 \pmod{21}</m>. Although this solution is fine, it can be determined more efficiently with Euler's Theorem.</p>
 </example>
 <theorem xml:id="theorem-euler"><title>Euler's Theorem</title>
 <idx>Euler's Theorem</idx>
@@ -145,7 +145,7 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\varphi(n)} \cdot X \pm
 <ol>
 <li><p> Find and prove a formula for <m>\varphi \left(p^k\right)</m> if <m>k\geq 1</m> and <m>p</m> is prime.</p></li>
 <li><p>Prove that if <m>a</m> and <m>b</m> are relatively prime positive integers greater than <m>1</m>, then  <m>\varphi(a \cdot b)=\varphi(a) \cdot \varphi(b)</m></p></li>
-<li><p> Determine the value of <m>\varphi(100!)</m>.</p></li>
+<li><p> Determine the value of <m>\varphi(100)</m> for use in the next problem.</p></li>
 </ol>
 </p>
 </statement>
