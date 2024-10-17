@@ -110,35 +110,20 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\varphi(n)} \cdot X \pm
 <exercises>
 <title>Problems</title>
 <introduction><p>Before starting these problems, you might want to review the statement of <xref ref="theorem-fermat-little" text="title"/>.</p></introduction>
-<exercise number="1">
+
+<exercise>
 <statement>
-<p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em>
- if <m>a d - b c = \pm 1</m>.  
-<ol marker="(a)">
-	<li><p>Prove that if <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are close, then <m>\frac{a+c}{b+d}</m> is close to both <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>.</p></li>
-	<li><p>Find five rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
-<!-- 
-	<li><p>Find a connection between pairs of close rational numbers, <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>, and  the determinant of the matrix 
-			<m>\left(
-			\begin{array}{cc}
-			a  &amp;  b   \\
-			c  &amp;  d   \\
-			\end{array}
-			\right)
-			</m>
-</p></li>
- -->
-</ol>
+<p>For which positive integers <m>n</m>, <m>n \geq 2</m> is there a sum of <m>n</m> consecutive positive integers that is a perfect square?
 </p>
 </statement>
-<!-- 
-<hint><p></p></hint>
+<hint><p>First consider odd values of <m>n</m>, and then even ones.</p></hint>
 <solution>
-<p></p>
+<p>If <m>n</m> is odd and <m>n =2m+1</m> , then <m>\sum_{k=n-m}^{n+m} k = n^2</m>.</p>
+<p>Regarding the even case we make the following basic observation.  If we add <m>n=2m</m> consecutive positive integers then the first and last, second and next-to-last, etc. pair up to produce <m>m</m> terms, each consisting of an odd number.   In order to get a square, the number of factors of 2 in <m>m</m> must be even.  Therefore, <m>n</m> is even, you can get a square if <m>n</m> has an odd number for factors of two.</p>
+<p>We illustrate the observation with the example of <m>n=14</m>.  Fourteen consecutive integers can be a paired up from both ends to seven equal sums, so the sum will be a multiple of 7.  To get a square we will want the paired sums to have a second factor of 7.  We can try setting the two end to add to 7, but pair would be -3 and 10, but we want only positive integers so the next possible sum, which must be odd, is <m>63=7\cdot 9</m>.  Solving <m>k + (k+13)=63</m> we see that the first term of the sum is 25 and <m>\sum_{k=25}^{38}=441=21^2</m>.</p>
+<p>In general, if <m>n=2^{2j+1} (2m+1)</m>, we will want to pair up terms in our sum of <m>n</m> integers so that we have <m>2^{2j} (2m+1)</m> terms. We can focus on the two middle terms of the sum, call them <m>k</m> and <m>k+1</m>. Their sum will be the common sum for all paired terms as we work outward in pairings.  Therefore we will have a sum of <m>2^{2j} (2m+1)(2k+1)</m>.  Since we are free to select any odd integer <m>2k+1</m> we can make sure it has a factor of <m>2m+1</m> and is possibly so other odd square factors so that the run of consecutive integers is completely positive. Notice that if <m>n=2^{2j} (2m+1)</m>, any sum will have an odd number of factors of two, which makes having the sum be a perfect square impossible.</p>
 </solution>
- -->
 </exercise>
-
 <exercise number="2" xml:id="exercise-euler-phi"><title>Euler's Phi Function</title>
 <statement>
 <p>Recall that <m>\varphi(n)</m> is the number of integers in the set <m>\{1,2, \ldots  , n-1\}</m> that are relatively prime to <m>n</m>.
@@ -191,7 +176,23 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\varphi(n)} \cdot X \pm
 </exercise>
 <exercise>
 <statement>
-<p>For which positive integers <m>n</m> is there a sum of <m>n</m> consecutive integers that is a perfect square?
+<p>We say that two positive rational numbers <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are <em>close</em>
+ if <m>a d - b c = \pm 1</m>.  
+<ol marker="(a)">
+	<li><p>Prove that if <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m> are close, then <m>\frac{a+c}{b+d}</m> is close to both <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>.</p></li>
+	<li><p>Find five rational numbers that are close to <m>\frac{2}{7}</m>.</p></li>
+<!-- 
+	<li><p>Find a connection between pairs of close rational numbers, <m>\frac{a}{b}</m> and <m>\frac{c}{d}</m>, and  the determinant of the matrix 
+			<m>\left(
+			\begin{array}{cc}
+			a  &amp;  b   \\
+			c  &amp;  d   \\
+			\end{array}
+			\right)
+			</m>
+</p></li>
+ -->
+</ol>
 </p>
 </statement>
 <!-- 
@@ -201,6 +202,7 @@ Multiplying both sides of the equivalence <m>X \equiv a^{\varphi(n)} \cdot X \pm
 </solution>
  -->
 </exercise>
+
 
 <exercise>
 <statement>
