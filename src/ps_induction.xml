@@ -291,7 +291,7 @@ for all positive integers <m>n \gt 0 = d</m>. Note at if <m>n = 0</m> the sum ab
 <p>Let <m>g(x)</m> be an arbitrary polynomial of degree <m>d+1</m> over the integers, then <m>g(x)</m> can be rewritten as <m>g(x) = x\cdot h(x) + c</m>, where <m>h(x)</m> has degree <m>d</m> and <m>c</m> is an integer. Then
 <men xml:id="sum1">
 \begin{split}
-\sum_{k=0}^{n} (-1)^k\binom{n}{k}g(k) &amp;= \sum_{k=0}^{n} (-1)^k\binom{n}{k}\left[kh(k) + c\right]\\
+\sum_{k=0}^{n} (-1)^k\binom{n}{k}g(k) &amp;= \sum_{k=0}^{n} (-1)^k\binom{n}{k}\left[k \cdot h(k) + c\right]\\
 		&amp; = \sum_{k=0}^{n} (-1)^k\binom{n}{k}k \cdot h(k) + \sum_{k=0}^{n} (-1)^k\binom{n}{k}c.
 \end{split}
 </men>

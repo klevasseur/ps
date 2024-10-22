@@ -105,7 +105,7 @@ This quadratic polynomial in <m>\alpha</m> has no real roots and so the discrimi
 	<idx>Young's inequality</idx>
 		<statement><p>If <m>a</m> and <m>b</m> are nonnegative real numbers and <m>p</m> and <m>q</m> are positive real numbers such that <m>\frac{1}{p} + \frac{1}{q} = 1</m>, then 
 		<me>a\cdot b \leq \frac{a^{p}}{p} + \frac{b^{q}}{q},</me>
-		with equality if and only if <m>f(a)=b</m>.</p></statement>
+		with equality if and only if <m>a^p=b^q</m>.</p></statement>
 <proof><p>The proof follows from the following more general inequality, where <m>f(x)=x^{p-1}</m>.
 </p> </proof>
 </theorem>

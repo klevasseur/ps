@@ -12,7 +12,7 @@
 <p>Let <m>k</m> be a fixed positive integer. The <m>n</m>-th derivative of
 <m>\frac{1}{x^k - 1}</m> has the form <m>\frac{P_n(x)}{(x^k - 1)^{n+1}}</m>
 where <m>P_n(x)</m> is a polynomial. Find <m>P_n(1)</m>.</p>
-<p>One solution published solution from <xref ref="biblio-putnam-archive"/> follows.  By differentiating <m>P_n(x)/(x^k-1)^{n+1}</m>, we find that
+<p>One published solution from <xref ref="biblio-putnam-archive"/> follows.  By differentiating <m>P_n(x)/(x^k-1)^{n+1}</m>, we find that
 <m>P_{n+1}(x) = (x^k-1)P_n'(x)-(n+1)kx^{k-1}P_n(x)</m>; substituting
 <m>x=1</m> yields <m>P_{n+1}(1) = -(n+1)k P_n(1)</m>.  Since <m>P_0(1)=1</m>, an
 easy induction gives <m>P_n(1) = (-k)^n n!</m> for all <m>n \geq 0</m>.</p>

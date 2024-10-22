@@ -22,7 +22,7 @@ Notice that if this sum is infinite and the <m>a_i</m> converge to zero, everyth
 <p>The solution, by Rebecca Mendum, not only identifies the telescoping of terms, but is a good example of using auxiliary notation to simplify expressions.  We start by letting <m>2^k=x</m> and <m>3^k=y</m> and first work with the general term of the sum:
 <me>\begin{split}
 \frac{6^k}{(3^{k+1}-2^{k+1})(3^k-2^k)}&amp;=\frac{x y}{(3y-2x)(y-x)}\\
-	&amp;=\frac{A}{3x-2x} + \frac{B}{y-x}
+	&amp;=\frac{A}{3y-2x} + \frac{B}{y-x}
 \end{split}
 </me>
 For the purposes of this partial fractions decomposition, we imagine <m>y</m> to be our variable and think of <m>x</m> as a constant. With this assumption, we get <m>A=-2x</m> and <m>B=x</m>. Our sum becomes
