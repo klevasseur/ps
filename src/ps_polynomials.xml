@@ -108,18 +108,24 @@ described in the problem and evaluate it at <m>2019</m> to get <me>
 \prod_{j \neq i} \frac{1009-j}{i-j} \end{split}</me> </p> <p>We observe
 that the product expressions inside the sum above involve factorials
 that can be combined into an expression that involves a binomial
-coefficient. <me> \begin{split} \prod_{j \neq i}
-\frac{1009-j}{i-j}&amp;=\frac{\prod_{j \neq i} {1009-j}} {\prod_{j \neq
-i} {i-j}}\\ &amp;\frac{1009!/(1009-i)}{i! (1008-i)! (-1)^{1008-8}}\\
-&amp; (-1)^{1008-i}\binom{1009}{i} \end{split} </me> We now return to
-the value of <m>p(2019)</m> with the this expression for the product and
-<xref ref="binet" text="title"/> for the Fibonacci numbers. <me>
-\begin{split} p(2019) &amp;=\sum_{i=0}^{1008}
-\frac{1}{\sqrt{5}}(\alpha^{2i+1}-\beta^{2i+1})
-(-1)^{1008-i}\binom{1009}{i}    \\ &amp;=\frac{1}{\sqrt{5}}\left(
-\sum_{i=0}^{1008} \alpha^{2i+1} (-1)^{1008-i}\binom{1009}{i}-
+coefficient. 
+
+<me> \begin{split} 
+\prod_{j \neq i} \frac{1009-j}{i-j}
+			&amp;=\frac{\prod_{j \neq i} {1009-j}} {\prod_{j \neq i} {i-j}}\\
+			&amp;\frac{1009!/(1009-i)}{i! (1008-i)! (-1)^{1008-i}}\\
+			&amp; (-1)^{1008-i}\binom{1009}{i} \end{split} </me>
+
+ We now return to the value of <m>p(2019)</m> with the this expression for the product and
+<xref ref="binet" text="title"/> for the Fibonacci numbers. 
+
+<me>
+\begin{split} p(2019) 
+	&amp;=\sum_{i=0}^{1008}\frac{1}{\sqrt{5}}(\alpha^{2i+1}-\beta^{2i+1})
+(-1)^{1008-i}\binom{1009}{i}    \\ 
+	&amp;=\frac{1}{\sqrt{5}}\left(\sum_{i=0}^{1008} \alpha^{2i+1} (-1)^{1008-i}\binom{1009}{i}-
 \sum_{i=0}^{1008} \beta^{2i+1} (-1)^{1008-i}\binom{1009}{i} \right)\\
-&amp;=\frac{1}{\sqrt{5}}\left( \sum_{i=0}^{1008}(-\alpha) (\alpha^2)^i
+	&amp;=\frac{1}{\sqrt{5}}\left( \sum_{i=0}^{1008}(-\alpha) (\alpha^2)^i
 (-1)^{1009-i}\binom{1009}{i}- \sum_{i=0}^{1008}(-\beta) (\beta^2)^i
 (-1)^{1009-i}\binom{1009}{i} \right)\\ &amp;=\frac{1}{\sqrt{5}}\left(
 \sum_{i=0}^{1008}(-\alpha) (\alpha^2)^i (-1)^{1009-i}\binom{1009}{i}-
@@ -137,9 +143,9 @@ deduce that <m>p(2019) = F_{2019} - F_{1010}</m>. </p>
 
 </section> <section><title>Polynomial Conguences</title>
 <p>Using the division property for polynomials, we can develop the
-definitons of greatest common divisors of polynomials and  congruence modulo a polynomial.</p>
+definitions of greatest common divisors of polynomials and  congruence modulo a polynomial.</p>
 
-<p>Given two polynomials <m>a(x)</m> and <m>b(x)</m> over some field (think of the real numbers if you're) not all that familiar with fields), a greatest common factor of the two polynomials is a polynomial <m>d(x)</m> that divides evenly into both  <m>a(x)</m> and <m>b(x)</m> and has the property that every other polynomial that divides evenly into  <m>a(x)</m> and <m>b(x)</m> also divides evenly into <m>d(x)</m>.  We will leave our some of the details but suffice to point out that the following algorthm computes a greatest common divisor of any pair of polynomials as long as they are not both equal to the zero polynomial.
+<p>Given two polynomials <m>a(x)</m> and <m>b(x)</m> over some field (think of the real numbers if you're not all that familiar with fields), a greatest common factor of the two polynomials is a polynomial <m>d(x)</m> that divides evenly into both  <m>a(x)</m> and <m>b(x)</m> and has the property that every other polynomial that divides evenly into  <m>a(x)</m> and <m>b(x)</m> also divides evenly into <m>d(x)</m>.  We will leave our some of the details but suffice to point out that the following algorithm computes a greatest common divisor of any pair of polynomials as long as they are not both equal to the zero polynomial.
 </p>  
 <algorithm><title>Polynomial Euclidean Algorithm</title>
 <statement>
