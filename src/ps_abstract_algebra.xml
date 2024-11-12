@@ -32,7 +32,7 @@ We can show that <m>F[x]/I</m> is isomorphic to the ring <m>F^n</m> of <m>n</m>-
 <li><p>For all <m>r(x)+I, s(x)+I  \in F[x]/I</m>:<me>\phi((r(x)+I)+(s(x)+I))= \phi(r(x)+I)+\phi(s(x)+I)</me>  </p></li>
 <li><p>For all <m>r(x)+I, s(x)+I  \in F[x]/I</m>:<me>\phi((r(x)+I)\cdot (s(x)+I))= \phi(r(x)+I)\cdot \phi(s(x)+I)</me>  </p></li>
 </ul>
-A quick note on the need <m>\phi</m> to be well defined.  Since the same coset can be generated from different polynomials, and since <m>\phi</m> is defined in terms of a generating polynomial, we need to be sure that if <m>s(x)</m> and <m>t(x)</m> are different polynomials for which <m>s(x)+I=t(x)+I</m>, we get <m>\phi(s(x)+I)=\phi(t(x)+I)</m>.
+A quick note on the need for <m>\phi</m> to be well defined.  Since the same coset can be generated from different polynomials, and since <m>\phi</m> is defined in terms of a generating polynomial, we need to be sure that if <m>s(x)</m> and <m>t(x)</m> are different polynomials for which <m>s(x)+I=t(x)+I</m>, we get <m>\phi(s(x)+I)=\phi(t(x)+I)</m>.
 </p>
 </section>  
 
@@ -44,7 +44,8 @@ A quick note on the need <m>\phi</m> to be well defined.  Since the same coset c
 <p>Let <m>S</m> be a set which is closed under the binary operation <m>\circ</m>, with the following properties:
 <ul>
 <li><p>There is an element <m>e \in S</m> such that <m>a \circ e = e\circ a=a, \forall a\in S</m></p></li>
-<li><p> <m>(a \circ b) \circ (c \circ d) = (a \circ c) \circ (b \circ d) \forall a,b,c,d \in  S</m>.</p></li>
+<li><p> <m>(a \circ b) \circ (c \circ d) = (a \circ c) \circ (b \circ d)\quad
+ \forall a,b,c,d \in  S</m>.</p></li>
 </ul>
 </p>
 <p>Prove or disprove:
@@ -143,7 +144,7 @@ determine the order of <m>h</m>.
 </exercise>
 <exercise>
 <statement>
-<p>Consider the puzzle below, where one can rotate each of the three triangles. For example, rotating the middle triangle in (A) once gives the configuration in (B).
+<p>Consider the puzzle below, where one can rotate each of the three triangles. For example, rotating the middle triangle <m>120</m> degrees counterclockwise in (A) produces the configuration in (B).
 </p>
 <!-- 
 <image source="images/fig-group-puzzle-1" width="70%">
