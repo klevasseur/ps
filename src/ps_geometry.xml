@@ -131,8 +131,9 @@ fig.show(axes=False)
 </statement>
 <!-- 
 <hint><p></p></hint>
-<solution><p></p></solution>
  -->
+ <solution><p>The area of the triangle is <m>\frac{1}{2} b (1-h/2)</m> and the area of the rectangle is <m>b h</m>.  Equating these two area, we get <m>h=\frac{2}{5}</m>.</p></solution>
+
 </exercise>
 <exercise>
 <statement>
