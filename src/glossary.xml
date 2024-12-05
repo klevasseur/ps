@@ -1,11 +1,11 @@
 <glossary xml:id="ads-glossary">
 <title>An Informal Glossary of Terms</title>
 <idx>Glossary</idx>
-<headnote><p>Many of the words in this glossary may not formally defined in the book either because they are viewed as prerequisites to a problem-solving course.</p></headnote>
+<headnote><p>Many of the words in this glossary may not formally defined in the book mostly because they are viewed as prerequisites to a problem-solving course.</p></headnote>
 
 <gi xml:id="gloss-An">
 <title>An</title> <idx>An</idx>
-<p>When referring to “an entity” we mean that the object can be any of the elements is some set.  For example, if you say that <m>n</m> is an integer, it could be any integer.</p>
+<p>When referring to “an entity” we mean that the object can be any of the elements is some set.  For example, if you say that <m>n</m> is <em>an</em> integer, it could be any integer.</p>
 </gi>
 
 <gi xml:id="gloss-Bit"> 

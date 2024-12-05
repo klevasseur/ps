@@ -209,7 +209,9 @@ root of <m>p(x)</m>, then <m>\bar{z}= a -b i</m> is also a root of
 <m>p(x)</m>.</p></li> <li><p>Prove that <m>p(x)</m> can be factored into
 a product of linear and quadratic polynomials with real
 coefficients.</p></li> </ol> </p></statement> <!-- <hint><p></p></hint>
-<solution><p></p></solution> --> </exercise> <exercise> <statement><p>
+<solution><p></p></solution> --> </exercise> 
+
+<exercise> <statement><p>
 Let <m>f(x)</m> be a polynomial of degree greater than or equal to two
 with <m>f(-1)=f(1)=0</m>, and <m>f(x)>0</m> on the interval
 <m>(-1,1)</m>.  Let <m>L_{-1}</m> and <m>L_1</m> be tangents to the
@@ -217,6 +219,7 @@ with <m>f(-1)=f(1)=0</m>, and <m>f(x)>0</m> on the interval
 <m>T</m>, of the triangle formed by <m>L_{-1}</m>, <m>L_1</m>, and the
 <m>x</m>-axis?  Is <m>T</m> bounded? </p></statement> <!--
 <hint><p></p></hint> <solution><p></p></solution> --> </exercise>
+
 <exercise> <statement><p>This exercise can initiate a more general
 discussion of conditions under which polynomial interpolation is
 possible <ol marker="(a)"> <li><p>Given three real numbers <m>x_0 \lt
@@ -330,12 +333,16 @@ _{k\in B_n} p(k).</me></p></li> </ol></p></solution> </exercise>
 <exercise> <statement><p> Determine all polynomials <m>P(x)</m> such
 that <m>P\left(x^2+1\right)=P(x)^2+1</m> and <m>P(0)=0</m>.
 </p></statement> <!-- <hint><p></p></hint> <solution><p></p></solution>
---> </exercise> <exercise xml:id="exercise-p2019b5-related">
+--> </exercise> 
+
+<exercise xml:id="exercise-p2019b5-related">
 <statement><p>Let <m>a, b \in \RR</m>, <m>a \neq 0</m>. Prove that if
 <m>p(x)</m> and <m>q(x)</m> are polynomials of degree <m>n</m>, <m>n
 \geq 1</m>, such that <m>p(a k +b)=q(x)</m>, <m>k = 0, 1, \dots, n</m>,
 then <m>p(a x + b)=q(x)</m></p></statement> <!-- <hint><p></p></hint>
-<solution><p></p></solution> --> </exercise> <exercise
+<solution><p></p></solution> --> </exercise>
+
+ <exercise
 xml:id="exercise-chebyshev"><title>Chebyshev Polynomials of the First
 Kind</title><idx>Chebyshev Polynomials</idx> <statement><p>Prove that if
 <m>n</m> is a nonnegative integer then <m>\cos{n \theta}</m>  is a
