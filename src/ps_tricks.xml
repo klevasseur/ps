@@ -9,14 +9,14 @@
 <idx>Telescoping Sum</idx>
 <p>Telescoping sums are occasionally embedded in more challenging problems than this one.</p>
 <example><idx>Nguyen, Tung</idx><p>Let <m>f(n)=\sum_{k=1}^n \frac{1}{\sqrt{k}+\sqrt{k+1}}</m>.  Evaluate <m>f(9999)</m>.</p>
-<p>Rationalizing the denominator reveals a <term>telescoping sum</term> here.  For any nonnegative <m>k</m>,
+<p>Rationalizing the denominator reveals a <term>telescoping sum</term> here.  For any positive <m>k</m>,
 <me>\begin{split}
 \frac{1}{\sqrt{k} + \sqrt{k + 1}} &amp; = \frac{\sqrt{k + 1} - \sqrt{k}}{(\sqrt{k} + \sqrt{k + 1})(\sqrt{k + 1} - \sqrt{k})}\\ 
 	&amp;= \frac{\sqrt{k + 1} - \sqrt{k}}{k + 1 - k}\\
 	&amp;= \sqrt{k + 1} - \sqrt{k}
 \end{split}
 </me>.
-So <m>f(9999) = \sum_{1}^{9999}(\sqrt{k + 1} - \sqrt{k}) = \sqrt{9999 + 1} - \sqrt{1} = 100 - 1 = 99</m>.  (Solution by Tung Nguyen)
+So <m>f(9999) = \sum_{k=1}^{9999}(\sqrt{k + 1} - \sqrt{k}) = \sqrt{9999 + 1} - \sqrt{1} = 100 - 1 = 99</m>.  (Solution by Tung Nguyen)
 </p>
 </example>
 </section>

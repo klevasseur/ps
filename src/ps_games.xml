@@ -66,15 +66,17 @@ Let <m>k</m> and <m>n</m> be integers with <m>1 \leq k \lt n</m>. Alice and Bob 
 to any vacant hole that is further to the right. The players alternate moves, with Alice playing first. The game ends when the pegs are in the <m>k</m> rightmost holes, so whoever is next to play cannot move and therefore loses. For what values
 of <m>n</m> and <m>k</m> does Alice have a winning strategy?
 </p></statement> 
-<solution><p>
+<solution>
+<p>
 We refer to this two-player game, with <m>n</m> holes and <m>k</m> pegs, as the <em><m>(n,k)</m>-game</em>.
-We will show that Alice has a winning strategy for the <m>(n,k)</m>-game if and only if at least one of <m>n</m> and <m>k</m> is odd; otherwise Bob has a winning strategy.</p>
-
-<p>We reduce the first claim to the second as follows. If <m>n</m> and <m>k</m> are both odd, then Alice can move the <m>k</m>-th peg to the last hole; this renders the last hole, and the peg in it, totally out of play, thus reducing the <m>(n,k)</m>-game to the <m>(n-1,k-1)</m>-game, for which Alice now has a winning strategy by the second claim. Similarly, if <m>n</m> is odd but <m>k</m> is even, then Alice may move the first peg to the <m>(k+1)</m>-st hole, removing the first hole from play and reducing the <m>(n,k)</m>-game to the <m>(n-1,k)</m> game. Finally, if <m>n</m> is even but <m>k</m> is odd, then Alice can move the first peg to the last hole, taking the first and last holes, and the peg in the last hole, out of play, and reducing the <m>(n,k)</m>-game to the <m>(n-2,k-1)</m>-game.</p>
+We will show that Alice has a winning strategy for the <m>(n,k)</m>-game if and only if at least one of <m>n</m> and <m>k</m> is odd; otherwise Bob has a winning strategy.
+</p>
+<p>We reduce the first claim to the second as follows. If <m>n</m> and <m>k</m> are both odd, then Alice can move the <m>k</m>-th peg to the last hole; this renders the last hole, and the peg in it, totally out of play, thus reducing the <m>(n,k)</m>-game to the <m>(n-1,k-1)</m>-game, for which Alice now has a winning strategy by the second claim. Similarly, if <m>n</m> is odd but <m>k</m> is even, then Alice may move the first peg to the <m>(k+1)</m>-st hole, removing the first hole from play and reducing the <m>(n,k)</m>-game to the <m>(n-1,k)</m> game. Finally, if <m>n</m> is even but <m>k</m> is odd, then Alice can move the first peg to the last hole, taking the first and last holes, and the peg in the last hole, out of play, and reducing the <m>(n,k)</m>-game to the <m>(n-2,k-1)</m>-game.
+</p>
 
 <p>We now assume <m>n</m> and <m>k</m> are both even and describe a winning strategy for the <m>(n,k)</m>-game for Bob.
 Subdivide the <m>n</m> holes into <m>n/2</m> disjoint pairs of adjacent holes. Call a configuration of <m>k</m> pegs \textit{good} if for each pair of holes, both or neither is occupied by pegs, and note that the starting position is good. Bob can ensure that after each of his moves, he leaves Alice with a good configuration: presented with a good configuration, Alice must move a peg from a pair of occupied holes to a hole in an unoccupied pair; then Bob can move the other peg from the first pair to the remaining hole in the second pair, resulting in another good configuration. In particular, this ensures that Bob always has a move to make. Since the game must terminate, this is a winning strategy for Bob.</p>
-</p></solution>  </problem>
+</solution>  </problem>
 
 
 
